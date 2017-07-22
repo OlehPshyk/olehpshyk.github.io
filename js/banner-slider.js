@@ -9,6 +9,8 @@ $(document).ready(function(){
 	    nav: true,		            
 	    navText : ["",""],
 	    rewindNav : true,
+	    touchDrag: false,
+		mouseDrag: false,
 	    responsive:{
 	        0: {
 	            items:1

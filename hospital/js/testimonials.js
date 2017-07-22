@@ -4,10 +4,12 @@ jQuery(document).ready(function($) {
 		            center: true,
 		            items: 3,		            
 		            margin: 0,        			
-		            autoplay: true,
+		            autoplay: true,		            
 		            dots:true,
 		            autoplayTimeout: 3000,
-		            smartSpeed: 1950,
+		            smartSpeed: 1950,		            
+			        touchDrag: false,
+			        mouseDrag: false,
 		            responsive: {
 		              0: {
 		                items: 1

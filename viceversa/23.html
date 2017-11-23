@@ -15,7 +15,7 @@
 
 		<!-- HEADER -->
 		<header id="header" class="top-head">
-			<div class="wrapper-white">   
+			<div class="wrapper-white">    
 				<div class="limiter">
 
 
@@ -23,13 +23,15 @@
 						<div class="logo"></div>
 						<div class="nav">
 							<ul class="nav-ul">
-								<li class="nav-li"><a class="nav-item active" href="#">Catalogue</a></li>   
+								<li class="nav-li"><a class="nav-item" href="#">Catalogue</a></li>   
 								<li class="nav-li"><a class="nav-item" href="#">Publishers</a></li>
 								<li class="nav-li"><a class="nav-item" href="#">Info</a></li>
 								<li class="nav-li"><a class="nav-item" href="#">Search</a></li>
 								<li class="nav-li"><a class="nav-item" href="#">Newsletter</a></li>
 							</ul>
 						</div>
+						<div class="cart-box"><span>Cart(1)</span></div>
+
 						<div class="login-box">
 							<button class="login" onclick="dropdown()">Login</button>
 						</div>
@@ -43,7 +45,7 @@
 								<li class="lg-li"><a class="lg-link" href="">Inventory</a></li>
 								<li class="lg-li"><a class="lg-link" href="">Logout</a></li>							
 							</ul>	
-						</div>		
+						</div>			
 						
 						<div class="menu">					
 							<button class="menu-button">Menu</button>		
@@ -72,263 +74,136 @@
 			</div>
 		</header>
 		<!-- END HEADER -->
+		
 
-			
 		
 		<div class="wrapper-white">
 			<div class="limiter pd-t-104 sm-pd-t-64"></div>
 		</div>
-
-		<!-- PANEL ITEM-->
+		
 		<section>
-			<div class="wrapper-white"> 
-				<div class="limiter mg-b-88 pd-t-80 sm-pd-t-80">
-					<div class="panel-item">
-					<div class="action-box mg-b-80">
+			<div class="wrapper-white">    
+				<div class="limiter pd-t-32 sm-pd-t-40">
+					<div class="checkout">
+
+						
+						<span class="b-title-n">Checkout</span>						
 						<div class="left-action">							
-							<a class="link" href="">						
-								<img class="icon" src="img/Icon/List Black.svg" alt="Link">	
-								<span class="link-title">Books by Edition Taube (xxxx)</span>							
-							</a>
-						</div>											
-					</div>	
-					<div class="panel-item-box">											
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/badbigwidth.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
+							<a class="link-back-box" href="">
+								<img class="icon" src="img/Icon/Link Grey.svg" alt="Plus">	
+								<span class="link-title text-gray">Back to cart</span>							
+							</a>	
+						</div>	
+						<span class="b-title-n">Shipping Address</span>
+						<form name="" method="" action="">
+							<div class="name">
+								<div class="vert">
+									<span class="first">First Name</span>
+									<input type="text" class="text-input-n w264" placeholder="First Name">	
+								</div>
+								<div class="vert">
+									<span class="second">Second Name</span>
+								   	<input type="text" class="text-input-n w264" placeholder="Second Name">
+								</div>
 							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/1.jpg" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
+							<div class="vert">
+								<span class="street">Street, Number</span>
+								<input type="text" class="text-input-n" placeholder="Street, Number">
 							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/2.jpg" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
+							<div class="vert">
+								<span class="address">Address</span>
+								<input type="text" class="text-input-n" placeholder="Address">
 							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/3.jpg" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
+
+							<div class="address-block">
+								<div class="vert">
+									<span class="city">City</span>
+									<input type="text" class="text-input-n w264" placeholder="City">
+								</div>
+								<div class="vert">
+									<span class="state">State</span>
+									<input type="text" class="text-input-n w264" placeholder="State">
+								</div>
+							</div>								
+							<div class="vert">
+								<span class="code">Postal Code</span>
+								<input type="text" class="text-input-n w264" placeholder="Postal Code">
 							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/4.jpg" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
+
+							<span class="country">Country</span>
+							<div class="select w585">
+
+			    				<select name="slct" class="show-for-large" id="slct">
+								    <option value="">Please select your Shopping Country</option>
+								    <option value="">Shopping Country</option>
+								    <option value="">Switzerland</option>
+								    <option value="">England</option>
+								    <option value="">France</option>
+								    <option value="">Germany</option>
+								    <option value="">Czech Republic</option>
+								    <option value="">Italy</option>
+								</select>
+								<select name="slct" class="hide-for-large" id="slct">
+								    <option value="">Shopping Country</option>
+								    <option value="">Shopping Country</option>
+								    <option value="">Switzerland</option>
+								    <option value="">England</option>
+								    <option value="">France</option>
+								    <option value="">Germany</option>
+								    <option value="">Czech Republic</option>
+								    <option value="">Italy</option>
+								</select>
+
 							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/5.jpg" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
+							<div class="vert mg-b-64">
+								<span class="email">Email Address</span>
+								<input type="email" class="text-input-n" placeholder="name@mail.com">
 							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/6.jpg" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
+							<div class="vert mg-b-80">
+								<span class="b-title-n">Billing Address</span>	
+								<div class="ch-box">
+									<input type="checkbox" checked id="billaddr" class="checkbox">	
+									<label for="billaddr">Same as Shipping Address</label>
+								</div>								
+							</div>	
+							<div class="vert mg-b-80">
+								<span class="b-title-n">Payment Method</span>	
+								<div class="ch-box">
+									<input type="radio" checked id="crcard" class="radio">							
+									<label class="text-violet" for="crcard">Credit Card</label>
+								</div>
 							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/7.jpg" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
+							<div class="vert mg-b-88">
+								<span class="b-title-n">Account</span>
+								<div class="ch-box">
+									<input type="radio" checked name="account" id="radio1" class="radio">
+									<label class="text-violet" for="radio1">Save my information to check the order status online</label>	
+								</div>	
+								<div class="ch-box">						
+									<input type="radio" name="account" id="radio2" class="radio">
+									<label for="radio2">Check out as a guest</label>
+								</div>
 							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/badbigheight.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
+							<div class="ch-box">
+								<input type="checkbox" id="accept" class="checkbox" checked>							
+								<label for="accept">I accept the <a class="terms" href="">terms and conditions</a></label>
 							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/test1.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>					
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/test2.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/bad.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/book-slim.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/book-wide.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/test3.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/test4.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>
-						</div>
+						   	
+						   	<!-- <input type="submit" value="">		    -->
+						   	<button class="button v2 button-violet">Review and pay</button>
+						</form>
+						
+
+						<span class="question2">Do you have questions?</span>
+						<p class="touch2">Get in touch with us:<br/>+49 30 61 609 236<br/>orders@viceversaartbooks.com</p>
+						
+					</div>
 				</div>
-				</div>				
-			</div>			
+			</div>
 		</section>
-		<!-- END PANEL ITEM-->		
+
+
+		<div class="wrapper-white pd-t-160"></div>
 
 
 		<!-- CATEGORY-->
@@ -358,6 +233,8 @@
 			</div>			
 		</section>	
 		<!-- END CATEGORY-->	
+		
+
 
 		<!-- FOOTER -->
 		<footer>
@@ -394,7 +271,6 @@
 			</div>
 		</footer>
 		<!-- END FOOTER -->
-
 
 		<!-- FOOTER-REVEAL -->
 		<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
@@ -434,6 +310,7 @@
 
 		<script src="js/scrollreveal/scrollreveal.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-				
+
+			
 	</body>
 </html>

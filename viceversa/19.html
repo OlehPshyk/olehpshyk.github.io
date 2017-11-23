@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>ViceVersa</title>	
-	<link rel="stylesheet" href="https://webfonts.fontstand.com/WF-022471-a28765b828c615a7d074d97d40c96a18.css" type="text/css"/>
 	<link rel="stylesheet" href="css/normalize/normalize.min.css" type="text/css">
 	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css" type="text/css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -75,7 +74,10 @@
 		<!-- END HEADER -->
 		
 
-		<div class="wrapper-red pd-t-64"></div>
+		
+		<div class="wrapper-red">
+			<div class="limiter pd-t-64"></div>
+		</div>
 
 		<!-- BOOK SELFY -->
 		<section>
@@ -668,7 +670,7 @@
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
 			  	},
-			  	tolerance: {up:2,down:10}
+			  	tolerance: {up:2,down:5}
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);

@@ -5,8 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>ViceVersa</title>	
-	<link rel="stylesheet" href="https://webfonts.fontstand.com/WF-022471-a28765b828c615a7d074d97d40c96a18.css" type="text/css"/>
+	<title>ViceVersa</title>		
 	<link rel="stylesheet" href="css/normalize/normalize.min.css" type="text/css">
 	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css" type="text/css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -74,7 +73,10 @@
 		</header>
 		<!-- END HEADER -->
 		
-		<div class="wrapper-white pd-t-104"></div>
+		
+		<div class="wrapper-white">
+			<div class="limiter pd-t-104 sm-pd-t-64"></div>
+		</div>	
 
 		<section>
 			<div class="wrapper-white">
@@ -97,7 +99,7 @@
 				<div class="limiter mg-b-160">
 					<div class="text-container">	
 						<div class="main-part">
-							<h2 class="title">Publishers</h2>									
+							<h2 class="title mg-b-64">Publishers</h2>									
 							<p class="text stretched">
 								Broken Dimanche Press, Berlin<br/>
 								Dokument Press, Copenhagen<br/>
@@ -130,7 +132,7 @@
 				<div class="limiter mg-b-128">
 					<div class="text-container">	
 						<div class="main-part">
-							<h2 class="title">Publisher Service</h2>									
+							<h2 class="title mg-b-64">Publisher Service</h2>									
 							<p class="text">Vice Versa is one of the largest and oldest distributors fully dedicated to art publications and artist’s books. Based in Berlin, Vice Versa specializes in architecture, art, design, fashion, film, photography and theory. We carry a carefully curated list of publishers, who share our passion for printed matter. We sell books and magazines to consumers, bookshops, museums, libraries, and companies in Germany, Austria, and Switzerland and fulfill orders worldwide. If you have any inquieries please email us, we are looking forward to hear from you.</p>		
 						</div>															
 					</div>
@@ -145,7 +147,7 @@
 				<div class="limiter mg-b-160">
 					<div class="text-container">	
 						<div class="main-part">
-							<h2 class="title">Verlagsservice</h2>									
+							<h2 class="title mg-b-64">Verlagsservice</h2>									
 							<p class="text">Vice Versa is one of the largest and oldest distributors fully dedicated to art publications and artist’s books. Based in Berlin, Vice Versa specializes in architecture, art, design, fashion, film, photography and theory. We carry a carefully curated list of publishers, who share our passion for printed matter. We sell books and magazines to consumers, bookshops, museums, libraries, and companies in Germany, Austria, and Switzerland and fulfill orders worldwide. If you have any inquieries please email us, we are looking forward to hear from you.</p>			
 						</div>														
 					</div>
@@ -255,7 +257,7 @@
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
 			  	},
-			  	tolerance: {up:2,down:10}
+			  	tolerance: {up:2,down:5}
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);

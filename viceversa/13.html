@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>ViceVersa</title>	
-	<link rel="stylesheet" href="https://webfonts.fontstand.com/WF-022471-a28765b828c615a7d074d97d40c96a18.css" type="text/css"/>
 	<link rel="stylesheet" href="css/normalize/normalize.min.css" type="text/css">
 	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css" type="text/css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -77,11 +76,14 @@
 		<!-- END HEADER -->
 		
 
-		<div class="wrapper-white pd-t-136 sm-pd-t-104"></div>
+		
+		<div class="wrapper-white">
+			<div class="limiter pd-t-104 sm-pd-t-64"></div>
+		</div>
 		
 		<section>
 			<div class="wrapper-white">    
-				<div class="limiter">
+				<div class="limiter pd-t-32 sm-pd-t-40">
 					<div class="checkout">
 
 						<a href="" class="link-back">Back to Cart</a>
@@ -123,16 +125,30 @@
 							</div>
 
 							<span class="country">Country</span>
-							<div class="select w452">							    	
-			    				<select name="slct" id="slct">
-								    <option value="">Please select your Shopping Country</option>
-								    <option value="">Switzerland</option>
-								    <option value="">England</option>
-								    <option value="">France</option>
-								    <option value="">Germany</option>
-								    <option value="">Czech Republic</option>
-								    <option value="">Italy</option>
-								</select>
+							<div class="select w452">		
+
+
+			    					<select name="slct" class="show-for-large" id="slct">
+									    <option value="">Please select your Shopping Country</option>
+									    <option value="">Shopping Country</option>
+									    <option value="">Switzerland</option>
+									    <option value="">England</option>
+									    <option value="">France</option>
+									    <option value="">Germany</option>
+									    <option value="">Czech Republic</option>
+									    <option value="">Italy</option>
+									</select>
+									<select name="slct" class="hide-for-large" id="slct">
+									    <option value="">Shopping Country</option>
+									    <option value="">Shopping Country</option>
+									    <option value="">Switzerland</option>
+									    <option value="">England</option>
+									    <option value="">France</option>
+									    <option value="">Germany</option>
+									    <option value="">Czech Republic</option>
+									    <option value="">Italy</option>
+									</select>
+								
 							</div>
 							<div class="vert">
 								<span class="email">Email Address</span>
@@ -183,64 +199,12 @@
 						</ul>
 
 						<span class="copyr">&copy; Vice Versa Art Books 2017</span>
-
-						
-						
-						
-						
-						
-						
-						
-
-						
-						
-
-						
-
-
-
-
-
 					</div>
 				</div>
 			</div>
 		</section>
 		
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-
-
-
-
-
-
-
-		
 
 		<!-- FOOTER -->
 		<footer>
@@ -307,7 +271,7 @@
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
 			  	},
-			  	tolerance: {up:2,down:10}
+			  	tolerance: {up:2,down:5}
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);

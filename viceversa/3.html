@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>ViceVersa</title>	
-	<link rel="stylesheet" href="https://webfonts.fontstand.com/WF-022471-a28765b828c615a7d074d97d40c96a18.css" type="text/css"/>
 	<link rel="stylesheet" href="css/normalize/normalize.min.css" type="text/css">
 	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css" type="text/css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -76,14 +75,12 @@
 		
 		
 		<div class="wrapper-white">
-			<div class="limiter show-for-large pd-t-104"></div>
+			<div class="limiter pd-t-104 sm-pd-t-64"></div>
 		</div>
 		<div class="wrapper-white">
 			<div class="limiter show-for-large pd-t-104"></div>
 		</div>
-		<div class="wrapper-white">
-			<div class="limiter hide-for-large pd-t-64"></div>
-		</div>
+		
 		
 		
 		<!-- sticky-kit START parent for  STICK BANNER-->
@@ -97,7 +94,7 @@
 							<div class="left-action-banner">
 								<span class="run-title">
 									Hank Schmidt in der Beek, Fabian Schubert<br/>
-									Und im Sommer tu ich malen 666 dskldjsld ksdj hkjsh  kj hjk hk shskjhd kjh kjh kj hkj hjk 
+									Und im Sommer tu ich malen  
 								</span>
 							</div>	
 							<div class="show-for-large">
@@ -245,7 +242,7 @@
 									ISBN 978-3-945900-06-2<br/>
 									edcat ID E00000173
 								</p>
-								<div class="button-box show-for-large">
+								<div class="button-box show-for-large mg-b-40">
 									<div class="a-button"><a href=""><button class="button-small button-gray">Artists&prime; Books</button></a></div>
 									<div class="a-button"><a href=""><button class="button-small button-gray">Monograph</button></a></div>
 									<div class="a-button"><a href=""><button class="button-small button-gray">Plein-Air</button></a></div>
@@ -254,7 +251,16 @@
 									<div class="a-button"><a href=""><button class="button-small button-gray">Landscape</button></a></div>	
 									<div class="a-button"><a href=""><button class="button-small button-gray">Landscape</button></a></div>		
 									<div class="a-button"><a href=""><button class="button-small button-gray">Painting</button></a></div>			
-								</div>	
+								</div>
+
+								<div class="smallaction-box show-for-large">
+									<a class="link" href="">						
+										<img class="icon" src="img/Icon/Download Grey.svg" alt="Plus">	
+										<span class="link-title gray">Download infos</span>							
+									</a>							
+								</div>							
+
+
 							</div>
 						</div>
 						<div class="button-box hide-for-large sm-mg-b-88">
@@ -265,8 +271,8 @@
 							<div class="a-button"><a href=""><button class="button-small button-gray">Art</button></a></div>
 							<div class="a-button"><a href=""><button class="button-small button-gray">Landscape</button></a></div>	
 							<div class="a-button"><a href=""><button class="button-small button-gray">Landscape</button></a></div>		
-							<div class="a-button"><a href=""><button class="button-small button-gray">Painting</button></a></div>				
-						</div>	
+							<div class="a-button"><a href=""><button class="button-small button-gray">Painting</button></a></div>
+						</div>							
 					</div> 				
 				</div>			
 			</section>
@@ -738,8 +744,8 @@
 			      		this.elem.classList.add(this.classes.unpinned);
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
-			  	},
-			  	tolerance: {up:2,down:10}
+			  	}
+			  	,tolerance: {up:2,down:5}  //2 10
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);
@@ -751,10 +757,10 @@
 			// HEADRUM STICK
 			if (window.innerWidth > 1199){				
 				var myElement = document.querySelector("#stick");			
-				var headroom  = new Headroom(myElement,{tolerance:{up:2,down:10}});			
+				var headroom  = new Headroom(myElement,{tolerance:{up:2,down:5}});			//
 				headroom.init();
 			// STICK-IN-PARENT STICK 
-				$("#stick").stick_in_parent({parent: "#parent"});
+				$("#stick").stick_in_parent({parent: "#parent"});		//parent: "#parent", offset_top: 0, spacer: "false"	
 			}
 		</script>
 

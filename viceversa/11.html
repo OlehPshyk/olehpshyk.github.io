@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>ViceVersa</title>	
-	<link rel="stylesheet" href="https://webfonts.fontstand.com/WF-022471-a28765b828c615a7d074d97d40c96a18.css" type="text/css"/>
 	<link rel="stylesheet" href="css/normalize/normalize.min.css" type="text/css">
 	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css" type="text/css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -77,14 +76,17 @@
 		<!-- END HEADER -->
 		
 
-		<div class="wrapper-white pd-t-136 sm-pd-t-104"></div>
+		
+		<div class="wrapper-white">
+			<div class="limiter pd-t-104 sm-pd-t-64"></div>
+		</div>
 		
 
 
 		<!-- ACTION-->
 		<section>
-			<div class="wrapper-white "> 
-				<div class="limiter mg-b-16">											
+			<div class="wrapper-white"> 
+				<div class="limiter mg-b-16 pd-t-32 sm-pd-t-40">											
 					<div class="action-box">
 						<div class="left-action">							
 							<a class="link" href="">														
@@ -122,9 +124,9 @@
 									25.00 Euro
 								</span>
 								<div class="q-buttons">
-									<div class="q-b"><a class="q-ty-link" href=""><img class="down" src="img/Icon/down.svg"/></a></div>
+									<div class="q-b"><a class="q-ty-link" href=""><img class="down" src="img/Icon/Reduce.svg"/></a></div>
 									<div class="q-b"><span class="number">1</span></div>
-									<div class="q-b"><a class="q-ty-link" href=""><img class="up" src="img/Icon/up.svg"/></a></div>
+									<div class="q-b"><a class="q-ty-link" href=""><img class="up" src="img/Icon/Increase.svg"/></a></div>
 								</div>
 								<span class="sum">
 									25.00 Euro
@@ -150,9 +152,9 @@
 									38.00 Euro
 								</span>
 								<div class="q-buttons">
-									<a class="q-ty-link" href=""><div class="q-b"><img class="down" src="img/Icon/down.svg"/></div></a>
+									<a class="q-ty-link" href=""><div class="q-b"><img class="down" src="img/Icon/Reduce.svg"/></div></a>
 									<div class="q-b"><span class="number">2</span></div>
-									<a class="q-ty-link" href=""><div class="q-b"><img class="up" src="img/Icon/up.svg"/></div></a>
+									<a class="q-ty-link" href=""><div class="q-b"><img class="up" src="img/Icon/Increase.svg"/></div></a>
 								</div>
 								<span class="sum">
 									76.00 Euro
@@ -310,7 +312,7 @@
 		<!-- ACTION-->
 		<section>
 			<div class="wrapper-white"> 
-				<div class="limiter show-for-large mg-b-16">											
+				<div class="limiter mg-b-16">											
 					<div class="action-box">
 						<div class="left-action">							
 							<a class="link" href="">						
@@ -326,11 +328,9 @@
 		
 		
 		<div class="wrapper-white">
-			<div class="limiter show-for-large pd-t-160"></div>
+			<div class="limiter pd-t-160 sm-pd-t-80"></div>
 		</div>
-		<div class="wrapper-white">
-			<div class="limiter hide-for-large pd-t-80"></div>
-		</div>
+		
 		
 
 		
@@ -430,7 +430,7 @@
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
 			  	},
-			  	tolerance: {up:2,down:10}
+			  	tolerance: {up:2,down:5}
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);

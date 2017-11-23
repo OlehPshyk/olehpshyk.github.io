@@ -24,22 +24,24 @@ $('footer').footerReveal();
 
 <!-- REVEAL -->
 if (window.innerWidth > 900){		//only on large screen			
-	window.sr = ScrollReveal({ reset: true,
+	window.sr = ScrollReveal({ reset: false,
 							   viewFactor: 0.4,
 							   opacity: 0,
+							   scale: 0,
 							   origin: 'bottom',
-							   distance: '10px',
+							   distance: '50px',
 							   duration: 1000,
 							   delay: 100,
 							   mobile: true});
 	sr.reveal('.reveal-v1');
 } 
 else {
-	window.sr = ScrollReveal({ reset: true,
+	window.sr = ScrollReveal({ reset: false,
 							   viewFactor: 0.3,
-							   opacity: 0,							   
+							   opacity: 0,	
+							   scale: 0,						   
 							   origin: 'bottom',
-							   // distance: '10px',
+							   distance: '50px',
 							   duration: 1000,
 							   delay: 100,
 							   mobile: true});

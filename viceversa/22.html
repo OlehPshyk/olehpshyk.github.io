@@ -76,7 +76,7 @@
 		<!-- END HEADER -->
 		
 
-		
+		<!-- Substitute header(navbar) height. Because heather is position: static; -->
 		<div class="wrapper-white">
 			<div class="limiter pd-t-104 sm-pd-t-64"></div>
 		</div>
@@ -86,7 +86,7 @@
 		<!-- ACTION-->
 		<section>
 			<div class="wrapper-white"> 
-				<div class="limiter mg-b-16 pd-t-32 sm-pd-t-40">											
+				<div class="limiter mg-b-16 pd-t-32 sm-pd-t-0">											
 					<div class="action-box">
 						<div class="left-action">							
 							<a class="link" href="">														
@@ -102,7 +102,7 @@
 		<!-- SHOPING PART -->
 		<section>
 			<div class="wrapper-white"> 
-				<div class="limiter pd-t-40 mg-b-168">
+				<div class="limiter pd-t-40 sm-pd-t-0 mg-b-168 sm-mg-b-96">
 
 					<div class="shoping">
 
@@ -110,7 +110,7 @@
 							<div class="book-box">
 								<div class="book">
 									<div class="img-box">
-										<img class="img reveal-v1" src="img/book-wide.png" alt="">
+										<img class="img" src="img/book-wide.png" alt="">
 									</div>
 								</div>
 								<span class="title">
@@ -121,15 +121,15 @@
 							</div>
 							<div class="price-box">
 								<span class="price">
-									25.00 Euro
+									25.00 <span class="currency">Euro</span>
 								</span>
 								<div class="q-buttons">
-									<div class="q-b"><a class="q-ty-link" href=""><img class="down" src="img/Icon/Reduce.svg"/></a></div>
+									<a class="q-ty-link" href=""><div class="q-b"><img class="down" src="img/Icon/Reduce.svg"/></div></a>
 									<div class="q-b"><span class="number">1</span></div>
-									<div class="q-b"><a class="q-ty-link" href=""><img class="up" src="img/Icon/Increase.svg"/></a></div>
+									<a class="q-ty-link" href=""><div class="q-b"><img class="up" src="img/Icon/Increase.svg"/></div></a>
 								</div>
 								<span class="sum">
-									25.00 Euro
+									25.00 <span class="currency">Euro</span>
 								</span>
 							</div>	
 						</div>	
@@ -138,7 +138,7 @@
 							<div class="book-box">
 								<div class="book">
 									<div class="img-box">
-										<img class="img reveal-v1" src="img/5.jpg" alt="">
+										<img class="img" src="img/5.jpg" alt="">
 									</div>
 								</div>
 								<span class="title">
@@ -149,7 +149,7 @@
 							</div>
 							<div class="price-box">
 								<span class="price">
-									38.00 Euro
+									38.00 <span class="currency">Euro</span>
 								</span>
 								<div class="q-buttons">
 									<a class="q-ty-link" href=""><div class="q-b"><img class="down" src="img/Icon/Reduce.svg"/></div></a>
@@ -157,7 +157,7 @@
 									<a class="q-ty-link" href=""><div class="q-b"><img class="up" src="img/Icon/Increase.svg"/></div></a>
 								</div>
 								<span class="sum">
-									76.00 Euro
+									76.00 <span class="currency">Euro</span>
 								</span>
 							</div>	
 						</div>	
@@ -169,11 +169,11 @@
 							<div class="item-check right-only mg-b-8">
 								<div class="ship">
 									<span class="text1">Subtotal</span>
-									<span class="pr1">101.00 Euro</span>
+									<span class="pr1">101.00 <span class="currency">Euro</span></span>
 								</div>
 							</div>
 
-							<div class="item-check mg-b-32">
+							<div class="item-check mg-b-32 sm-mg-b-8">
 								<div class="left">
 									<div class="select">							    	
 					    				<select name="slct" id="slct">
@@ -189,9 +189,9 @@
 								</div>							    
 								<div class="ship">
 									<span class="text2">Shipping(Switzerland)</span>
-									<span class="pr2">10.00 Euro</span>
+									<span class="pr2">10.00 <span class="currency">Euro</span></span>
 								</div>
-							</div>
+							</div>							
 							
 							<div class="item-check mg-b-8">	
 								<div class="left">
@@ -207,9 +207,32 @@
 
 							<div class="item-check right-only">															   
 								<div class="ship right-only">									
-									<span class="pr3 text-gray">includes 6,54 Euro VAT (7%)</span>
+									<span class="pr4 text-gray">includes 6,54 Euro VAT (7%)</span>
 								</div>
-							</div>										
+							</div>	
+
+
+							<!-- FOR MOBILE -->
+							<div class="item-check hide-for-large pd-t-72 mg-b-24">	
+								<div class="select mobile">							    	
+				    				<select name="slct" id="slct">
+				    					<option value="">Please select <span class="w320">your shipping</span> country</option>
+									    <option value="" selected>Switzerland</option>
+									    <option value="">England</option>
+									    <option value="">France</option>
+									    <option value="">Germany</option>
+									    <option value="">Czech Republic</option>
+									    <option value="">Italy</option>
+									</select>
+								</div>								
+							</div>
+
+							
+							<div class="button-box mobile hide-for-large">
+								<button class="button button-violet-invert">Check out and pay</button>
+							</div>
+								
+							<!-- END FOR MOBILE -->									
 								
 								<!-- .pr1 .pr2 .pr3 .pr4 not used
 								Thay are For future changes in the size of the font, or something like that-->
@@ -227,7 +250,7 @@
 
 		
 		<!-- PANEL ITEM-->
-		<section>
+		<section class="show-for-large">
 			<div class="wrapper-white"> 
 				<div class="limiter mg-b-24">
 					<div class="panel-item">
@@ -240,9 +263,9 @@
 							</div>
 						</div>							
 						<div class="panel-item-box">											
-							<div class="item-box">	
+							<div class="item-box reveal-v1">	
 								<div class="img-box">
-									<img class="img reveal-v1" src="img/badbigwidth.png" alt="">
+									<img class="img" src="img/badbigwidth.png" alt="">
 								</div>							
 								<span class="item-text">
 									Jimmie Durham
@@ -250,9 +273,9 @@
 									God's Children, God's Poems
 								</span>
 							</div>
-							<div class="item-box">	
+							<div class="item-box reveal-v1">	
 								<div class="img-box">
-									<img class="img reveal-v1" src="img/1.jpg" alt="">
+									<img class="img" src="img/1.jpg" alt="">
 								</div>							
 								<span class="item-text">
 									Jimmie Durham
@@ -260,9 +283,9 @@
 									God's Children, God's Poems
 								</span>
 							</div>
-							<div class="item-box">	
+							<div class="item-box reveal-v1">	
 								<div class="img-box">
-									<img class="img reveal-v1" src="img/2.jpg" alt="">
+									<img class="img" src="img/2.jpg" alt="">
 								</div>							
 								<span class="item-text">
 									Jimmie Durham
@@ -270,19 +293,9 @@
 									God's Children, God's Poems
 								</span>
 							</div>
-							<div class="item-box">	
+							<div class="item-box reveal-v1">	
 								<div class="img-box">
-									<img class="img reveal-v1" src="img/3.jpg" alt="">
-								</div>							
-								<span class="item-text">
-									Jimmie Durham
-									<br>
-									God's Children, God's Poems
-								</span>
-							</div>	
-							<div class="item-box">	
-								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
+									<img class="img" src="img/3.jpg" alt="">
 								</div>							
 								<span class="item-text">
 									Jimmie Durham
@@ -290,9 +303,9 @@
 									God's Children, God's Poems
 								</span>
 							</div>
-							<div class="item-box">	
+							<div class="item-box reveal-v1">	
 								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
+									<img class="img" src="img/4.jpg" alt="">
 								</div>							
 								<span class="item-text">
 									Jimmie Durham
@@ -300,9 +313,9 @@
 									God's Children, God's Poems
 								</span>
 							</div>
-							<div class="item-box">	
+							<div class="item-box reveal-v1">	
 								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
+									<img class="img" src="img/5.jpg" alt="">
 								</div>							
 								<span class="item-text">
 									Jimmie Durham
@@ -310,9 +323,9 @@
 									God's Children, God's Poems
 								</span>
 							</div>
-							<div class="item-box">	
+							<div class="item-box reveal-v1">	
 								<div class="img-box">
-									<img class="img reveal-v1" src="img/item.png" alt="">
+									<img class="img" src="img/6.jpg" alt="">
 								</div>							
 								<span class="item-text">
 									Jimmie Durham
@@ -320,6 +333,116 @@
 									God's Children, God's Poems
 								</span>
 							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/7.jpg" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/badbigheight.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/item.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/test1.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>					
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/test2.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/bad.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/book-slim.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/book-wide.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/test3.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/test4.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>
+							<div class="item-box reveal-v1">	
+								<div class="img-box">
+									<img class="img" src="img/item.png" alt="">
+								</div>							
+								<span class="item-text">
+									Jimmie Durham
+									<br>
+									God's Children, God's Poems
+								</span>
+							</div>						
 						</div>
 					</div>
 				</div>				
@@ -329,7 +452,7 @@
 
 
 		<!-- ACTION-->
-		<section>
+		<section class="show-for-large">
 			<div class="wrapper-white"> 
 				<div class="limiter mg-b-16">											
 					<div class="action-box">
@@ -346,8 +469,8 @@
 		<!-- END ACTION-->
 		
 		
-		<div class="wrapper-white">
-			<div class="limiter pd-t-160 sm-pd-t-80"></div>
+		<div class="wrapper-white show-for-large">
+			<div class="limiter pd-t-160 sm-pd-t-96"></div>
 		</div>
 		
 		

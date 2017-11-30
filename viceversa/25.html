@@ -76,7 +76,7 @@
 		<!-- END HEADER -->
 		
 
-		
+		<!-- Substitute header(navbar) height. Because heather is position: static; -->
 		<div class="wrapper-white">
 			<div class="limiter pd-t-104 sm-pd-t-64"></div>
 		</div>
@@ -84,10 +84,25 @@
 
 
 		<!-- ACTION-->
+		<section class="hide-for-large">
+			<div class="wrapper-white"> 
+				<div class="limiter sm-pd-t-24 sm-mg-b-64">											
+					<div class="complete">															
+						<div class="complete-img">
+							<img class="img" src="img/Icon/Success Brand.svg" alt="">
+						</div>
+						<div class="complete-text">
+							<span class="text text-violet">Thank you!<br/>Your order is complete.</span>	
+						</div>						
+					</div>										
+				</div>
+			</div>		
+		</section>
+			
 		<section>
-			<div class="wrapper-white "> 
-				<div class="limiter mg-b-16 pd-t-32 sm-pd-t-40">											
-					<div class="action-box">
+			<div class="wrapper-white wrapper-grey-wr2-only-small"> 
+				<div class="limiter mg-b-16 pd-t-32 sm-pd-t-24">											
+					<div class="action-box show-for-large">
 						<div class="left-action">									
 							<span class="link-title text-violet">Thank you! Your order is complete.</span>
 						</div>						
@@ -95,7 +110,7 @@
 					<div class="action-box">
 						<div class="left-action">							
 							<!-- <a class="link" href="">														 -->
-								<span class="link-title">Order #0346, 2017-11-05</span>							
+								<span class="link-title big">Order #0346, 2017-11-05</span>							
 							<!-- </a>	 -->
 						</div>						
 					</div>					
@@ -106,8 +121,8 @@
 
 		<!-- SHOPING PART -->
 		<section>
-			<div class="wrapper-white"> 
-				<div class="limiter pd-t-40 mg-b-56">
+			<div class="wrapper-white wrapper-grey-wr2-only-small"> 
+				<div class="limiter pd-t-40 sm-pd-t-0 mg-b-56 sm-mg-b-32">
 
 					<div class="shoping checkout-stage">
 
@@ -115,13 +130,13 @@
 							<div class="book-box">
 								<div class="book">
 									<div class="img-box">
-										<img class="img reveal-v1" src="img/book-wide.png" alt="">
+										<img class="img" src="img/book-wide.png" alt="">
 									</div>
 								</div>
 								<span class="title">
-									Jimmie Durham
+									Kenneth Goldsmith									
 									<br>
-									God's Children, God's Poems
+									Against Translation
 								</span>								
 							</div>
 							<div class="price-box">
@@ -132,7 +147,7 @@
 									1x
 								</div>
 								<span class="sum">
-									25.00 Euro
+									25.00 <span class="currency">Euro</span>
 								</span>
 							</div>	
 						</div>	
@@ -141,13 +156,13 @@
 							<div class="book-box">
 								<div class="book">
 									<div class="img-box">
-										<img class="img reveal-v1" src="img/5.jpg" alt="">
+										<img class="img" src="img/5.jpg" alt="">
 									</div>
 								</div>
 								<span class="title">
-									Jimmie Durham
+									Kenneth Goldsmith
 									<br>
-									God's Children, God's Poems
+									Against Translation
 								</span>								
 							</div>
 							<div class="price-box">
@@ -158,7 +173,7 @@
 									2x
 								</div>
 								<span class="sum">
-									76.00 Euro
+									76.00 <span class="currency">Euro</span>
 								</span>
 							</div>	
 						</div>	
@@ -170,15 +185,15 @@
 							<div class="item-check right-only mg-b-8">
 								<div class="ship">
 									<span class="text1">Subtotal</span>
-									<span class="pr1">101.00 Euro</span>
+									<span class="pr1">101.00 <span class="currency">Euro</span></span>
 								</div>
 							</div>
 
-							<div class="item-check right-only mg-b-32">
+							<div class="item-check right-only mg-b-32 sm-mg-b-8">
 														    
 								<div class="ship">
 									<span class="text2">Shipping(Switzerland)</span>
-									<span class="pr2">10.00 Euro</span>
+									<span class="pr2">10.00 <span class="currency">Euro</span></span>
 								</div>
 							</div>
 							
@@ -198,7 +213,7 @@
 
 							<div class="item-check right-only">															   
 								<div class="ship right-only">									
-									<span class="pr3 text-gray">includes 6,54 Euro VAT (7%)</span>
+									<span class="pr4 text-gray">includes 6,54 Euro VAT (7%)</span>
 								</div>
 							</div>										
 								
@@ -220,29 +235,52 @@
 		<!-- PANEL TEXT FLEX-4-->
 		<section>
 			<div class="wrapper-grey-wr2"> 
-				<div class="limiter pd-t-64 mg-b-64">	
+				<div class="limiter pd-t-64 sm-pd-t-32 mg-b-64 sm-mg-b-32">	
+
+					<!-- FOR MOBILE -->	
+					<div class="action-box hide-for-large mg-b-16">	
+						<span class="subheader">Delivery Time: 5-10 days</span>
+					</div>	
+					<!-- END FOR MOBILE -->	
+
 					<div class="flex-4">
-						<div class="text-v">
-							<span>Shipping Address</span>
-							<span>Jan Steinbach</span>
-							<span>Feldeggstrasse 4</span>
-							<span>8008 Zürich</span>
-							<span>Switzerland</span>
+						<div class="text-sm-h">
+							<div class="text-v">
+								<span>Shipping Address</span>
+							</div>
+							<div class="text-v">
+								<span>Jan Steinbach</span>
+								<span>Feldeggstrasse 4</span>
+								<span>8008 Zürich</span>
+								<span>Switzerland</span>
+							</div>
 						</div>
-						<div class="text-v">
-							<span>Billing Address</span>
-							<span>Jan Steinbach</span>
-							<span>Feldeggstrasse 4</span>
-							<span>8008 Zürich</span>
-							<span>Switzerland</span>
+						<div class="text-sm-h">
+							<div class="text-v">
+								<span>Billing Address</span>
+							</div>
+							<div class="text-v">
+								<span>Jan Steinbach</span>
+								<span>Feldeggstrasse 4</span>
+								<span>8008 Zürich</span>
+								<span>Switzerland</span>								
+							</div>
 						</div>
-						<div class="text-v">
-							<span>E-Mail</span>
-							<span>js@parat.cc</span>
+						<div class="text-sm-h">
+							<div class="text-v">
+								<span>E-Mail</span>
+							</div>
+							<div class="text-v">
+								<span>js@parat.cc</span>
+							</div>
 						</div>
-						<div class="text-v">
-							<span>Payment method</span>
-							<span>Bitcoin</span>
+						<div class="text-sm-h">
+							<div class="text-v">
+								<span>Payment method</span>
+							</div>
+							<div class="text-v">
+								<span>Credit card</span>								
+							</div>
 						</div>		
 					</div>									
 				</div>				
@@ -254,15 +292,19 @@
 		<!-- ACTION-->
 		<section>
 			<div class="wrapper-white"> 
-				<div class="limiter pd-t-56 mg-b-88">											
-					<div class="action-box">
+				<div class="limiter pd-t-56 sm-pd-t-0 mg-b-88 sm-mg-b-0">											
+					<div class="action-box sm-mg-b-32">
 						<div class="left-action">							
 							<a class="link" href="">						
 								<img class="icon" src="img/Icon/Link Grey.svg" alt="Plus">	
-								<span class="link-title gray">Continue shopping</span>							
+								<span class="link-title gray big">Continue shopping</span>							
 							</a>	
 						</div>
-					</div>					
+					</div>
+					<div class="question-text hide-for-large">
+						<span class="title">Do you have questions?</span>
+						<p class="touch">Get in touch with us:<br/>+49 30 61 609 236<br/>orders@viceversaartbooks.com</p>
+					</div>
 				</div>
 			</div>			
 		</section>
@@ -270,7 +312,7 @@
 		
 		
 		<div class="wrapper-white">
-			<div class="limiter pd-t-160 sm-pd-t-80"></div>
+			<div class="limiter pd-t-160 sm-pd-t-128"></div>
 		</div>
 		
 		

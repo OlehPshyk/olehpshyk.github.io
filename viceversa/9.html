@@ -73,14 +73,14 @@
 		</header>
 		<!-- END HEADER -->
 		
-		
+		<!-- Substitute header(navbar) height. Because heather is position: static; -->
 		<div class="wrapper-white">
 			<div class="limiter pd-t-104 sm-pd-t-64"></div>
 		</div>	
 
 		<section>
 			<div class="wrapper-white">
-				<div class="limiter pd-t-40 mg-b-96">
+				<div class="limiter pd-t-40">
 					<div class="subheader">
 						<div class="nav">
 							<ul class="nav-ul">
@@ -96,16 +96,16 @@
 		<!-- PUBLISHERS-->
 		<section>
 			<div class="wrapper-white" id="publishers"> 
-				<div class="limiter mg-b-160">
+				<div class="limiter mg-b-80 mg-t-96">
 					<div class="text-container">	
 						<div class="main-part">
-							<h2 class="title mg-b-64">Publishers</h2>									
+							<h2 class="title mg-b-32">Publishers</h2>									
 							<p class="text stretched">
 								Broken Dimanche Press, Berlin<br/>
 								Dokument Press, Copenhagen<br/>
 								Drago Publishing, Rome<br/>
 								Edition Fink, Zurich<br/>
-								Edition Taube, Munich<br/>
+								<a href="#" class="link">Edition Taube, Munich</a><br/>
 								Jean Boîte Éditions, Paris<br/>
 								JRP|Ringier, Zurich<br/>
 								Lodret Vandret, Copenhagen<br/>
@@ -129,10 +129,10 @@
 		<!-- Publisher Service-->
 		<section>
 			<div class="wrapper-white" id="service"> 
-				<div class="limiter mg-b-128">
+				<div class="limiter mg-b-128 mg-t-96">
 					<div class="text-container">	
 						<div class="main-part">
-							<h2 class="title mg-b-64">Publisher Service</h2>									
+							<h2 class="title mg-b-32">Publisher Service</h2>									
 							<p class="text">Vice Versa is one of the largest and oldest distributors fully dedicated to art publications and artist’s books. Based in Berlin, Vice Versa specializes in architecture, art, design, fashion, film, photography and theory. We carry a carefully curated list of publishers, who share our passion for printed matter. We sell books and magazines to consumers, bookshops, museums, libraries, and companies in Germany, Austria, and Switzerland and fulfill orders worldwide. If you have any inquieries please email us, we are looking forward to hear from you.</p>		
 						</div>															
 					</div>
@@ -147,7 +147,7 @@
 				<div class="limiter mg-b-160">
 					<div class="text-container">	
 						<div class="main-part">
-							<h2 class="title mg-b-64">Verlagsservice</h2>									
+							<h2 class="title mg-b-32">Verlagsservice</h2>									
 							<p class="text">Vice Versa is one of the largest and oldest distributors fully dedicated to art publications and artist’s books. Based in Berlin, Vice Versa specializes in architecture, art, design, fashion, film, photography and theory. We carry a carefully curated list of publishers, who share our passion for printed matter. We sell books and magazines to consumers, bookshops, museums, libraries, and companies in Germany, Austria, and Switzerland and fulfill orders worldwide. If you have any inquieries please email us, we are looking forward to hear from you.</p>			
 						</div>														
 					</div>
@@ -220,13 +220,10 @@
 			</div>
 		</footer>
 		<!-- END FOOTER -->
+		
 
-
-
-
-
-		<!-- FOOTER-REVEAL -->
-		<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+		<!-- FOOTER-REVEAL -->	
+		<script type="text/javascript" src="js/jquery/jquery.min.js"></script>	
 		<script src="js/footer-reveal/footer-reveal.min.js" type="text/javascript" charset="utf-8"></script>
 		
 		
@@ -262,6 +259,22 @@
 
 			var headroomHeader = new Headroom(myHeader, options);
 			headroomHeader.init();	
+		</script>
+
+		<!-- SCROLL TO ANCHOR -->
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$('a[href^="#"]').on('click',function (e) {
+				    e.preventDefault();
+
+				    var target = this.hash;
+				    var $target = $(target);
+
+				    $('html, body').stop().animate({
+				        'scrollTop': $target.offset().top
+				    }, 900, 'swing');
+				});
+			});			
 		</script>
 
 		<script src="js/scrollreveal/scrollreveal.min.js" type="text/javascript" charset="utf-8"></script>

@@ -76,7 +76,7 @@
 		<!-- END HEADER -->
 		
 
-		
+		<!-- Substitute header(navbar) height. Because heather is position: static; -->
 		<div class="wrapper-white">
 			<div class="limiter pd-t-104 sm-pd-t-64"></div>
 		</div>
@@ -86,16 +86,21 @@
 		<!-- ACTION-->
 		<section>
 			<div class="wrapper-white "> 
-				<div class="limiter mg-b-16 pd-t-32 sm-pd-t-40">											
+				<div class="limiter mg-b-16 pd-t-32 sm-pd-t-0">											
 					<div class="action-box">
 						<div class="left-action">									
-							<span class="link-title">Checkout</span>
+							<span class="link-title big">Checkout</span>
+						</div>	
+						<div class="right-action hide-for-large">							
+							<a class="link" href="">
+								<img class="icon" src="img/Icon/Link Grey.svg" alt="Plus">	
+								<span class="link-title text-gray big">Back to cart</span>							
+							</a>	
 						</div>						
 					</div>	
 
-
 						
-					<div class="action-box">
+					<div class="action-box show-for-large">
 						<div class="left-action">							
 							<a class="link" href="">
 								<img class="icon" src="img/Icon/Link Grey.svg" alt="Plus">	
@@ -111,7 +116,7 @@
 		<!-- SHOPING PART -->
 		<section>
 			<div class="wrapper-white"> 
-				<div class="limiter pd-t-40 mg-b-56">
+				<div class="limiter pd-t-40 sm-pd-t-0 mg-b-56 sm-mg-b-32">
 
 					<div class="shoping checkout-stage">
 
@@ -119,7 +124,7 @@
 							<div class="book-box">
 								<div class="book">
 									<div class="img-box">
-										<img class="img reveal-v1" src="img/book-wide.png" alt="">
+										<img class="img" src="img/book-wide.png" alt="">
 									</div>
 								</div>
 								<span class="title">
@@ -136,7 +141,7 @@
 									1x
 								</div>
 								<span class="sum">
-									25.00 Euro
+									25.00 <span class="currency">Euro</span>
 								</span>
 							</div>	
 						</div>	
@@ -145,7 +150,7 @@
 							<div class="book-box">
 								<div class="book">
 									<div class="img-box">
-										<img class="img reveal-v1" src="img/5.jpg" alt="">
+										<img class="img" src="img/5.jpg" alt="">
 									</div>
 								</div>
 								<span class="title">
@@ -162,7 +167,7 @@
 									2x
 								</div>
 								<span class="sum">
-									76.00 Euro
+									76.00 <span class="currency">Euro</span>
 								</span>
 							</div>	
 						</div>	
@@ -174,15 +179,15 @@
 							<div class="item-check right-only mg-b-8">
 								<div class="ship">
 									<span class="text1">Subtotal</span>
-									<span class="pr1">101.00 Euro</span>
+									<span class="pr1">101.00 <span class="currency">Euro</span></span>
 								</div>
 							</div>
 
-							<div class="item-check right-only mg-b-32">
+							<div class="item-check right-only mg-b-32 sm-mg-b-8">
 														    
 								<div class="ship">
 									<span class="text2">Shipping(Switzerland)</span>
-									<span class="pr2">10.00 Euro</span>
+									<span class="pr2">10.00 <span class="currency">Euro</span></span>
 								</div>
 							</div>
 							
@@ -202,7 +207,7 @@
 
 							<div class="item-check right-only">															   
 								<div class="ship right-only">									
-									<span class="pr3 text-gray">includes 6,54 Euro VAT (7%)</span>
+									<span class="pr4 text-gray">includes 6,54 Euro VAT (7%)</span>
 								</div>
 							</div>										
 								
@@ -224,46 +229,68 @@
 		<!-- PANEL TEXT FLEX-4-->
 		<section>
 			<div class="wrapper-grey-wr2"> 
-				<div class="limiter pd-t-64 mg-b-64">	
+				<div class="limiter pd-t-64 sm-pd-t-32 mg-b-64 sm-mg-b-32">	
+
+					<!-- FOR MOBILE -->	
+					<div class="action-box hide-for-large mg-b-16">	
+						<span class="subheader">Delivery Time: 5-10 days</span>
+					</div>	
+					<!-- END FOR MOBILE -->	
+
 					<div class="flex-4">
-						<div class="text-v">
-							<span>Shipping Address</span>
-							<span>Jan Steinbach</span>
-							<span>Feldeggstrasse 4</span>
-							<span>8008 Zürich</span>
-							<span>Switzerland</span>							
-							<a class="link-box" href="">						
-								<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
-								<span class="link-title">Change</span>							
-							</a>							
-							
+						<div class="text-sm-h">
+							<div class="text-v">
+								<span>Shipping Address</span>
+							</div>
+							<div class="text-v">
+								<span>Jan Steinbach</span>
+								<span>Feldeggstrasse 4</span>
+								<span>8008 Zürich</span>
+								<span>Switzerland</span>							
+								<a class="link-box" href="">						
+									<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
+									<span class="link-title">Change</span>							
+								</a>	
+							</div>
 						</div>
-						<div class="text-v">
-							<span>Billing Address</span>
-							<span>Jan Steinbach</span>
-							<span>Feldeggstrasse 4</span>
-							<span>8008 Zürich</span>
-							<span>Switzerland</span>
-							<a class="link-box" href="">						
-								<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
-								<span class="link-title">Change</span>							
-							</a>
+						<div class="text-sm-h">
+							<div class="text-v">
+								<span>Billing Address</span>
+							</div>
+							<div class="text-v">
+								<span>Jan Steinbach</span>
+								<span>Feldeggstrasse 4</span>
+								<span>8008 Zürich</span>
+								<span>Switzerland</span>
+								<a class="link-box" href="">						
+									<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
+									<span class="link-title">Change</span>							
+								</a>
+							</div>
 						</div>
-						<div class="text-v">
-							<span>E-Mail</span>
-							<span>js@parat.cc</span>
-							<a class="link-box" href="">						
-								<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
-								<span class="link-title">Change</span>							
-							</a>
+						<div class="text-sm-h">
+							<div class="text-v">
+								<span>E-Mail</span>
+							</div>
+							<div class="text-v">
+								<span>js@parat.cc</span>
+								<a class="link-box" href="">						
+									<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
+									<span class="link-title">Change</span>							
+								</a>
+							</div>
 						</div>
-						<div class="text-v">
-							<span>Payment method</span>
-							<span>Bitcoin</span>
-							<a class="link-box" href="">						
-								<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
-								<span class="link-title">Change</span>							
-							</a>
+						<div class="text-sm-h">
+							<div class="text-v">
+								<span>Payment method</span>
+							</div>
+							<div class="text-v">
+								<span>Credit card</span>
+								<a class="link-box" href="">						
+									<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
+									<span class="link-title">Change</span>							
+								</a>
+							</div>
 						</div>		
 					</div>									
 				</div>				
@@ -275,13 +302,19 @@
 		<!-- PANEL PAY CREDIT CARD-->
 		<section>
 			<div class="wrapper-white"> 
-				<div class="limiter pd-t-64 mg-b-64">	
-					<div class="credit-card-box right-only">
+				<div class="limiter pd-t-64 sm-pd-t-40 mg-b-64 sm-mg-b-0">	
+					<div class="credit-card-box right-only show-for-large">
 						<div class="button-box">
-							<button class="button button-violet show-for-large">Pay 117 Euro with credit card to complete the order</button>
-						<button class="button button-violet hide-for-large">Pay 117 Euro</button>
+							<button class="button button-violet">Pay 117 Euro with credit card to complete the order</button>							
 						</div>						
-					</div>
+					</div>					
+					<div class="button-box mobile hide-for-large sm-mg-b-72">
+						<button class="button button-violet-invert">Pay 117,00 Euro to order</button>
+					</div>	
+					<div class="question-text hide-for-large">
+						<span class="title">Do you have questions?</span>
+						<p class="touch">Get in touch with us:<br/>+49 30 61 609 236<br/>orders@viceversaartbooks.com</p>
+					</div>									
 				</div>
 			</div>
 		</section>
@@ -291,7 +324,7 @@
 		
 		
 		<div class="wrapper-white">
-			<div class="limiter pd-t-160 sm-pd-t-80"></div>
+			<div class="limiter pd-t-160 sm-pd-t-152"></div>
 		</div>
 		
 		

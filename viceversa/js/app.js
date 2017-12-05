@@ -23,33 +23,34 @@ document.querySelector(".close-button").addEventListener("click", dropped);
 // Vice Versa Art Books
 var logo = document.querySelector(".logo"),
 	hoverArt = document.querySelector(".hover-art"),
-	testHeader = document.querySelector("#header"),
+	idHeader = document.querySelector("#header"),	
 	artTimeoutAdd, artTimeoutRemove;	
 			
 // check if mobile menu	dropped?
 function isMobileDrop(el) {
   	return ( el.classList.contains('mobile-menu-dropped') ? true : false );
 }
+// check if admin menu	dropped?
 function isLargeDrop(el) {
   	return ( el.classList.contains('large-dropdown') ? true : false );
 }
 function addArt() {		
-	if ( hoverArt.classList.contains("on") )
+	if ( idHeader.classList.contains("hoverArt") )
 		clearTimeout(artTimeoutRemove);	
- 	if(hoverArt !== null){
-		if ( (!hoverArt.classList.contains("on")) && (!isMobileDrop(testHeader)) && (!isLargeDrop(testHeader)) ){										
-			artTimeoutAdd = window.setTimeout(function(){hoverArt.classList.add("on");}, 200);							
-			//hoverArt.classList.add("on");		  			
+ 	if(idHeader !== null){
+		if ( (!idHeader.classList.contains("hoverArt")) && (!isMobileDrop(idHeader)) && (!isLargeDrop(idHeader)) ){				   			
+			artTimeoutAdd = window.setTimeout(function(){idHeader.classList.add("hoverArt");}, 400);							
+			//idHeader.classList.add("hoverArt");
 		} 
 	}	
 }
 function removeArt() {	
-	if ( !hoverArt.classList.contains("on") )
+	if ( !idHeader.classList.contains("hoverArt") )
 		clearTimeout(artTimeoutAdd);		
-	if(hoverArt !== null){
-		if (hoverArt.classList.contains("on")){						
-			artTimeoutRemove = window.setTimeout(function(){hoverArt.classList.remove("on");}, 500);			
-			//hoverArt.classList.remove("on");		   			
+	if(idHeader !== null){
+		if (idHeader.classList.contains("hoverArt")){						
+			artTimeoutRemove = window.setTimeout(function(){idHeader.classList.remove("hoverArt");}, 500);			
+			//idHeader.classList.remove("hoverArt");		   			
 		}
 	}
 	
@@ -66,26 +67,27 @@ if(logo !== null){
 var loginned = document.querySelector(".loginned"),
 	hoverLoginned = document.querySelector(".hover-loginned"),
 	loginnedTimeoutAdd, loginnedTimeoutRemove;	
-	// testHeader = document.querySelector("#header"); //already is ready before
+	// idHeader = document.querySelector("#header"); //already is ready before
+	
 
 function addLoginned() {
-	if ( hoverLoginned.classList.contains("on") )
+	if ( idHeader.classList.contains("hoverLoginned") )
 		clearTimeout(loginnedTimeoutRemove);		
- 	if(hoverLoginned !== null){
-		if ( (!hoverLoginned.classList.contains("on")) && (!isMobileDrop(testHeader)) && (!isLargeDrop(testHeader)) ){
-			//hoverLoginned.classList.add("on"); 
-			loginnedTimeoutAdd = window.setTimeout(function(){hoverLoginned.classList.add("on");}, 200);		   			
+ 	if(idHeader !== null){
+		if ( (!idHeader.classList.contains("hoverLoginned")) && (!isMobileDrop(idHeader)) && (!isLargeDrop(idHeader)) ){			
+			loginnedTimeoutAdd = window.setTimeout(function(){idHeader.classList.add("hoverLoginned");}, 400);		
+			//idHeader.classList.add("hoverLoginned");
 		} 
 	} 			
 }
 
 function removeLoginned() {
-	if ( !hoverLoginned.classList.contains("on") )
+	if ( !idHeader.classList.contains("hoverLoginned") )
 		clearTimeout(loginnedTimeoutAdd);
-	if(hoverLoginned !== null){
-		if (hoverLoginned.classList.contains("on")){
-			//hoverLoginned.classList.remove("on");
-			loginnedTimeoutRemove = window.setTimeout(function(){hoverLoginned.classList.remove("on");}, 500);		   			
+	if(idHeader !== null){
+		if (idHeader.classList.contains("hoverLoginned")){			
+			loginnedTimeoutRemove = window.setTimeout(function(){idHeader.classList.remove("hoverLoginned");}, 500);	
+			//idHeader.classList.remove("hoverLoginned");	   			
 		}
 	}
 }

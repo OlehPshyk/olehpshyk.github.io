@@ -23,7 +23,8 @@ document.querySelector(".close-button").addEventListener("click", dropped);
 // Vice Versa Art Books
 var logo = document.querySelector(".logo"),
 	hoverArt = document.querySelector(".hover-art"),
-	testHeader = document.querySelector("#header");
+	testHeader = document.querySelector("#header"),
+	artTimeoutAdd, artTimeoutRemove;	
 			
 // check if mobile menu	dropped?
 function isMobileDrop(el) {
@@ -32,23 +33,26 @@ function isMobileDrop(el) {
 function isLargeDrop(el) {
   	return ( el.classList.contains('large-dropdown') ? true : false );
 }
-
-function addArt() {	
+function addArt() {		
+	if ( hoverArt.classList.contains("on") )
+		clearTimeout(artTimeoutRemove);	
  	if(hoverArt !== null){
-		if ( (!hoverArt.classList.contains("on")) && (!isMobileDrop(testHeader)) && (!isLargeDrop(testHeader)) ){
-			//hoverArt.classList.add("on"); 
-			setTimeout(function(){hoverArt.classList.add("on");}, 200);		   			
+		if ( (!hoverArt.classList.contains("on")) && (!isMobileDrop(testHeader)) && (!isLargeDrop(testHeader)) ){										
+			artTimeoutAdd = window.setTimeout(function(){hoverArt.classList.add("on");}, 200);							
+			//hoverArt.classList.add("on");		  			
 		} 
-	} 			
+	}	
 }
-
-function removeArt() {
+function removeArt() {	
+	if ( !hoverArt.classList.contains("on") )
+		clearTimeout(artTimeoutAdd);		
 	if(hoverArt !== null){
-		if (hoverArt.classList.contains("on")){
-			//hoverArt.classList.remove("on");
-			setTimeout(function(){hoverArt.classList.remove("on");}, 500);		   			
+		if (hoverArt.classList.contains("on")){						
+			artTimeoutRemove = window.setTimeout(function(){hoverArt.classList.remove("on");}, 500);			
+			//hoverArt.classList.remove("on");		   			
 		}
 	}
+	
 }
 if(logo !== null){
 	logo.addEventListener("mouseover", addArt);
@@ -60,23 +64,28 @@ if(logo !== null){
 /*=======================================================*/
 // LOGINNED MAIL DISPLAY
 var loginned = document.querySelector(".loginned"),
-	hoverLoginned = document.querySelector(".hover-loginned");
+	hoverLoginned = document.querySelector(".hover-loginned"),
+	loginnedTimeoutAdd, loginnedTimeoutRemove;	
 	// testHeader = document.querySelector("#header"); //already is ready before
 
-function addLoginned() {	
+function addLoginned() {
+	if ( hoverLoginned.classList.contains("on") )
+		clearTimeout(loginnedTimeoutRemove);		
  	if(hoverLoginned !== null){
 		if ( (!hoverLoginned.classList.contains("on")) && (!isMobileDrop(testHeader)) && (!isLargeDrop(testHeader)) ){
 			//hoverLoginned.classList.add("on"); 
-			setTimeout(function(){hoverLoginned.classList.add("on");}, 200);		   			
+			loginnedTimeoutAdd = window.setTimeout(function(){hoverLoginned.classList.add("on");}, 200);		   			
 		} 
 	} 			
 }
 
 function removeLoginned() {
+	if ( !hoverLoginned.classList.contains("on") )
+		clearTimeout(loginnedTimeoutAdd);
 	if(hoverLoginned !== null){
 		if (hoverLoginned.classList.contains("on")){
 			//hoverLoginned.classList.remove("on");
-			setTimeout(function(){hoverLoginned.classList.remove("on");}, 500);		   			
+			loginnedTimeoutRemove = window.setTimeout(function(){hoverLoginned.classList.remove("on");}, 500);		   			
 		}
 	}
 }

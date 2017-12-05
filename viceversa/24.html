@@ -21,6 +21,9 @@
 
 					<div class="header">					
 						<div class="logo"></div>
+						<div class="hover-art">
+							<span class="art-text">Vice Versa Art Books</span>
+						</div>
 						<div class="nav">
 							<ul class="nav-ul">
 								<li class="nav-li"><a class="nav-item" href="#">Catalogue</a></li>   
@@ -33,7 +36,22 @@
 						<div class="cart-box"><span>Cart(1)</span></div>
 						
 						<div class="login-box">
-							<button class="login" onclick="dropdown()">Login</button>
+							<!-- Uncomment what you want us -->
+
+							<!-- <button class="login" onclick="dropdown()">Login</button> -->   
+
+							<!-- <span class="login">longlongmail<wbr>@gmail.com</span> -->
+
+								<!-- if present class .on display: block  if ebsent class .on display: none -->
+
+								<!-- !!!   .login hasn't :hover    .loginned   has :hover !!! -->
+
+							<span class="loginned on">Account</span>
+
+							<!-- <div class="loginned"><div class="img-loginned"></div></div> -->
+						</div>
+						<div class="hover-loginned">
+							<span class="mail-loginned">Longlonglonglong@gmail.com</span>
 						</div>
 
 						<div class="login-dropdown">
@@ -91,23 +109,25 @@
 						<div class="left-action">									
 							<span class="link-title big">Checkout</span>
 						</div>	
-						<div class="right-action hide-for-large">							
-							<a class="link" href="">
-								<img class="icon" src="img/Icon/Link Grey.svg" alt="Plus">	
-								<span class="link-title text-gray big">Back to cart</span>							
-							</a>	
-						</div>						
+						<div class="hide-for-large">
+							<div class="right-action">							
+								<a class="link" href="">
+									<img class="icon" src="img/Icon/Link Grey.svg" alt="Plus">	
+									<span class="link-title text-gray big">Back to cart</span>							
+								</a>	
+							</div>
+						</div>
 					</div>	
-
-						
-					<div class="action-box show-for-large">
-						<div class="left-action">							
-							<a class="link" href="">
-								<img class="icon" src="img/Icon/Link Grey.svg" alt="Plus">	
-								<span class="link-title text-gray">Back to cart</span>							
-							</a>	
-						</div>						
-					</div>					
+					<div class="show-for-large">	
+						<div class="action-box">
+							<div class="left-action">							
+								<a class="link" href="">
+									<img class="icon" src="img/Icon/Link Grey.svg" alt="Plus">	
+									<span class="link-title text-gray">Back to cart</span>							
+								</a>	
+							</div>						
+						</div>	
+					</div>				
 				</div>
 			</div>			
 		</section>
@@ -232,15 +252,17 @@
 				<div class="limiter pd-t-64 sm-pd-t-32 mg-b-64 sm-mg-b-32">	
 
 					<!-- FOR MOBILE -->	
-					<div class="action-box hide-for-large mg-b-16">	
-						<span class="subheader">Delivery Time: 5-10 days</span>
-					</div>	
+					<div class="hide-for-large">
+						<div class="action-box mg-b-16">	
+							<span class="subheader">Delivery Time: 5-10 days</span>
+						</div>	
+					</div>
 					<!-- END FOR MOBILE -->	
 
 					<div class="flex-4">
 						<div class="text-sm-h">
 							<div class="text-v">
-								<span>Shipping Address</span>
+								<span class="title">Shipping Address</span>
 							</div>
 							<div class="text-v">
 								<span>Jan Steinbach</span>
@@ -255,7 +277,7 @@
 						</div>
 						<div class="text-sm-h">
 							<div class="text-v">
-								<span>Billing Address</span>
+								<span class="title">Billing Address</span>
 							</div>
 							<div class="text-v">
 								<span>Jan Steinbach</span>
@@ -263,31 +285,34 @@
 								<span>8008 Zürich</span>
 								<span>Switzerland</span>
 								<a class="link-box" href="">						
-									<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
+									<img class="icon on" src="img/Icon/Link Black.svg" alt="Link">	
+									<img class="icon off" src="img/Icon/Link Black.svg" alt="Link">
 									<span class="link-title">Change</span>							
 								</a>
 							</div>
 						</div>
 						<div class="text-sm-h">
 							<div class="text-v">
-								<span>E-Mail</span>
+								<span class="title">E-Mail</span>
 							</div>
 							<div class="text-v">
-								<span>js@parat.cc</span>
+								<span class="mail">js<wbr>@parat.cc</span>
 								<a class="link-box" href="">						
-									<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
+									<img class="icon on" src="img/Icon/Link Black.svg" alt="Link">	
+									<img class="icon off" src="img/Icon/Link Black.svg" alt="Link">
 									<span class="link-title">Change</span>							
 								</a>
 							</div>
 						</div>
 						<div class="text-sm-h">
 							<div class="text-v">
-								<span>Payment method</span>
+								<span class="title">Payment method</span>
 							</div>
 							<div class="text-v">
 								<span>Credit card</span>
 								<a class="link-box" href="">						
-									<img class="icon" src="img/Icon/Link Black.svg" alt="Link">	
+									<img class="icon on" src="img/Icon/Link Black.svg" alt="Link">	
+									<img class="icon off" src="img/Icon/Link Black.svg" alt="Link">
 									<span class="link-title">Change</span>							
 								</a>
 							</div>
@@ -303,18 +328,24 @@
 		<section>
 			<div class="wrapper-white"> 
 				<div class="limiter pd-t-64 sm-pd-t-40 mg-b-64 sm-mg-b-0">	
-					<div class="credit-card-box right-only show-for-large">
-						<div class="button-box">
-							<button class="button button-violet">Pay 117 Euro with credit card to complete the order</button>							
-						</div>						
-					</div>					
-					<div class="button-box mobile hide-for-large sm-mg-b-72">
-						<button class="button button-violet-invert">Pay 117,00 Euro to order</button>
-					</div>	
-					<div class="question-text hide-for-large">
-						<span class="title">Do you have questions?</span>
-						<p class="touch">Get in touch with us:<br/>+49 30 61 609 236<br/>orders@viceversaartbooks.com</p>
-					</div>									
+					<div class="show-for-large">
+						<div class="credit-card-box right-only">
+							<div class="button-box">
+								<button class="button button-violet-invert">Pay 117 Euro with credit card to complete the order</button>							
+							</div>						
+						</div>
+					</div>
+					<div class="hide-for-large">
+						<div class="button-box mobile sm-mg-b-72">
+							<button class="button button-violet-invert">Pay 117,00 Euro to order</button>
+						</div>	
+					</div>
+					<div class="hide-for-large">
+						<div class="question-text">
+							<span class="title">Do you have questions?</span>
+							<p class="touch">Get in touch with us:<br/>+49 30 61 609 236<br/>orders@viceversaartbooks.com</p>
+						</div>		
+					</div>							
 				</div>
 			</div>
 		</section>
@@ -425,7 +456,7 @@
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
 			  	},
-			  	tolerance: {up:2,down:5}
+			  	tolerance: { up: 5, down: 15 }
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);

@@ -21,6 +21,9 @@
 					
 					<div class="header">					
 						<div class="logo"></div>
+						<div class="hover-art">
+							<span class="art-text">Vice Versa Art Books</span>
+						</div>
 						<div class="nav">
 							<ul class="nav-ul">
 								<li class="nav-li"><a class="nav-item active" href="#">Catalogue</a></li>   
@@ -31,7 +34,21 @@
 							</ul>
 						</div>
 						<div class="login-box">
-							<button class="login" onclick="dropdown()">Login</button>
+							<!-- Uncomment what you want us -->
+								<!-- if present class .on display: block  if ebsent class .on display: none -->
+
+								<!-- !!!   .login hasn't :hover    .loginned   has :hover !!! -->
+
+							<button class="login on" onclick="dropdown()">Login</button>   
+
+							<!-- <span class="login">longlongmail<wbr>@gmail.com</span> -->								
+
+							<!-- <span class="loginned on">Account</span> -->
+
+							<!-- <div class="loginned"><div class="img-loginned"></div></div> -->
+						</div>
+						<div class="hover-loginned">
+							<span class="mail-loginned">Longlonglonglong@gmail.com</span>
 						</div>
 
 						<div class="login-dropdown">
@@ -361,7 +378,7 @@
 
 
 		<!-- ACTION-->
-		<section>
+		<section id="next_items_block">
 			<div class="wrapper-violet hide-for-large"> 
 				<div class="limiter">																
 					<div class="action-box">
@@ -480,8 +497,8 @@
 			  	return ( el.classList.contains('large-dropdown') ? true : false );
 			}
 			// if mobile menu dropped  redefine onUnpin function
-			var options = {
-			  	onUnpin: function() {
+			var options = {				
+			  	onUnpin: function() {			  		
 			    	if ( isMobileMenuDropped(myHeader) || isLargeDropdown(myHeader) ) {
 			      		this.elem.classList.remove(this.classes.unpinned);
 			      		this.elem.classList.add(this.classes.pinned);
@@ -491,7 +508,7 @@
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
 			  	},
-			  	tolerance: {up:2,down:5}
+			  	tolerance: { up: 5, down: 15 }	
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);
@@ -499,19 +516,11 @@
 
 
 
-			// STICK-IN-PARENT FILTER-SLIDER 
+			// STICK-IN-PARENT FILTER-SLIDER 			
 			if (window.innerWidth < 1200){
-				$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 64, bottoming: false});
+				$("#filter-slider").stick_in_parent({offset_top: 64});
 			} else {
-				$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104, bottoming: false})
-				 // in procces fix bottom=104(large) or 64(small) when unpinned
-				 // .on("sticky_kit:bottom", function(e) {
-				 //    	console.log("has bottom!", e.target);
-				 //  	})
-				 //  	.on("sticky_kit:unbottom", function(e) {
-				 //    	console.log("has unbottom!", e.target);
-				 //  	})
-				;
+				$("#filter-slider").stick_in_parent({offset_top: 104});
 			}
 
 
@@ -528,7 +537,7 @@
 		 	 	el.style.top = "";			 	 	
 			}			
 
-			var optionsFilter = {
+			var optionsFilter = {				
 				onPin: function() {
 			  		if (isFilterFixed(myFilter)) {
 			  			//console.log("FIXED PIN");	
@@ -540,8 +549,8 @@
 			  			//console.log("FIXED UNPIN");
 			  			resetStyle(myFilter);					  						  			
 			  		}				  		
-			  	},
-			  	tolerance: {up:2,down:5}  //2 10
+			  	},	
+			  	tolerance: { up: 5, down: 15 }		  	
 			};	
 			var headroomFilter  = new Headroom(myFilter, optionsFilter);			
 			headroomFilter.init();

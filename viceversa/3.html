@@ -21,6 +21,9 @@
 
 					<div class="header">					
 						<div class="logo"></div>
+						<div class="hover-art">
+							<span class="art-text">Vice Versa Art Books</span>
+						</div>
 						<div class="nav">
 							<ul class="nav-ul">
 								<li class="nav-li"><a class="nav-item" href="#">Catalogue</a></li>   
@@ -31,7 +34,21 @@
 							</ul>
 						</div>
 						<div class="login-box">
-							<button class="login" onclick="dropdown()">Login</button>
+							<!-- Uncomment what you want us -->
+								<!-- if present class .on display: block  if ebsent class .on display: none -->
+
+								<!-- !!!   .login hasn't :hover    .loginned   has :hover !!! -->
+
+							<button class="login on" onclick="dropdown()">Login</button>   
+
+							<!-- <span class="login">longlongmail<wbr>@gmail.com</span> -->								
+
+							<!-- <span class="loginned on">Account</span> -->
+
+							<!-- <div class="loginned"><div class="img-loginned"></div></div> -->
+						</div>
+						<div class="hover-loginned">
+							<span class="mail-loginned">Longlonglonglong@gmail.com</span>
 						</div>
 
 						<div class="login-dropdown">
@@ -234,13 +251,14 @@
 							</div>						
 							<div class="aside-part">
 								<p class="aside-text mg-b-48 sm-mg-b-32">
-									2016<br/>
-									2nd edition<br/>
-									72 pages<br/>
-									hardcover, thread stitched<br/>
-									16 × 21 cm<br/>
-									ISBN 978-3-945900-06-2<br/>
-									edcat ID E00000173
+									<a class="aside-text-link" href="">Edition Taube</a>
+									<span>2016</span>
+									<span>2nd edition</span>
+									<span>72 pages</span>
+									<span>hardcover, thread stitched</span>
+									<span>16 × 21 cm</span>
+									<span>ISBN 978-3-945900-06-2</span>
+									<span>edcat ID E00000173</span>
 								</p>
 								<div class="button-box show-for-large mg-b-40">
 									<div class="a-button"><a href=""><button class="button-small button-gray">Artists&prime; Books</button></a></div>
@@ -697,8 +715,8 @@
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
 			    	//console.log("unpinnedHeader"); 
-			  	}
-			  	,tolerance: {up:2,down:5}  //2 10
+			  	},
+			  	tolerance: { up: 5, down: 15 } 
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);
@@ -708,15 +726,7 @@
 			
 			if (window.innerWidth > 1199){	
 				// STICK-IN-PARENT STICK 
-				$("#stick").stick_in_parent({parent: "#parent", offset_top: 104})
-					 // in procces fix bottom=104(large) when unpinned					 
-					 // .on("sticky_kit:bottom", function(e) {
-					 //    	console.log("has bottom!", e.target);
-					 //  	})
-					 //  	.on("sticky_kit:unbottom", function(e) {
-					 //    	console.log("has unbottom!", e.target);
-					 //  	})
-				;
+				$("#stick").stick_in_parent({parent: "#parent", offset_top: 104});
 				
 				
 
@@ -746,7 +756,7 @@
 				  			resetStyle(myBanner);					  						  			
 				  		}				  		
 				  	},
-				  	tolerance: {up:2,down:5}  //2 10
+				  	tolerance: { up: 5, down: 15 }  
 				  					   
 				};	
 				var headroomBanner  = new Headroom(myBanner, optionsBanner);			

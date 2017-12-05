@@ -21,6 +21,9 @@
 
 					<div class="header slim">					
 						<div class="logo"></div>
+						<div class="hover-art">
+							<span class="art-text">Vice Versa Art Books</span>
+						</div>
 						<div class="nav">
 							<ul class="nav-ul">
 								<li class="nav-li"><a class="nav-item" href="#">Catalogue</a></li>   
@@ -31,7 +34,21 @@
 							</ul>
 						</div>
 						<div class="login-box">
-							<button class="login" onclick="dropdown()">Login</button>
+							<!-- Uncomment what you want us -->
+								<!-- if present class .on display: block  if ebsent class .on display: none -->
+
+								<!-- !!!   .login hasn't :hover    .loginned   has :hover !!! -->
+
+							<button class="login on" onclick="dropdown()">Login</button>   
+
+							<!-- <span class="login">longlongmail<wbr>@gmail.com</span> -->								
+
+							<!-- <span class="loginned on">Account</span> -->
+
+							<!-- <div class="loginned"><div class="img-loginned"></div></div> -->
+						</div>
+						<div class="hover-loginned">
+							<span class="mail-loginned">Longlonglonglong@gmail.com</span>
 						</div>
 
 						<div class="login-dropdown">
@@ -620,7 +637,7 @@
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
 			  	},
-			  	tolerance: {up:2,down:5}
+			  	tolerance: { up: 5, down: 15 }
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);

@@ -21,6 +21,9 @@
 
 					<div class="header">					
 						<div class="logo"></div>
+						<div class="hover-art">
+							<span class="art-text">Vice Versa Art Books</span>
+						</div>
 						<div class="nav">
 							<ul class="nav-ul">
 								<li class="nav-li"><a class="nav-item" href="#">Catalogue</a></li>   
@@ -33,7 +36,22 @@
 						<div class="cart-box"><span>Cart(1)</span></div>
 						
 						<div class="login-box">
-							<button class="login" onclick="dropdown()">Login</button>
+							<!-- Uncomment what you want us -->
+
+							<!-- <button class="login" onclick="dropdown()">Login</button> -->   
+
+							<!-- <span class="login">longlongmail<wbr>@gmail.com</span> -->
+
+								<!-- if present class .on display: block  if ebsent class .on display: none -->
+
+								<!-- !!!   .login hasn't :hover    .loginned   has :hover !!! -->
+
+							<span class="loginned on">Account</span>
+
+							<!-- <div class="loginned"><div class="img-loginned"></div></div> -->
+						</div>
+						<div class="hover-loginned">
+							<span class="mail-loginned">Longlonglonglong@gmail.com</span>
 						</div>
 
 						<div class="login-dropdown">
@@ -123,11 +141,31 @@
 								<span class="price">
 									25.00 <span class="currency">Euro</span>
 								</span>
-								<div class="q-buttons">
-									<a class="q-ty-link" href=""><div class="q-b"><img class="down" src="img/Icon/Reduce.svg"/></div></a>
-									<div class="q-b"><span class="number">1</span></div>
-									<a class="q-ty-link" href=""><div class="q-b"><img class="up" src="img/Icon/Increase.svg"/></div></a>
+
+								<div class="q-ty-box">
+									<div class="q-buttons">
+										<a class="q-ty-link" href=""><div class="q-b"><img class="down" src="img/Icon/Reduce.svg"/></div></a>
+										<div class="q-b inp">										
+											<div class="show-for-large">
+												<span class="number">1</span>
+											</div>
+											<div class="hide-for-large">
+												<div class="number-inp">
+													<form action="">
+														<input class="n-input" type="number" name="" value="1" min="0" step="1">
+													</form>
+												</div>	
+											</div>
+										</div>
+										<a class="q-ty-link" href=""><div class="q-b"><img class="up" src="img/Icon/Increase.svg"/></div></a>
+									</div>
+									<a href="" class="remove">										
+										<img src="img/Icon/Close Grey.svg" alt="" class="img on">
+										<img src="img/Icon/Close Brand.svg" alt="" class="img off">
+										<span>remove</span>										
+									</a>									
 								</div>
+
 								<span class="sum">
 									25.00 <span class="currency">Euro</span>
 								</span>
@@ -151,10 +189,28 @@
 								<span class="price">
 									38.00 <span class="currency">Euro</span>
 								</span>
-								<div class="q-buttons">
-									<a class="q-ty-link" href=""><div class="q-b"><img class="down" src="img/Icon/Reduce.svg"/></div></a>
-									<div class="q-b"><span class="number">2</span></div>
-									<a class="q-ty-link" href=""><div class="q-b"><img class="up" src="img/Icon/Increase.svg"/></div></a>
+								<div class="q-ty-box">
+									<div class="q-buttons">
+										<a class="q-ty-link" href=""><div class="q-b"><img class="down" src="img/Icon/Reduce.svg"/></div></a>
+										<div class="q-b inp">
+											<div class="show-for-large">
+												<span class="number">2</span>
+											</div>
+											<div class="hide-for-large">
+												<div class="number-inp">
+													<form action="">
+														<input class="n-input" type="number" name="" value="2" min="0" step="1">
+													</form>
+												</div>	
+											</div>										
+										</div>									
+										<a class="q-ty-link" href=""><div class="q-b"><img class="up" src="img/Icon/Increase.svg"/></div></a>
+									</div>
+									<a href="" class="remove">										
+										<img src="img/Icon/Close Grey.svg" alt="" class="img on">
+										<img src="img/Icon/Close Brand.svg" alt="" class="img off">
+										<span>remove</span>										
+									</a>		
 								</div>
 								<span class="sum">
 									76.00 <span class="currency">Euro</span>
@@ -204,42 +260,49 @@
 							</div>	
 
 							<!-- FOR MOBILE -->
-							<div class="item-check hide-for-large text-gray mg-b-8">	
-								<div class="ship">
-									<span class="text2">Shipping</span>
-									<span class="pr2">00.00 <span class="currency">Euro</span></span>
+							<div class="hide-for-large">
+								<div class="item-check text-gray mg-b-8">	
+									<div class="ship">
+										<span class="text2">Shipping</span>
+										<span class="pr2">00.00 <span class="currency">Euro</span></span>
+									</div>
 								</div>
-							</div>	
-							<div class="item-check hide-for-large text-gray mg-b-8">
-								<div class="ship total">
-									<span class="text3">Total</span>
-									<span class="pr3">101.00 Euro</span>
+							</div>
+							<div class="hide-for-large">	
+								<div class="item-check text-gray mg-b-8">
+									<div class="ship total">
+										<span class="text3">Total</span>
+										<span class="pr3">101.00 Euro</span>
+									</div>
+								</div>		
+							</div>
+							<div class="hide-for-large">
+								<div class="item-check right-only text-gray">
+									<div class="ship right-only">									
+										<span class="pr4 text-gray">includes 6,54 Euro VAT (7%)</span>
+									</div>
+								</div>	
+							</div>
+							<div class="hide-for-large">
+								<div class="item-check pd-t-72 mg-b-24">	
+									<div class="select mobile">							    	
+					    				<select name="slct" id="slct">
+					    					<option value="">Please select your shipping country</option>
+										    <option value="">Switzerland</option>
+										    <option value="">England</option>
+										    <option value="">France</option>
+										    <option value="">Germany</option>
+										    <option value="">Czech Republic</option>
+										    <option value="">Italy</option>
+										</select>
+									</div>								
 								</div>
-							</div>		
-
-							<div class="item-check hide-for-large right-only text-gray">
-								<div class="ship right-only">									
-									<span class="pr4 text-gray">includes 6,54 Euro VAT (7%)</span>
-								</div>
-							</div>	
-
-							<div class="item-check hide-for-large pd-t-72 mg-b-24">	
-								<div class="select mobile">							    	
-				    				<select name="slct" id="slct">
-				    					<option value="">Please select your shipping country</option>
-									    <option value="">Switzerland</option>
-									    <option value="">England</option>
-									    <option value="">France</option>
-									    <option value="">Germany</option>
-									    <option value="">Czech Republic</option>
-									    <option value="">Italy</option>
-									</select>
-								</div>								
 							</div>
 
-							
-							<div class="button-box mobile hide-for-large">
-								<button class="button button-gray">Check out and pay</button>
+							<div class="hide-for-large">
+								<div class="button-box mobile">
+									<button class="button button-gray">Check out and pay</button>
+								</div>
 							</div>
 								
 							<!-- END FOR MOBILE -->			
@@ -480,9 +543,10 @@
 		</section>
 		<!-- END ACTION-->
 		
-		
-		<div class="wrapper-white show-for-large">
-			<div class="limiter pd-t-160 sm-pd-t-80"></div>
+		<div class="show-for-large">
+			<div class="wrapper-white ">
+				<div class="limiter pd-t-160 sm-pd-t-80"></div>
+			</div>
 		</div>
 		
 		
@@ -583,7 +647,7 @@
 			      		this.elem.classList.remove(this.classes.pinned);
 			    	}
 			  	},
-			  	tolerance: {up:2,down:5}
+			  	tolerance: { up: 5, down: 15 }
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);

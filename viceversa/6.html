@@ -136,28 +136,33 @@
 						<!-- SORT BY -->	
 						<div class="limiter mg-b-16">
 							<div class="button-box">
-								<div class="a-button">
-									<a href="">
-										<button class="button-medium button-gray">
-											<div class="btn-flex">
-												<span class="button-text">latest releases</span>
-											</div>
-										</button>
-									</a>
-								</div>							
-								<div class="a-button">
-									<a href="">
-										<button class="button-medium button-violet">
-											<div class="btn-flex">
-												<span class="button-text">Price</span>
-												<div class="button-icons">
-													<img class="button-img on" src="img/Icon/Link Up Brand.svg" alt=""/>
-													<img class="button-img off" src="img/Icon/Link Up Brand White.svg" alt=""/>
-												</div>										
-											</div>
-										</button>
-									</a>
-								</div>		
+								<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Literature</button></a></div>					
+								<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
+								<div class="a-button"><a href=""><button class="button">All</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Literature</button></a></div>					
+								<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
+								<div class="a-button"><a href=""><button class="button">All</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Literature</button></a></div>					
+								<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
+								<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
+								<div class="a-button"><a href=""><button class="button">All</button></a></div>
 							</div>
 						</div>
 					</div>
@@ -512,45 +517,47 @@
 			headroomHeader.init();
 
 
+			if (window.innerWidth > 1199){
+				// STICK-IN-PARENT FILTER-SLIDER 			
+				// if (window.innerWidth < 1200){
+				// 	$("#filter-slider").stick_in_parent({offset_top: 64});
+				// } else {
+				// 	$("#filter-slider").stick_in_parent({offset_top: 104});
+				// }
 
-			// STICK-IN-PARENT FILTER-SLIDER 			
-			if (window.innerWidth < 1200){
-				$("#filter-slider").stick_in_parent({offset_top: 64});
-			} else {
 				$("#filter-slider").stick_in_parent({offset_top: 104});
+
+				//HEADROOM FILTER-SLIDER 
+									
+				var myFilter = document.querySelector("#filter-slider");								
+				function isFilterFixed(el) {			 	 	
+			 	 	return ((el.style.position == "fixed") ? true : false);			 	 	
+				}
+				function isFilterAbsolute(el) {			 	 	
+			 	 	return ((el.style.position == "absolute") ? true : false);			 	 	
+				}				
+				function resetStyle(el) {			 	 	
+			 	 	el.style.top = "";			 	 	
+				}			
+
+				var optionsFilter = {				
+					onPin: function() {
+				  		if (isFilterFixed(myFilter)) {
+				  			//console.log("FIXED PIN");	
+				  			resetStyle(myFilter);			  							  			
+				  		}				  			  		
+				  	},
+				  	onUnpin: function() {				  	
+				  	 	if (isFilterFixed(myFilter)) {
+				  			//console.log("FIXED UNPIN");
+				  			resetStyle(myFilter);					  						  			
+				  		}				  		
+				  	},	
+				  	tolerance: { up: 5, down: 10 }		  	
+				};	
+				var headroomFilter  = new Headroom(myFilter, optionsFilter);			
+				headroomFilter.init();
 			}
-
-
-			//HEADROOM FILTER-SLIDER 
-								
-			var myFilter = document.querySelector("#filter-slider");								
-			function isFilterFixed(el) {			 	 	
-		 	 	return ((el.style.position == "fixed") ? true : false);			 	 	
-			}
-			function isFilterAbsolute(el) {			 	 	
-		 	 	return ((el.style.position == "absolute") ? true : false);			 	 	
-			}				
-			function resetStyle(el) {			 	 	
-		 	 	el.style.top = "";			 	 	
-			}			
-
-			var optionsFilter = {				
-				onPin: function() {
-			  		if (isFilterFixed(myFilter)) {
-			  			//console.log("FIXED PIN");	
-			  			resetStyle(myFilter);			  							  			
-			  		}				  			  		
-			  	},
-			  	onUnpin: function() {				  	
-			  	 	if (isFilterFixed(myFilter)) {
-			  			//console.log("FIXED UNPIN");
-			  			resetStyle(myFilter);					  						  			
-			  		}				  		
-			  	},	
-			  	tolerance: { up: 5, down: 10 }		  	
-			};	
-			var headroomFilter  = new Headroom(myFilter, optionsFilter);			
-			headroomFilter.init();
 					
 		</script>
 

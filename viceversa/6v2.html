@@ -120,7 +120,7 @@
 				& !!and!! at the same time add class .on to #filter for show filter with position: static
 			-->
 
-			<div id="filter-slider" class="filtered off">      <!--  .filtered   .off       for javascript -->
+			<div id="filter-slider" class="">      <!--  .filtered   .off       for javascript -->
 				<section>
 					<div class="wrapper-white"> 
 						<div class="limiter pd-t-16 sm-pd-t-0">
@@ -128,16 +128,16 @@
 							<div class="all-book">
 								<div class="action-box mg-b-24">
 									<div class="left-action">							
-										<a class="link" href="">
+										<div class="link">
 											<img class="icon" src="img/Icon/List Black.svg" alt=""/>							
 											<span class="link-title">All books</span>								
-										</a>																
+										</div>																
 									</div>
 									<div class="right-action">
-										<a class="link" href="">	
+										<div class="link pointer openFilter">	
 											<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
-											<span class="link-title gray">Filter</span>						
-										</a>												
+											<span class="link-title gray 1">Filter</span>						
+										</div>												
 									</div>												
 								</div>									
 							</div>
@@ -145,16 +145,16 @@
 							<div class="filtered-result">
 								<div class="action-box mg-b-24">
 									<div class="left-action">							
-										<a class="link" href="">
+										<div class="link">
 											<img class="icon" src="img/Icon/List Brand.svg" alt=""/>
 											<span class="link-title violet">Filtered results (xx)</span>  <!-- violet -->
-										</a>																
+										</div>																
 									</div>
 									<div class="right-action">
-										<a class="link" href="">
+										<div class="link pointer openFilter">
 											<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
-											<span class="link-title gray">Filter</span>								
-										</a>												
+											<span class="link-title gray 2">Filter</span>								
+										</div>												
 									</div>						
 								</div>
 								<div class="button-box">
@@ -200,7 +200,7 @@
 				when selected any filter option add class .filtered to #filter-slider
 				when selected filter option ALL remove class .filtered from #filter-slider
 			-->
-			<div id="filter" class="on">    <!-- .on       for javascript-->
+			<div id="filter" class="">    <!-- .on       for javascript-->
 				<section>
 					<div class="wrapper-white"> 
 						<div class="inner-scroll-y">
@@ -208,16 +208,16 @@
 
 								<div class="action-box mg-b-24">
 									<div class="left-action">							
-										<a class="link" href="">
+										<div class="link">
 											<img class="icon" src="img/Icon/List Black.svg" alt=""/>					
 											<span class="link-title">Filter</span>	
-										</a>																
+										</div>																
 									</div>
 									<div class="right-action">
-										<a class="link" href="">	
+										<div class="link pointer closeFilter">	
 											<span class="link-title gray">Close</span>	
 											<img class="icon" src="img/Icon/Close Grey.svg" alt=""/>
-										</a>												
+										</div>												
 									</div>						
 								</div>																		
 								<div class="button-box">
@@ -648,12 +648,47 @@
 
 		<script type="text/javascript" charset="utf-8">	
 
+			//Filter-Slider & Filter behavior
+			var myCloseFilter = document.querySelector(".closeFilter"),
+				myFilterSlider = document.querySelector("#filter-slider"),
+				myFilter = document.querySelector("#filter"),
+				myOpenFilter = document.querySelectorAll(".openFilter");  //array of two element
+			//CLOSE FILTER
+			function closeFilter() {					
+			 	if( (myCloseFilter !== null) && (myFilterSlider !== null) && (myFilter !== null) ) {
+					if ( myFilterSlider.classList.contains("off") ) {				   			
+						myFilterSlider.classList.remove("off");	
+						console.log("remove off from filter-slider");
+					} 
+					if ( myFilter.classList.contains("on") ) {				   			
+						myFilter.classList.remove("on");	
+						console.log("remove on from filter");
+					} 
+				}	
+			}
+			if( (myCloseFilter !== null) && (myFilter !== null) ) {
+				myCloseFilter.addEventListener("click", closeFilter);
+			}
+			//OPEN FILTER
+			function openFilter() {					
+			 	if( (myOpenFilter.lenght !== 0) && (myFilterSlider !== null) && (myFilter !== null) ) {
+					if ( !myFilterSlider.classList.contains("off") ) {				   			
+						myFilterSlider.classList.add("off");	
+						console.log("add off to filter-slider");
+					} 
+					if ( !myFilter.classList.contains("on") ) {				   			
+						myFilter.classList.add("on");	
+						console.log("add on to filter");
+					} 
+				}	
+			}
+			if( (myCloseFilter !== null) && (myFilter !== null) ) {
+				myOpenFilter.forEach(function(el){el.addEventListener("click", openFilter)});
+			}
 
 
 
-
-			// HEADROOM HEADER
-			
+			// HEADROOM HEADER			
 			var myHeader = document.querySelector("#header"),
 			filter = document.querySelector("#filter");	//for disable headroom when filter is open
 
@@ -687,8 +722,7 @@
 
 
 			
-			//STICK-IN-PARENT FILTER-SLIDER 	
-					
+			//STICK-IN-PARENT FILTER-SLIDER					
 			if (window.innerWidth < 1200){
 				$("#filter-slider").stick_in_parent({offset_top: 64});
 			} else {
@@ -697,18 +731,14 @@
 
 			
 
-			//HEADROOM FILTER-SLIDER 
-								
-			var myFilterSlider = document.querySelector("#filter-slider");
+			//HEADROOM FILTER-SLIDER			
 			var optionsFilterSlider = {	
 			  	tolerance: { up: 5, down: 10 }		  	
 			};	
 			var headroomFilterSlider  = new Headroom(myFilterSlider, optionsFilterSlider);			
 			headroomFilterSlider.init();
 			
-			//HEADROOM FILTER
-			
-			// var myFilter = document.querySelector("#filter");
+			//HEADROOM FILTER			
 			// var optionsFilter = {	
 			//   	tolerance: { up: 5, down: 10 }		  	
 			// };	

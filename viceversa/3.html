@@ -734,32 +734,8 @@
 
 
 				var myBanner = document.querySelector("#stick");								
-				function isBannerFixed(el) {			 	 	
-			 	 	return ((el.style.position == "fixed") ? true : false);			 	 	
-				}
-				function isBannerAbsolute(el) {			 	 	
-			 	 	return ((el.style.position == "absolute") ? true : false);			 	 	
-				}				
-				function resetStyle(el) {			 	 	
-			 	 	el.style.top = "";			 	 	
-				}					
-
 				var optionsBanner = {
-					
-				  	onPin: function() {
-				  		if (isBannerFixed(myBanner)) {
-				  			//console.log("FIXED PIN");	
-				  			resetStyle(myBanner);			  							  			
-				  		}				  			  		
-				  	},
-				  	onUnpin: function() {				  	
-				  	 	if (isBannerFixed(myBanner)) {
-				  			//console.log("FIXED UNPIN");
-				  			resetStyle(myBanner);					  						  			
-				  		}				  		
-				  	},
 				  	tolerance: { up: 5, down: 10 } 
-				  					   
 				};	
 				var headroomBanner  = new Headroom(myBanner, optionsBanner);			
 				headroomBanner.init();

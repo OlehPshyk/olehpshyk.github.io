@@ -131,3 +131,10 @@ else {
 /*=======================================================*/
 
 
+//FADE-IN EFFECT  (JS only)  FIRST VARIANT
+		
+	var body = document.querySelector("body");
+	if ( body.classList.contains("fade-out") ) {
+		document.addEventListener("DOMContentLoaded", function(){body.classList.remove("fade-out")});				
+	}
+		

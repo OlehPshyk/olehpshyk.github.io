@@ -11,6 +11,9 @@
 </head>
 
 	<body>	
+		<!-- FADE-IN EFFECT  (JS only)  FIRST VARIANT -->
+		<!-- ADD this inline-script immediately following <body>  -->
+		<script>document.body.classList.add("fade-out");</script>	
 
 		<!-- HEADER -->
 		<header id="header" class="top-head">
@@ -126,13 +129,20 @@
 
 
 
-
+		<script type="text/javascript" charset="utf-8">
+			//FADE-IN EFFECT  (JS only)  FIRST VARIANT
+		
+			var body = document.querySelector("body");
+			if ( body.classList.contains("fade-out") ) {
+				document.addEventListener("DOMContentLoaded", function(){body.classList.remove("fade-out")});				
+			}
+		
+		</script>
 
 		
 
 		
 		
-		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-				
+		
 	</body>
 </html>

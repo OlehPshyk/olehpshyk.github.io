@@ -94,13 +94,17 @@
 		
 		<!-- Substitute header(navbar) height. Because heather is position: static; -->
 		<div class="wrapper-white">
-			<div class="limiter pd-t-104 sm-pd-t-64"></div>
-		</div>
+			<div class="limiter">
+				<div class="pd-t-104 sm-pd-t-64"></div>
+			</div>
+		</div>	
 			
 
 		<!-- Substitute FILTER-SLIDER height. IF FILTER-SLIDER position: static; -->
 		<!-- <div class="wrapper-white">
-			<div class="limiter pd-t-184 sm-pd-t-168"></div>
+			<div class="limiter">
+				<div class="pd-t-184 sm-pd-t-168"></div>
+			</div>
 		</div> -->
 
 
@@ -120,75 +124,73 @@
 				& !!and!! at the same time add class .on to #filter for show filter with position: static
 			-->
 
-			<div id="filter-slider" class="filtered off">      <!--  .filtered   .off       for javascript -->
-				<section>
-					<div class="wrapper-white"> 
-						<div class="limiter pd-t-16 sm-pd-t-0">
-							<!-- Not filtered(Start) -->
-							<div class="all-book">
-								<div class="action-box mg-b-24">
-									<div class="left-action">							
-										<a class="link" href="">
-											<img class="icon" src="img/Icon/List Black.svg" alt=""/>							
-											<span class="link-title">All books</span>								
-										</a>																
-									</div>
-									<div class="right-action">
-										<a class="link" href="">	
-											<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
-											<span class="link-title gray">Filter</span>						
-										</a>												
-									</div>												
-								</div>									
-							</div>
-							<!--Filtered -->
-							<div class="filtered-result">
-								<div class="action-box mg-b-24">
-									<div class="left-action">							
-										<a class="link" href="">
-											<img class="icon" src="img/Icon/List Brand.svg" alt=""/>
-											<span class="link-title violet">Filtered results (xx)</span>  <!-- violet -->
-										</a>																
-									</div>
-									<div class="right-action">
-										<a class="link" href="">
-											<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
-											<span class="link-title gray">Filter</span>								
-										</a>												
-									</div>						
+			<div id="filter-slider" class="filtered off">      <!--  .filtered   .off       for javascript or backend -->
+				<div class="wrapper-white"> 
+					<div class="limiter">
+						<!-- Not filtered(Start) -->
+						<div class="all-book pd-t-16 sm-pd-t-16">
+							<div class="action-box mg-b-24">
+								<div class="left-action">							
+									<a class="link" href="">
+										<img class="icon" src="img/Icon/List Black.svg" alt=""/>							
+										<span class="link-title">All books</span>								
+									</a>																
 								</div>
-								<div class="button-box">
-									<div class="a-button">
-										<a href="">
-											<button class="button-medium button-violet">
-												<div class="btn-flex">
-													<span class="button-text">Artists&prime; Books</span>	
-													<div class="button-icons">
-														<img class="button-img on" src="img/Icon/Close Brand.svg" alt="">
-														<img class="button-img off" src="img/Icon/Close White.svg" alt="">
-													</div>	
-												</div>													
-											</button>
-										</a>
-									</div>									
-									<div class="a-button">
-										<a href="">
-											<button class="button-medium button-gray">
-												<div class="btn-flex">
-													<span class="button-text">Price</span>
-													<div class="button-icons">
-														<img class="button-img on" src="img/Icon/Link Up.svg" alt=""/>
-														<img class="button-img off" src="img/Icon/Link Up Brand White.svg" alt=""/>
-													</div>										
-												</div>
-											</button>
-										</a>
-									</div>							
+								<div class="right-action">
+									<a class="link" href="">	
+										<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
+										<span class="link-title gray">Filter</span>						
+									</a>												
+								</div>												
+							</div>									
+						</div>
+						<!--Filtered -->
+						<div class="filtered-result">
+							<div class="action-box mg-b-24">
+								<div class="left-action">							
+									<a class="link" href="">
+										<img class="icon" src="img/Icon/List Brand.svg" alt=""/>
+										<span class="link-title violet">Filtered results (xx)</span>  <!-- violet -->
+									</a>																
+								</div>
+								<div class="right-action">
+									<a class="link" href="">
+										<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
+										<span class="link-title gray">Filter</span>								
+									</a>												
 								</div>						
-							</div>	
-						</div>						
-					</div>
-				</section>
+							</div>
+							<div class="button-box">
+								<div class="a-button">
+									<a href="">
+										<button class="button-medium button-violet">
+											<div class="btn-flex">
+												<span class="button-text">Artists&prime; Books</span>	
+												<div class="button-icons">
+													<img class="button-img on" src="img/Icon/Close Brand.svg" alt="">
+													<img class="button-img off" src="img/Icon/Close White.svg" alt="">
+												</div>	
+											</div>													
+										</button>
+									</a>
+								</div>									
+								<div class="a-button">
+									<a href="">
+										<button class="button-medium button-gray">
+											<div class="btn-flex">
+												<span class="button-text">Price</span>
+												<div class="button-icons">
+													<img class="button-img on" src="img/Icon/Link Up.svg" alt=""/>
+													<img class="button-img off" src="img/Icon/Link Up Brand White.svg" alt=""/>
+												</div>										
+											</div>
+										</button>
+									</a>
+								</div>							
+							</div>						
+						</div>	
+					</div>						
+				</div>				
 			</div>
 			<!-- END FILTER-SLIDER -->
 
@@ -200,13 +202,13 @@
 				when selected any filter option add class .filtered to #filter-slider
 				when selected filter option ALL remove class .filtered from #filter-slider
 			-->
-			<div id="filter" class="on">    <!-- .on       for javascript-->
+			<div id="filter" class="on">    <!-- .on       for javascript or backend-->
 				<section>
 					<div class="wrapper-white"> 
-						<div class="inner-scroll-y">
-							<div class="limiter pd-t-16 mg-b-16">						
-
-								<div class="action-box mg-b-24">
+						
+						<div class="limiter">	
+							<div class="inner-scroll-y">
+								<div class="action-box mg-t-16 mg-b-24">
 									<div class="left-action">							
 										<a class="link" href="">
 											<img class="icon" src="img/Icon/List Black.svg" alt=""/>					
@@ -220,43 +222,41 @@
 										</a>												
 									</div>						
 								</div>																		
-								<div class="button-box">
+								<div class="button-box mg-b-16">
 									<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>				
-									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
-									<div class="a-button"><a href=""><button class="button">All</button></a></div>
-									<br"><div style="color:red;""> OTHER BUTTONS ONLY FOR TEST</div><br>
-									<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>				
+									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>			
 									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
 									<div class="a-button"><a href=""><button class="button">All</button></a></div>
 
+									<!-- <br"><div style="color:red;""> OTHER BUTTONS ONLY FOR TEST</div><br>
 									<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>				
+									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>			
 									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
 									<div class="a-button"><a href=""><button class="button">All</button></a></div>
-								</div>					
-							</div>
-							<div class="limiter mg-b-72">						
+									<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
+									<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
+									<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
+									<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
+									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>			
+									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
+									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
+									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
+									<div class="a-button"><a href=""><button class="button">All</button></a></div> -->
+								</div>			
 								<div class="smallaction-box mg-b-16">
 									<span class="title gray">sort by</span>
 								</div>												
-								<div class="button-box">
+								<div class="button-box mg-b-72">
 									<div class="a-button">
 										<a href="">
 											<button class="button-medium button-gray">
@@ -330,8 +330,8 @@
 
 			<section>
 				<div class="wrapper-white sm-pd-t-24 hide-for-large"> 
-					<div class="limiter sm-mg-b-32">
-						<div class="text-container">
+					<div class="limiter">
+						<div class="text-container sm-mg-b-32">
 							<div class="main-part">	
 								<h2 class="title">Catalogue</h2>									
 							</div>															
@@ -344,8 +344,8 @@
 			<!-- PANEL ITEM-->
 			<section>
 				<div class="wrapper-white"> 
-					<div class="limiter mg-b-8 sm-mg-b-24">
-						<div class="panel-item">						
+					<div class="limiter">
+						<div class="panel-item mg-b-8 sm-mg-b-24">						
 							<div class="panel-item-box">											
 								<div class="item-box reveal-v1">	
 									<div class="img-box">
@@ -574,8 +574,8 @@
 		<!-- CATEGORY-->
 		<section>
 			<div class="wrapper-grey-wr2"> 
-				<div class="limiter pd-t-96 mg-b-144 sm-pd-t-48 sm-mg-b-72">	
-					<div class="action-box mg-b-56 sm-mg-b-24">
+				<div class="limiter">	
+					<div class="action-box pd-t-96 sm-pd-t-48 mg-b-56 sm-mg-b-24">
 						<div class="left-action">
 							<a class="link" href="">						
 								<img class="icon" src="img/Icon/List Black.svg" alt="Link">	
@@ -583,7 +583,7 @@
 							</a>								
 						</div>
 					</div>						
-					<div class="button-box">
+					<div class="button-box mg-b-144 sm-mg-b-72">
 						<div class="a-button"><a href=""><button class="button reveal-v1">Artists&prime; Books</button></a></div>
 						<div class="a-button"><a href=""><button class="button reveal-v1">Monograph</button></a></div>
 						<div class="a-button"><a href=""><button class="button reveal-v1">Architecture</button></a></div>
@@ -593,7 +593,7 @@
 						<div class="a-button"><a href=""><button class="button reveal-v1">Photography</button></a></div>
 						<div class="a-button"><a href=""><button class="button reveal-v1">Poetry</button></a></div>
 						<div class="a-button"><a href=""><button class="button reveal-v1">All</button></a></div>
-					</div>		
+					</div>	
 				</div>
 			</div>			
 		</section>	

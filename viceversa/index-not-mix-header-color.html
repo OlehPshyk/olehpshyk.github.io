@@ -725,20 +725,20 @@
 
 
 
-			// CHANGE HEADERS BACKGROUND_COLOR TO WHITE after first headroom--unpinned
-			var myStartPage = document.querySelector(".start-page");
-			function removeStartPage(){				
-				if (myStartPage !== null){	
-		    		if (myStartPage.classList.contains("start-page") ){
-		    			if ( myHeader.getBoundingClientRect().bottom == 0 ) {
-			    			myStartPage.classList.remove("start-page");			    			
-			    			document.removeEventListener('scroll', removeStartPage);
-			    		}
-		    		}
+			// // CHANGE HEADERS BACKGROUND_COLOR TO WHITE after first headroom--unpinned
+			// var myStartPage = document.querySelector(".start-page");
+			// function removeStartPage(){				
+			// 	if (myStartPage !== null){	
+		 //    		if (myStartPage.classList.contains("start-page") ){
+		 //    			if ( myHeader.getBoundingClientRect().bottom == 0 ) {
+			//     			myStartPage.classList.remove("start-page");			    			
+			//     			document.removeEventListener('scroll', removeStartPage);
+			//     		}
+		 //    		}
 		    		
-		    	}	
-			}
-			document.addEventListener("scroll", removeStartPage);
+		 //    	}	
+			// }
+			// document.addEventListener("scroll", removeStartPage);
 			
 
 

@@ -657,7 +657,25 @@
 			var myCloseFilter = document.querySelector(".closeFilter"),
 				myFilterSlider = document.querySelector("#filter-slider"),
 				myFilter = document.querySelector("#filter"),
-				myOpenFilter = document.querySelectorAll(".openFilter");  //array of two element
+				myOpenFilter = document.querySelectorAll(".openFilter"), //array of two element
+				myAllAButtons = document.querySelectorAll(".a-button");  //array of all buttons
+				
+
+
+
+			//SCROLL TO TOP IF PRESSED ANY FILTER-OPTION
+			
+			function scrollTop() {	
+				document.body.scrollTop = 0; // For Safari
+    			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    			//console.log("SCROLL-TOP");
+			}	
+
+		 	if( myAllAButtons.lenght !== 0 ) {
+		 		myAllAButtons.forEach(function(el){el.addEventListener("click", scrollTop)});
+		 	}
+
+
 			//CLOSE FILTER
 			function closeFilter() {					
 			 	if( (myCloseFilter !== null) && (myFilterSlider !== null) && (myFilter !== null) ) {
@@ -740,7 +758,7 @@
 			  	tolerance: { up: 5, down: 10 }		  	
 			};	
 			var headroomFilterSlider = new Headroom(myFilterSlider, optionsFilterSlider);	
-			console.log("Start");		
+			//console.log("Start");		
 			headroomFilterSlider.init();
 
 

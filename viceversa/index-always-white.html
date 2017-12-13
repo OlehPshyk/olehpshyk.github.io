@@ -10,15 +10,18 @@
 	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css" type="text/css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
+
 	<body>	
 		<!-- FADE-IN EFFECT  (JS only)  FIRST VARIANT -->
 		<!-- ADD this inline-script immediately following <body>  -->
 		<script>document.body.classList.add("fade-out");</script>	
-		
-		
-		<!-- HEADER -->		
+
+		<!-- HEADER -->
 		<header id="header" class="top-head">
-			<div class="wrapper-white">    
+			<div class="wrapper-white" >    <!-- on other pages replace to wrapper-white -->
+
+				<!-- <div class="start-color" style="background-color: #B8322B"></div> -->
+				
 				<div class="limiter">
 
 
@@ -53,8 +56,7 @@
 							<!-- <span class="loginned on">Account</span> -->
 
 							<!-- <div class="loginned"><div class="img-loginned"></div></div> -->
-						</div>
-						
+						</div>						
 
 						<div class="login-dropdown">
 							<ul class="lg-ul-list">
@@ -65,8 +67,9 @@
 								<li class="lg-li"><a class="lg-link" href="">Inventory</a></li>
 								<li class="lg-li"><a class="lg-link" href="">Logout</a></li>							
 							</ul>	
-						</div>		
-							
+						</div>						
+
+
 						<div class="menu">					
 							<button class="menu-button">Menu</button>		
 						</div>	
@@ -87,305 +90,336 @@
 								</div>
 							</div>
 						</div>
-					<div>
-
-									
+					</div>									
 				</div>				
 			</div>
 		</header>
 		<!-- END HEADER -->
 		
-		<!-- Substitute header(navbar) height. Because heather is position: static; -->
-		<div class="wrapper-white">
+
+
+		
+		<!-- Substitute header(navbar) height. Because header is position: static; -->	
+		<div class="wrapper-red">
 			<div class="limiter">
 				<div class="pd-t-104 sm-pd-t-64"></div>
 			</div>
 		</div>	
 
-		<!-- Important put this together with Sticky-kit Banner-->
-		<!-- Closes the black background when the banner slowly returns to its original position -->
-		<div class="white-back-for-stick"></div>
-		
-		
-		<!-- sticky-kit START parent for  STICK BANNER-->
-		<div id="parent">
-			
-			<!-- STICK BANNER -->			
-			<div id="stick">
-				<div class="wrapper-white">
-					<div class="limiter">											
-						<div class="action-banner">
-							<div class="left-action-banner">
-								<span class="run-title">
-									Hank Schmidt in der Beek, Fabian Schubert<br/>
-									Und im Sommer tu ich malen  
-								</span>
-							</div>	
-							<div class="show-for-large">
-								<div class="right-action-banner">
-									<span class="price">25,00 &euro;</span>
-									<button class="button">Add to cart</button>
-								</div>	
-							</div>			
-						</div>							
-					</div>
-				</div>	
-			</div>			
-			<!-- END  STICK BANNER-->	
-			
-			<!-- SEARCH -->
-			<div id="search">
-				<div class="wrapper-black">
-					<div class="limiter">
-						<div class="search-page">							
-							<div class="icon"><a href="#" class="closeSearch"><img src="img/Icon/Close White.svg" class="img"/></a></div>
-							<div class="searching">
-								<span class="title">Search our Catalogue<br>Durchsuchen Sie unser Sortiment</span>							
-								<form class="posr form" action="">
-									<div class="line show-for-small">
-										<input class="input" type="text" placeholder="Enter search terms / Suchbegriff eingeben">
-									</div>
-									<div class="line hide-for-small">
-										<input class="input" type="text" placeholder="Enter search terms" autofocus>
-									</div>
-								</form>	
-							</div>																
-						</div>					
-					</div>				
-				</div>
+
+
+		<!-- SEARCH -->
+		<div id="search">
+			<div class="wrapper-black">
+				<div class="limiter">
+					<div class="search-page">							
+						<div class="icon"><a href="#" class="closeSearch"><img src="img/Icon/Close White.svg" class="img"/></a></div>
+						<div class="searching">
+							<span class="title">Search our Catalogue<br>Durchsuchen Sie unser Sortiment</span>							
+							<form class="posr form" action="">
+								<div class="line show-for-small">
+									<input class="input" type="text" placeholder="Enter search terms / Suchbegriff eingeben">
+								</div>
+								<div class="line hide-for-small">
+									<input class="input" type="text" placeholder="Enter search terms" autofocus>
+								</div>
+							</form>	
+						</div>																
+					</div>					
+				</div>				
 			</div>
-			<!-- END SEARCH -->
-			<!-- ANTIBLICK -->
-			<div id="antiblick">
-				<div class="wrapper-black">
-					<div class="limiter">
-						<div class="antiblick">
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END ANTIBLICK -->
-			<!-- NEWSLATTER -->
-			<div id="newslatter">
-				<div class="wrapper-black">
-					<div class="limiter">
-						<div class="search-page">							
-							<div class="icon"><a href="#" class="closeNewslatter"><img src="img/Icon/Close White.svg" class="img"/></a></div>
-							<div class="searching">
-								<span class="title">Subscribe to our Newsletter:</span>							
-								<form class="posr form" action="">
-									<div class="line show-for-small">
-										<input class="input" type="email" placeholder="Please enter your Email Address">
-									</div>
-									<div class="line hide-for-small">
-										<input class="input" type="email" placeholder="Email Address">
-									</div>								
-									<button class="button button-black" id="subscribe">Subscribe</button>
-								</form>	
-							</div>																
-						</div>					
-					</div>				
-				</div>
-			</div>
-			<!-- END NEWSLATTER -->
-			
-			<!-- OWL Carousel-->
-			<section>
-				<div class="wrapper-white"> 
-					<div class="limiter">
-						<div class="owl-carousel owl-theme viceversa-carousel mg-b-48 sm-mg-b-24">
-							
-
-							<div class="item">
-								<div class="item-box">	
-									<div class="img-box">
-										<img class="img" src="img/161017_Hank_UISTIM_Repro01.jpg" alt="">
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="item-box">	
-									<div class="img-box">
-										<img class="img" src="img/161017_Hank_UISTIM_Cover.jpg" alt="">
-									</div>	
-								</div>
-							</div>
-							
-
-							<div class="item">
-								<div class="item-box" >	
-									<div class="img-box">
-										<img class="img" src="img/161017_Hank_UISTIM_Repro06.jpg" alt="">
-									</div>
-								</div>
-							</div> 
-
-							<div class="item">
-								<div class="item-box">	
-									<div class="img-box">
-										<img class="img" src="img/161017_Hank_UISTIM_Repro07.jpg" alt="">
-									</div>
-								</div>
-							</div>
-							
-
-							<div class="item">
-								<div class="item-box">	
-									<div class="img-box">
-										<img class="img" src="img/Hank_Banner_Website.jpg" alt="">
-									</div>
-								</div>
-							</div> 
-
-							<div class="item">
-								<div class="item-box">	
-									<div class="img-box">
-										<img class="img" src="img/badbigheight.png" alt="">
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="item-box">	
-									<div class="img-box">
-										<img class="img" src="img/bad.png" alt="">
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="item-box">	
-									<div class="img-box">
-										<img class="img" src="img/book-slim.png" alt="">
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="item-box">	
-									<div class="img-box">
-										<img class="img" src="img/book-wide.png" alt="">
-									</div>
-								</div>
-							</div>
-															
-						</div>					
-					</div>
-				</div>
-			</section>				
-			<!-- END OWL Carousel-->
-
-
-			<!-- PRICE-->
-			<section>						
-					<div class="fixed hide-for-large"> <!-- posf will be changed to a more complex class if need a complicated interaction with the header(fixed & hidden & sliding) -->
-						<div class="wrapper-white">
-							<div class="limiter">	
-								<div class="action-banner">													
-									<div class="small-banner">									
-										<button class="button">Add to cart</button>
-										<span class="price">25,00 &euro;</span>
-									</div>																
-								</div>
-							</div>
-						</div>								
-					</div>			
-			</section> 
-			<!-- END PRICE-->
-
-
-			<!-- TEXT-->
-			<section>
-				<div class="wrapper-white">
-					<div class="limiter">
-						<div class="text-container">	 <!-- mg-t-48 -->
-							<div class="main-part">
-								<p class="text mg-b-56">
-									We can see a painter in painterly landscapes. Art enthusiasts might recognize the places where the big names of plein-air painting of the last centuries like Caspar David Friedrich, Ferdinand Hodler, Franz Marc, Paul Cezanne, Claude Monet or Vincent van Gogh et al. created their masterpieces. Hank Schmidt in der Beek stands in front of his canvas with the paint-brush in his hand. At second glance, you’ll recognize that he isn’t painting the same scene his famous predecessors painted there decades before: Instead, Hank Schmidt in der Beek is painting the pattern of his shirt.
-								</p>
-								<p class="text mg-b-56">
-									Since 2009 Hank Schmidt in der Beek works on the ongoing series “Und im Sommer tu ich malen” (‘And in Summer I do Paint’). Together with the photographer Fabian Schubert he travels through Europe to paint his own self portrait. The work combines conceptual and concrete art as well as plein-air with portrait painting.
-								</p>
-								<p class="text mg-b-56 sm-mg-b-64">
-									On 30 double pages the book juxtaposes the painting in opposition to the photograph of the moment of its genesis. A homage to modernist painting and its documentation.
-								</p>
-							</div>						
-							<div class="aside-part">
-								<p class="aside-text mg-b-48 sm-mg-b-32">
-									<a class="aside-text-link" href="">Edition Taube</a>
-									<span>2016</span>
-									<span>2nd edition</span>
-									<span>72 pages</span>
-									<span>hardcover, thread stitched</span>
-									<span>16 × 21 cm</span>
-									<span>ISBN 978-3-945900-06-2</span>
-									<span>edcat ID E00000173</span>
-								</p>
-								<div class="button-box show-for-large mg-b-40">
-									<div class="a-button"><a href=""><button class="button-small button-gray">Artists&prime; Books</button></a></div>
-									<div class="a-button"><a href=""><button class="button-small button-gray">Monograph</button></a></div>
-									<div class="a-button"><a href=""><button class="button-small button-gray">Plein-Air</button></a></div>
-									<div class="a-button"><a href=""><button class="button-small button-gray">Concept-Art</button></a></div>
-									<div class="a-button"><a href=""><button class="button-small button-gray">Art</button></a></div>
-									<div class="a-button"><a href=""><button class="button-small button-gray">Landscape</button></a></div>	
-									<div class="a-button"><a href=""><button class="button-small button-gray">Landscape</button></a></div>		
-									<div class="a-button"><a href=""><button class="button-small button-gray">Painting</button></a></div>			
-								</div>
-
-								<div class="smallaction-box show-for-large">
-									<a class="link" href="">										
-										<img class="icon on" src="img/Icon/Download Grey.svg" alt="Plus">	
-										<img class="icon off" src="img/Icon/Download Brand.svg" alt="Plus">
-										<span class="link-title">Download infos</span>							
-									</a>							
-								</div>							
-
-
-							</div>
-						</div>
-						<div class="button-box hide-for-large sm-mg-b-88">
-							<div class="a-button"><a href=""><button class="button-small button-gray">Artists&prime; Books</button></a></div>
-							<div class="a-button"><a href=""><button class="button-small button-gray">Monograph</button></a></div>
-							<div class="a-button"><a href=""><button class="button-small button-gray">Plein-Air</button></a></div>
-							<div class="a-button"><a href=""><button class="button-small button-gray">Concept-Art</button></a></div>
-							<div class="a-button"><a href=""><button class="button-small button-gray">Art</button></a></div>
-							<div class="a-button"><a href=""><button class="button-small button-gray">Landscape</button></a></div>	
-							<div class="a-button"><a href=""><button class="button-small button-gray">Landscape</button></a></div>		
-							<div class="a-button"><a href=""><button class="button-small button-gray">Painting</button></a></div>
-						</div>							
-					</div> 				
-				</div>			
-			</section>
-			<!-- END TEXT-->	
-
-
 		</div>
-		<!-- sticky-kit END parent for STICK BANNER-->
-				
+		<!-- END SEARCH -->
+		<!-- ANTIBLICK -->
+		<div id="antiblick">
+			<div class="wrapper-black">
+				<div class="limiter">
+					<div class="antiblick">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END ANTIBLICK -->
+		<!-- NEWSLATTER -->
+		<div id="newslatter">
+			<div class="wrapper-black">
+				<div class="limiter">
+					<div class="search-page">							
+						<div class="icon"><a href="#" class="closeNewslatter"><img src="img/Icon/Close White.svg" class="img"/></a></div>
+						<div class="searching">
+							<span class="title">Subscribe to our Newsletter:</span>							
+							<form class="posr form" action="">
+								<div class="line show-for-small">
+									<input class="input" type="email" placeholder="Please enter your Email Address">
+								</div>
+								<div class="line hide-for-small">
+									<input class="input" type="email" placeholder="Email Address">
+								</div>								
+								<button class="button button-black" id="subscribe">Subscribe</button>
+							</form>	
+						</div>																
+					</div>					
+				</div>				
+			</div>
+		</div>
+		<!-- END NEWSLATTER -->
+	
+		
+
+		<!-- BOOK SELFY -->
+		
+		<section>				
+			<div class="wrapper-red"> 	
+
+				<div class="limiter">  
+				<!--  bottom padding  64 for large & 0 for small screen-->
+					<div class="book-selfy pd-t-80 mg-b-112 sm-pd-t-56 sm-mg-b-0">
+						<div class="book-image">
+							<div class="label reveal-v1">
+								Back in stock!
+							</div>
+							<div class="img-box">							
+								<div class="absrespons">
+									<img class="imgrespons" src="img/book-wide.png" alt="">
+								</div>							
+							</div>						
+						</div>
+						<div class="book-description">
+							<div class="description-box reveal-v1">
+								<div class="description">
+									<h2 class="title">The Plein-Air Painting as a Romantic-Comic Selfy</h2>
+									<div class="text-box">
+										<p class="author">
+											Und im Sommer tu ich malen<br>by Hank Schmidt in der Beek
+										</p>
+										<p class="text">
+											This book follows Image is Imminent and conflates the past four years of work by the artist. The title Holding the Frame came to the artist while watching Agnes Martin’s file watching Agnes Martin’s film Gabriel. In her film, everything Image is Imminent and conflates the past four…
+										</p>
+									</div>																
+								</div>	
+								<div class="action-box show-for-medium">
+									<div class="right-action">	
+										<a class="link" href="">						
+											<img class="icon" src="img/Icon/Link Black.svg" alt="Link">
+										</a>													
+									</div>
+								</div>	
+								<div class="action-box hide-for-medium">
+									<div class="left-action pd-x-off">
+										<a class="link" href="">
+											<img class="icon" src="img/Icon/Link Black.svg" alt="Link">
+											<span class="link-title">Read more</span>	
+										</a>		
+									</div>				
+								</div>	
+							</div>										
+						</div>
+					</div>									
+				</div>				
+			</div>
+		</section>		
+		<!-- END BOOK SELFY -->
+
+
+
+		<!-- BOOK SELFY -->
+		
+		<section>	
+			<a href="" style="display:block;">
+				<div class="wrapper-red"> 	
+
+					<div class="limiter">  
+					<!--  bottom padding  64 for large & 0 for small screen-->
+						<div class="book-selfy pd-t-80 mg-b-112 sm-pd-t-56 sm-mg-b-0">
+							<div class="book-image">
+								<div class="label reveal-v1">
+									Back in stock!
+								</div>
+								<div class="img-box">							
+									<div class="absrespons">
+										<img class="imgrespons" src="img/book-wide.png" alt="">
+									</div>							
+								</div>						
+							</div>
+							<div class="book-description">
+								<div class="description-box reveal-v1">
+									<div class="description">
+										<h2 class="title">The Plein-Air Painting as a Romantic-Comic Selfy</h2>
+										<div class="text-box">
+											<p class="author">
+												Und im Sommer tu ich malen<br>by Hank Schmidt in der Beek
+											</p>
+											<p class="text">
+												This book follows Image is Imminent and conflates the past four years of work by the artist. The title Holding the Frame came to the artist while watching Agnes Martin’s file watching Agnes Martin’s film Gabriel. In her film, everything Image is Imminent and conflates the past four…
+											</p>
+										</div>																
+									</div>	
+									<div class="action-box show-for-medium">
+										<div class="right-action">	
+											<!--<a class="link" href="">-->
+												<img class="icon" src="img/Icon/Link Black.svg" alt="Link">
+											<!--</a>-->
+										</div>
+									</div>	
+									<div class="action-box hide-for-medium">
+										<div class="left-action pd-x-off">
+											<!-- <a class="link" href=""> -->
+											<div>
+												<img class="icon" src="img/Icon/Link Black.svg" alt="Link">
+												<span class="link-title">Read more</span>	
+											</div>
+											<!--</a>-->
+										</div>				
+									</div>	
+								</div>										
+							</div>
+						</div>									
+					</div>				
+				</div>		
+			</a>
+		</section>		
+		<!-- END BOOK SELFY -->
+		
+
+		<!-- BOOK SELFY SLIM-->
+		<section>
+			<div class="wrapper-green"> 
+				<div class="limiter">
+					<div class="book-selfy pd-t-64 mg-b-64 sm-mg-b-0">
+						<div class="book-image">
+							<div class="label reveal-v1">
+								Back in stock!
+							</div>						
+							<div class="img-box">							
+								<!-- Added class slim for slim images -->
+								<div class="absrespons slim">
+									<img class="imgrespons" src="img/book-slim.png" alt="">
+								</div>							
+							</div>
+						</div>
+						<div class="book-description">
+							<div class="description-box reveal-v1">
+								<div class="description">
+									<h2 class="title">The Plein-Air Painting as a Romantic-Comic Selfy</h2>
+									<div class="text-box">
+										<p class="author">
+											Und im Sommer tu ich malen<br>by Hank Schmidt in der Beek
+										</p>
+										<p class="text">
+											This book follows Image is Imminent and conflates the past four years of work by the artist. The title Holding the Frame came to the artist while watching Agnes Martin’s file watching Agnes Martin’s film Gabriel. In her film, everything Image is Imminent and conflates the past four…
+										</p>
+									</div>																
+								</div>									
+								<div class="action-box show-for-medium">
+									<div class="right-action">	
+										<a class="link" href="">						
+											<img class="icon" src="img/Icon/Link Black.svg" alt="Link">
+										</a>													
+									</div>
+								</div>	
+								<div class="action-box hide-for-medium">
+									<div class="left-action pd-x-off">
+										<a class="link" href="">
+											<img class="icon" src="img/Icon/Link Black.svg" alt="Link">
+											<span class="link-title">Read more</span>	
+										</a>		
+									</div>				
+								</div>	
+							</div>										
+						</div>
+					</div>					
+				</div>				
+			</div>			
+		</section>
+		<!-- END BOOK SELFY SLIM-->
+
+
+		<!-- BOOK SELFY SLIM-->
+		<section class="show-for-medium">
+			<div class="wrapper-grey-wr1"> 
+				<div class="limiter">
+					<div class="book-selfy pd-t-64 mg-b-64 sm-mg-b-0">						
+						<div class="book-image">
+							<div class="label reveal-v1">
+								Prix Bob Calle 2017
+							</div>
+							<!-- Added class slim for slim images -->
+							<div class="img-box">							
+								<div class="absrespons slim">
+									<img class="imgrespons" src="img/book-slim-xxx.png" alt="">
+								</div>							
+							</div>						
+						</div>	
+						<div class="book-description">
+							<div class="description-box reveal-v1">
+								<div class="description">
+									<h2 class="title">The Plein-Air Painting as a Romantic-Comic Selfy</h2>
+									<div class="text-box">
+										<p class="author">
+											Und im Sommer tu ich malen<br>by Hank Schmidt in der Beek
+										</p>
+										<p class="text">
+											This book follows Image is Imminent and conflates the past four years of work by the artist. The title Holding the Frame came to the artist while watching Agnes Martin’s file watching Agnes Martin’s film Gabriel. In her film, everything Image is Imminent and conflates the past four…
+										</p>
+									</div>																
+								</div>										
+								<div class="action-box show-for-medium">
+									<div class="right-action">	
+										<a class="link" href="">						
+											<img class="icon" src="img/Icon/Link Black.svg" alt="Link">
+										</a>													
+									</div>
+								</div>	
+							
+								<div class="action-box hide-for-medium">
+									<div class="left-action pd-x-off">
+										<a class="link" href="">
+											<img class="icon" src="img/Icon/Link Black.svg" alt="Link">
+											<span class="link-title">Read more</span>	
+										</a>		
+									</div>				
+								</div>					
+							</div>										
+						</div>						
+					</div>					
+				</div>				
+			</div>			
+		</section>
+		<!-- END BOOK SELFY SLIM-->
+		
+
+		<!-- ACTION-->
+		<section>
+			<div class="wrapper-white"> 
+				<div class="limiter">											
+					<div class="action-box pd-t-96 mg-b-96 sm-pd-t-64 sm-mg-b-64">
+						<div class="left-action">
+							<a class="link" href="">
+								<img class="icon" src="img/Icon/Plus Grey.svg" alt="Plus"/>					
+								<span class="link-title gray">Load more featured books</span>
+							</a>		
+						</div>				
+					</div>					
+				</div>
+			</div>			
+		</section>
+		<!-- END ACTION-->
+		
 
 
 		<!-- PANEL ITEM-->
 		<section>
 			<div class="wrapper-white"> 
-				<div class="limiter">
-					<div class="panel-item mg-b-24">
-						<div class="action-box mg-b-96 show-for-large">
-							<div class="left-action">
+				<div class="limiter">   
+					<div class="panel-item mg-b-16">						
+						<div class="action-box mg-b-96 sm-mg-b-16">
+							<div class="left-action">	
 								<a class="link" href="">						
-									<img class="icon" src="img/Icon/List Black.svg" alt="Link">	
-									<span class="link-title">Latest Arrivals</span>							
-								</a>							
-							</div>
-						</div>	
-						<div class="action-box sm-mg-b-32 hide-for-large">
-							<div class="left-action">
-								<a class="link" href="">						
-									<img class="icon" src="img/Icon/List Black.svg" alt="Link">	
-									<span class="link-title">Related Books</span>							
-								</a>							
-							</div>
-						</div>	
+									<img class="icon" src="img/Icon/List Black.svg" alt="Plus"/>	
+									<span class="link-title">Latest Arrivals</span>				
+								</a>
+							</div>								
+						</div>
 						<div class="panel-item-box">											
 							<div class="item-box reveal-v1">	
 								<div class="img-box">
@@ -568,7 +602,7 @@
 								</span>
 							</div>							
 						</div>
-					</div>
+					</div>					
 				</div>				
 			</div>			
 		</section>
@@ -577,48 +611,25 @@
 
 		<!-- ACTION-->
 		<section>
-			<div class="wrapper-white show-for-large"> 
+			<div class="wrapper-white"> 
 				<div class="limiter">											
-					<div class="action-box mg-b-16">
-						<div class="left-action">							
+					<div class="action-box mg-b-120 sm-mg-b-96">
+						<div class="left-action">	
 							<a class="link" href="">						
-								<img class="icon" src="img/Icon/Plus Grey.svg" alt="Plus">	
-								<span class="link-title gray">Load all books</span>							
-							</a>	
+								<img class="icon" src="img/Icon/Link Black.svg" alt="Plus">	
+								<span class="link-title">Show all books</span>							
+							</a>													
 						</div>
 					</div>					
 				</div>
 			</div>			
 		</section>
 		<!-- END ACTION-->
-		<!-- ACTION-->
-		<section>
-			<div class="wrapper-violet hide-for-large"> 
-				<div class="limiter">											
-					<a class="action-box" href="https://www.google.com.ua/?gfe_rd=cr&dcr=0&ei=XuMQWs3ENc6v8wfK_r_gBg">
-						<div class="left-action">							
-							<div class="link">						
-								<img class="icon" src="img/Icon/Plus White.svg" alt="Plus">	
-								<span class="link-title white">Show all books</span>
-							</div>	
-						</div>
-					</a>					
-				</div>
-			</div>			
-		</section>
-		<!-- END ACTION-->
 
-		
-		<div class="wrapper-white show-for-large">
-			<div class="pd-t-160"></div>
-		</div>
-		<div class="wrapper-white hide-for-large">
-			<div class="pd-t-80"></div>
-		</div>
 
 		<!-- ABOUT-->
 		<section>
-			<div class="wrapper-white hide-for-large"> 
+			<div class="wrapper-white"> 
 				<div class="limiter">
 					<div class="text-container mg-b-80">	
 						<div class="main-part">
@@ -627,7 +638,7 @@
 							<div class="smallaction-box">
 								<a class="link" href="">						
 									<img class="icon" src="img/Icon/Link Grey.svg" alt="Link">	
-									<span class="link-title">Read more</span>							
+									<span class="link-title gray">Read more</span>							
 								</a>							
 							</div>
 						</div>									
@@ -639,7 +650,7 @@
 
 		<!-- ABOUT GERMAN-->
 		<section>
-			<div class="wrapper-white hide-for-large"> 
+			<div class="wrapper-white"> 
 				<div class="limiter">
 					<div class="text-container mg-b-160 sm-mg-b-80">	
 						<div class="main-part">
@@ -648,7 +659,7 @@
 							<div class="smallaction-box">
 								<a class="link" href="">						
 									<img class="icon" src="img/Icon/Link Grey.svg" alt="Link">	
-									<span class="link-title">Mehr lesen</span>							
+									<span class="link-title gray">Mehr lesen</span>							
 								</a>								
 							</div>	
 						</div>								
@@ -657,6 +668,7 @@
 			</div>			
 		</section>
 		<!-- END ABOUT GERMAN-->		
+
 
 		<!-- CATEGORY-->
 		<section>
@@ -685,7 +697,7 @@
 			</div>			
 		</section>	
 		<!-- END CATEGORY-->	
-
+		
 		<!-- FOOTER -->
 		<footer>
 			<div class="wrapper-black">
@@ -723,45 +735,28 @@
 		<!-- END FOOTER -->
 
 
-		<!-- OWL CAROUSEL (jquery.min.js + owl.carousel.min.js)-->
-		<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="js/owlcarousel/owl.carousel.min.js"></script>	
 
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$(".viceversa-carousel").owlCarousel({
-			  		loop:true,			    				    	
-			    	nav:true,
-			    	dots: false,
-			    	navText:false,		    				    	
-			    	animateOut: 'fadeOut',
-		    		responsive:{
-		        		0:{
-		            		items:1
-		        		}
-			    	}
-			  	});
-			});
-		</script>
-
-		
 
 
 
 		<!-- FOOTER-REVEAL -->
+		<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+		<script src="js/footer-reveal/footer-reveal.min.js" type="text/javascript" charset="utf-8"></script>
 		
-		<script src="js/footer-reveal/footer-reveal.min.js" type="text/javascript" charset="utf-8"></script>	
-			
+		
 
+		
+		
+					
 
-		<!--HEADROOM HEADER, HEADRUM STICK, STICK-IN-PARENT STICK
-			(headroom.min.js + jquery.min.js + jquery.sticky-kit.min.js) -->
+		<!--HEADROOM HEADER	(headroom.min.js) -->
 		<script src="js/headroom/headroom.min.js" type="text/javascript" charset="utf-8"></script>	
-		<script src="js/sticky-kit/jquery.sticky-kit.min.js" type="text/javascript" charset="utf-8"></script>
-		
+
 		<script type="text/javascript" charset="utf-8">	
 			// HEADROOM HEADER
-			var myHeader = document.querySelector("#header");			
+			var myHeader = document.querySelector("#header");
+				
+							
 			// check if mobile menu	dropped?
 			function isMobileMenuDropped(el) {
 			  	return ( el.classList.contains('mobile-menu-dropped') ? true : false );
@@ -784,7 +779,7 @@
 					return false;
 			}
 			// if mobile menu dropped, large menu dropdown or open search or newsletter redefine onUnpin function
-			var options = {
+			var options = {				
 			  	onUnpin: function() {
 			    	if ( isMobileMenuDropped(myHeader) || isLargeDropdown(myHeader) || isSearchOrNewsletterOpen() ) {
 			      		this.elem.classList.remove(this.classes.unpinned);
@@ -793,37 +788,37 @@
 			    	else {
 			      		this.elem.classList.add(this.classes.unpinned);
 			      		this.elem.classList.remove(this.classes.pinned);
-			    	}
-			    	//console.log("unpinnedHeader"); 
+			    	}				    			    	
 			  	},
 			  	tolerance: { up: 5, down: 10 }
 			};
 
 			var headroomHeader = new Headroom(myHeader, options);
-			headroomHeader.init();		
+			headroomHeader.init();	
+
+
+
+			// CHANGE HEADERS BACKGROUND_COLOR TO WHITE after first headroom--unpinned
+			var myStartPage = document.querySelector(".start-page");
+			function removeStartPage(){				
+				if (myStartPage !== null){	
+		    		if (myStartPage.classList.contains("start-page") ){
+		    			if ( myHeader.getBoundingClientRect().bottom == 0 ) {
+			    			myStartPage.classList.remove("start-page");			    			
+			    			document.removeEventListener('scroll', removeStartPage);
+			    		}
+		    		}
+		    		
+		    	}	
+			}
+			document.addEventListener("scroll", removeStartPage);
 			
 
-			
-			if (window.innerWidth > 1199){	
-				// STICK-IN-PARENT STICK 
-				$("#stick").stick_in_parent({parent: "#parent", offset_top: 104});
-				
-				
 
-
-				var myBanner = document.querySelector("#stick");								
-				var optionsBanner = {
-				  	tolerance: { up: 5, down: 10 } 
-				};	
-				var headroomBanner  = new Headroom(myBanner, optionsBanner);			
-				headroomBanner.init();
-			}			
 		</script>
-		
-		
+
 
 		<script src="js/scrollreveal/scrollreveal.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>		
 	</body>
 </html>

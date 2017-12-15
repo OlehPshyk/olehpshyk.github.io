@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Smart-Fest</title>	
-	<link rel="stylesheet" href="css/normalize/normalize.min.css" type="text/css">	
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">	 -->
+	<link rel="stylesheet" href="css/normalize/normalize.min.css" type="text/css">		
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600&amp;subset=cyrillic" rel="stylesheet">	 -->
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
@@ -16,8 +16,10 @@
 		<div class="wrapper background-main-img">			
 			<div class="main full-height limiter-x">					
 				<div class="logo">
-					<img src="img/Icons/SmartFestLogo_Light.svg" alt="LOGO">
-					<!-- <span>SmartFest</span> -->
+					<a href="#" class="link-logo">
+						<img class="img-logo"src="img/Icons/SmartFestLogo_Light.svg" alt="LOGO">
+						<!-- <span>SmartFest</span> -->
+					</a>					
 				</div>	
 				<div class="title">
 					<h5 class="title-1 text-uppercase">The Ultimate</h5>
@@ -98,7 +100,43 @@
 			</div>
 		</div>
 
-				
+		<div class="wrapper-white">			
+			<div class="send limiter-x">
+				<a href="#" class="link-send">
+					<img class="img-send"src="img/Icons/PaperAeroplane_Dark.svg" alt="LOGO">
+					<!-- <span>SmartFest</span> -->
+				</a>		
+				<h4>It’s on the way to us!</h4>
+				<span class="get-back">We’ll try to get back to your soon</span>
+			</div>
+			<div class="sended limiter-x">						
+				<h2 class="title">It’s on the way to us!</h2>
+				<span class="get-back">We’re happy to hear from you.</span>
+				<form action="" class="form">
+					<input class="input" type="text" name="name" placeholder="Call me…">
+					<input class="input" type="email" name="email" placeholder="Email me at…">					
+					<textarea class="text-area" name="text-area" placeholder="So, I had this thought…"></textarea>
+					<div class="submit-box">
+						<div class="g-recaptcha" data-sitekey="1111111111111"></div>
+						<button class="submit-button" type="submit">
+							<span class="text-submit">Send</span>
+							<img class="img-submit" src="img/Icons/PaperAeroplane_Light.svg" alt="">
+						</button>
+					</div>
+				</form>	
+			</div>
+		</div>
+
+		<footer>
+			<div class="background-footer">
+				<div class="footer">
+					<span class="developer">A Spaceship Innovations Product</span>
+					<span class="copyright">Copyright 2017</span>					
+				</div>
+			</div>			
+		</footer>
+
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>		
 	</body>
 </html>

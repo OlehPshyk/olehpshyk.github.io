@@ -100,8 +100,8 @@
 			</div>
 		</div>
 
-		<div class="wrapper-white">			
-			<div class="send limiter-x">
+		<div class="wrapper-white">		
+			<div class="success off limiter-x">    <!-- add class .off for hide this block & remove him for show block-->
 				<a href="#" class="link-send">
 					<img class="img-send"src="img/Icons/PaperAeroplane_Dark.svg" alt="LOGO">
 					<!-- <span>SmartFest</span> -->
@@ -109,7 +109,8 @@
 				<h4>It’s on the way to us!</h4>
 				<span class="get-back">We’ll try to get back to your soon</span>
 			</div>
-			<div class="sended limiter-x">						
+			
+			<div class="contact limiter-x">			<!-- add class .off for hide this block & remove him for show block-->			
 				<h2 class="title">It’s on the way to us!</h2>
 				<span class="get-back">We’re happy to hear from you.</span>
 				<form action="" class="form">
@@ -117,14 +118,50 @@
 					<input class="input" type="email" name="email" placeholder="Email me at…">					
 					<textarea class="text-area" name="text-area" placeholder="So, I had this thought…"></textarea>
 					<div class="submit-box">
-						<div class="g-recaptcha" data-sitekey="1111111111111"></div>
+						<!-- uncomment when register a new key -->
+						<!-- <div class="g-recaptcha" data-sitekey="1111111111111"></div>  		 -->
 						<button class="submit-button" type="submit">
-							<span class="text-submit">Send</span>
-							<img class="img-submit" src="img/Icons/PaperAeroplane_Light.svg" alt="">
+							<div class="button-box">
+								<span class="text-submit">Send</span>
+								<img class="img-submit" src="img/Icons/PaperAeroplane_Light.svg" alt="">
+							</div>							
 						</button>
 					</div>
 				</form>	
 			</div>
+		</div>
+
+		<div class="getNotifiedModal1">		<!-- add class .on for show this block & remove him for hide block-->
+			<div class="getNotified background-Notified1">				
+				<h2 class="title">Get Notified</h2>
+				<span class="ready">When we’re ready, you’ll be the first to know.</span>
+				<form action="" class="formModal">
+					<input class="input" type="text" name="name" placeholder="Call me…">
+					<input class="input" type="email" name="email" placeholder="Email me at…">										
+					<div class="submit-box">	
+						<button class="cancel-button">							
+							<img class="cancel-img" src="img/Icons/Close_Light.svg" alt="">
+						</button>					
+						<button class="submit-button" type="submit">
+							<span class="text-submit">Submit</span>							
+						</button>
+					</div>
+				</form>	
+				
+			</div>			
+		</div>
+
+		<div class="getNotifiedModal2">		<!-- add class .on for show this block & remove him for hide block-->
+			<div class="getNotified background-Notified2">
+				<img class="notified-img" src="img/Icons/hand.svg" alt="">							
+				<h2 class="title">Rock and Roll</h2>
+				<p class="text">
+					We’re working hard to make this a reality and we really appreciate yours support.
+				</p>
+				<p class="text">
+					If you’ve got any questions or ideas, please <a href="#">get in touch</a> and let us know.
+				</p>
+			</div>			
 		</div>
 
 		<footer>

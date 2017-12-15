@@ -688,10 +688,12 @@
     			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     			//console.log("SCROLL-TOP");
 			}	
+			window.onload = function() {    //correct work
+			    scrollTop();
+			};
+					 	
 
-		 	
-
-		 	document.addEventListener("DOMContentLoaded", scrollTop); 
+		 	//document.addEventListener("DOMContentLoaded", scrollTop);   //not correct work!!!
 
 		 	var myAllAButtons = document.querySelectorAll(".a-button");  //array of all buttons
 				
@@ -756,9 +758,9 @@
 			
 			//STICK-IN-PARENT FILTER-SLIDER 			
 			if (window.innerWidth < 1200){
-				$("#filter-slider").stick_in_parent({offset_top: 62});
+				$("#filter-slider").stick_in_parent({offset_top: 64});
 			} else {
-				$("#filter-slider").stick_in_parent({offset_top: 102});
+				$("#filter-slider").stick_in_parent({offset_top: 104});
 			}
 
 			//HEADROOM FILTER-SLIDER 								

@@ -104,7 +104,7 @@ $('footer').footerReveal();
 
 
 <!-- REVEAL -->
-if (window.innerWidth > 900){		//only on large screen			
+if (window.innerWidth > 1199){		//only on large screen			
 	window.sr = ScrollReveal({ reset: false,
 							   viewFactor: 0.4,
 							   opacity: 0,

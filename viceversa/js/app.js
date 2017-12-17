@@ -191,9 +191,9 @@ function addActiveSerch(i) {
 		aSearch[i].classList.add("active");
 	}
 }
-function addActiveNewslatter() {
-	if ( (aNewslatter[0] !== null) && (!aNewslatter[0].classList.contains("active")) ) {
-		aNewslatter[0].classList.add("active");
+function addActiveNewslatter(i) {
+	if ( (aNewslatter[i] !== null) && (!aNewslatter[i].classList.contains("active")) ) {
+		aNewslatter[i].classList.add("active");
 	}
 }
 function removeActiveSerch() {

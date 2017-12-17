@@ -116,10 +116,10 @@
 		<div class="white-back-for-filter"></div>
 
 		<!-- sticky-kit START parent for FILTER-SLIDER-->
-		<div id="parent-filter" class="">                                    <!-- .open (.filtered  not used)  for javascript or backend-->
+		<div id="parent-filter">                                    
 
 			<!-- FILTER-SLIDER -->
-			<div id="filter-slider" class="filtered">				
+			<div id="filter-slider" class="filtered">	  <!-- .open (.filtered  not used)  for javascript or backend-->			
 				<div class="wrapper-white"> 
 					<div class="limiter">						
 						<!-- Not filtered(Start) -->     <!-- show when filter-slider hasn't any class -->
@@ -209,25 +209,7 @@
 									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
-									<div class="a-button"><a href=""><button class="button">All</button></a></div>
-									<!-- <div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>					
-									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
-									<div class="a-button"><a href=""><button class="button">All</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>					
-									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
-									<div class="a-button"><a href=""><button class="button">All</button></a></div> -->
+									<div class="a-button"><a href=""><button class="button">All</button></a></div>									
 								</div>
 								<div class="smallaction-box mg-b-16">
 									<span class="title gray">sort by</span>
@@ -569,7 +551,7 @@
 
 
 		<!-- ACTION-->
-		<section id="next_items_block">
+		<section>
 			<div class="wrapper-violet hide-for-large"> 
 				<div class="limiter">																
 					<div class="action-box">
@@ -707,6 +689,7 @@
 
 
 
+
 			// HEADROOM HEADER
 			var myHeader = document.querySelector("#header"),
 				myFilterSlider = document.querySelector("#filter-slider");			
@@ -756,28 +739,39 @@
 
 			
 			//STICK-IN-PARENT FILTER-SLIDER 			
+
 			if (window.innerWidth < 1200){
-				$("#filter-slider").stick_in_parent({offset_top: 64});
+				$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 64});
 			} else {
-				$("#filter-slider").stick_in_parent({offset_top: 104});
+				$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
 			}
+
+			//only for test
+			//$("#stick").stick_in_parent({parent: "#parent", offset_top: 104});
+						
 
 			//HEADROOM FILTER-SLIDER 								
 			
-			var optionsFilterSlider = {
-				onUnpin: function() {			  		
-			    	if ( isMobileMenuDropped(myHeader) || isLargeDropdown(myHeader) || isFilterOpen(myFilterSlider) || isSearchOrNewsletterOpen() ) {
-			      		this.elem.classList.remove(this.classes.unpinned);
-			      		this.elem.classList.add(this.classes.pinned);
-			    	}
-			    	else {
-			      		this.elem.classList.add(this.classes.unpinned);
-			      		this.elem.classList.remove(this.classes.pinned);
-			    	}
-			  	},
+			// var optionsFilterSlider = {
+			// 	onUnpin: function() {			  		
+			//     	if ( isMobileMenuDropped(myHeader) || isLargeDropdown(myHeader) || isFilterOpen(myFilterSlider) || isSearchOrNewsletterOpen() ) {
+			//       		this.elem.classList.remove(this.classes.unpinned);
+			//       		this.elem.classList.add(this.classes.pinned);
+			//     	}
+			//     	else {
+			//       		this.elem.classList.add(this.classes.unpinned);
+			//       		this.elem.classList.remove(this.classes.pinned);
+			//     	}
+			//   	},
+			//   	tolerance: { up: 5, down: 10 }		  	
+			// };	
+			
+
+			var optionsFilterSlider = {				
 			  	tolerance: { up: 5, down: 10 }		  	
 			};	
-			var headroomFilterSlider  = new Headroom(myFilterSlider, optionsFilterSlider);			
+
+			var headroomFilterSlider = new Headroom(myFilterSlider, optionsFilterSlider);			
 			headroomFilterSlider.init();
 			
 					

@@ -76,12 +76,12 @@
 							<div class="limiter">
 								<div class="sm-nav">	
 									<ul class="sm-ul-list">
-										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Catalogue</li>
-										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Publishers</li>
-										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Info</li>
-										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Search</li>
-										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Newsletter</li>
-										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Contact</li>
+										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Catalogue</a></li>
+										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Publishers</a></li>
+										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Info</a></li>
+										<li class="sm-nav-li"><a class="sm-nav-item search" href="#">Search</a></li>
+										<li class="sm-nav-li"><a class="sm-nav-item newslatter" href="#">Newsletter</a></li>
+										<li class="sm-nav-li"><a class="sm-nav-item" href="#">Contact</a></li>
 									</ul>									
 									<a class="login-dropped" href="">Login</a>
 								</div>
@@ -116,10 +116,10 @@
 		<div class="white-back-for-filter"></div>
 
 		<!-- sticky-kit START parent for FILTER-SLIDER-->
-		<div id="parent-filter" class="">                                    <!-- .open (.filtered  not used)  for javascript or backend-->
+		<div id="parent-filter">                                    
 
 			<!-- FILTER-SLIDER -->
-			<div id="filter-slider" class="">				
+			<div id="filter-slider">	  <!-- .open (.filtered  not used)  for javascript or backend-->			
 				<div class="wrapper-white"> 
 					<div class="limiter">						
 						<!-- Not filtered(Start) -->     <!-- show when filter-slider hasn't any class -->
@@ -209,25 +209,7 @@
 									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
-									<div class="a-button"><a href=""><button class="button">All</button></a></div>
-									<!-- <div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>					
-									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
-									<div class="a-button"><a href=""><button class="button">All</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Architecture</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Art Theory</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Literature</button></a></div>					
-									<div class="a-button"><a href=""><button class="button">Exhibition Catalogue</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Photography</button></a></div>
-									<div class="a-button"><a href=""><button class="button">Poetry</button></a></div>
-									<div class="a-button"><a href=""><button class="button">All</button></a></div> -->
+									<div class="a-button"><a href=""><button class="button">All</button></a></div>									
 								</div>
 								<div class="smallaction-box mg-b-16">
 									<span class="title gray">sort by</span>
@@ -303,273 +285,299 @@
 			</div>
 			<!-- END FILTER-SLIDER -->
 
-			<!-- SEARCH -->
-			<!-- <div id="search">
-				<div class="wrapper-black">
-					<div class="limiter">
-						<div class="search-page">							
-							<div class="icon"><a href="#" class="closeSearch"><img src="img/Icon/Close White.svg" class="img"/></a></div>
-							<div class="searching">
-								<span class="title">Search our Catalogue<br>Durchsuchen Sie unser Sortiment</span>							
-								<form class="posr form" action="">
-									<div class="line show-for-small">
-										<input class="input" type="text" placeholder="Enter search terms / Suchbegriff eingeben">
-									</div>
-									<div class="line hide-for-small">
-										<input class="input" type="text" placeholder="Enter search terms" autofocus>
-									</div>
-								</form>	
-							</div>																
-						</div>					
-					</div>				
+
+			<div id="parent">
+			
+				<!-- STICK BANNER -->			
+				<div id="stick">
+					<div class="wrapper-white">
+						<div class="limiter">											
+							<div class="action-banner">
+								<div class="left-action-banner">
+									<span class="run-title">
+										Hank Schmidt in der Beek, Fabian Schubert<br/>
+										Und im Sommer tu ich malen  
+									</span>
+								</div>	
+								<div class="show-for-large">
+									<div class="right-action-banner">
+										<span class="price">25,00 &euro;</span>
+										<button class="button">Add to cart</button>
+									</div>	
+								</div>			
+							</div>							
+						</div>
+					</div>	
+				</div>		
+
+				<!-- SEARCH -->
+				<div id="search">
+					<div class="wrapper-black">
+						<div class="limiter">
+							<div class="search-page">							
+								<div class="icon"><a href="#" class="closeSearch"><img src="img/Icon/Close White.svg" class="img"/></a></div>
+								<div class="searching">
+									<span class="title">Search our Catalogue<br>Durchsuchen Sie unser Sortiment</span>							
+									<form class="posr form" action="">
+										<div class="line show-for-small">
+											<input class="input" type="text" placeholder="Enter search terms / Suchbegriff eingeben">
+										</div>
+										<div class="line hide-for-small">
+											<input class="input" type="text" placeholder="Enter search terms" autofocus>
+										</div>
+									</form>	
+								</div>																
+							</div>					
+						</div>				
+					</div>
 				</div>
-			</div> -->
-			<!-- END SEARCH -->
-			<!-- ANTIBLICK -->
-			<!-- <div id="antiblick">
-				<div class="wrapper-black">
-					<div class="limiter">
-						<div class="antiblick">
+				<!-- END SEARCH -->
+				<!-- ANTIBLICK -->
+				<div id="antiblick">
+					<div class="wrapper-black">
+						<div class="limiter">
+							<div class="antiblick">
+							</div>
 						</div>
 					</div>
 				</div>
-			</div> -->
-			<!-- END ANTIBLICK -->
-			<!-- NEWSLATTER -->
-			<!-- <div id="newslatter">
-				<div class="wrapper-black">
-					<div class="limiter">
-						<div class="search-page">							
-							<div class="icon"><a href="#" class="closeNewslatter"><img src="img/Icon/Close White.svg" class="img"/></a></div>
-							<div class="searching">
-								<span class="title">Subscribe to our Newsletter:</span>							
-								<form class="posr form" action="">
-									<div class="line show-for-small">
-										<input class="input" type="email" placeholder="Please enter your Email Address">
-									</div>
-									<div class="line hide-for-small">
-										<input class="input" type="email" placeholder="Email Address">
-									</div>								
-									<button class="button button-black" id="subscribe">Subscribe</button>
-								</form>	
-							</div>																
-						</div>					
-					</div>				
+				<!-- END ANTIBLICK -->
+				<!-- NEWSLATTER -->
+				<div id="newslatter">
+					<div class="wrapper-black">
+						<div class="limiter">
+							<div class="search-page">							
+								<div class="icon"><a href="#" class="closeNewslatter"><img src="img/Icon/Close White.svg" class="img"/></a></div>
+								<div class="searching">
+									<span class="title">Subscribe to our Newsletter:</span>							
+									<form class="posr form" action="">
+										<div class="line show-for-small">
+											<input class="input" type="email" placeholder="Please enter your Email Address">
+										</div>
+										<div class="line hide-for-small">
+											<input class="input" type="email" placeholder="Email Address">
+										</div>								
+										<button class="button button-black" id="subscribe">Subscribe</button>
+									</form>	
+								</div>																
+							</div>					
+						</div>				
+					</div>
 				</div>
-			</div> -->
-			<!-- END NEWSLATTER -->
+				<!-- END NEWSLATTER -->
 
-			<section>
-				<div class="wrapper-white hide-for-large"> 
-					<div class="limiter">
-						<div class="text-container sm-pd-t-24 sm-mg-b-32">
-							<div class="main-part">	
-								<h2 class="title">Catalogue</h2>									
-							</div>															
-						</div>
-					</div>				
-				</div>			
-			</section>
-
-
-			<!-- PANEL ITEM-->
-			<section>
-				<div class="wrapper-white"> 
-					<div class="limiter">
-						<div class="panel-item mg-b-8 sm-mg-b-24">						
-							<div class="panel-item-box">											
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/badbigwidth.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/1.jpg" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/2.jpg" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/3.jpg" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/4.jpg" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/5.jpg" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/6.jpg" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/7.jpg" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/badbigheight.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/item.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/test1.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>					
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/test2.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/bad.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/book-slim.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/book-wide.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/test3.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/test4.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>
-								<div class="item-box reveal-v1">	
-									<div class="img-box">
-										<img class="img" src="img/item.png" alt="">
-									</div>							
-									<span class="item-text">
-										Jimmie Durham
-										<br>
-										God's Children, God's Poems
-									</span>
-								</div>						
+				<section>
+					<div class="wrapper-white hide-for-large"> 
+						<div class="limiter">
+							<div class="text-container sm-pd-t-24 sm-mg-b-32">
+								<div class="main-part">	
+									<h2 class="title">Catalogue</h2>									
+								</div>															
 							</div>
-						</div>
-					</div>				
-				</div>			
-			</section>
-			<!-- END PANEL ITEM-->
+						</div>				
+					</div>			
+				</section>
+
+
+				<!-- PANEL ITEM-->
+				<section>
+					<div class="wrapper-white"> 
+						<div class="limiter">
+							<div class="panel-item mg-b-8 sm-mg-b-24">						
+								<div class="panel-item-box">											
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/badbigwidth.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/1.jpg" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/2.jpg" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/3.jpg" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/4.jpg" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/5.jpg" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/6.jpg" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/7.jpg" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/badbigheight.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/item.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/test1.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>					
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/test2.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/bad.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/book-slim.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/book-wide.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/test3.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/test4.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>
+									<div class="item-box reveal-v1">	
+										<div class="img-box">
+											<img class="img" src="img/item.png" alt="">
+										</div>							
+										<span class="item-text">
+											Jimmie Durham
+											<br>
+											God's Children, God's Poems
+										</span>
+									</div>						
+								</div>
+							</div>
+						</div>				
+					</div>			
+				</section>
+				<!-- END PANEL ITEM-->
+			</div>
 		</div>
 		<!-- sticky-kit END parent for FILTER-SLIDER-->
 
 
 		<!-- ACTION-->
-		<section id="">
+		<section>
 			<div class="wrapper-violet hide-for-large"> 
 				<div class="limiter">																
 					<div class="action-box">
@@ -683,26 +691,26 @@
 
 			//SCROLL TO TOP IF PRESSED ANY FILTER-OPTION
 			
-			// function scrollTop() {	
-			// 	document.body.scrollTop = 0; // For Safari
-   //  			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-   //  			//console.log("SCROLL-TOP");
-			// }	
-			// window.onload = function() {    //correct work
-			//     scrollTop();
-			// };
+			function scrollTop() {	
+				document.body.scrollTop = 0; // For Safari
+    			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    			//console.log("SCROLL-TOP");
+			}	
+			window.onload = function() {    //correct work
+			    scrollTop();
+			};
 					 	
 
 		 	//document.addEventListener("DOMContentLoaded", scrollTop);   //not correct work!!!
 
-		 	// var myAllAButtons = document.querySelectorAll(".a-button");  //array of all buttons
+		 	var myAllAButtons = document.querySelectorAll(".a-button");  //array of all buttons
 				
 
 
 			//SCROLL TO TOP IF PRESSED ANY FILTER-OPTION
-			// if( myAllAButtons.lenght !== 0 ) {
-		 // 		myAllAButtons.forEach(function(el){el.addEventListener("click", scrollTop)});
-		 // 	}
+			if( myAllAButtons.lenght !== 0 ) {
+		 		myAllAButtons.forEach(function(el){el.addEventListener("click", scrollTop)});
+		 	}
 
 
 
@@ -757,30 +765,57 @@
 
 			
 			//STICK-IN-PARENT FILTER-SLIDER 			
+
 			// if (window.innerWidth < 1200){
 			// 	$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 64});
 			// } else {
-				$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
+			// 	$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
 			// }
+
+			//only for test
+			//$("#stick").stick_in_parent({parent: "#parent", offset_top: 104});
+			
+			$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
 
 			//HEADROOM FILTER-SLIDER 								
 			
-			var optionsFilterSlider = {
-				onUnpin: function() {			  		
-			    	if ( isMobileMenuDropped(myHeader) || isLargeDropdown(myHeader) || isFilterOpen(myFilterSlider) || isSearchOrNewsletterOpen() ) {
-			      		this.elem.classList.remove(this.classes.unpinned);
-			      		this.elem.classList.add(this.classes.pinned);
-			    	}
-			    	else {
-			      		this.elem.classList.add(this.classes.unpinned);
-			      		this.elem.classList.remove(this.classes.pinned);
-			    	}
-			  	},
+			// var optionsFilterSlider = {
+			// 	onUnpin: function() {			  		
+			//     	if ( isMobileMenuDropped(myHeader) || isLargeDropdown(myHeader) || isFilterOpen(myFilterSlider) || isSearchOrNewsletterOpen() ) {
+			//       		this.elem.classList.remove(this.classes.unpinned);
+			//       		this.elem.classList.add(this.classes.pinned);
+			//     	}
+			//     	else {
+			//       		this.elem.classList.add(this.classes.unpinned);
+			//       		this.elem.classList.remove(this.classes.pinned);
+			//     	}
+			//   	},
+			//   	tolerance: { up: 5, down: 10 }		  	
+			// };	
+			
+
+			var optionsFilterSlider = {				
 			  	tolerance: { up: 5, down: 10 }		  	
 			};	
-			var headroomFilterSlider  = new Headroom(myFilterSlider, optionsFilterSlider);			
+
+			var headroomFilterSlider = new Headroom(myFilterSlider, optionsFilterSlider);			
 			headroomFilterSlider.init();
 			
+
+			if (window.innerWidth > 1199){	
+
+				// STICK-IN-PARENT STICK 
+				$("#stick").stick_in_parent({parent: "#parent", offset_top: 288});
+				
+
+				var myBanner = document.querySelector("#stick");								
+				var optionsBanner = {
+				  	tolerance: { up: 5, down: 10 }
+				};	
+				var headroomBanner  = new Headroom(myBanner, optionsBanner);			
+				headroomBanner.init();				
+
+			}		
 					
 		</script>
 

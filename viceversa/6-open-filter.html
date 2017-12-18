@@ -740,16 +740,16 @@
 			
 			//STICK-IN-PARENT FILTER-SLIDER 			
 
-			// if (window.innerWidth < 1200){
-			// 	$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 64});
-			// } else {
-			// 	$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
-			// }
+			if (window.innerWidth < 1200){
+				$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 64});
+			} else {
+				$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
+			}
 
 			//only for test
 			//$("#stick").stick_in_parent({parent: "#parent", offset_top: 104});
 			
-			$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
+			//$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
 
 			//HEADROOM FILTER-SLIDER 								
 			
@@ -768,7 +768,17 @@
 			// };	
 			
 
-			var optionsFilterSlider = {				
+			var optionsFilterSlider = {	
+				onUnpin: function() {			  		
+			    	if ( isFilterOpen(myFilterSlider) ) {
+			      		this.elem.classList.remove(this.classes.unpinned);
+			      		this.elem.classList.add(this.classes.pinned);
+			    	}
+			    	else {
+			      		this.elem.classList.add(this.classes.unpinned);
+			      		this.elem.classList.remove(this.classes.pinned);
+			    	}
+			  	},						
 			  	tolerance: { up: 5, down: 10 }		  	
 			};	
 

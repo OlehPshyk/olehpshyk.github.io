@@ -121,85 +121,85 @@
 			<!-- FILTER-SLIDER -->
 			<div id="filter-slider">	  <!-- .open (.filtered  not used)  for javascript or backend-->			
 				<div class="wrapper-white"> 
-					<div class="limiter">						
-						<!-- Not filtered(Start) -->     <!-- show when filter-slider hasn't any class -->
-						<div class="all-book pd-t-16 sm-pd-t-16">
-							<div class="action-box mg-b-24">
-								<div class="left-action">							
-									<a class="link" href="">
-										<img class="icon" src="img/Icon/List Black.svg" alt=""/>							
-										<span class="link-title">All books</span>								
-									</a>																
-								</div>
-								<div class="right-action filter-close">
-									<a class="link" href="">	
-										<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
-										<span class="link-title gray">Filter</span>						
-									</a>												
+					<div class="limiter">
+						<div class="inner-scroll-y">						
+							<!-- Not filtered(Start) -->     <!-- show when filter-slider hasn't any class -->
+							<div class="all-book pd-t-16 sm-pd-t-16">
+								<div class="action-box mg-b-24">
+									<div class="left-action">							
+										<a class="link" href="">
+											<img class="icon" src="img/Icon/List Black.svg" alt=""/>							
+											<span class="link-title">All books</span>								
+										</a>																
+									</div>
+									<div class="right-action filter-close">
+										<a class="link" href="">	
+											<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
+											<span class="link-title gray">Filter</span>						
+										</a>												
+									</div>	
+									<div class="right-action filter-open">
+										<a class="link" href="">	
+											<span class="link-title gray">Close</span>	
+											<img class="icon" src="img/Icon/Close Grey.svg" alt=""/>
+										</a>												
+									</div>												
 								</div>	
-								<div class="right-action filter-open">
-									<a class="link" href="">	
-										<span class="link-title gray">Close</span>	
-										<img class="icon" src="img/Icon/Close Grey.svg" alt=""/>
-									</a>												
-								</div>												
+							</div>
+							<!--Filtered -->                 <!-- show when filter-slider has class filtered -->  <!-- Not used -->
+							<div class="filtered-result">
+								<div class="action-box mg-b-24">
+									<div class="left-action">							
+										<a class="link" href="">
+											<img class="icon" src="img/Icon/List Brand.svg" alt=""/>
+											<span class="link-title violet">Filtered results (xx)</span>  
+										</a>																
+									</div>
+									<div class="right-action filter-close">
+										<a class="link" href="">
+											<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
+											<span class="link-title gray">Filter</span>								
+										</a>												
+									</div>	
+									<div class="right-action filter-open">
+										<a class="link" href="">	
+											
+											<img class="icon" src="img/Icon/Close Grey.svg" alt=""/>
+											<span class="link-title gray">Close</span>	
+										</a>												
+									</div>						
+								</div>											
 							</div>	
-						</div>
-						<!--Filtered -->                 <!-- show when filter-slider has class filtered -->  <!-- Not used -->
-						<div class="filtered-result">
-							<div class="action-box mg-b-24">
-								<div class="left-action">							
-									<a class="link" href="">
-										<img class="icon" src="img/Icon/List Brand.svg" alt=""/>
-										<span class="link-title violet">Filtered results (xx)</span>  
-									</a>																
-								</div>
-								<div class="right-action filter-close">
-									<a class="link" href="">
-										<img class="icon" src="img/Icon/Plus Grey.svg" alt=""/>	
-										<span class="link-title gray">Filter</span>								
-									</a>												
-								</div>	
-								<div class="right-action filter-open">
-									<a class="link" href="">	
-										
-										<img class="icon" src="img/Icon/Close Grey.svg" alt=""/>
-										<span class="link-title gray">Close</span>	
-									</a>												
-								</div>						
-							</div>											
-						</div>	
-						<div class="button-box mg-b-16" id="applied_filters">
-							<div class="a-button">
-								<a href="">
-									<button class="button-medium button-violet">
-										<div class="btn-flex">
-											<span class="button-text">Artists&prime; Books</span>	
-											<div class="button-icons">
-												<img class="button-img on" src="img/Icon/Close Brand.svg" alt="">
-												<img class="button-img off" src="img/Icon/Close White.svg" alt="">
-											</div>	
-										</div>													
-									</button>
-								</a>
-							</div>									
-							<div class="a-button">
-								<a href="">
-									<button class="button-medium button-gray">
-										<div class="btn-flex">
-											<span class="button-text">Price</span>
-											<div class="button-icons">
-												<img class="button-img on" src="img/Icon/Link Up.svg" alt=""/>
-												<img class="button-img off" src="img/Icon/Link Up Brand White.svg" alt=""/>
-											</div>										
-										</div>
-									</button>
-								</a>
-							</div>							
-						</div>	
-						<!-- FILTER -->
-						<div id="filters">
-							<div class="inner-scroll-y">
+							<div class="button-box mg-b-16" id="applied_filters">
+								<div class="a-button">
+									<a href="">
+										<button class="button-medium button-violet">
+											<div class="btn-flex">
+												<span class="button-text">Artists&prime; Books</span>	
+												<div class="button-icons">
+													<img class="button-img on" src="img/Icon/Close Brand.svg" alt="">
+													<img class="button-img off" src="img/Icon/Close White.svg" alt="">
+												</div>	
+											</div>													
+										</button>
+									</a>
+								</div>									
+								<div class="a-button">
+									<a href="">
+										<button class="button-medium button-gray">
+											<div class="btn-flex">
+												<span class="button-text">Price</span>
+												<div class="button-icons">
+													<img class="button-img on" src="img/Icon/Link Up.svg" alt=""/>
+													<img class="button-img off" src="img/Icon/Link Up Brand White.svg" alt=""/>
+												</div>										
+											</div>
+										</button>
+									</a>
+								</div>							
+							</div>	
+							<!-- FILTER -->
+							<div id="filters">								
 								<div class="button-box mg-b-16">
 									<div class="a-button"><a href=""><button class="button">Artists&prime; Books</button></a></div>
 									<div class="a-button"><a href=""><button class="button">Monograph</button></a></div>
@@ -277,7 +277,7 @@
 											</button>
 										</a>
 									</div>
-								</div>				
+								</div>
 							</div>							
 						</div>
 					</div>

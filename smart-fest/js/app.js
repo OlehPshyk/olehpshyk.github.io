@@ -1,6 +1,6 @@
 "use strict";
 
-var getNotified = document.querySelectorAll(".notified"),
+var getNotified = document.querySelectorAll(".notified-btn"),
     getNotifiedModal1 = document.querySelector(".getNotifiedModal1"),
     cancelModal1Button = document.querySelector(".cancel-modal1-button"),
     submitNotified = document.querySelector(".getNotifiedModal1 .submit-button"),

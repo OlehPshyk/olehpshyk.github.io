@@ -91,13 +91,17 @@ if (getNotified.lenght !== 0) {
 	});
 }
 function openNotifiedModal1() {
-	if (getNotifiedModal1 !== null && !getNotifiedModal1.classList.contains("on")) {
-		getNotifiedModal1.classList.add("on");
+	//changed animation to use requestAnimationFrame
+	// if( (getNotifiedModal1 !== null) && (!getNotifiedModal1.classList.contains("on")) ){
+	// 	getNotifiedModal1.classList.add("on");
+	if (getNotifiedModal1 !== null) {
+		fadeIn(getNotifiedModal1, "flex");
 		submitNotified.focus();
-		document.addEventListener("keydown", handlerEscModal1);
 		cancelModal1Button.addEventListener("click", handlerCloseNotifiedModal1);
+		getNotifiedModal1.addEventListener("click", handlerClickOutModal1);
 		notifiedName.addEventListener("keydown", handlerEnterModal);
 		notifiedEmail.addEventListener("keydown", handlerEnterModal);
+		document.addEventListener("keydown", handlerEscModal1);
 	}
 }
 /*=============================================================================*/
@@ -109,11 +113,15 @@ function handlerCloseNotifiedModal1(e) {
 	closeNotifiedModal1();
 }
 function closeNotifiedModal1() {
-	if (getNotifiedModal1 !== null && getNotifiedModal1.classList.contains("on")) {
+	//changed animation to use requestAnimationFrame
+	//if( (getNotifiedModal1 !== null) && (getNotifiedModal1.classList.contains("on")) ){
+	if (getNotifiedModal1 !== null && getNotifiedModal1.style.opacity >= 1) {
 		document.removeEventListener("keydown", handlerEscModal1);
+		getNotifiedModal1.removeEventListener("click", handlerClickOutModal1);
 		notifiedName.removeEventListener("keydown", handlerEnterModal);
 		notifiedEmail.removeEventListener("keydown", handlerEnterModal);
-		getNotifiedModal1.classList.remove("on");
+		//getNotifiedModal1.classList.remove("on");	
+		fadeOut(getNotifiedModal1);
 		resetInvalid();
 	}
 }
@@ -177,11 +185,22 @@ function resetInvalid() {
 	if (notifiedEmail.classList.contains("invalid")) notifiedEmail.classList.remove("invalid");
 }
 function openNotifiedModal2() {
-	if (getNotifiedModal2 !== null && !getNotifiedModal2.classList.contains("on")) {
-		getNotifiedModal2.classList.add("on");
+	// if( (getNotifiedModal2 !== null) && (!getNotifiedModal2.classList.contains("on")) ){		
+	// 	getNotifiedModal2.classList.add("on");
+	if (getNotifiedModal2 !== null) {
+		fadeIn(getNotifiedModal2, "flex");
 		closeNotifiedModal1();
-		getNotifiedModal2.addEventListener("click", handlerClickOut);
+		getNotifiedModal2.addEventListener("click", handlerClickOutModal2);
 		document.addEventListener("keydown", handlerEscModal2);
+	}
+}
+function closeNotifiedModal2() {
+	//if( (getNotifiedModal2 !== null) && (getNotifiedModal2.classList.contains("on")) ){
+	if (getNotifiedModal2 !== null && getNotifiedModal2.style.opacity >= 1) {
+		getNotifiedModal2.removeEventListener("click", handlerClickOutModal2);
+		document.removeEventListener("keydown", handlerEscModal2);
+		//getNotifiedModal2.classList.remove("on");
+		fadeOut(getNotifiedModal2);
 	}
 }
 // key  ESC in getNotifiedModal2 pressed
@@ -194,7 +213,19 @@ function handlerEscModal2(e) {
 		closeNotifiedModal2();
 	}
 }
-function handlerClickOut(e) {
+// click OUT of getNotifiedModal1 / getNotifiedModal2 
+function handlerClickOutModal1(e) {
+	var target = findClosest(e.target, function (el) {
+		//console.log("click IN!!!");
+		return el.id == "getNotified1";
+	});
+	if (!target) {
+		//console.log("click OUT!!!");
+		resetValue();
+		closeNotifiedModal1();
+	}
+}
+function handlerClickOutModal2(e) {
 	var target = findClosest(e.target, function (el) {
 		//console.log("click IN!!!");
 		return el.id == "getNotified2";
@@ -208,13 +239,6 @@ function handlerClickOut(e) {
 function findClosest(element, fn) {
 	if (!element) return undefined;
 	return fn(element) ? element : findClosest(element.parentElement, fn);
-}
-function closeNotifiedModal2() {
-	if (getNotifiedModal2 !== null && getNotifiedModal2.classList.contains("on")) {
-		getNotifiedModal2.removeEventListener("click", handlerClickOut);
-		document.removeEventListener("keydown", handlerEscModal2);
-		getNotifiedModal2.classList.remove("on");
-	}
 }
 function resetValue() {
 	notifiedName.value = "";
@@ -318,3 +342,35 @@ document.querySelector(".link-learn").addEventListener("click", function (e) {
 	//,() => console.log(`Finished scrolling to ${window.pageYOffset}px`)
 	);
 });
+
+/*=============================================================================*/
+//					FADE OUT
+/*=============================================================================*/
+function fadeOut(el) {
+	el.style.opacity = 1;
+	(function fade() {
+		if ((el.style.opacity -= .02) < 0) {
+			el.style.display = "none";
+			el.style.opacity = 0; //for situation -0.001
+		} else {
+			requestAnimationFrame(fade);
+		}
+	})();
+}
+
+/*=============================================================================*/
+//					FADE IN
+/*=============================================================================*/
+function fadeIn(el, display) {
+	el.style.opacity = 0;
+	el.style.display = display || "block";
+	(function fade() {
+		var val = parseFloat(el.style.opacity);
+		if (!((val += .02) > 1)) {
+			el.style.opacity = val;
+			requestAnimationFrame(fade);
+		} else {
+			el.style.opacity = 1; //for situation 0.999
+		}
+	})();
+}

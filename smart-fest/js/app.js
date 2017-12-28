@@ -22,7 +22,7 @@ function handlerSubmitContactForm(e) {
 function handlerEnter(e) {
 	e = e || window.event;
 	if (e.keyCode === 13) {
-		console.log("Enter key pressed.");
+		//console.log("Enter key pressed.");
 		e.preventDefault();
 		checkSubmitContactForm();
 	}
@@ -30,14 +30,14 @@ function handlerEnter(e) {
 function checkSubmitContactForm() {
 	var check = true,
 	    focus = true;
-	if (contactName.value == "") {
+	if (!isValidText(contactName.value)) {
 		contactName.classList.add("invalid");
 		check = false;
 		if (focus) {
 			contactName.focus();
 			focus = false;
 		}
-	} else if (contactName.classList.contains("invalid")) contactName.classList.remove("invalid");
+	} else resetContactInvalidName();
 
 	if (!isValidEmailAddress(contactEmail.value)) {
 		contactEmail.classList.add("invalid");
@@ -46,31 +46,68 @@ function checkSubmitContactForm() {
 			contactEmail.focus();
 			focus = false;
 		}
-	} else if (contactEmail.classList.contains("invalid")) contactEmail.classList.remove("invalid");
+	} else resetContactInvalidEmail();
 
-	if (contactText.value == "") {
+	if (!isValidText(contactText.value)) {
 		contactText.classList.add("invalid");
 		check = false;
 		if (focus) {
 			contactText.focus();
 			focus = false;
 		}
-	} else if (contactText.classList.contains("invalid")) contactText.classList.remove("invalid");
+	} else resetContactInvalidText();
 
 	if (check) submitSuccess();
+}
+function resetContactInvalidName() {
+	if (contactName.classList.contains("invalid")) contactName.classList.remove("invalid");
+}
+function resetContactInvalidEmail() {
+	if (contactEmail.classList.contains("invalid")) contactEmail.classList.remove("invalid");
+}
+function resetContactInvalidText() {
+	if (contactText.classList.contains("invalid")) contactText.classList.remove("invalid");
 }
 function isValidEmailAddress(email) {
 	var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 	return pattern.test(email);
 }
+function isValidText(e) {
+	var testE = e.replace(/[\s]+/g, ''); // not enter any letter or enter only whitespace			
+	return testE == "" ? false : true;
+}
+contactName.oninput = function () {
+	if (contactName.classList.contains("invalid")) {
+		contactName.classList.remove("invalid");
+	}
+	if (!isValidText(contactName.value)) {
+		contactName.classList.add("invalid");
+	}
+};
+contactEmail.oninput = function () {
+	if (contactEmail.classList.contains("invalid")) {
+		contactEmail.classList.remove("invalid");
+	}
+	if (!isValidEmailAddress(contactEmail.value)) {
+		contactEmail.classList.add("invalid");
+	}
+};
+contactText.oninput = function () {
+	if (contactText.classList.contains("invalid")) {
+		contactText.classList.remove("invalid");
+	}
+	if (!isValidText(contactText.value)) {
+		contactText.classList.add("invalid");
+	}
+};
 function submitSuccess() {
+	//contactForm.submit();	   //???  Without reloading the page	XMLHttpRequest  ???
 	if (contactSuccess !== null && !contactSuccess.classList.contains("ok")) {
 		contactSuccess.classList.add("ok");
 		contactSubmit.removeEventListener("click", handlerSubmitContactForm);
 		contactName.removeEventListener("keydown", handlerEnter);
 		contactEmail.removeEventListener("keydown", handlerEnter);
 	}
-	//contactForm.submit();	   //???  Without reloading the page
 }
 
 /*=============================================================================*/
@@ -122,7 +159,7 @@ function closeNotifiedModal1() {
 		notifiedEmail.removeEventListener("keydown", handlerEnterModal);
 		//getNotifiedModal1.classList.remove("on");	
 		fadeOut(getNotifiedModal1);
-		resetInvalid();
+		resetNotifiedInvalid();
 	}
 }
 // key  ESC in getNotifiedModal1 pressed
@@ -157,14 +194,14 @@ function handlerCheckSubmitFormModal(e) {
 function checkSubmitFormModal() {
 	var checkM = true,
 	    focusM = true;
-	if (notifiedName.value == "") {
+	if (!isValidText(notifiedName.value)) {
 		notifiedName.classList.add("invalid");
 		checkM = false;
 		if (focusM) {
 			notifiedName.focus();
 			focusM = false;
 		}
-	} else if (notifiedName.classList.contains("invalid")) notifiedName.classList.remove("invalid");
+	} else resetNotifiedInvalidName();
 
 	if (!isValidEmailAddress(notifiedEmail.value)) {
 		notifiedEmail.classList.add("invalid");
@@ -173,15 +210,33 @@ function checkSubmitFormModal() {
 			notifiedEmail.focus();
 			focusM = false;
 		}
-	} else if (notifiedEmail.classList.contains("invalid")) notifiedEmail.classList.remove("invalid");
+	} else resetNotifiedInvalidEmail();
 
 	if (checkM) {
+		//formModal.submit();	   //???  Without reloading the page   XMLHttpRequest  ???
 		openNotifiedModal2();
-		//formModal.submit();	   //???  Without reloading the page
 	}
 }
-function resetInvalid() {
+notifiedName.oninput = function () {
+	resetNotifiedInvalidName();
+	if (!isValidText(notifiedName.value)) {
+		notifiedName.classList.add("invalid");
+	}
+};
+notifiedEmail.oninput = function () {
+	resetNotifiedInvalidEmail();
+	if (!isValidEmailAddress(notifiedEmail.value)) {
+		notifiedEmail.classList.add("invalid");
+	}
+};
+function resetNotifiedInvalid() {
+	resetNotifiedInvalidName();
+	resetNotifiedInvalidEmail();
+}
+function resetNotifiedInvalidName() {
 	if (notifiedName.classList.contains("invalid")) notifiedName.classList.remove("invalid");
+}
+function resetNotifiedInvalidEmail() {
 	if (notifiedEmail.classList.contains("invalid")) notifiedEmail.classList.remove("invalid");
 }
 function openNotifiedModal2() {
@@ -349,7 +404,8 @@ document.querySelector(".link-learn").addEventListener("click", function (e) {
 function fadeOut(el) {
 	el.style.opacity = 1;
 	(function fade() {
-		if ((el.style.opacity -= .02) < 0) {
+		if ((el.style.opacity -= .04) < 0) {
+			// .01 --  .1
 			el.style.display = "none";
 			el.style.opacity = 0; //for situation -0.001
 		} else {
@@ -366,7 +422,8 @@ function fadeIn(el, display) {
 	el.style.display = display || "block";
 	(function fade() {
 		var val = parseFloat(el.style.opacity);
-		if (!((val += .02) > 1)) {
+		if (!((val += .04) > 1)) {
+			// .01 --  .1
 			el.style.opacity = val;
 			requestAnimationFrame(fade);
 		} else {

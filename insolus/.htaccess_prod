@@ -1,0 +1,62 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# !!!!!!!!!!!! à mettre en prod!!!
+# Force HTTPS
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule (.*) https://insolus.com/$1 [R=301,L]
+# ^^^^
+
+# !!!!!!!!!!!! à mettre en prod!!!
+RewriteCond %{HTTP_HOST} ^www\.insolus\.com [NC]
+RewriteRule ^(.*)$ https://insolus.com/$1 [L,R=301]
+# ^^^^
+
+# !!!!!!!!!!!! à mettre en prod!!!
+# Avoid Duplicate content for homepage
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/ [NC]
+RewriteRule ^index\.php$ https://insolus.com [R=301]
+# ^^^^
+
+# !!!!!!!!!!!! à mettre en prod!!!
+# Avoid Duplicate content for homepage (bis)
+Redirect 301 /index https://insolus.com 
+# ^^^^	
+
+# To externally redirect /dir/foo.php to /dir/foo
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R,L,NC]
+# To internally redirect /dir/foo to /dir/foo.php (keep this in order to avoid duplicate content)
+RewriteCond %{REQUEST_FILENAME}.php -f [NC]
+RewriteRule ^ %{REQUEST_URI}.php [L]
+
+#
+ErrorDocument 404 /sitemap
+
+#
+Redirect 301 /web-developpement							https://insolus.com/webapps
+Redirect 301 /developpement-applications-web			https://insolus.com/webapps
+Redirect 301 /web-sites									https://insolus.com/webapps
+Redirect 301 /web-cms									https://insolus.com/webapps
+Redirect 301 /web-ecommerce								https://insolus.com/webapps
+Redirect 301 /web-transfert-sites						https://insolus.com
+Redirect 301 /developpement-applications-mobiles		https://insolus.com/mobileapps
+Redirect 301 /developpement-logiciel					https://insolus.com/software
+Redirect 301 /developpement-databases					https://insolus.com/databases
+Redirect 301 /developpement-ms-access					https://insolus.com/ms-access
+Redirect 301 /developpement-mysql						https://insolus.com/technologies
+Redirect 301 /developpement-open-source					https://insolus.com/technologies
+Redirect 301 /insolus-contact							https://insolus.com/contact
+Redirect 301 /insolus-sitemap							https://insolus.com/sitemap
+Redirect 301 /insolus-temoignages						https://insolus.com
+Redirect 301 /insolus-references						https://insolus.com/clients
+Redirect 301 /job-flyering								https://insolus.com
+Redirect 301 /job										https://insolus.com
+Redirect 301 /article-cahier-charges					https://insolus.com
+Redirect 301 /article-internet-majuscule-minuscule		https://insolus.com/a-internet-majuscule-minuscule
+Redirect 301 /article-site-web-internet					https://insolus.com
+
+# https://faq.infomaniak.com/2013
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html

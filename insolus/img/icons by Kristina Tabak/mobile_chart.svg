@@ -1,0 +1,8 @@
+<svg id="mobile_chart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 214">
+  <path id="phone" d="M114 0H6a6 6 0 0 0-6 6v202a6 6 0 0 0 6 6h108a6 6 0 0 0 6-6V6a6 6 0 0 0-6-6zM6 2h108a4 4 0 0 1 4 4v28H2V6a4 4 0 0 1 4-4zm112 34v142H2V36zm-4 176H6a4 4 0 0 1-4-4v-28h116v28a4 4 0 0 1-4 4zm-53.9-7a9 9 0 1 1 9-9 9 9 0 0 1-9 9zm0-16a7 7 0 1 0 7 7 7 7 0 0 0-7-7zM81 19H56a1 1 0 0 1 0-2h25a1 1 0 0 1 0 2zm-38 4.5a5.5 5.5 0 1 1 5.5-5.5 5.5 5.5 0 0 1-5.5 5.5zm0-9a3.5 3.5 0 1 0 3.5 3.5 3.5 3.5 0 0 0-3.5-3.5z" fill="#738fab"/>
+  <g fill="#738fab">
+    <path d="M55 101a21 21 0 0 1 0-42 1 1 0 0 1 1 1v19h19a1 1 0 0 1 1 1 21 21 0 0 1-21 21zm-1-40a19 19 0 1 0 20 20H55a1 1 0 0 1-1-1z"/>
+    <path d="M85 71H65a1 1 0 0 1-1-1V50a1 1 0 0 1 1-1 21 21 0 0 1 21 21 1 1 0 0 1-1 1zm-19-2h18a19 19 0 0 0-18-18z"/>
+  </g>
+  <path id="llines" d="M17 127h76m-76 16h86m-86 16h52" fill="none" stroke="#738fab" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

@@ -1,2 +1,0 @@
-<p>Avec plaisir, nous répondons rapidement à vos questions.</p>
-<p><span class="highlight">Parlez-nous maintenant de votre projet <?php echo $origin;?></span> dans un <script>document.write("<a href=" + decode("znvygb:vasb@vafbyhf.pbz") + "?subject=Demande%20depuis%20inSolus.com%20(<?php echo $origin;?>)" + ">" + "simple e-mail" + "</a>");</script> ou par téléphone au <a href="tel:+41228200420" class="telephone">022 820 04 20</a>.</p>

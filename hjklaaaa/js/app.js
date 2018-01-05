@@ -1,1 +1,0 @@
-window.onload=function(){Typed.new(".typed-strings",{stringsElement:document.getElementById('typed-strings'),typeSpeed:20,backDelay:2000,loop:true});};

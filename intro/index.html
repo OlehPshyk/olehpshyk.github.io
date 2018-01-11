@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Panels 💪</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <style>
+    html {
+      box-sizing: border-box;
+      background:#ffc600;
+      font-family:'helvetica neue';
+      font-size: 20px;
+      font-weight: 200;
+    }
+    body {
+      margin: 0;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .panels {
+      min-height:100vh;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .panel {
+      background:#6B0F9C;
+      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+      color:white;
+      text-align: center;
+      align-items:center;
+      /* Safari transitionend event.propertyName === flex */
+      /* Chrome + FF transitionend event.propertyName === flex-grow */
+      transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+      font-size: 20px;
+      background-size:cover;
+      background-position:center;
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
+    .panel2 { background-image:url(https://source.unsplash.com/1CD3fd8kHnE/1500x1500); }
+    .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
+    .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
+    .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+
+    /* Flex Items */
+    .panel > * {
+      margin:0;
+      width: 100%;
+      transition:transform 0.5s;
+      flex: 1 0 auto;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .panel > *:first-child { transform: translateY(-100%); }
+    .panel.open-active > *:first-child { transform: translateY(0); }
+    .panel > *:last-child { transform: translateY(100%); }
+    .panel.open-active > *:last-child { transform: translateY(0); }
+
+    .panel p {
+      text-transform: uppercase;
+      font-family: 'Amatic SC', cursive;
+      text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+      font-size: 2em;
+    }
+    .panel p:nth-child(2) {
+      font-size: 4em;
+    }
+
+    .panel.open {
+      flex: 5;
+      font-size:40px;
+    }
+
+    .cta {
+      color:white;
+      text-decoration: none;
+    }
+
+  </style>
+
+
+  <div class="panels">
+    <div class="panel panel1">
+      <p>Hey</p>
+      <p>Let's</p>
+      <p>Dance</p>
+    </div>
+    <div class="panel panel2">
+      <p>Give</p>
+      <p>Take</p>
+      <p>Receive</p>
+    </div>
+    <div class="panel panel3">
+      <p>Experience</p>
+      <p>It</p>
+      <p>Today</p>
+    </div>
+    <div class="panel panel4">
+      <p>Give</p>
+      <p>All</p>
+      <p>You can</p>
+    </div>
+    <div class="panel panel5">
+      <p>Life</p>
+      <p>In</p>
+      <p>Motion</p>
+    </div>
+  </div>
+
+  <script>
+
+    //   find all .panel in the DOM    
+    // create two function toggleOpen and toggleActive
+    // toggleOpen should toggle class for panel element (MDN classList.toggle)
+    // toggleActive shoudl check if panel 'flex' if true use classList.toggle() 'open-active'(use propertyName.includes)
+    //add forEach panel addEventListner to toggleOpen and toggleActive
+
+    /*====================================================================================================
+    В змінну allBands зберігаємо "колекцію" елементів з класом .panel
+    Використовуєм querySelectorAll щоб мати метод .forEach для подальшої обробки кожного елементу колекції
+    Якщо використати getElementsByClassName метод .forEach буде недоступний для отриманої колекції
+    ====================================================================================================*/
+    var allBands = document.querySelectorAll('.panel');
+    /*====================================================================================================
+    Прослуховуєм на клік кожен елемент нашої колекції і якщо такий відбувся викликаємо функцію toggleOpen
+    Те саме з toggleActive.
+    ====================================================================================================*/
+    allBands.forEach(function(band) {
+      band.addEventListener("click", toggleOpen);         
+      band.addEventListener("transitionend", toggleActive); 
+      // спрацьовує після звершення всіх transition ефектів      
+    });      
+    /*====================================================================================================
+    Функція toggleOpen 
+    1- забирає !Усі! наявні класи open і open-active(якщо такі є вже додані) Це робиться викликом функції resetAll() 
+    2- додає клас open (this)елементу, від якого пішов виклик функції toggleOpen
+    ====================================================================================================*/
+    function toggleOpen() {      
+      if (this.classList.contains('open')) {
+          resetAll();         
+        } else {
+          resetAll(); 
+          this.classList.toggle('open');                                    
+        }
+    }
+    /*====================================================================================================
+    Функція resetAll
+    За допомогою forEach перебирає всі panel (band) і якщо смуга містить клас open, то забирає його. 
+    Можна не перевіряти і забирати для всіх навіть якщо його немає але це не по фен-шую))
+    ====================================================================================================*/
+    function resetAll() {
+      allBands.forEach(function(band) {    
+        if (band.classList.contains('open-active')) {
+          band.classList.remove('open-active');
+        }  
+        if (band.classList.contains('open')) {
+          band.classList.remove('open');          
+        }              
+      });
+    }
+    /*====================================================================================================
+    Функція toggleActive     
+    Додає клас open-active елементу, який має клас open (flex: 5;)
+    клас додається методом add(не toggle), тому-що функція toggleActive запускається при "transitionend", який спрацьовує 4 рази при першому кліці(4 transition ефекти на panel, який збільшується) і 8 раз при наступних кліках(
+    4 на panel, який збільшується і 4 на panel, який зменшується). Оскільки метод toggle додає клас(якщо його немає) і забирає клас(якщо такий вже є в елемента), то в такому випадку(парна кількість викликів) він буде додавати і віднімати клас open-active. В результаті клас не додається (4 виклики  +-+-  8 викликів +-+-+-+-) 
+    Висновок: коли пробувати щось "навмання"" і "сходу"" не прочитавши документацію методів, воно іноді навть працюватиме. Якби був 1 (3,5,7...) transition ефект  --- не було-б потрачено мною лишньої години)) але то 
+    "навчання" )))
+
+    ====================================================================================================*/
+    function toggleActive() {
+      //console.log('test');  //тут то і вилізло що запуск відбувається декілька раз         
+      //console.log(this);     
+        if (this.classList.contains('open')) {
+          this.classList.add('open-active');          
+        }
+    }
+  </script>
+</body>
+</html>

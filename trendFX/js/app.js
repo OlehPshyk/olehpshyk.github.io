@@ -54,7 +54,7 @@ for (i = 0; i < x.length; i++) {
   /*for each element, create a new DIV that will contain the option list:*/
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
-  invalid = true;
+  //invalid = true;
   for (j = 1; j < selElmnt.length; j++) {
     /*for each option in the original select element,
     create a new DIV that will act as an option item:*/
@@ -63,7 +63,7 @@ for (i = 0; i < x.length; i++) {
     //modification//  
     if (selElmnt.options[j].hasAttribute("selected")) {
       c.setAttribute("class", "same-as-selected");
-      invalid = false;
+      // invalid = false;
     }
     //end modification//     
     c.addEventListener("click", function (e) {
@@ -90,7 +90,8 @@ for (i = 0; i < x.length; i++) {
     b.appendChild(c);
   }
   //modification//
-  if (invalid && x[i].hasAttribute("required")) x[i].classList.add("invalid");
+  // if (invalid&&x[i].hasAttribute("required"))
+  //   x[i].classList.add("invalid");
   //end modification//
   x[i].appendChild(b);
   a.addEventListener("click", function (e) {

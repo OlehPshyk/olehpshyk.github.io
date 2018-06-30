@@ -84,7 +84,7 @@ for (i = 0; i < x.length; i++) {
           break;
         }
       }
-      h.parentNode.classList.remove("invalid"); //remove class "invalid" when selected some item
+      //h.parentNode.classList.remove("invalid"); //remove class "invalid" when selected some item
       h.click();
     });
     b.appendChild(c);
@@ -99,6 +99,7 @@ for (i = 0; i < x.length; i++) {
     and open/close the current select box:*/
     e.stopPropagation();
     closeAllSelect(this);
+    closeAllDropdown();
     this.nextSibling.classList.toggle("select-hide");
     this.classList.toggle("select-arrow-active");
   });
@@ -129,3 +130,37 @@ function closeAllSelect(elmnt) {
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 //END SELECT
+
+
+//DROPDOWN
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+// function dropdown() {
+//     document.getElementById("myDropdown").classList.toggle("show");
+// }
+
+
+var dropbtn = document.getElementsByClassName("dropbtn");
+var dropdowns = document.getElementsByClassName("dropdown-content");
+
+for (var dropbtni = 0; dropbtni < dropbtn.length; dropbtni++) {
+  dropbtn[dropbtni].addEventListener("click", dropdownOpen);
+}
+function dropdownOpen(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  closeAllDropdown();
+  closeAllSelect();
+  e.target.nextElementSibling.classList.toggle("show");
+}
+function closeAllDropdown() {
+  for (var dropi = 0; dropi < dropdowns.length; dropi++) {
+    var openDropdown = dropdowns[dropi];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+// Close the dropdown menu if the user clicks outside of it
+document.addEventListener("click", closeAllDropdown);
+//END DROPDOWN

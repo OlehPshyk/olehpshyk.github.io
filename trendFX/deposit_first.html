@@ -200,7 +200,7 @@
                         <!-- Add class "invalid" for output error red-border validation
                           or add "required" attribute, then these class will be added automatically(js) for 
                           output error red-border validation -->
-                        <div class="select fix-w" required>
+                       <!--  <div class="select fix-w" required>
                           <select>
                             <option value="0">Choose...</option>
                             <option selected value="1">USD (balance: 0.00)</option>
@@ -210,10 +210,21 @@
                             <option value="5">Five</option>
                             <option value="6">Six</option>
                             <option value="7">Seven</option>
-                            <option value="8">Eight</option>
-                            <!--You can use attribute selected for selected option by defoult-->
+                            <option value="8">Eight</option>                            
                           </select>
-                        </div> 
+                        </div> -->
+                        <div class="dropdown fix-w">
+                          <button class="dropbtn">USD (balance: 0.00)</button>
+                          <div class="dropdown-content">
+                            <a href="#">option 1</a>
+                            <a href="#">option 2</a>
+                            <a href="#">option 3</a>
+                            <a href="#">option 4</a>
+                            <a href="#">option 5</a>
+                            <a href="#">option 6</a>
+                            <a href="#">option 7</a>
+                          </div>
+                        </div>
                       </div>
                       <div class="input-group right">                    
                         <label class="input-label" for="amountlabel">Deposit Amount</label>
@@ -221,34 +232,32 @@
                       </div>
                       <div class="input-group right">
                         <label class="input-label">Currency</label>
-                        <div class="select fix-w" required>
-                          <select>
-                            <option value="0">Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                            <option value="6">Six</option>
-                            <option value="7">Seven</option>
-                            <option value="8">Eight</option> 
-                          </select>
+                        <div class="dropdown fix-w">
+                          <button class="dropbtn">Choose...</button>
+                          <div class="dropdown-content">
+                            <a href="#">option 1</a>
+                            <a href="#">option 2</a>
+                            <a href="#">option 3</a>
+                            <a href="#">option 4</a>
+                            <a href="#">option 5</a>
+                            <a href="#">option 6</a>
+                            <a href="#">option 7</a>
+                          </div>
                         </div>
                       </div>
                       <div class="input-group right">
                         <label class="input-label">Preferred TrendFX Bank</label>
-                        <div class="select fix-w" required>
-                          <select>
-                            <option value="0">Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                            <option selected value="6">Barclays Bank PLC (UK)</option>
-                            <option value="7">Seven</option>
-                            <option value="8">Eight</option>                                                      
-                          </select>
+                        <div class="dropdown fix-w">
+                          <button class="dropbtn">Barclays Bank PLC (UK)</button>
+                          <div class="dropdown-content">
+                            <a href="#">option 1</a>
+                            <a href="#">option 2</a>
+                            <a href="#">option 3</a>
+                            <a href="#">option 4</a>
+                            <a href="#">option 5</a>
+                            <a href="#">option 6</a>
+                            <a href="#">option 7</a>
+                          </div>
                         </div>
                       </div>
                       <div class="input-group right">

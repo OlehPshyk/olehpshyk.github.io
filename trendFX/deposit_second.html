@@ -196,39 +196,33 @@
                   <form class="form" action="">
                     <div class="mg-b-27">
                       <div class="input-group right">
-                        <label class="input-label">TrendFX vault</label>
-                        <!-- Add class "invalid" for output error red-border validation
-                          or add "required" attribute, then these class will be added automatically(js) for 
-                          output error red-border validation -->
-                        <div class="select fix-w" required>
-                          <select>
-                            <option value="0">Choose...</option>
-                            <option selected value="1">USD (balance: 0.00)</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                            <option value="6">Six</option>
-                            <option value="7">Seven</option>
-                            <option value="8">Eight</option>
-                            <!--You can use attribute selected for selected option by defoult-->
-                          </select>
-                        </div> 
+                        <label class="input-label">TrendFX vault</label>                       
+                        <div class="dropdown fix-w">
+                          <button class="dropbtn">USD (balance: 0.00)</button>
+                          <div class="dropdown-content">
+                            <a href="#">option 1</a>
+                            <a href="#">option 2</a>
+                            <a href="#">option 3</a>
+                            <a href="#">option 4</a>
+                            <a href="#">option 5</a>
+                            <a href="#">option 6</a>
+                            <a href="#">option 7</a>
+                          </div>
+                        </div>
                       </div>
                       <div class="input-group right">                    
-                        <label class="input-label" for="amountlabel">Issuing country</label>
-                        <div class="select fix-w" required>
-                          <select>
-                            <option value="0">Choose...</option>
-                            <option value="1">One</option>
-                            <option selected value="2">Turkey</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                            <option value="6">Six</option>
-                            <option value="7">Seven</option>
-                            <option value="8">Eight</option>
-                          </select>
+                        <label class="input-label" for="amountlabel">Issuing country</label>                        
+                        <div class="dropdown fix-w">
+                          <button class="dropbtn">Turkey</button>
+                          <div class="dropdown-content">
+                            <a href="#">option 1</a>
+                            <a href="#">option 2</a>
+                            <a href="#">option 3</a>
+                            <a href="#">option 4</a>
+                            <a href="#">option 5</a>
+                            <a href="#">option 6</a>
+                            <a href="#">option 7</a>
+                          </div>
                         </div>
                       </div>
                       <div class="input-group right">
@@ -241,32 +235,30 @@
                       </div>
                       <div class="input-group right">
                         <label class="input-label">Card expiry date</label>
-                        <div class="two-select-group">
-                          <div class="select" required>
-                            <select>
-                              <option value="0">Choose...</option>
-                              <option selected value="1">1</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                              <option value="4">Four</option>
-                              <option value="5">Five</option>
-                              <option value="6">Six</option>
-                              <option value="7">Seven</option>
-                              <option value="8">Eight</option>                              
-                            </select>
-                          </div>
-                          <div class="select mg-l-10" required>
-                            <select>
-                              <option value="0">Choose...</option>
-                              <option selected value="1">2018</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                              <option value="4">Four</option>
-                              <option value="5">Five</option>
-                              <option value="6">Six</option>
-                              <option value="7">Seven</option>
-                              <option value="8">Eight</option> 
-                            </select>
+                        <div class="two-dropdown-group">
+                          <div class="dropdown">
+                            <button class="dropbtn">1</button>
+                            <div class="dropdown-content">
+                              <a href="#">option 1</a>
+                              <a href="#">option 2</a>
+                              <a href="#">option 3</a>
+                              <a href="#">option 4</a>
+                              <a href="#">option 5</a>
+                              <a href="#">option 6</a>
+                              <a href="#">option 7</a>
+                            </div>
+                          </div>                          
+                          <div class="dropdown mg-l-10">
+                            <button class="dropbtn">2018</button>
+                            <div class="dropdown-content">
+                              <a href="#">option 1</a>
+                              <a href="#">option 2</a>
+                              <a href="#">option 3</a>
+                              <a href="#">option 4</a>
+                              <a href="#">option 5</a>
+                              <a href="#">option 6</a>
+                              <a href="#">option 7</a>
+                            </div>
                           </div>
                         </div>                        
                       </div>
@@ -275,19 +267,18 @@
                         <input class="input-control fix-w" type="text" placeholder="CVV2" id="CVV2label" required>
                       </div>
                       <div class="input-group right">
-                        <label class="input-label">Currency</label>
-                        <div class="select fix-w" required>
-                          <select>
-                            <option value="0">Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                            <option value="6">Six</option>
-                            <option value="7">Seven</option>
-                            <option value="8">Eight</option>                            
-                          </select>
+                        <label class="input-label">Currency</label>                       
+                        <div class="dropdown fix-w">
+                          <button class="dropbtn">Choose...</button>
+                          <div class="dropdown-content">
+                            <a href="#">option 1</a>
+                            <a href="#">option 2</a>
+                            <a href="#">option 3</a>
+                            <a href="#">option 4</a>
+                            <a href="#">option 5</a>
+                            <a href="#">option 6</a>
+                            <a href="#">option 7</a>
+                          </div>
                         </div>
                       </div>
                       <div class="input-group right">

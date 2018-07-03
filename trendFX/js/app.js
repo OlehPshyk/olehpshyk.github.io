@@ -2,21 +2,15 @@
 
 var navDropButton = document.querySelector('.js-nav-drop-icon'),
     sideNavigation = document.querySelector('.js-side-navigation');
-
-//console.log(navDropButton);
-//console.log(sideNavigation);
-
 if (navDropButton) navDropButton.addEventListener('click', toggleSideNavigation);
 if (sideNavigation) sideNavigation.addEventListener('click', function (e) {
   e.stopPropagation();
   closeSideNavigation();
 });
-
 function toggleSideNavigation() {
   navDropButton.classList.toggle('open');
   sideNavigation.classList.toggle('open');
 }
-
 function closeSideNavigation() {
   navDropButton.classList.remove('open');
   sideNavigation.classList.remove('open');
@@ -45,7 +39,6 @@ var x, i, j, selElmnt, a, b, c, invalid;
 x = document.getElementsByClassName("select");
 for (i = 0; i < x.length; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
-  //modification//  
   /*for each element, create a new DIV that will act as the selected item:*/
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
@@ -133,16 +126,8 @@ document.addEventListener("click", closeAllSelect);
 
 
 //DROPDOWN
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-// function dropdown() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-// }
-
-
 var dropbtn = document.getElementsByClassName("dropbtn");
 var dropdowns = document.getElementsByClassName("dropdown-content");
-
 for (var dropbtni = 0; dropbtni < dropbtn.length; dropbtni++) {
   dropbtn[dropbtni].addEventListener("click", dropdownOpen);
 }
@@ -164,3 +149,31 @@ function closeAllDropdown() {
 // Close the dropdown menu if the user clicks outside of it
 document.addEventListener("click", closeAllDropdown);
 //END DROPDOWN
+
+
+//VANILLA-MODAL
+var vanillaModal = new VanillaModal.default({
+  modal: '.modal',
+  modalInner: '.modal-inner',
+  modalContent: '.modal-content',
+  open: '[data-modal-open]',
+  close: '[data-modal-close]',
+  page: 'body',
+  loadClass: 'vanilla-modal',
+  class: 'modal-visible',
+  clickOutside: true,
+  closeKeys: [27],
+  transitions: true,
+  onBeforeOpen: null,
+  onBeforeClose: null,
+  onOpen: null,
+  onClose: null
+});
+//END VANILLA-MODAL
+
+//OPEN MODAL
+// for open OK modal use these command
+// vanillaModal.open('#modal-ok');
+// for open ERROR modal use these command
+// vanillaModal.open('#modal-error');
+//END OPEN MODAL

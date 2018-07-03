@@ -186,6 +186,8 @@
 									</div>
 								</div>
 
+
+
 							</div>
 							<!-- Side-navigation end-->
 
@@ -386,6 +388,8 @@
 					</div>
 				</section>
 
+				
+
 				<!-- Warning start -->
 				<section class="warning-section">
 					<div class="container">
@@ -400,12 +404,48 @@
 					</div>												
 				</section>
 				<!-- Warning end -->
+				
+				
+				<!-- TEST MODALS -->
+					<div style="width: 300px; margin: 50px;">
+						<span class="text-red"> test link for Ok-modal open or run js code <code>vanillaModal.open('#modal-ok');</code></span>				
+						<a href="#modal-ok" data-modal-open data-translatable class="submit-button">Ok-modal</a>				
+						<span class="text-red"> test link for Error-modal open or run js code <code> vanillaModal.open('#modal-error');</code></span>
+						<a href="#modal-error" data-modal-open data-translatable class="submit-button">Error-modal</a>
+					</div>
+				<!-- END TEST MODALS -->
+				
+
+				<!-- MODALS SECTIONS -->
+				<!-- Ok modal -->
+				<div id="modal-ok" style="display:none">
+					<div class="modal-icon ok"></div>
+					<h3 class="modal-title ok">Transaction successful</h3>
+					<p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo veritatis non aliquam perferendis, optio quasi.</p>
+				</div>
+				<!-- Error modal -->
+				<div id="modal-error" style="display:none">
+					<div class="modal-icon error"></div>
+					<h3 class="modal-title error">Transaction aborted</h3>
+					<p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo veritatis non aliquam perferendis, optio quasi.</p>
+				</div>			
+				<div class="modal">
+				  <div class="modal-inner">
+				    <!-- <a class="close-modal" data-modal-close>			    	
+				    	<div class="close-icon"></div>			    	
+				    </a>		 -->	    
+				    <div class="modal-content"></div>			    		    
+				  </div>
+				</div>
+				<!-- END MODALS SECTIONS -->
+				
 
 			</div>	
 
-		</main>				
+		</main>
 
-		<script src="js/app.js"></script>
+		<script src="./libs/vanilla-modal.js"></script>
+		<script src="./js/app.js"></script>
 	</body>
 
 </html>

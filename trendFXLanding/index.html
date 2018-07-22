@@ -114,13 +114,13 @@
 							<div class="che-cap-but-box">
 								<div class="checkbox-collection">	
 									<label class="label-checkbox">
-						        <input class="input" type="checkbox" name="" id="protection">
+						        <input class="input" type="checkbox" name="" id="protection" required>
 						        <div class="custom-checkbox"></div>
 						        Kişisel verilerin korunmasını kabul ediyorum.
 					      	</label>
 
 									<label class="label-checkbox">
-						        <input class="input" type="checkbox" name="" id="confidentiality">
+						        <input class="input" type="checkbox" name="" id="confidentiality" required>
 						        <div class="custom-checkbox"></div>
 						        Gizlilik sözleşmesini okudum ve kabul ediyorum.
 					      	</label>	
@@ -129,15 +129,24 @@
 								<div class="cap-inp-but-collection">
 
 									<div class="cap-inp-container">
-										<div class="capcha">Capcha</div>
-										<div class="input-group">                    
-											<!-- <label class="input-label" for="capcha">Gizlilik sözleşmesini okudum ve kabul ediyorum.</label> -->
-											<input class="input-control input-capcha" type="text" placeholder="Kodu giriniz" value="" id="capcha">
+										
+										<div class="cap-repoad-container">
+											<div class="capcha" id="CaptchaImageCode">
+	      								<canvas id="CapCode" class="capcode"></canvas>      								
+	    								</div>
+	    								<input type="button" class="ReloadBtn" onclick='CreateCaptcha();'>
+										</div>
+										
+    								
+    								<span id="WrongCaptchaError" class="error"></span>
+  									<span id="SuccessMessage" class="success">Hurray! Your have successfully entered the captcha.</span>
+										<div class="input-group">	
+											<input class="input-control input-capcha" type="text" placeholder="Kodu giriniz" value="" id="UserCaptchaCode">
 										</div>
 									</div>										
 
 									<div class="submit-container">
-										<a class="submit-button" href="#">GÖNDER</a>
+										<button class="submit-button" onclick="CheckCaptcha();">GÖNDER</button>
 									</div>								
 								</div>								
 							</div>	
@@ -384,8 +393,9 @@
 						<span class="text-uppercase">Risk warning</span><br/>All financial products traded on margin carry a high degree of risk to your capital. They are not suited to all investors and you can lose more than your initial deposit. Please ensure that you fully understand the risks involved, and seek independent advice if necessary.<br/>See our full RISK WARNING and Terms and Conditions for further details.<br/>Copyright © 2017 TrendFX. All rights reserved.
 					</p>
 				</div>  
-		</footer>       
+		</footer>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>		
 		<script src="./js/app.js"></script>
 	</body>
 

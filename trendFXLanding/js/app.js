@@ -29,7 +29,7 @@ function CreateCaptcha() {
       x = c.width / 2,
       img = new Image();
 
-  img.src = "https://pixelsharing.files.wordpress.com/2010/11/salvage-tileable-and-seamless-pattern.jpg";
+  img.src = "./img/salvage-tileable-and-seamless-pattern.jpg";
   img.onload = function () {
     var pattern = ctx.createPattern(img, "repeat");
     ctx.fillStyle = pattern;

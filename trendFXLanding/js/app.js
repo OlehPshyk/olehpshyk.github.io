@@ -59,7 +59,7 @@ function removeSpaces(string) {
 }
 
 // Check Captcha
-function CheckCaptcha(e) {
+function CheckCaptcha() {
   var result = ValidateCaptcha();
   if ($("#UserCaptchaCode").val() == "" || $("#UserCaptchaCode").val() == null || $("#UserCaptchaCode").val() == "undefined") {
     $('#WrongCaptchaError').text('Please enter code given below in a picture.').show();

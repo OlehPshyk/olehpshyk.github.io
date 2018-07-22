@@ -129,25 +129,27 @@
 								<div class="cap-inp-but-collection">
 
 									<div class="cap-inp-container">
-										
+
 										<div class="cap-repoad-container">
 											<div class="capcha" id="CaptchaImageCode">
 	      								<canvas id="CapCode" class="capcode"></canvas>      								
 	    								</div>
 	    								<input type="button" class="ReloadBtn" onclick='CreateCaptcha();'>
-										</div>
-										
-    								
-    								<span id="WrongCaptchaError" class="error"></span>
-  									<span id="SuccessMessage" class="success">Hurray! Your have successfully entered the captcha.</span>
+										</div>	
+
 										<div class="input-group">	
-											<input class="input-control input-capcha" type="text" placeholder="Kodu giriniz" value="" id="UserCaptchaCode">
+											<input class="input-control input-capcha" type="text" placeholder="Kodu giriniz" value="" id="UserCaptchaCode" required>
 										</div>
+
+										<span id="WrongCaptchaError" class="error"></span>
+										<span id="SuccessMessage" class="success">Your have successfully entered the captcha.</span>
+
 									</div>										
 
 									<div class="submit-container">
 										<button class="submit-button" onclick="CheckCaptcha();">GÖNDER</button>
-									</div>								
+									</div>
+
 								</div>								
 							</div>	
 						</form>

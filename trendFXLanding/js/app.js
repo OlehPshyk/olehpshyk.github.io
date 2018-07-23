@@ -13,10 +13,12 @@ form && form.addEventListener("submit", checkForm);
 reloadBtn && reloadBtn.addEventListener("click", CreateCaptcha);
 
 function checkForm(e) {
-	ValidateCaptcha() ? goodCapcha() : badCapcha(e);
+	ValidateCaptcha() ? goodCapcha(e) : badCapcha(e);
 }
-function goodCapcha() {
+function goodCapcha(e) {
 	//console.log("submit");
+	//e.preventDefault();
+
 	if (userCaptchaCode) {
 		userCaptchaCode.value = "";
 		userCaptchaCode.setAttribute("placeholder", "Kodu giriniz");
@@ -32,6 +34,17 @@ function goodCapcha() {
 	submitForm();
 }
 function submitForm() {
+	// var data = new FormData(form);
+
+	// var request = new XMLHttpRequest();
+
+	// request.onreadystatechange = function(){
+	//   document.getElementById("result").innerText = request.responseText;
+	// }
+
+	// request.open(form.method, form.action);
+	// request.send(data);
+
 	form && form.submit();
 }
 function badCapcha(e) {

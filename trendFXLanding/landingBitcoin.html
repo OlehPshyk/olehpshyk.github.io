@@ -78,7 +78,7 @@
 			<section class="form-section">              
 				<div class="wrapper">
 					<div class="form-container">
-						<form class="form" action="">
+						<form class="form" id="form" action="">
 							<h4 class="title">
 								Forexin yıldızı olmak için hemen demo hesabı açın!
 							</h4>
@@ -122,7 +122,7 @@
 											<div class="capcha" id="CaptchaImageCode">
 	      								<canvas id="CapCode" class="capcode"></canvas>      								
 	    								</div>
-	    								<input type="button" class="ReloadBtn" onclick='CreateCaptcha();'>
+	    								<input type="button" class="ReloadBtn" id="ReloadBtn">
 										</div>	
 
 										<div class="input-group">	
@@ -135,7 +135,7 @@
 									</div>										
 
 									<div class="submit-container">
-										<button class="submit-button" onclick="CheckCaptcha();">GÖNDER</button>
+										<button class="submit-button">GÖNDER</button>
 									</div>
 
 								</div>								
@@ -385,7 +385,7 @@
 				</div>  
 		</footer>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>		
+		
 		<script src="./js/app.js"></script>
 	</body>
 

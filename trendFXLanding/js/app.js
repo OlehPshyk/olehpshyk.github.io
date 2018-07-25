@@ -93,7 +93,7 @@ function CreateCaptcha() {
 			var ctx = c.getContext("2d"),
 			    x = c.width / 2,
 			    img = new Image();
-			img.src = "./img/salvage-tileable-and-seamless-pattern.jpg";
+			img.src = "./img/captcha-bg.jpg";
 			img.onload = function () {
 				var pattern = ctx.createPattern(img, "repeat");
 				ctx.fillStyle = pattern;

@@ -12,10 +12,10 @@
 	<body>  
 		<header class="header">
 			<div class="wrapper">           
-				<div class="header-container"> <!-- add class "center" for center, defoult -> left -->
+				<div class="header-container center">  <!-- add class "center" for center, defoult -> left -->
 					<a href="./" class="logo-container">
 						<!-- <img class="logo-img" src="./img/TrendFXLogoColor.svg" alt="logo"> -->
-						<svg class="logo-img white" id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318.66 33.96">
+						<svg class="logo-img color" id="katman_1" data-name="katman 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318.66 33.96">
 							<path class="cls-1" d="M110.39,110.41H99.29v30.38h-3.6V110.41H84.6V107h25.79Z" transform="translate(-84.6 -106.87)"/><path class="cls-1" d="M123.59,116v3.6h-.43a7.7,7.7,0,0,0-6.34,3.12,11.25,11.25,0,0,0-2.3,7.11v10.95h-3.61v-24.4h3.61v5.91a9.1,9.1,0,0,1,8.83-6.29Z" transform="translate(-84.6 -106.87)"/>
 							<path class="cls-1" d="M137.57,137.52a7.26,7.26,0,0,0,7-4h3.94a11.66,11.66,0,0,1-4,5.28,11.4,11.4,0,0,1-7,2,11.62,11.62,0,0,1-8.84-3.6,12.3,12.3,0,0,1-3.31-8.79,12.46,12.46,0,0,1,3.17-8.79,12.41,12.41,0,0,1,17.48,0,12.5,12.5,0,0,1,3.17,8.79v1.44H129.07a8.64,8.64,0,0,0,2.64,5.47A8.08,8.08,0,0,0,137.57,137.52Zm-.29-18.25a7.92,7.92,0,0,0-5.57,2.07,8.51,8.51,0,0,0-2.6,5.14h16.33a8.5,8.5,0,0,0-2.59-5.14A7.94,7.94,0,0,0,137.28,119.27Z" transform="translate(-84.6 -106.87)"/>
 							<path class="cls-1" d="M157.21,116.39v3.75a12,12,0,0,1,3.17-2.93,7.72,7.72,0,0,1,4.27-1.2,11.35,11.35,0,0,1,4.13.67,8.44,8.44,0,0,1,3,2,10.37,10.37,0,0,1,3,7.73v14.36h-3.6V126.52a7.36,7.36,0,0,0-1.87-5.28,6.41,6.41,0,0,0-4.85-2,7.19,7.19,0,0,0-5.14,2,7.07,7.07,0,0,0-2.11,5.28v14.22H153.6v-24.4Z" transform="translate(-84.6 -106.87)"/>
@@ -52,23 +52,26 @@
 
 		<main role="main" class="main">
 
-			<section class="hero-section bg-bitcoin">
+			<section class="hero-section">				
 				<div class="wrapper">
-					<div class="hero-container title-bottom">      <!-- "title-bottom", "title-left", ...-->
-						<h1 class="title title-bitcoin">
-							<span class="text-orange">Bitcoin</span>dekİ fİyat dalgalanmalarından yüksek kar <span class="text-orange">elde edİn!</span>
+					<div class="hero-container title-left"> <!-- "title-bottom", "title-left", ...-->
+						<div class="lion-abs-bg">
+							<img class="img" src="img/lion.png" alt="">
+						</div>
+						<h1 class="title title-lion">
+							<span class="text-orange">Doların</span> TL karşısındakİ <span class="text-orange">yükselİşİnİ</span> seyretmekle yetİnmeyİn!</span>
 						</h1>                                     
 					</div>
 				</div>	
 			</section>
 			
-			<section class="text-bg-section">
-				<div class="bg-079d70"></div>
-				<div class="bg-coins"></div>
+			<section class="text-bg-section">				
+				<div class="bg-064a5f"></div>
+				<div class="bg-cash"></div>
 				<div class="wrapper">
 					<div class="text-bg-container">
-						<p class="text">
-							Akıllı yatırımcılar geleceğin para birimindeki fiyat hareketlerini izlemekle kalmaz <span class="text-bold">TrendFX</span>’te işlem yaparak kazanç sağlarlar.
+						<p class="text">                            
+							Akıllı yatırımcılar forex piyasalarında <span class="text-bold">TrendFX</span> ile işlem yapar, doların yükselişini kazanca dönüştürür.
 						</p>
 					</div>
 				</div>                                              
@@ -77,7 +80,7 @@
 			<section class="form-section">              
 				<div class="wrapper">
 					<div class="form-container">
-						<form class="form" id="form" action="" method=""> 
+						<form class="form" id="form" action="" method="">
 							<h4 class="title">
 								Forexin yıldızı olmak için hemen demo hesabı açın!
 							</h4>
@@ -86,15 +89,15 @@
 							<div class="text-collection">
 								<div class="input-group">                    
 									<!-- <label class="input-label" for="name">Name</label> -->
-									<input class="input-control" type="text" placeholder="Adınız" value="" id="name" name="name" required>
+									<input class="input-control" type="text" placeholder="Adınız" value="" id="name" required>
 								</div>                          
 								<div class="input-group">                    
 									<!-- <label class="input-label" for="phone">Phone</label> -->
-									<input class="input-control" type="text" placeholder="Telefon numaranız" value="" id="phone" name="phone" required>
+									<input class="input-control" type="text" placeholder="Telefon numaranız" value="" id="phone" required>
 								</div>
 								<div class="input-group">                    
 									<!-- <label class="input-label" for="email">Email</label> -->
-									<input class="input-control" type="email" placeholder="E-postanız" value="" id="email" name="email" required>
+									<input class="input-control" type="email" placeholder="E-postanız" value="" id="email" required>
 								</div>
 							</div>
 
@@ -370,20 +373,20 @@
 
 		</main>
 		<footer class="footer">
-			<div class="wrapper">					
+			<div class="wrapper">
 				<ul class="social-list">
 					<li class="social-item"><a class="social-link" href="#"><img class="social-img" src="img/soc1.png" alt=""></a></li>
 					<li class="social-item"><a class="social-link" href="#"><img class="social-img" src="img/soc2.png" alt=""></a></li>
 					<li class="social-item"><a class="social-link" href="#"><img class="social-img" src="img/soc3.png" alt=""></a></li>
 					<li class="social-item"><a class="social-link" href="#"><img class="social-img" src="img/soc4.png" alt=""></a></li>
-				</ul>
+				</ul> 
 				<p class="footer-text">
 					<span class="text-uppercase">Risk warning</span><br/>All financial products traded on margin carry a high degree of risk to your capital. They are not suited to all investors and you can lose more than your initial deposit. Please ensure that you fully understand the risks involved, and seek independent advice if necessary.<br/>See our full RISK WARNING and Terms and Conditions for further details.<br/>Copyright © 2017 TrendFX. All rights reserved.
 				</p>
 			</div>  
 		</footer>
 
-		
+			
 		<script src="./js/app.js"></script>
 	</body>
 

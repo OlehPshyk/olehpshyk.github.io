@@ -14,6 +14,7 @@ reloadBtn && reloadBtn.addEventListener("click", CreateCaptcha);
 
 function checkForm(e) {
 	ValidateCaptcha() ? goodCapcha(e) : badCapcha(e);
+	return false;
 }
 function goodCapcha(e) {
 	//console.log("submit");
@@ -31,9 +32,9 @@ function goodCapcha(e) {
 	if (successMessage) {
 		successMessage.style.display = "block";
 	}
-	submitForm();
+	submitForm(e);
 }
-function submitForm() {
+function submitForm(e) {
 	// var data = new FormData(form);
 
 	// var request = new XMLHttpRequest();
@@ -45,7 +46,29 @@ function submitForm() {
 	// request.open(form.method, form.action);
 	// request.send(data);
 
-	form && form.submit();
+	//form && form.submit();
+	e.preventDefault();
+	e.stopPropagation();
+
+	var name = encodeURIComponent(document.getElementById('name').value);
+	var phone = encodeURIComponent(document.getElementById('phone').value);
+	var email = encodeURIComponent(document.getElementById('email').value);
+
+	var parameters = 'name=' + name + '&phone=' + phone + '&email=' + email;
+
+	var xhr = new XMLHttpRequest();
+
+	xhr.onreadystatechange = function (e) {
+		if (xhr.readyState === 4 && xhr.status === 200) {
+			form.innerHTML = xhr.responseText;
+		}
+	};
+
+	xhr.open(form.method, form.action);
+	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhr.send(parameters);
+
+	//form && form.submit();
 }
 function badCapcha(e) {
 	e.preventDefault();
@@ -66,7 +89,9 @@ function badCapcha(e) {
 }
 // Create Captcha
 function CreateCaptcha() {
-	var alpha = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+	//var alpha = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+	//var alpha = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+	var alpha = new Array('1', '2', '3', '4', '5', '6', '7', '8', '9');
 	var i;
 	for (i = 0; i < 6; i++) {
 		var a = alpha[Math.floor(Math.random() * alpha.length)];

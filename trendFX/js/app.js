@@ -1,146 +1,179 @@
-"use strict";
+'use strict';
 
-// capcha initialize
-var captchaImageCode = document.getElementById("CaptchaImageCode"),
-    userCaptchaCode = document.getElementById("UserCaptchaCode"),
-    wrongCaptchaError = document.getElementById("WrongCaptchaError"),
-    successMessage = document.getElementById("SuccessMessage"),
-    form = document.getElementById("form"),
-    reloadBtn = document.getElementById("ReloadBtn");
-var cd;
-CreateCaptcha();
-form && form.addEventListener("submit", checkForm);
-reloadBtn && reloadBtn.addEventListener("click", CreateCaptcha);
-
-function checkForm(e) {
-	ValidateCaptcha() ? goodCapcha(e) : badCapcha(e);
+var navDropButton = document.querySelector('.js-nav-drop-icon'),
+    sideNavigation = document.querySelector('.js-side-navigation');
+if (navDropButton) navDropButton.addEventListener('click', toggleSideNavigation);
+if (sideNavigation) sideNavigation.addEventListener('click', function (e) {
+  e.stopPropagation();
+  closeSideNavigation();
+});
+function toggleSideNavigation() {
+  navDropButton.classList.toggle('open');
+  sideNavigation.classList.toggle('open');
 }
-function goodCapcha(e) {
-	//console.log("submit");
-	//e.preventDefault();
-
-	if (userCaptchaCode) {
-		userCaptchaCode.value = "";
-		userCaptchaCode.setAttribute("placeholder", "Kodu giriniz");
-	}
-
-	CreateCaptcha();
-	if (wrongCaptchaError) {
-		wrongCaptchaError.style.display = "none";
-	}
-	if (successMessage) {
-		successMessage.style.display = "block";
-	}
-	submitForm();
+function closeSideNavigation() {
+  navDropButton.classList.remove('open');
+  sideNavigation.classList.remove('open');
+  console.log('closeSideNavigation');
 }
-function submitForm() {
-	// var data = new FormData(form);
 
-	// var request = new XMLHttpRequest();
-
-	// request.onreadystatechange = function(){
-	//   document.getElementById("result").innerText = request.responseText;
-	// }
-
-	// request.open(form.method, form.action);
-	// request.send(data);
-
-	form && form.submit();
-}
-function badCapcha(e) {
-	e.preventDefault();
-	if (userCaptchaCode && userCaptchaCode.value == "" || userCaptchaCode.value == null || userCaptchaCode.value == "undefined") {
-		if (wrongCaptchaError) {
-			wrongCaptchaError.innerHTML = "Please enter code given below in a picture.";
-			wrongCaptchaError.style.display = 'block';
-		}
-		userCaptchaCode && userCaptchaCode.focus();
-	} else {
-		if (wrongCaptchaError) {
-			wrongCaptchaError.innerHTML = "Invalid Captcha! Please try again.";
-			wrongCaptchaError.style.display = 'block';
-		}
-		CreateCaptcha();
-		userCaptchaCode && userCaptchaCode.focus();
-	}
-}
-// Create Captcha
-function CreateCaptcha() {
-	var alpha = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
-	var i;
-	for (i = 0; i < 6; i++) {
-		var a = alpha[Math.floor(Math.random() * alpha.length)];
-		var b = alpha[Math.floor(Math.random() * alpha.length)];
-		var c = alpha[Math.floor(Math.random() * alpha.length)];
-		var d = alpha[Math.floor(Math.random() * alpha.length)];
-		var e = alpha[Math.floor(Math.random() * alpha.length)];
-		var f = alpha[Math.floor(Math.random() * alpha.length)];
-	}
-	cd = a + ' ' + b + ' ' + c + ' ' + d + ' ' + e + ' ' + f;
-	if (captchaImageCode) {
-		while (captchaImageCode.firstChild) {
-			captchaImageCode.removeChild(captchaImageCode.firstChild);
-		}
-	}
-	//.append('<canvas id="CapCode" class="capcode"></canvas>')
-	var canvas = document.createElement('canvas');
-	if (canvas) {
-		canvas.id = "CapCode";
-		canvas.setAttribute("class", "capcode");
-		captchaImageCode && captchaImageCode.appendChild(canvas);
-		var c = document.getElementById("CapCode");
-		if (c) {
-			var ctx = c.getContext("2d"),
-			    x = c.width / 2,
-			    img = new Image();
-			img.src = "./img/captcha-bg.jpg";
-			img.onload = function () {
-				var pattern = ctx.createPattern(img, "repeat");
-				ctx.fillStyle = pattern;
-				ctx.fillRect(0, 0, c.width, c.height);
-				ctx.font = "46px Titillium Web";
-				ctx.fillStyle = '#ccc';
-				ctx.textAlign = 'center';
-				ctx.setTransform(1, -0.12, 0, 1, 0, 50);
-				ctx.fillText(cd, x, 55);
-			};
-		}
-	}
-}
-// Validate Captcha
-function ValidateCaptcha() {
-	var string1 = removeSpaces(cd);
-	var string2 = removeSpaces(userCaptchaCode.value);
-	if (string1 == string2) {
-		return true;
-	} else {
-		return false;
-	}
-}
-// Remove Spaces
-function removeSpaces(string) {
-	return string.split(' ').join('');
-}
-//Check Captcha
-// function CheckCaptcha() {	
-// 	var result = ValidateCaptcha();
-// 	if( userCaptchaCode.value == "" || userCaptchaCode.value == null || userCaptchaCode.value == "undefined") {
-// 		wrongCaptchaError.innerHTML="Please enter code given below in a picture.";
-// 		wrongCaptchaError.style.display = 'block';		
-// 	    userCaptchaCode.focus();
-// 	} else {
-// 	    if(result == false) { 
-// 	    	wrongCaptchaError.innerHTML = "Invalid Captcha! Please try again.";
-// 	    	wrongCaptchaError.style.display = 'block';
-// 	    	CreateCaptcha();
-// 	    	userCaptchaCode.focus();	    	
-// 	    }
-// 	    else { 
-// 	    	userCaptchaCode.value = "";
-// 	    	userCaptchaCode.setAttribute("placeholder", "Kodu giriniz");
-// 	    	CreateCaptcha();
-// 	    	wrongCaptchaError.style.display = "none";
-// 	    	successMessage.style.display = "block";
-// 	    }
-// 	}
+//INPUT [type=email] & [type=password] CLEARING onClick
+// var loginInputs = document.querySelectorAll("input[type=email]");
+// var passwordInputs = document.querySelectorAll("input[type=password]");
+// var logi,pasi;
+// for (logi = 0; logi < loginInputs.length; logi++) {
+//   loginInputs[logi].addEventListener('click', function(e) {
+//     e.target.value="";    
+//   })
 // }
+// for (pasi = 0; pasi < passwordInputs.length; pasi++) {
+//   passwordInputs[pasi].addEventListener('click', function(e) {
+//     e.target.value="";    
+//   })
+// }
+
+
+//SELECT
+var x, i, j, selElmnt, a, b, c, invalid;
+/*look for any elements with the class "select":*/
+x = document.getElementsByClassName("select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  //invalid = true;
+  for (j = 1; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    //modification//  
+    if (selElmnt.options[j].hasAttribute("selected")) {
+      c.setAttribute("class", "same-as-selected");
+      // invalid = false;
+    }
+    //end modification//     
+    c.addEventListener("click", function (e) {
+      /*when an item is clicked, update the original select box,
+      and the selected item:*/
+      var y, i, k, s, h;
+      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+      h = this.parentNode.previousSibling;
+      for (i = 0; i < s.length; i++) {
+        if (s.options[i].innerHTML == this.innerHTML) {
+          s.selectedIndex = i;
+          h.innerHTML = this.innerHTML;
+          y = this.parentNode.getElementsByClassName("same-as-selected");
+          for (k = 0; k < y.length; k++) {
+            y[k].removeAttribute("class");
+          }
+          this.setAttribute("class", "same-as-selected");
+          break;
+        }
+      }
+      //h.parentNode.classList.remove("invalid"); //remove class "invalid" when selected some item
+      h.click();
+    });
+    b.appendChild(c);
+  }
+  //modification//
+  // if (invalid&&x[i].hasAttribute("required"))
+  //   x[i].classList.add("invalid");
+  //end modification//
+  x[i].appendChild(b);
+  a.addEventListener("click", function (e) {
+    /*when the select box is clicked, close any other select boxes,
+    and open/close the current select box:*/
+    e.stopPropagation();
+    closeAllSelect(this);
+    closeAllDropdown();
+    this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-arrow-active");
+  });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x,
+      y,
+      i,
+      arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i);
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+//END SELECT
+
+
+//DROPDOWN
+var dropbtn = document.getElementsByClassName("dropbtn");
+var dropdowns = document.getElementsByClassName("dropdown-content");
+for (var dropbtni = 0; dropbtni < dropbtn.length; dropbtni++) {
+  dropbtn[dropbtni].addEventListener("click", dropdownOpen);
+}
+function dropdownOpen(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  closeAllDropdown();
+  closeAllSelect();
+  e.target.nextElementSibling.classList.toggle("show");
+}
+function closeAllDropdown() {
+  for (var dropi = 0; dropi < dropdowns.length; dropi++) {
+    var openDropdown = dropdowns[dropi];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+// Close the dropdown menu if the user clicks outside of it
+document.addEventListener("click", closeAllDropdown);
+//END DROPDOWN
+
+
+//VANILLA-MODAL
+var vanillaModal = new VanillaModal.default({
+  modal: '.modal',
+  modalInner: '.modal-inner',
+  modalContent: '.modal-content',
+  open: '[data-modal-open]',
+  close: '[data-modal-close]',
+  page: 'body',
+  loadClass: 'vanilla-modal',
+  class: 'modal-visible',
+  clickOutside: true,
+  closeKeys: [27],
+  transitions: true,
+  onBeforeOpen: null,
+  onBeforeClose: null,
+  onOpen: null,
+  onClose: null
+});
+//END VANILLA-MODAL
+
+//OPEN MODAL
+// for open OK modal use these command
+// vanillaModal.open('#modal-ok');
+// for open ERROR modal use these command
+// vanillaModal.open('#modal-error');
+//END OPEN MODAL

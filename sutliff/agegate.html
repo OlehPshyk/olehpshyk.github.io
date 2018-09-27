@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>         
+    <link href="https://fonts.googleapis.com/css?family=Goblin+One|Playfair+Display:900i|Roboto+Condensed:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+  </head>
+
+  <body>
+    <main role="main" class="main agegate-page">
+      <div class="content full-width">    
+        <img class="logo" src="./img/logo1.png" alt="logo">
+        <h2 class="header-title">SUTLIFF</h2>    
+        <h3 class="header-subtitle">A MAC BAREN COMPANY</h3> 
+        <h3 class="number">1-528-277-1000</h3>
+        <p class="text">Are you <span class="big">21</span> or older?</p>
+        <form id="agegate" action="" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="data-container">
+            <input class="date" id="month" type="number"  min="1" max="12" placeholder="MM" required> 
+            <input class="date" id="day" type="number" min="1" max="31" placeholder="DD" required> 
+            <input class="date" id="year" type="number" placeholder="YYYY" required> 
+          </div>        
+          <h5 class="text1">By entering you agree to our <a class="link" href="#">Terms and Conditions</a> & <a class="link" href="#">Privacy Policy.</a></h5>
+          <div class="check-container">
+            <div class="checkbox">  
+              <input id="remember" class="input" type="checkbox" required>
+              <div class="custom-checkbox"></div>       
+            </div>
+            <label class="label" for="remember">Remember me</label>          
+          </div>        
+          <button class="submit-button" href="#">ENTER</button>
+        </form>
+      </div>  
+    </main>
+
+
+    <script>
+      var form = document.getElementById("agegate"),
+          remember = document.getElementById("remember");
+      if (form){
+        form.addEventListener("submit", checkForm); 
+      }
+      function checkForm(e){  
+        //check form
+        if(remember){
+          if(remember.checked){
+            submitForm(e)
+          }  
+        }                   
+        return false;
+      } 
+      function submitForm(e){  
+        console.log("Send info");
+        e.preventDefault();
+        e.stopPropagation();
+        var day = encodeURIComponent(document.getElementById('day').value);
+        var month = encodeURIComponent(document.getElementById('month').value);
+        var year = encodeURIComponent(document.getElementById('year').value);        
+        var parameters = 'day='+day+'&month='+month+'&year='+year;        
+        var xhr = new XMLHttpRequest();        
+        xhr.onreadystatechange = function (e) {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            form.innerHTML = xhr.responseText;
+          }
+        }
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send(parameters);        
+      }
+    </script>    
+
+  </body>
+
+</html>
+
+
+

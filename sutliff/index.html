@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title></title>         
     <link href="https://fonts.googleapis.com/css?family=Goblin+One|Playfair+Display:900i|Roboto+Condensed:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>
+    
     <link rel="stylesheet" type="text/css" href="./style/app.css"/>
   </head>
 
@@ -23,9 +23,25 @@
           <h3 class="header-subtitle">a mac baren company</h3>
           <h3 class="header-subtitle">1-528-277-1000</h3>
         </div>
-        <div class="search lg-up">
+
+        <!-- OLD large search -->
+        <!-- <div class="search lg-up">
           <input class="input" type="text"> 
-        </div>     
+        </div>  -->
+        <div class="search-container lg-up">        
+          <a class="search-start-button">
+            <svg version="1.1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 485.213 485.213" style="enable-background:new 0 0 485.213 485.213;" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z" fill="#FFFFFF"/>
+                  <path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951C282.44,363.906,363.909,282.437,363.909,181.955zM181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465    C318.424,257.208,257.206,318.416,181.956,318.416z" fill="#FFFFFF"/>
+                  <path d="M75.817,181.955h30.322c0-41.803,34.014-75.814,75.816-75.814V75.816C123.438,75.816,75.817,123.437,75.817,181.955z" fill="#FFFFFF"/>
+                </g>
+              </g>
+            </svg>          
+          </a>
+        </div>
+
       </header>  
 
       <section class="mobile">
@@ -33,9 +49,26 @@
           <div class="menu_icon">
             <span id="hamburger" class="hamburger">&#9776;</span>
           </div>
-          <div class="search">
+
+          <!-- OLD SEARCH -->
+          <!-- <div class="search">
             <input class="input" type="text"> 
+          </div> -->
+
+          <div class="search-container">        
+            <a class="search-start-button">
+              <svg version="1.1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 485.213 485.213" style="enable-background:new 0 0 485.213 485.213;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z" fill="#FFFFFF"/>
+                    <path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951C282.44,363.906,363.909,282.437,363.909,181.955zM181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465    C318.424,257.208,257.206,318.416,181.956,318.416z" fill="#FFFFFF"/>
+                    <path d="M75.817,181.955h30.322c0-41.803,34.014-75.814,75.816-75.814V75.816C123.438,75.816,75.817,123.437,75.817,181.955z" fill="#FFFFFF"/>
+                  </g>
+                </g>
+              </svg>          
+            </a>
           </div>
+
         </div> 
 
         <div id="mobile-menu-container" class="mobile-menu-container">
@@ -50,23 +83,23 @@
               <li class="item"><a class="link" href="">Home</a></li>
               <li class="item">
                 <button class="drop-btn">Pipe Tobacco
-                  <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;" xml:space="preserve">
+                  <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;" xml:space="preserve">
                     <g>
                       <path d="M434.252,114.203l-21.409-21.416c-7.419-7.04-16.084-10.561-25.975-10.561c-10.095,0-18.657,3.521-25.7,10.561   L222.41,231.549L83.653,92.791c-7.042-7.04-15.606-10.561-25.697-10.561c-9.896,0-18.559,3.521-25.979,10.561l-21.128,21.416   C3.615,121.436,0,130.099,0,140.188c0,10.277,3.619,18.842,10.848,25.693l185.864,185.865c6.855,7.23,15.416,10.848,25.697,10.848   c10.088,0,18.75-3.617,25.977-10.848l185.865-185.865c7.043-7.044,10.567-15.608,10.567-25.693   C444.819,130.287,441.295,121.629,434.252,114.203z" fill="#333"/>
                     </g>
                   </svg>
-                  <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;" xml:space="preserve">
+                  <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;" xml:space="preserve">
                     <g>
                       <path d="M433.968,278.657L248.387,92.79c-7.419-7.044-16.08-10.566-25.977-10.566c-10.088,0-18.652,3.521-25.697,10.566   L10.848,278.657C3.615,285.887,0,294.549,0,304.637c0,10.28,3.619,18.843,10.848,25.693l21.411,21.413   c6.854,7.23,15.42,10.852,25.697,10.852c10.278,0,18.842-3.621,25.697-10.852L222.41,213.271L361.168,351.74   c6.848,7.228,15.413,10.852,25.7,10.852c10.082,0,18.747-3.624,25.975-10.852l21.409-21.412   c7.043-7.043,10.567-15.608,10.567-25.693C444.819,294.545,441.205,285.884,433.968,278.657z" fill="#333"/>
                     </g>
                   </svg>                  
                 </button> 
                 <ul class="dropdown-container">
-                  <li class="sub-item"><a class="link" href="#">About us</a></li>
-                  <li class="sub-item"><a class="link" href="#">Contact</a></li>
+                  <li class="sub-item"><a class="link" href="./about.html">About us</a></li>
+                  <li class="sub-item"><a class="link" href="./contact.html">Contact</a></li>
                   <li class="sub-item"><a class="link" href="#">Accessories</a></li>
                   <li class="sub-item"><a class="link" href="#">Tobacco 101</a></li>
-                  <li class="sub-item"><a class="link" href="#">Contact</a></li>
+                  <li class="sub-item"><a class="link" href="./contact.html">Contact</a></li>
                   <li class="sub-item"><a class="link" href="#">Accessories</a></li>
                   <li class="sub-item"><a class="link" href="#">Tobacco 101</a></li>
                 </ul> 
@@ -76,16 +109,16 @@
               <li class="item"><a class="link" href="#">Tobacco 101</a></li>
               <li class="item"><a class="link" href="#">Menu Item two</a></li>
               <li class="item"><a class="link" href="#">Menu Item there</a></li> 
-              <li class="item"><a class="link" href="#">About us </a></li>
-              <li class="item"><a class="link" href="#">Contact</a></li>
+              <li class="item"><a class="link" href="./about.html">About us </a></li>
+              <li class="item"><a class="link" href="./contact.html">Contact</a></li>
               <li class="item">
                 <button class="drop-btn">Pipe Button
-                  <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;" xml:space="preserve">
+                  <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;" xml:space="preserve">
                     <g>
                       <path d="M434.252,114.203l-21.409-21.416c-7.419-7.04-16.084-10.561-25.975-10.561c-10.095,0-18.657,3.521-25.7,10.561   L222.41,231.549L83.653,92.791c-7.042-7.04-15.606-10.561-25.697-10.561c-9.896,0-18.559,3.521-25.979,10.561l-21.128,21.416   C3.615,121.436,0,130.099,0,140.188c0,10.277,3.619,18.842,10.848,25.693l185.864,185.865c6.855,7.23,15.416,10.848,25.697,10.848   c10.088,0,18.75-3.617,25.977-10.848l185.865-185.865c7.043-7.044,10.567-15.608,10.567-25.693   C444.819,130.287,441.295,121.629,434.252,114.203z" fill="#333"/>
                     </g>
                   </svg>
-                  <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;" xml:space="preserve">
+                  <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;" xml:space="preserve">
                     <g>
                       <path d="M433.968,278.657L248.387,92.79c-7.419-7.044-16.08-10.566-25.977-10.566c-10.088,0-18.652,3.521-25.697,10.566   L10.848,278.657C3.615,285.887,0,294.549,0,304.637c0,10.28,3.619,18.843,10.848,25.693l21.411,21.413   c6.854,7.23,15.42,10.852,25.697,10.852c10.278,0,18.842-3.621,25.697-10.852L222.41,213.271L361.168,351.74   c6.848,7.228,15.413,10.852,25.7,10.852c10.082,0,18.747-3.624,25.975-10.852l21.409-21.412   c7.043-7.043,10.567-15.608,10.567-25.693C444.819,294.545,441.205,285.884,433.968,278.657z" fill="#333"/>
                     </g>
@@ -93,8 +126,8 @@
                 </button> 
                 <ul class="dropdown-container"> 
                   <li class="sub-item"><a class="link" href="">Tobacco 101</a></li>
-                  <li class="sub-item"><a class="link" href="">About us </a></li>
-                  <li class="sub-item"><a class="link" href="">Contact</a></li>   
+                  <li class="sub-item"><a class="link" href="./about.html">About us </a></li>
+                  <li class="sub-item"><a class="link" href="./contact.html">Contact</a></li>   
                   <li class="sub-item"><a class="link" href="">Accessories</a></li>
                 </ul>
               </li>
@@ -144,8 +177,8 @@
               </li>
               <li class="nav-item"><a class="nav-link" href="#">Accessoties</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Tobacco 101</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="./about.html">About us</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
             </ul>
             <img class="nav-decoration" src="./img/pipe.png" alt="pipe">
           </div>
@@ -177,6 +210,32 @@
           </div>
         </div>        
       </div>
+
+      <div id="search-screen" class="search-screen"> <!-- Add class "open" here for opening search-form -->
+        <a id="close-search-button" class="close-search-button">
+          <svg version="1.1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve">
+            <g id="Close">
+              <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#FDB827"/>
+            </g>
+          </svg>
+        </a>
+        <form id="search-form" class="form" action="" method="POST" enctype="application/x-www-form-urlencoded">          
+          <input class="input" id="search-word" type="text" placeholder="SEARCH">
+          <button class="submit-search-button">
+            <svg  version="1.1" id="Capa_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 485.213 485.213" style="enable-background:new 0 0 485.213 485.213;" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324    c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z" fill="#FDB827"/>
+                  <path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951    C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46    c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465    C318.424,257.208,257.206,318.416,181.956,318.416z" fill="#FDB827"/>
+                  <path d="M75.817,181.955h30.322c0-41.803,34.014-75.814,75.816-75.814V75.816C123.438,75.816,75.817,123.437,75.817,181.955z" fill="#FDB827"/>
+                </g>
+              </g>
+            </svg>
+          </button>          
+        </form>
+        <div id="search-result" class="search-result"></div>       
+      </div>
+
       <footer class="footer">
         <ul class="social-container">
           <li class="soc-item">

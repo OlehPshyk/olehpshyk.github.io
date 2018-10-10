@@ -6,13 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Poppins:100,300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/app.css">
+	<link rel="stylesheet" type="text/css" href="style/plugin.css">
 </head>
 <body>
+
 <div id="header" class="header">
+	<div class="theme-stripe th-bg-color-50"></div>
 	<div class="header-center">
 		<div class="header-username-container">
 			<h1 class="header-username">Laura Goodman</h1>
-			<h5 class="header-trade">Photography</h5>
+			<h5 class="header-trade th-after-bg-color-50">Photography</h5>
 		</div>
 		<div class="header-link">
 			<ul class="top-menu">
@@ -91,7 +94,7 @@
 </div>
 
 <section id="hero" class="hero-section" style="background-image: url('./img/landing/banner.jpg');">
-	<div class="hero-text-container">		
+	<div class="hero-text-container th-bg-color-50">		
 		<h1 class="hero-title">CREATIVE</h1>
 		<div class="hero-b-container">
 			<span class="hero-b-b-text">
@@ -109,8 +112,10 @@
 	</div> -->
 </section>
 <section id="about" class="about-section">
-	<div class="section-title-container align-stretch">
-		<h2 class="section-title"><span class="small">About</span><span class="big"> me</span></h2>
+	<div class="section-title-container center animatedParent animateOnce" data-appear-top-offset="-200">
+		<h2 class="section-title th-color animated fadeInDownShort">
+			<span class="small">About&nbsp;</span><span class="big">me</span>
+		</h2>
 	</div>
 	<div class="section-badge-container">
 		<img class="section-badge" src="./img/section-badge.png" alt="badge">
@@ -119,35 +124,37 @@
 		<div class="about-text-part w-lg47">
 			<div class="about-text-content">
 				<div class="custom-scroll">
-					<p>
+					<p class="about-text">
 						Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
 					</p>
-					<p>
+					<p class="about-text">
 						Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.
 					</p>
 				</div>				
 			</div>			
 		</div>
-		<div class="double-img-part w-lg53 skew-27">			
-			<div class="adapt-container ratio90">
-				<div class="image" style="background-image: url('./img/about.png');"></div>
-			</div>
-			<div class="two-lines"></div>								
+		<div class="about-img-part w-lg53">
+			<div class="skew-27">
+				<div class="adapt-container ratio90">
+					<div class="image" style="background-image: url('./img/about-orig.png');"></div>
+				</div>
+				<div class="two-lines"></div>								
+			</div>				
 		</div>
-		<a href="#" class="about-button"></a>
+		<a href="#" class="about-button">How we work</a>
 	</div>
 </section>
 
 <section id="services" class="services-section">
-	<div class="section-title-container center">
-		<h2 class="section-title">Services</h2>
+	<div class="section-title-container pad-x center animatedParent animateOnce" data-appear-top-offset="-200">
+		<h2 class="section-title th-color animated fadeInDownShort"><span class="normal animated bounceInDown">Services</span></h2>
 	</div>
-	<div class="section-badge-container">
+	<div class="section-badge-container pad-x th-border-color">
 		<img class="section-badge" src="./img/section-badge.png" alt="badge">
 	</div>	
 	<div class="services-container">		
 		<div class="services-img-container">
-			<div class="services-img" style="background-image: url('./img/children.jpg')">
+			<div class="services-img th-after-bg-color-80" style="background-image: url('./img/children.jpg')">
 				<a href="#" class="service-button hvr-sweep-to-right">
 					children
 				</a>
@@ -163,14 +170,14 @@
 				</div>
 				<div class="social-container">
 					<ul class="social-list">
-						<li><a class="social-link" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a class="social-link" href="#"><i class="fa fa fa-twitter"></i></a></li>
-						<li><a class="social-link" href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a class="social-link" href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-linkedin"></i></a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="services-img" style="background-image: url('./img/weddings-min.jpg')">
+			<div class="services-img th-after-bg-color-80" style="background-image: url('./img/weddings-min.jpg')">
 				<a href="#;" class="service-button hvr-sweep-to-right">
 					wedding
 				</a>
@@ -186,14 +193,14 @@
 				</div>
 				<div class="social-container">
 					<ul class="social-list">
-						<li><a class="social-link" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a class="social-link" href="#"><i class="fa fa fa-twitter"></i></a></li>
-						<li><a class="social-link" href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a class="social-link" href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa fa-twitter"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-linkedin"></i></a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="services-img" style="background-image: url('./img/family.jpg')">
+			<div class="services-img th-after-bg-color-80" style="background-image: url('./img/family.jpg')">
 				<a href="#;" class="service-button hvr-sweep-to-right">
 					people
 				</a>
@@ -209,18 +216,17 @@
 				</div>
 				<div class="social-container">
 					<ul class="social-list">
-						<li><a class="social-link" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a class="social-link" href="#"><i class="fa fa fa-twitter"></i></a></li>
-						<li><a class="social-link" href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a class="social-link" href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa fa-twitter"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-linkedin"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>		
 	</div>
 </section>
-<section id="dream" class="dream-section">
-	<div class="section-title-container center"></div>
+<section id="dream" class="dream-section">	
 	<div class="section-badge-container">
 		<img class="section-badge" src="./img/section-badge.png" alt="badge">
 	</div>
@@ -229,7 +235,7 @@
 			<div class="adapt-container ratio100">				
 					<div class="quarter-text-container">
 						<div class="adapt-container ratio100">
-							<div class="quarter-rotate-container">
+							<div class="quarter-rotate-container th-bg-color-80">
 								<div class="quarter-text top5">
 									<span class="quarter-span">You</span>
 									<span class="quarter-span">Dream it,</span>
@@ -269,90 +275,92 @@
 		</div>		
 	</div>	
 </section>
-<section id="testimonials" class="testimonials-section" >
+<section id="testimonials" class="testimonials-section">
 	<div class="double-container">	
-		<div class="testimonials-left-container w-lg40">
-			<h2 class="testimonials-title">Testimonials</h2>
+
+		<div class="testimonials-left-container w-lg40 animatedParent animateOnce" data-appear-top-offset="-200">
+			<h2 class="testimonials-title th-color animated fadeInDownShort">Testimonials</h2>
+			
 			<div class="t-p-container">
 				<div class="t-p-slider-container">
 					<div class="slider-arrow-container">
-		        <div class="testimonials-swiper-button-prev">
+		        <div class="t-swiper-button-prev js-t-swiper-button-prev">
 							<img class="image" src="./img/left-arrow.png">
 		        </div>
-		        <div class="testimonials-swiper-button-next">
+		        <div class="t-swiper-button-next js-t-swiper-button-next">
 		        	<img class="image" src="./img/right-arrow.png">
 		        </div>
 		      </div>
-					<div class="swiper-container testimonials-text-slider">
+					<div class="swiper-container js-testimonials-text-slider">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="t-slider-container">								
-									<h2 class="t-slider-title">DAVE AND MARIA WEDDING</h2>
-									<p class="t-slider-text">
+									<h2 class="t-slider-title animated fadeInRightShort delay-500">DAVE AND MARIA WEDDING</h2>
+									<p class="t-slider-text animated fadeInUpShort delay-1000">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 									</p>
 								</div>								
 							</div>				
 							<div class="swiper-slide">
 								<div class="t-slider-container">
-									<h2 class="t-slider-title">DAVE AND MARIA WEDDING</h2>
-									<p class="t-slider-text">
+									<h2 class="t-slider-title animated fadeInRightShort delay-500">DAVE AND MARIA WEDDING</h2>
+									<p class="t-slider-text animated fadeInUpShort delay-1000">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 									</p>	
 								</div>							
 							</div>
 							<div class="swiper-slide">
 								<div class="t-slider-container">
-									<h2 class="t-slider-title">DAVE AND MARIA WEDDING</h2>
-									<p class="t-slider-text">
+									<h2 class="t-slider-title animated fadeInRightShort delay-500">DAVE AND MARIA WEDDING</h2>
+									<p class="t-slider-text animated fadeInUpShort delay-1000">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 									</p>
 								</div>								
 							</div>
 							<div class="swiper-slide">
 								<div class="t-slider-container">								
-									<h2 class="t-slider-title">DAVE AND MARIA WEDDING</h2>
-									<p class="t-slider-text">
+									<h2 class="t-slider-title animated fadeInRightShort delay-500">DAVE AND MARIA WEDDING</h2>
+									<p class="t-slider-text animated fadeInUpShort delay-1000">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 									</p>
 								</div>								
 							</div>				
 							<div class="swiper-slide">
 								<div class="t-slider-container">
-									<h2 class="t-slider-title">DAVE AND MARIA WEDDING</h2>
-									<p class="t-slider-text">
+									<h2 class="t-slider-title animated fadeInRightShort delay-500">DAVE AND MARIA WEDDING</h2>
+									<p class="t-slider-text animated fadeInUpShort delay-1000">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 									</p>	
 								</div>							
 							</div>
 							<div class="swiper-slide">
 								<div class="t-slider-container">
-									<h2 class="t-slider-title">DAVE AND MARIA WEDDING</h2>
-									<p class="t-slider-text">
+									<h2 class="t-slider-title animated fadeInRightShort delay-500">DAVE AND MARIA WEDDING</h2>
+									<p class="t-slider-text animated fadeInUpShort delay-1000">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 									</p>
 								</div>								
 							</div>
 							<div class="swiper-slide">
 								<div class="t-slider-container">								
-									<h2 class="t-slider-title">DAVE AND MARIA WEDDING</h2>
-									<p class="t-slider-text">
+									<h2 class="t-slider-title animated fadeInRightShort delay-500">DAVE AND MARIA WEDDING</h2>
+									<p class="t-slider-text animated fadeInUpShort delay-1000">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 									</p>
 								</div>								
 							</div>				
 							<div class="swiper-slide">
 								<div class="t-slider-container">
-									<h2 class="t-slider-title">DAVE AND MARIA WEDDING</h2>
-									<p class="t-slider-text">
+									<h2 class="t-slider-title animated fadeInRightShort delay-500">DAVE AND MARIA WEDDING</h2>
+									<p class="t-slider-text animated fadeInUpShort delay-1000">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 									</p>	
 								</div>							
 							</div>
 							<div class="swiper-slide">
 								<div class="t-slider-container">
-									<h2 class="t-slider-title">DAVE AND MARIA WEDDING</h2>
-									<p class="t-slider-text">
+									<h2 class="t-slider-title animated fadeInRightShort delay-500">DAVE AND MARIA WEDDING</h2>
+									<p class="t-slider-text animated fadeInUpShort delay-1000">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 									</p>
 								</div>								
@@ -362,8 +370,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="double-img-part w-lg60">
-			<div class="swiper-container testimonials-img-slider">
+
+		<div class="testimonials-img-part w-lg60">
+			<div class="swiper-container js-testimonials-img-slider">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">									
 						<div class="adapt-container ratio67">
@@ -412,145 +421,357 @@
 					</div>
 				</div>
 			</div>
-			<div class="swiper-pagination t-swiper-pagination"></div>
-		</div>		
+			<div class="swiper-pagination js-t-swiper-pagination th-pagination"></div>
+		</div>	
+
 	</div>	
 </section>
-<section id="portfolio" class="portfolio-section">
-	<div class="section-title-container center">
-		<h2 class="section-title">Portfolio</h2>
-	</div>	
-	<div class="section-badge-container">
-		<img class="section-badge" src="./img/section-badge.png" alt="badge">
-	</div>	
-	<div class="design-next portfolio-slider">
-		<div class="banner-slider">
-			<div class="swiper-container portfolio-sliders">
-		        <div class="swiper-wrapper">
-		            <div class="swiper-slide">
-	                    <img src="./img/slider/1.jpg" >
-	                    <div class="slier-hover-text">
-	                        <div class="slider-hover-content image-1">
-	                            <h1>fashion in the usa</h1>
-	                            <h5>gallery created on 11/10/2017</h5>
-	                        </div>
-	                    </div>
-		            </div>
-		            <div class="swiper-slide">
-		            	<img src="./img/slider/2.jpg" >
-		            	<div class="slier-hover-text">
-		            		<div class="slider-hover-content image-2">
-			            		<h1>fashion in the usa</h1>
-			            		<h5>gallery created on 11/10/2017</h5>
-		            		</div>
-		            	</div>
-		            </div>
-		            <div class="swiper-slide">
-		            	<img src="./img/slider/3.jpg" >
-		            	<div class="slier-hover-text">
-		            		<div class="slider-hover-content image-3">
-			            		<h1>fashion in the usa</h1>
-			            		<h5>gallery created on 11/10/2017</h5>
-		            		</div>
-		            	</div>
-		            </div>
-		            <div class="swiper-slide">
-		            	<img src="./img/slider/4.jpg" >
-		            	<div class="slier-hover-text">
-		            		<div class="slider-hover-content image-1">
-			            		<h1>fashion in the usa</h1>
-			            		<h5>gallery created on 11/10/2017</h5>
-		            		</div>
-		            	</div>
-		            </div>
-		            <div class="swiper-slide">
-		            	<img src="./img/slider/5.jpg" >
-		            	<div class="slier-hover-text">
-		            		<div class="slider-hover-content image-2">
-			            		<h1>fashion in the usa</h1>
-			            		<h5>gallery created on 11/10/2017</h5>
-		            		</div>
-		            	</div>
-		            </div>
-		        </div>
-		        <div class="swiper-button-next portfolio-swiper-button-next">
-		        	<img src="./img/right.png">
-		        </div>
-		        <div class="swiper-button-prev portfolio-swiper-button-prev">
-							<img src="./img/left.png">
-		        </div>
+
+<!-- <section id="testimonials-new" class="testimonials-new-section">	
+	<div class="testimonials-section-container-2">
+		<div class="testim-slider-container">			 	
+			<div class="slider">
+				<div class="slide">					
+					<div class="testim-slide-double-container">						
+						<div class="testim-slide-text-part w-lg47">							
+							<div class="slide_txt">
+								<h2 class="slide-txt-title slide_txt_line2 th-bg-color">Nisi perferendis dolores assumenda.</h2>							
+								<p class="slide-txt-text slide_txt_line3">
+									Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+									<br><br>						
+									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+								</p>
+							</div>
+						</div>
+						<div class="testim-slide-img-part w-lg53">
+							<div class="adapt-container ratio90">
+								<div class="image" style="background-image: url('./img/slider/1.jpg');">
+									<div class="progress"></div>
+								</div>
+							</div>					
+						</div>						
+					</div>
+				</div>
+				<div class="slide">	
+					<div class="testim-slide-double-container">						
+						<div class="testim-slide-text-part w-lg47">
+							
+							<div class="slide_txt">	
+								<h2 class="slide-txt-title slide_txt_line2 th-bg-color">Consectetur adipisicing elit.</h2>							
+								<p class="slide-txt-text slide_txt_line3">
+									Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+									<br><br>							
+									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+								</p>
+							</div>												
+										
+						</div>
+						<div class="testim-slide-img-part w-lg53">
+							<div class="adapt-container ratio90">
+								<div class="image " style="background-image: url('./img/slider/2.jpg');">
+									<div class="progress"></div>
+								</div>
+							</div>		
+						</div>						
+					</div>
+				</div>
+				<div class="slide">	
+					<div class="testim-slide-double-container">						
+						<div class="testim-slide-text-part w-lg47">
+							<div class="slide_txt">
+								<h2 class="slide-txt-title slide_txt_line2 th-bg-color">Lorem ipsum dolor sit amet</h2>							
+								<p class="slide-txt-text slide_txt_line3">
+									Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+									<br><br>								
+									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.	
+								</p>
+							</div>
+						</div>
+						<div class="testim-slide-img-part w-lg53">
+							<div class="adapt-container ratio90">
+								<div class="image " style="background-image: url('./img/slider/3.jpg');">
+									<div class="progress"></div>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div class="blog-2-arrow-container">
+		    <div class="btn_arrow sl-arrow-left js-sl-arrow-left">
+		      <svg x="0px" y="0px" viewBox="0 0 20.7 9.2" style="enable-background:new 0 0 20.7 9.2;" xml:space="preserve" class="my_svg01 replaced-svg">
+						<style type="text/css">
+							.st0{fill:#bc8910;}
+						</style>
+						<g>
+							<g>
+								<rect x="0.7" y="4.2" class="st0" width="20" height="0.8"></rect>
+								<polygon class="st0" points="4.6,0 5.1,0.5 1.1,4.5 5.2,8.7 4.6,9.2 0,4.5   "></polygon>
+							</g>
+						</g>
+					</svg>
 		    </div>
+		    <div class="btn_arrow sl-arrow-right js-sl-arrow-right">
+		      <svg x="0px" y="0px" viewBox="0 0 20.7 9.2" style="enable-background:new 0 0 20.7 9.2;" xml:space="preserve" class="my_svg01 replaced-svg">
+						<style type="text/css">
+							.st0{fill:#bc8910;}
+						</style>
+						<g>
+							<g>
+								<rect y="4.2" class="st0" width="20" height="0.8"></rect>
+								<polygon class="st0" points="16.1,9.2 15.6,8.7 19.6,4.7 15.5,0.5 16.1,0 20.7,4.7   "></polygon>
+							</g>
+						</g>
+					</svg>
+		    </div>
+		  </div>
+		</div>
+  </div>
+</section> -->
+
+<section id="portfolio" class="portfolio-section">
+	<div class="section-title-container pad-x center animatedParent animateOnce" data-appear-top-offset="-200">
+		<h2 class="section-title th-color animated fadeInDownShort"><span class="normal">Portfolio</span></h2>
+	</div>	
+	<div class="section-badge-container pad-x">				
+		<img class="section-badge" src="./img/section-badge.png" alt="badge">			
+	</div>	
+	<div class="portfolio-slider">
+		<div class="banner-slider">
+			<div class="swiper-container js-portfolio-sliders">
+				<div class="fictive-bg-shadow pad-x th-border-color"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide th-after-bg-color-80">
+          	<div class="fictive-shadow"></div>
+            <img class="img" src="./img/slider/1.jpg" >
+            <div class="slier-hover-text">
+                <div class="slider-hover-content image-1">
+                    <h1>fashion in the usa</h1>
+                    <h5>gallery created on 11/10/2017</h5>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide th-after-bg-color-80">
+          	<div class="fictive-shadow"></div>
+          	<img class="img" src="./img/slider/2.jpg" >
+          	<div class="slier-hover-text">
+          		<div class="slider-hover-content image-2">
+            		<h1>fashion in the usa</h1>
+            		<h5>gallery created on 11/10/2017</h5>
+          		</div>
+          	</div>
+          </div>
+          <div class="swiper-slide th-after-bg-color-80">
+          	<div class="fictive-shadow"></div>
+          	<img class="img" src="./img/slider/3.jpg" >
+          	<div class="slier-hover-text">
+          		<div class="slider-hover-content image-3">
+            		<h1>fashion in the usa</h1>
+            		<h5>gallery created on 11/10/2017</h5>
+          		</div>
+          	</div>
+          </div>
+          <div class="swiper-slide th-after-bg-color-80">
+          	<div class="fictive-shadow"></div>
+          	<img class="img" src="./img/slider/4.jpg" >
+          	<div class="slier-hover-text">
+          		<div class="slider-hover-content image-1">
+            		<h1>fashion in the usa</h1>
+            		<h5>gallery created on 11/10/2017</h5>
+          		</div>
+          	</div>
+          </div>
+          <div class="swiper-slide th-after-bg-color-80">
+          	<div class="fictive-shadow"></div>
+          	<img class="img" src="./img/slider/5.jpg" >
+          	<div class="slier-hover-text">
+          		<div class="slider-hover-content image-2">
+            		<h1>fashion in the usa</h1>
+            		<h5>gallery created on 11/10/2017</h5>
+          		</div>
+          	</div>
+          </div>
+        </div>
+        <div class="swiper-button-next js-portfolio-swiper-button-next">
+        	<img src="./img/right.png">
+        </div>
+        <div class="swiper-button-prev js-portfolio-swiper-button-prev">
+					<img src="./img/left.png">
+        </div>
+	    </div>
 		</div>
 	</div>
 </section>
+
+
+<section id="blog-new" class="blog-new-section">
+	<div class="section-title-container center pad-x animatedParent animateOnce" data-appear-top-offset="-200">
+		<h2 class="section-title th-color animated fadeInDownShort"><span class="normal">New Blog</span></h2>
+	</div>
+	<div class="blog-section-container-2">
+		<div class="slider-container">
+			<div class="slider">
+				<div class="slide">					
+					<div class="slide-double-container">						
+						<div class="slide-text-part w-lg47">
+							
+							<div class="slide_txt">
+								<h2 class="slide-txt-title slide_txt_line2 th-bg-color">Nisi perferendis dolores assumenda.</h2>							
+								<p class="slide-txt-text slide_txt_line3">
+									Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+									<br><br>						
+									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+								</p>
+							</div>																									
+									
+						</div>
+						<div class="slide-img-part w-lg53">							
+							<div class="skew-27">		
+								<div class="adapt-container ratio90">
+									<div class="image " style="background-image: url('./img/slider/1.jpg');">
+										<div class="progress"></div>
+									</div>
+								</div>
+								<div class="two-lines"></div>
+							</div>									
+						</div>						
+					</div>
+				</div>
+				<div class="slide">	
+					<div class="slide-double-container">						
+						<div class="slide-text-part w-lg47">
+							
+							<div class="slide_txt">	
+								<h2 class="slide-txt-title slide_txt_line2 th-bg-color">Consectetur adipisicing elit.</h2>							
+								<p class="slide-txt-text slide_txt_line3">
+									Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+									<br><br>							
+									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+								</p>
+							</div>												
+										
+						</div>
+						<div class="slide-img-part w-lg53">							
+							<div class="skew-27">		
+								<div class="adapt-container ratio90">
+									<div class="image " style="background-image: url('./img/slider/2.jpg');">
+										<div class="progress"></div>
+									</div>
+								</div>
+								<div class="two-lines"></div>
+							</div>								
+						</div>						
+					</div>
+				</div>
+				<div class="slide">	
+					<div class="slide-double-container">						
+						<div class="slide-text-part w-lg47">
+							
+							<div class="slide_txt">
+								<h2 class="slide-txt-title slide_txt_line2 th-bg-color">Lorem ipsum dolor sit amet</h2>							
+								<p class="slide-txt-text slide_txt_line3">
+									Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+									<br><br>								
+									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.	
+								</p>
+							</div>																	
+									
+						</div>
+						<div class="slide-img-part w-lg53">							
+							<div class="skew-27">			
+								<div class="adapt-container ratio90">
+									<div class="image " style="background-image: url('./img/slider/3.jpg');">
+										<div class="progress"></div>
+									</div>
+								</div>
+								<div class="two-lines"></div>
+							</div>								
+						</div>						
+					</div>
+				</div>
+			</div>
+
+		</div>
+  </div>
+</div>
+
+
 <section id="blog" class="blog-section">
-	<div class="section-title-container">
-		<h2 class="section-title color-db841d">Latest Blog</h2>
-	</div>	
-	<div class="blog-section-container">
-		<div class="swiper-container blog-slider">
+	<div class="section-title-container center pad-x animatedParent animateOnce" data-appear-top-offset="-200">
+		<h2 class="section-title th-color animated fadeInDownShort"><span class="normal">Latest Blog</span></h2>
+	</div>
+	<div class="blog-section-container animatedParent animateOnce">
+		<div class="swiper-container js-blog-slider">
 			<div class="swiper-wrapper">
 
 				<div class="swiper-slide">					
-					<div class="double-container align-center">
+					<div class="blog-double-container align-center">
 						<div class="blog-text-part w-lg47">
 							<div class="blog-text-content">	
-								<h2 class="blog-title">FOOD PHOTOGRAPHY WAS FUN!</h2>							
-								<p>
+								<h2 class="blog-title animated fadeInRightShort delay-500">FOOD PHOTOGRAPHY WAS FUN!</h2>							
+								<p class="blog-text animated fadeInUpShort delay-1000">
 									Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
 								</p>
-								<p>
+								<p class="blog-text animated fadeInUpShort delay-1000">
 									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
 								</p>																									
 							</div>			
 						</div>
-						<div class="double-img-part w-lg53 skew-27">			
-							<div class="adapt-container ratio90">
-								<div class="image" style="background-image: url('./img/food-min.jpg');"></div>
-							</div>
-							<div class="two-lines"></div>								
+						<div class="blog-img-part w-lg53">
+							<div class="skew-27">		
+								<div class="adapt-container ratio90">
+									<div class="image" style="background-image: url('./img/food-min.jpg');"></div>
+								</div>
+								<div class="two-lines"></div>
+							</div>									
 						</div>						
 					</div>
 				</div>
+
 				<div class="swiper-slide">
-					<div class="double-container align-center">
+					<div class="blog-double-container align-center">
 						<div class="blog-text-part w-lg47">
 							<div class="blog-text-content">	
-								<h2 class="blog-title">FOOD PHOTOGRAPHY WAS FUN!</h2>							
-								<p>
+								<h2 class="blog-title animated fadeInRightShort delay-500">FOOD PHOTOGRAPHY WAS FUN!</h2>							
+								<p class="blog-text animated fadeInUpShort delay-1000">
 									Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
 								</p>
-								<p>
+								<p class="blog-text animated fadeInUpShort delay-1000">
 									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
 								</p>												
 							</div>			
 						</div>
-						<div class="double-img-part w-lg53 skew-27">			
-							<div class="adapt-container ratio90">
-								<div class="image" style="background-image: url('./img/food-min.jpg');"></div>
-							</div>
-							<div class="two-lines"></div>								
+						<div class="blog-img-part w-lg53">	
+							<div class="skew-27">		
+								<div class="adapt-container ratio90">
+									<div class="image" style="background-image: url('./img/food-min.jpg');"></div>
+								</div>
+								<div class="two-lines"></div>
+							</div>								
 						</div>						
 					</div>
 				</div>
+
 				<div class="swiper-slide">
-					<div class="double-container align-center">
+					<div class="blog-double-container align-center">
 						<div class="blog-text-part w-lg47">
 							<div class="blog-text-content">	
-								<h2 class="blog-title">FOOD PHOTOGRAPHY WAS FUN!</h2>							
-								<p>
+								<h2 class="blog-title animated fadeInRightShort delay-500">FOOD PHOTOGRAPHY WAS FUN!</h2>							
+								<p class="blog-text animated fadeInUpShort delay-1000">
 									Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
 								</p>
-								<p>
-									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.
+								<p class="blog-text animated fadeInUpShort delay-1000">
+									Dicat scripta percipit ex vel, vim appareat tractatos eu. Id commodo constituam nec. Posse utamur meliore cu eum, ius affert intellegebat ei. Cum corpora deleniti cu, ne omnes sensibus electram mel. Est ne dicta essent adversarium, ne qui sententiae omittantur.Lorem ipsum dolor sit amet, vis nostrud nusquam an, ex qui munere admodum democritum, ne numquam nominavi sea. Eu vis natum nostro. Mea mazim ubique ea, vel meis liber aliquando cu. Vel modo hendrerit cu. Eu mei eius pertinax cotidieque, atqui copiosae verterem id mea, clita legendos consetetur ius ea.									
 								</p>																	
 							</div>			
 						</div>
-						<div class="double-img-part w-lg53 skew-27">			
-							<div class="adapt-container ratio90">
-								<div class="image" style="background-image: url('./img/food-min.jpg');"></div>
-							</div>
-							<div class="two-lines"></div>								
+						<div class="blog-img-part w-lg53">
+							<div class="skew-27">			
+								<div class="adapt-container ratio90">
+									<div class="image" style="background-image: url('./img/food-min.jpg');"></div>
+								</div>
+								<div class="two-lines"></div>
+							</div>								
 						</div>						
 					</div>
 				</div>
@@ -558,21 +779,24 @@
 			</div>
 		</div>
 	</div>
-	<div class="swiper-pagination blog-swiper-pagination"></div>
+	<div class="swiper-pagination js-blog-swiper-pagination th-pagination"></div>
 	<div class="social-container">
 		<ul class="social-list">
-			<li><a class="social-link" href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a class="social-link" href="#"><i class="fa fa fa-twitter"></i></a></li>
-			<li><a class="social-link" href="#"><i class="fa fa-google-plus"></i></a></li>
-			<li><a class="social-link" href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-facebook"></i></a></li>
+			<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa fa-twitter"></i></a></li>
+			<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-google-plus"></i></a></li>
+			<li class="social-item"><a class="social-link th-hover-bg-color" href="#"><i class="fa fa-linkedin"></i></a></li>
 		</ul>
 	</div>
 </section>
 <section id="instagram" class="instagram-section">
-	<div class="section-title-container">
-		<h2 class="section-title color-895a5b"><span class="small">My</span><span class="big"> Instagram</span></h2>
+	<div class="section-title-container center pad-x animatedParent animateOnce" data-appear-top-offset="-200">
+		<h2 class="section-title th-color animated fadeInDownShort"><span class="small">My&nbsp;</span><span class="big">Instagram</span></h2>
 	</div>	
-	<div class="instagram-container">		
+	<div class="instagram-container">	
+		<div class="section-badge-container pad-x">
+			<img class="section-badge" src="./img/section-badge.png" alt="badge">
+		</div>	
 		<ul class="instagram-grid">	
 			<li class="instagram-item">
 				<a class="instagram-link" href="#">
@@ -615,34 +839,13 @@
 						<div class="instagram-image" style="background-image: url('./img/instagram/6.jpg');"></div>
 					</div>						
 				</a>
-			</li>
-			<li class="instagram-item">
-				<a class="instagram-link" href="#">
-					<div class="adapt-container overflow ratio100">
-						<div class="instagram-image" style="background-image: url('./img/instagram/1.jpg');"></div>
-					</div>						
-				</a>
-			</li>
-			<li class="instagram-item">
-				<a class="instagram-link" href="#">
-					<div class="adapt-container overflow ratio100">
-						<div class="instagram-image" style="background-image: url('./img/instagram/2.jpg');"></div>
-					</div>						
-				</a>
-			</li>
-			<li class="instagram-item">
-				<a class="instagram-link" href="#">
-					<div class="adapt-container overflow ratio100">
-						<div class="instagram-image" style="background-image: url('./img/instagram/3.jpg');"></div>
-					</div>						
-				</a>
-			</li>			
+			</li>					
 		</ul>
 	</div>
 </section>
 <section id="flicker" class="flicker-section">
-	<div class="section-title-container center">
-		<h2 class="section-title color-db841d">My Flickr</h2>
+	<div class="section-title-container center animatedParent animateOnce" data-appear-top-offset="-200">
+		<h2 class="section-title th-color animated fadeInDownShort"><span class="normal">My Flickr</span></h2>
 	</div>	
 	<div class="section-badge-container">
 		<img class="section-badge" src="./img/section-badge.png" alt="badge">
@@ -695,13 +898,13 @@
 	</div>	
 </section> 
 <section id="contact" class="contact-section">
-	<div class="section-title-container center">
-		<h2 class="section-title color-db841d">Comtact</h2>
+	<div class="section-title-container center animatedParent animateOnce" data-appear-top-offset="-200">
+		<h2 class="section-title th-color animated fadeInDownShort"><span class="normal">Comtact</span></h2>
 	</div>	
 	<div class="section-badge-container">
 		<img class="section-badge" src="./img/section-badge.png" alt="badge">
 	</div>
-	<div class="contact-container design-next">
+	<div class="contact-container">
 		<div class="contact-inner">
 			<div class="contact-form">
 				<form action="" class="flex-form">
@@ -758,19 +961,25 @@
 			</a>
 		</li>
 	</ul>	
-	<h6 class="copy-r"><span class="big">C </span>Laura Goodman Photography</h6>
+	<div>
+		<p class="footer-text">
+			The photographs and the art work presented on ths website may not be copied, published, stored or reproduced amywhere else without the written permission of the copywright holder.
+		</p>
+		<h6 class="footer-copy-r"><span class="big">C </span>Laura Goodman Photography</h6>
+	</div>
 </div>
 
-<div class="top-bottom-link btn btn-yellow">
-	<a href="#;"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-	<span class="btn-bg"></span>
-	<span class="btn-bg btn-bg-mask"></span>
+<div class="top-bottom-link-container">
+	<a class="top-bottom-link th-color" href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+	<!-- <span class="btn-bg"></span>
+	<span class="btn-bg btn-bg-mask"></span> -->
 </div>
 <!-- jQuery from google cdn --> 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <!-- OR -->
 <!-- jQuery inside in plugin.js  !!!FIRST loaded-->    
 <script src="./script/plugin.js" type="text/javascript"></script>
+
 <!-- own script in modules -->
 <script src="./script/app.js" type="text/javascript"></script>
 </body>

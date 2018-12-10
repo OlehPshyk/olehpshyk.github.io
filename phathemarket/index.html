@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>             
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+  </head>
+
+  <body>  
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-container">
+          <div class="header__logo-container">
+            <img class="header__logo" src="./img/logo.png" alt="logo">
+          </div>          
+        </div>
+      </div>
+    </header>   
+
+    <main role="main" class="main">
+
+      <section class="hero-section santa-gr">
+        <div class="wrapper"> 
+          <div class="hero-section-container  santa-bg">
+            <div class="bonus1">
+              <div class="b-t-1">
+                <span class="b-t-1-1">500<span class="sm">$</span></span>
+                <span class="b-t-1-2">FOR<br/> <span class="lg">1000</span>$</span>
+              </div>
+            </div>
+            <div class="spruce1-bg"></div>
+            <div class="spruce2-bg"></div>
+            <h1 class="hero-title">
+              <span class="text1">Don't wait for the</span>
+              <span class="text2">St. Claus, grab your</span>
+              <span class="text3"><span class="text4">%50 bo<span class="anchor1">n<div class="bonus2"><div class="b-t-2"><span class="b-t-2-1">250<span class="sm">$</span></span><span class="b-t-2-2">FOR<br/><span class="lg">500</span>$</span></div></div></span>us </span>no<span class="anchor2">w<div class="bonus3"><div class="b-t-3"><span class="b-t-3-1">50<span class="sm">$</span></span><span class="b-t-3-2">FOR<br/><span class="lg">100</span>$</span></div></div></span>!</span>
+            </h1>
+          </div>
+          <div class="hero-form-container">
+            <form class="hero-form" id="form" action="" method="POST" enctype="application/x-www-form-urlencoded">
+              <h4 class="hero-form__title">                
+                Try yourself in real market conditions!
+              </h4>
+              <div class="form-body">
+                <div class="form-inp-chk">
+                  <div class="input-collection">
+                    <div class="input-group">
+                      <input class="input-control" type="text" placeholder="Name" value="" id="name" required>
+                    </div>                          
+                    <div class="input-group"> 
+                      <input class="input-control" type="text" placeholder="Phone" value="" id="phone" required>
+                    </div>
+                    <div class="input-group"> 
+                      <input class="input-control" type="email" placeholder="E-mail" value="" id="email" required>
+                    </div>
+                  </div>
+
+                  <div class="checkbox-collection"> 
+                    <label class="label-checkbox">
+                      <input class="input" type="checkbox" name="" id="protection" required>
+                      <div class="custom-checkbox"></div>
+                      <span>
+                        <span class="semi-bold">I accept</span> to receive emails about opening Live Trading Account.</span>
+                      </span>
+                    </label>
+                    <label class="label-checkbox">
+                      <input class="input" type="checkbox" name="" id="confidentiality" required>
+                      <div class="custom-checkbox"></div>
+                      <span>
+                        <span class="semi-bold">I have read and agreed</span> to the privacy policy and terms of use.
+                      </span>
+                    </label>  
+                  </div>
+                </div>            
+                <div class="submit-container">
+                  <button class="hero-f-s-button">Send</button>
+                </div>
+              </div>
+
+              <span id="WrongMessage" class="error">XXX</span>
+              <span id="SuccessMessage" class="success">YYY</span>
+              <div id="result"></div>
+            </form>
+          </div>
+        </div>  
+      </section>      
+
+      <section class="stat-section">              
+        <div class="wrapper">
+          <div class="stat-section-container">
+
+            <div class="stat-item">
+              <span class="stat-number">
+                100+
+              </span>
+              <span class="stat-text">
+                Trading Instruments
+              </span>
+            </div>
+
+            <div class="stat-item">
+              <span class="stat-number">
+                0.00
+              </span>
+              <span class="stat-text">
+                Spreads as low as 0 pips
+              </span>
+            </div>
+
+            <div class="stat-item">
+              <span class="stat-number">
+                500:1
+              </span>
+              <span class="stat-text">
+                Leverage is up to
+              </span>
+            </div>
+
+            <div class="stat-item revers">
+              <span class="stat-number">
+                $5000
+              </span>
+              <span class="stat-text">
+                Bonus up to
+              </span>
+            </div>
+            
+          </div>
+        </div>                                              
+      </section>
+
+      <section class="service-section">              
+        <div class="wrapper">
+          <div class="service-section-container">
+
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="service-number">
+                  01
+                </span>
+                <div class="service-img-container">
+                  <img class="img" src="./img/serv1.png" alt="service">
+                </div>
+                <span class="service-text">
+                  Personal Account Managers
+                </span>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="service-number">
+                  02
+                </span>
+                <div class="service-img-container">
+                  <img class="img" src="./img/serv2.png" alt="service">
+                </div>
+                <span class="service-text">
+                  Free Access to Forex Market Research
+                </span>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="service-number">
+                  03
+                </span>
+                <div class="service-img-container">
+                  <img class="img" src="./img/serv3.png" alt="service">
+                </div>
+                <span class="service-text">
+                  Free Access to Daily Forex Webinars
+                </span>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="service-number">
+                  04
+                </span>
+                <div class="service-img-container">
+                  <img class="img" src="./img/serv4.png" alt="service">
+                </div>
+                <span class="service-text">
+                  Unlimited Access to Video Tutorials
+                </span>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="service-number">
+                  05
+                </span>
+                <div class="service-img-container">
+                  <img class="img" src="./img/serv5.png" alt="service">
+                </div>
+                <span class="service-text">
+                  Daily Access to Forex Trading Signals
+                </span>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="service-number">
+                  06
+                </span>
+                <div class="service-img-container">
+                  <img class="img" src="./img/serv6.png" alt="service">
+                </div>
+                <span class="service-text">
+                  16 Platforms to Choose From. Any Device, Anywhere
+                </span>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="service-number">
+                  07
+                </span>
+                <div class="service-img-container">
+                  <img class="img" src="./img/serv7.png" alt="service">
+                </div>
+                <span class="service-text">
+                  Free Daily Technical Analysis
+                </span>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="service-number">
+                  08
+                </span>
+                <div class="service-img-container">
+                  <img class="img" src="./img/serv8.png" alt="service">
+                </div>
+                <span class="service-text">
+                  Daily Forex Market Outlook
+                </span>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-content">
+                <span class="service-number">
+                  09
+                </span>
+                <div class="service-img-container">
+                  <img class="img" src="./img/serv9.png" alt="service">
+                </div>
+                <span class="service-text">
+                  24/5 Hour Live Help
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        </div>                                              
+      </section>
+      <section class="link-section">              
+        <div class="wrapper">
+          <div class="link-section-container">
+
+            <div class="link-list">
+              <a href="#;" class="link lg">Start trading</a>
+              <a href="#;" class="link">Open a Demo Account</a>
+              <a href="#;" class="link">Open a Live Account</a>
+              <a href="#;" class="link">Accounts</a>
+              <a href="#;" class="link">Products</a>
+              <a href="#;" class="link sm">Forex</a>
+              <a href="#;" class="link sm">Indices</a>
+              <a href="#;" class="link sm">Commodities</a>
+              <a href="#;" class="link sm">Shares</a>
+              <a href="#;" class="link sm">Cryptos</a>              
+            </div>
+
+            <div class="link-list">
+              <a href="#;" class="link lg">Trading platforms</a>
+              <a href="#;" class="link">MT4 PC / MAC</a>
+              <a href="#;" class="link">MT4 SmartPhones / Tablets</a>
+              <a href="#;" class="link">Phase Station</a>
+            </div>
+
+            <div class="link-list">
+              <a href="#;" class="link lg">Research</a>
+              <a href="#;" class="link">Daily FX Bulletin</a>
+              <a href="#;" class="link">Economic Calendar</a>
+              <a href="#;" class="link">Weekly Videos</a>
+              <a href="#;" class="link">Free Forex Signals</a>
+            </div>
+
+            <div class="link-list">
+              <a href="#;" class="link lg">Campaigns</a>
+              <a href="#;" class="link lg">Partnerships</a>
+              <a href="#;" class="link lg">About us</a>
+              <a href="#;" class="link lg">Legal</a>
+            </div>
+            
+          </div>
+        </div>                                              
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-container">
+          <ul class="soc-container">
+            <li class="img-box">
+              <img src="./img/soc1.png" class="img" alt="facebook">
+            </li>
+            <li class="img-box">
+              <img src="./img/soc2.png" class="img" alt="twitter">
+            </li>
+            <li class="img-box">
+              <img src="./img/soc3.png" class="img" alt="youtube">
+            </li>
+            <li class="img-box">
+              <img src="./img/soc4.png" class="img" alt="google+">
+            </li>
+            <li class="img-box">
+              <img src="./img/soc5.png" class="img" alt="linkedin">
+            </li>
+          </ul>
+          <p class="f-text semi-bold">
+            Phase Markets LTD. ® 2018
+          </p>
+          <p class="f-text">
+            Phase Markets LTD. is authorized and regulated by the VFSC (reference number 40387) in the address of Govant Building, 1st Floor, 1276 Port Vila.
+          </p>
+          <p class="f-text">
+            <span class="uppercase semi-bold">Risk warning</span> and <span class="uppercase semi-bold">Legal disclaimer</span>
+          </p>
+          <p class="f-text">
+            All financial products traded on margin carry a high degree of risk to your capital. They may not be suited to all investors and you can lose more than your initial deposit. Please ensure that you fully understand the risks involved, and seek independent advice if necessary.See our full RISK WARNING and Terms and Conditions for further details. This website is owned and operated by Phase Markets LTD. 
+          </p>
+          <p class="f-text">
+            This website can be accessed worldwide however the information on the website is related to Phase Markets LTD. A company registered and formed under the Companies Act of Vanuatu. All clients will directly governed by the VFSC (Vanuatu Financial Services Commission)
+          </p>
+          <p class="f-text">
+            Unfortunately, we do not accept <span class="accent">clients from Turkey, US &amp; Canada.</span>
+          </p>
+          <p class="f-text">
+            Any fact, assessment, analysis, forecasts, opinion and other information (collectively “Information”) released by Phase Markets LTD. Any director, officer, employee or representative here whether provided on the Phase Markets websites, on third party websites, in marketing materials, newsletters, in individual e-mails and letters, in lectures, individual conversations or in any other form of written or verbal communication (collectively “Publications”) are provided for informational and/or marketing purposes only. Unless specifically stated, no Publication of the Phase Markets LTD should be construed as an offer (or solicitation of an offer) to: buy or sell any currency, product or financial instrument, make any investment, or participate in any particular trading strategy (collectively “Offers”). Notwithstanding anything to the contrary (not even if specifically stated), no Publication of the Phase Markets LTD should be construed as an Offer in any jurisdiction in which such offer would be illegal. Any such perceived offer will not be honoured by the Phase Markets LTD.
+          </p>
+          <p class="f-text semi-bold">
+            PHASE MARKETS LTD. TERMS OF BUSINESS
+          </p>
+          <p class="f-text">
+            In these General Business Terms (hereinafter the “Terms”) the following terms shall, unless the context otherwise pledges, have the following meanings and may be used in the singular or plural as appropriate:
+          </p>
+          <p class="f-text">
+            Phase Markets LTD Terms of Business
+          </p>
+          <p class="f-text semi-bold">
+            PHASE MARKETS LTD. RISK ASSESSMENT &amp; AML POLICY
+          </p>
+          <p class="f-text">
+            Phase Markets LTD is required to categorize its clients and in accordance with the AML Act, the Phase Markets LTD. shall establish the identity and verify the identity of any customer of the Company by requiring the customer to produce an identification record or such other reliable, independent source document. Here are the details for Risk Assessment and AML Policy.
+          </p>
+        </div>
+      </div>       
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+
+    
+    <!-- <script src="./script/plugin.js"></script> -->
+    <script src="./script/app.js"></script>
+
+  </body>
+
+</html>

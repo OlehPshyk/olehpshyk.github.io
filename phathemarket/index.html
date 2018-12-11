@@ -74,8 +74,20 @@
                       </span>
                     </label>  
                   </div>
-                </div>            
+                </div> 
+
                 <div class="submit-container">
+                  <div class="cap-inp-container">
+                    <div class="cap-repoad-container">
+                      <div class="capcha" id="CaptchaImageCode">
+                        <canvas id="CapCode" class="capcode"></canvas>                      
+                      </div>
+                      <input type="button" class="reloadBtn" id="ReloadBtn">
+                    </div>                    
+                    <input class="input-control input-capcha" type="text" placeholder="Enter code" value="" id="UserCaptchaCode" required>                  
+                    <span id="WrongCaptchaError" class="error"></span>
+                    <span id="SuccessMessage" class="success">Your have successfully entered the captcha.</span>
+                  </div>
                   <button class="hero-f-s-button">Send</button>
                 </div>
               </div>

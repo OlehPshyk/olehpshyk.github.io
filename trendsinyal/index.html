@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Catamaran:400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+  </head>
+
+  <body>  
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-container">
+          <div class="logo-container">
+            <img class="header-logo" src="./img/logo.png" alt="logo">
+          </div> 
+          <div class="list-opportunities-container">
+            <ul class="list-opportunities">
+              <li class="list-item">
+                <div class="icon-container">
+                  <img class="icon" src="./img/icon1.png" alt="">
+                </div>
+                <span class="item-text">DENETLENMİŞ SİNYALLER</span>
+              </li>
+              <li class="list-item">
+                <div class="icon-container">
+                  <img class="icon" src="./img/icon2.png" alt="">
+                </div>
+                <span class="item-text">DOĞRULANMIŞ SİNYALLER</span>
+              </li>
+              <li class="list-item">
+                <div class="icon-container">
+                  <img class="icon" src="./img/icon3.png" alt="">
+                </div>
+                <span class="item-text">REGÜLE SİNYALLER</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>   
+
+    <main role="main" class="main">
+       
+      <section class="hero-section">
+        <div class="wrapper">
+          <div class="hero-section-container"> 
+
+            <div class="title-container"> 
+              <div class="abs-img-container">
+                <img class="hero-img" src="./img/hero-img.png" alt="img">
+              </div>              
+              <h1 class="title">             
+                <span class="text1">GÜVENİLİR VE ÜCRETSİZ</span>
+                <span class="text2">FOREX SİNYALİ</span>
+                <span class="text3">Mİ ARIYORSUNUZ?</span>                  
+              </h1> 
+
+              <div class="list-opportunities-container">
+                <ul class="list-opportunities">
+                  <li class="list-item">
+                    <div class="icon-container">
+                      <img class="icon" src="./img/icon1.png" alt="">
+                    </div>
+                    <span class="item-text">DENETLENMİŞ<br/>SİNYALLER</span>
+                  </li>
+                  <li class="list-item">
+                    <div class="icon-container">
+                      <img class="icon" src="./img/icon2.png" alt="">
+                    </div>
+                    <span class="item-text">DOĞRULANMIŞ<br/>SİNYALLER</span>
+                  </li>
+                  <li class="list-item">
+                    <div class="icon-container">
+                      <img class="icon" src="./img/icon3.png" alt="">
+                    </div>
+                    <span class="item-text">REGÜLE<br/>SİNYALLER</span>
+                  </li>
+                </ul>
+              </div>                      
+            </div> 
+            
+            <div class="hero-form-container">
+              <form class="hero-form" id="form" action="" method="POST" enctype="application/x-www-form-urlencoded">
+                <h4 class="form-title">                   
+                  SİNYALLERİNİZİ ALMAYA<br/><span class="accent">HEMEN BUGÜN BAŞLAYIN!</span>
+                </h4>
+                <div class="input-collection">
+                  <div class="input-group">
+                    <input class="input-control" type="text" placeholder="Adınız" value="" id="name" required>
+                  </div>                          
+                  <div class="input-group"> 
+                    <input class="input-control" type="text" placeholder="Telefon numaranız" value="" id="phone" required>
+                  </div>
+                  <div class="input-group"> 
+                    <input class="input-control" type="email" placeholder="E-postanız" value="" id="email" required>
+                  </div>
+                </div>              
+                <div class="checkbox-collection"> 
+                  <label class="label-checkbox">
+                <input class="input" type="checkbox" name="" id="protection" required>
+                <div class="custom-checkbox"></div>
+                <span>
+                  Kişisel verilerin korunmasını kabul ediyorum.
+                </span>
+              </label>
+                  <label class="label-checkbox">
+                <input class="input" type="checkbox" name="" id="confidentiality" required>
+                <div class="custom-checkbox"></div>
+                <span>
+                  Gizlilik sözleşmesini <span class="text-bold">okudum</span> ve <span class="text-bold">kabul ediyorum.</span>
+                </span>
+              </label>  
+                </div>
+                <div class="cap-inp-container">
+                  <div class="cap-repoad-container">
+                    <div class="capcha" id="CaptchaImageCode">
+                  <canvas id="CapCode" class="capcode"></canvas>                      
+                  </div>
+                  <input type="button" class="ReloadBtn" id="ReloadBtn">
+                  </div>                    
+                  <input class="input-control input-capcha" type="text" placeholder="Kodu giriniz" value="" id="UserCaptchaCode" required>                 
+                  <span id="WrongCaptchaError" class="error"></span>
+                  <span id="SuccessMessage" class="success">Your have successfully entered the captcha.</span>
+                </div>
+                <div class="submit-container">
+                  <button class="hero-submit-button">GÖNDER</button>
+                </div>
+              <div id="result"></div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">              
+        <div class="wrapper">
+          <div class="about-section-container">
+            <div class="img-part">
+              <div class="img-container">
+                <img class="img" src="./img/signal-img.png" alt="img">
+              </div>
+            </div>
+            <div class="text-part">
+              <h2 class="title">SİNYAL NEDİR?</h2>
+              <p class="text">Sinyaller, döviz ticareti, hisse veya diğer finansal yatırım araçlarında pozisyon açmak için tavsiyelerdir. Sinyaller genellikle al-sat fiyatı tavsiyeleri içerebilirken bazen sadece fiyat yönü konusunda da tavsiye içerebilir. Kar hedeflerinin dışında, sinyaller zarar durdurma seviyeleri de içerir, bu da yatırımın kaybedilmesini engeller.
+              </p>
+            </div>
+          </div>
+        </div>                                              
+      </section>   
+
+      <section class="info-section">              
+        <div class="wrapper">
+          <div class="info-section-container">
+            <p class="text">En iyi yatırım tecrübesini sunmak için</br> TrendSinyal ekibini kurduk...
+            </p>
+          </div>
+        </div>                                              
+      </section>
+
+      <section class="table-section">              
+        <div class="wrapper">
+          <div class="table-section-container">
+            <h2 class="title">TRENDSİNYAL SİNYALLERİ</h2>
+            <h3 class="subtitle">Diğer Sağlayıcılardan Sinyaller</h3>
+            <div class="table-container">
+              <div class="shift-table"></div>
+              <div class="info-table">
+                <ul class="column-list">
+                  <li class="item-head yellow">
+                    Trading Central Signals
+                  </li>  
+                  <li class="item">
+                    Regulated by the AMD (comma) SEC&SFC
+                  </li>
+                  <li class="item">
+                    Free with a Fondex Live Account
+                  </li>
+                  <li class="item">
+                    Produced by professional research analysts
+                  </li>
+                  <li class="item">
+                    Entry&exit points provided
+                  </li>
+                  <li class="item">
+                    Alternative scenario available
+                  </li>
+                  <li class="item">
+                    Integrated with the platform
+                  </li>
+                  <li class="item">
+                    Full coverage of the Forex market
+                  </li>
+                  <li class="item">
+                    Signals for major Forex pairs are updated 12 times a day
+                  </li>                
+                </ul>
+                <ul class="column-list">
+                  <li class="item-head orange">
+                    Signals from other providers
+                  </li>  
+                  <li class="item">
+                    Regulated by the AMD (comma) SEC&SFC
+                  </li>
+                  <li class="item">
+                    Free with a Fondex Live Account
+                  </li>
+                  <li class="item">
+                    Produced by professional research analysts
+                  </li>
+                  <li class="item">
+                    Entry&exit points provided
+                  </li>
+                  <li class="item">
+                    Alternative scenario available
+                  </li>
+                  <li class="item">
+                    Integrated with the platform
+                  </li>
+                  <li class="item">
+                    Full coverage of the Forex market
+                  </li>
+                  <li class="item">
+                    Signals for major Forex pairs are updated 12 times a day
+                  </li> 
+                </ul>
+              </div>              
+            </div>
+            <div class="btn-container">
+              <a class="table-section-btn" href="#;">SİNYALLERİ KULLANMAYA BAŞLA</a>
+            </div>
+          </div>
+        </div>                                              
+      </section>  
+
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-container">         
+
+          <p class="footer-text">
+            <span class="text-uppercase">RİSK UYARISI</span><br/>Kaldıraçlı işlem gören tüm finansal ürünler, sermayeniz için yüksek derecede risk taşır. Bunlar tüm yatırımcılara uygun değildir ve yatırımınızın tamamını kaybedebilirsiniz. Lütfen riskleri tamamen anladığınızdan emin olun ve gerekirse bağımsız tavsiyeler isteyin. ABD, Kanada, İsrail ve İran, yatırımcılarına hizmet vermediğimiz ülkeler arasındadır. TrendSinyal Limited, lisanslı ve regüle bir aracı kurumdur.
+          </p>
+
+          <div class="footer-bottom">
+            <span class="footer-bottom-text">
+            &copy; 2019 TrendSinyal. Tüm hakları saklıdır.
+            </span>
+            <a href="#;" class="footer-bottom-text">
+              Kişisel verileri işleme politikası
+            </a>
+          </div>
+
+        </div>
+      </div>  
+    </footer>
+
+    <!-- For testimonials slider-->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+        
+    <script src="./script/plugin.js"></script>
+    <script src="./script/app.js"></script>
+
+  </body>
+
+</html>

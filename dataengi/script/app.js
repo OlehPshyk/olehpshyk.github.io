@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./modules/handle-sliders */ \"./src/js/modules/handle-sliders.js\");\n\n__webpack_require__(/*! ./modules/handle-blog-tab */ \"./src/js/modules/handle-blog-tab.js\");\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("\n\n__webpack_require__(/*! ./modules/handle-sliders */ \"./src/js/modules/handle-sliders.js\");\n\n__webpack_require__(/*! ./modules/handle-blog-tab */ \"./src/js/modules/handle-blog-tab.js\");\n\n__webpack_require__(/*! ./modules/handle-describe */ \"./src/js/modules/handle-describe.js\");\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("\n\n__webpack_require__(/*! ./modules/handle-sliders */ \"./src/js/modules
 
 "use strict";
 eval("\n\nfunction _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }\n\ndocument.addEventListener('DOMContentLoaded', function () {\n\tvar tabList = document.getElementById('blog-tab-list');\n\tif (tabList) {\n\t\tvar handleBlogTab = function handleBlogTab(e) {\n\t\t\te.preventDefault();\n\t\t\tif (!e.target.classList.contains('active')) {\n\t\t\t\t//tabList.querySelectorAll('.js-tab-link.active')[0].classList.remove('active');\n\t\t\t\tblogTabs.map(function (tab) {\n\t\t\t\t\ttab.classList.remove('active');\n\t\t\t\t});\n\t\t\t\te.target.classList.add('active');\n\t\t\t}\n\t\t};\n\n\t\tvar blogTabs = [].concat(_toConsumableArray(tabList.querySelectorAll('.js-tab-link')));\n\t\t//const blogTabs1 = document.getElementsByClassName('js-tab-link');\t\t\n\t\tblogTabs && blogTabs.map(function (tab) {\n\t\t\ttab.addEventListener(\"click\", handleBlogTab);\n\t\t});\n\t}\n});\n\n//# sourceURL=webpack:///./src/js/modules/handle-blog-tab.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/handle-describe.js":
+/*!*******************************************!*\
+  !*** ./src/js/modules/handle-describe.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var describeForm = document.getElementById(\"describe-form\");\n  describeForm && describeForm.addEventListener(\"submit\", submitForm);\n  function submitForm(e) {\n    e.preventDefault();\n    e.stopPropagation();\n    var firstName = encodeURIComponent(document.getElementById('firstName').value);\n    var lastName = encodeURIComponent(document.getElementById('lastName').value);\n    var email = encodeURIComponent(document.getElementById('email').value);\n    var company = encodeURIComponent(document.getElementById('company').value);\n    var describeText = encodeURIComponent(document.getElementById('describeText').value);\n    var describeFull = 'firstName=' + firstName + '&lastName=' + lastName + '&email=' + email + '&company=' + company + '&describeText=' + describeText;\n    var xhr = new XMLHttpRequest();\n    xhr.onreadystatechange = function (e) {\n      if (xhr.readyState === 4 && xhr.status === 200) {\n        describeForm.innerHTML = xhr.responseText;\n      }\n    };\n    xhr.open(describeForm.method, describeForm.action);\n    xhr.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\n    xhr.send(describeFull);\n  }\n});\n\n//# sourceURL=webpack:///./src/js/modules/handle-describe.js?");
 
 /***/ }),
 

@@ -1244,7 +1244,7 @@ body {
   z-index: 5;
 }
 
-.describe-form-section {
+.describe-form-section .describe-form-section-container {
   background-image: linear-gradient(249deg, var(--dark-sky-blue, #4fafdd), var(--bluish, #2777b8));
 }
 

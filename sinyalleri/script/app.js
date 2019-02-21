@@ -118,19 +118,19 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./modules/handle-submitform */ \"./src/js/modules/handle-submitform.js\");\n\n__webpack_require__(/*! ./modules/handle-animationXL */ \"./src/js/modules/handle-animationXL.js\");\n\n__webpack_require__(/*! ./modules/handle-scrollify */ \"./src/js/modules/handle-scrollify.js\");\n\n__webpack_require__(/*! ./modules/smooth-scroll */ \"./src/js/modules/smooth-scroll.js\");\n\n__webpack_require__(/*! ./modules/darken-sections */ \"./src/js/modules/darken-sections.js\");\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("\n\n__webpack_require__(/*! ./modules/dark-sections */ \"./src/js/modules/dark-sections.js\");\n\n__webpack_require__(/*! ./modules/smooth-scroll */ \"./src/js/modules/smooth-scroll.js\");\n\n__webpack_require__(/*! ./modules/handle-submitform */ \"./src/js/modules/handle-submitform.js\");\n\n__webpack_require__(/*! ./modules/handle-animationXL */ \"./src/js/modules/handle-animationXL.js\");\n\n__webpack_require__(/*! ./modules/handle-scrollify */ \"./src/js/modules/handle-scrollify.js\");\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
-/***/ "./src/js/modules/darken-sections.js":
-/*!*******************************************!*\
-  !*** ./src/js/modules/darken-sections.js ***!
-  \*******************************************/
+/***/ "./src/js/modules/dark-sections.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/dark-sections.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n\tvar toFormBtn = document.getElementById('to-form-btn');\n\n\tvar heroSection = document.getElementById('hero-section'),\n\t    graphikSection = document.getElementById('graphik-section'),\n\t    infoSection = document.getElementById('info-section');\n\n\tvar darkenSections = function darkenSections(e) {\n\t\theroSection.classList.add('is-darken');\n\t\tgraphikSection.classList.add('is-darken');\n\t\tinfoSection.classList.add('is-darken');\n\t};\n\n\ttoFormBtn && toFormBtn.addEventListener(\"click\", darkenSections);\n});\n\n//# sourceURL=webpack:///./src/js/modules/darken-sections.js?");
+eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var toFormBtn1 = document.getElementById('to-form-btn1'),\n      toFormBtn2 = document.getElementById('to-form-btn2'),\n      mainSection = document.getElementById('main'),\n      formSection = document.getElementById(\"form-section\");\n\n  toFormBtn1.addEventListener(\"click\", darkenSections);\n  toFormBtn2.addEventListener(\"click\", darkenSections);\n\n  function darkenSections(e) {\n    e.preventDefault();\n    mainSection.classList.add('is-darken');\n    setTimeout(function () {\n      mainSection.addEventListener(\"click\", undarkenSections);\n    }, 1000); // do not used e.stopPropagation becouse smothScroll not work\n  }\n\n  function undarkenSections(e) {\n    if (!formSection.contains(e.target)) {\n      mainSection.classList.remove('is-darken');\n      mainSection.removeEventListener(\"click\", undarkenSections);\n    }\n  }\n});\n\n//# sourceURL=webpack:///./src/js/modules/dark-sections.js?");
 
 /***/ }),
 

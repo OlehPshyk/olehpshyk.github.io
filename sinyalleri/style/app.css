@@ -327,6 +327,28 @@ video {
 
 /*=======================================================================================*/
 
+.main {
+  position: relative;
+}
+
+.main:after {
+  opacity: 0;
+  z-index: -100;
+  transition: opacity 2s ease 0.5s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.main.is-darken:after {
+  opacity: 1;
+  z-index: 100;
+}
+
 .header {
   position: absolute;
   z-index: 100;
@@ -564,6 +586,8 @@ video {
 .form-section {
   background-color: #ffffff;
   box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 200;
 }
 
 .form-section.sticky {
@@ -880,7 +904,7 @@ video {
 }
 
 .graphik-section .graphik-bottom-text {
-  font-family: SourceSansPro;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 11px;
   text-align: center;
   color: #3b3c5a;
@@ -1039,21 +1063,6 @@ video {
   left: 58px;
 }
 
-.animation .dot-line {
-  transform: translateY(0);
-  transition: transform 1s ease-out 2s;
-}
-
-.animation .bull {
-  transform: translate(0, 0);
-  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-}
-
-.animation .bull .bull-end {
-  opacity: 1;
-  transition: opacity 2s ease 2s;
-}
-
 .animation .bear {
   transform: translate(0, 0);
   transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -1061,7 +1070,22 @@ video {
 
 .animation .bear .bear-end {
   opacity: 1;
-  transition: opacity 2s ease 2s;
+  transition: opacity 1s ease 1.5s;
+}
+
+.animation .bull {
+  transform: translate(0, 0);
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.animation .bull .bull-end {
+  opacity: 1;
+  transition: opacity 1s ease 1.5s;
+}
+
+.animation .dot-line {
+  transform: translateY(0);
+  transition: transform 1s ease-out 1.5s;
 }
 
 .info-section {
@@ -1394,14 +1418,14 @@ video {
     margin: 0 auto 26px;
   }
 
+  .form-section .label-checkbox:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
   .form-section .label-checkbox {
     font-size: 22px;
     line-height: 0.93;
     min-height: 27px;
-  }
-
-  .form-section .label-checkbox:not(:last-child) {
-    margin-bottom: 9px;
   }
 
   .form-section .label-checkbox .custom-checkbox {
@@ -1761,14 +1785,14 @@ video {
     margin-bottom: 15px;
   }
 
+  .form-section .input-group:not(:last-child) {
+    margin-bottom: unset;
+  }
+
   .form-section .input-group {
     padding: 0 10px;
     flex: 1 1 33%;
     max-width: 297px;
-  }
-
-  .form-section .input-group:not(:last-child) {
-    margin-bottom: unset;
   }
 
   .form-section .input-control {
@@ -1789,6 +1813,10 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .form-section .label-checkbox:not(:last-child) {
+    margin-bottom: unset;
   }
 
   .form-section .label-checkbox {

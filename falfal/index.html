@@ -12,7 +12,8 @@
   </head>
 
   <body>  
-    <header class="header"> <!-- add class "logined" here to <header> if user is logined -->
+    <!-- add/remove class "logined" to <body>, or to <header> if user is logined (for show account-btn-login/account-btn-logined buttons) -->
+    <header class="header"> 
       <div class="wrapper">
         <div class="header-container">
           <div class="nav-container first">            
@@ -57,7 +58,7 @@
               <li class="nav-item"><a class="nav-link" href="#;">BLOG</a></li>
               <li class="nav-item"><a class="nav-link" href="#;">SSS</a></li> 
             </ul>
-            <a class="account-btn-login" href="#;">                 
+            <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
               <span class="account-btn-text">gİRİŞ YAP</span>
             </a> 
             <a class="account-btn-logined" href="#;">
@@ -133,7 +134,7 @@
             </li>
           </ul>
           <div class="account-btn-container">
-            <a class="account-btn-login" href="#;">                 
+            <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
               <span class="account-btn-text">gİRİŞ YAP</span>              
             </a>
             <a class="account-btn-logined" href="#;">
@@ -1225,7 +1226,7 @@
             </div>                         
           </div>        
         </div>                                   
-      </section>  
+      </section>
 
     </main>
 
@@ -1301,6 +1302,90 @@
       </div>  
     </footer>
 
+    <div id="modal-login" style="display:none"> 
+      <div class="login-section-container">
+        <div class="login-info-container">
+          <div class="inner-login-container">
+            <div class="logo-login-container">
+              <img class="logo-login-img" src="./img/logo.png" alt="logo">
+            </div>
+            <a class="modal-btn facebook-btn" href="#">
+              <img class="modal-btn-img" src="./img/facebook.png" alt="facebook">
+              <span>Facebook ile giriş yap</span>
+            </a>
+            <a class="modal-btn google-btn" href="#">
+              <img class="modal-btn-img" src="./img/facebook.png" alt="google">
+              <span>Google ile giriş yap</span>
+            </a>
+            <span class="or-text">ya da</span>
+            <form action="" id="login-form" class="login-form">
+              <div class="input-collection">                                        
+                <div class="input-group"> 
+                  <input class="input-control" type="email" placeholder="E-posta" value="" id="loginemail" required>
+                </div>
+                <div class="input-group"> 
+                  <input class="input-control" type="password" placeholder="Şifre" value="" id="loginpassword" required>
+                </div>
+              </div>
+              <button class="modal-btn modal-submit-btn" type="submit">Giriş yap</button>
+            </form>
+            <div class="forgot-container">
+              <a class="forget-p" href="#">Şifreni mi unuttun?</a>
+            </div>            
+          </div>
+          <span class="sign-text">Yoksa hala üye olmadın mı? <a class="sign-link" href="#modal-sign-up" data-modal-open data-translatable>Hemen kaydol!</a></span>
+        </div>
+        <div class="login-img-container">
+          <img class="login-img" src="./img/login-img.jpg" alt="img">
+        </div>        
+      </div>
+    </div>
+
+    <div id="modal-sign-up" style="display:none"> 
+      <div class="login-section-container">
+        <div class="login-info-container">
+          <div class="inner-login-container">
+            <div class="logo-login-container">
+              <img class="logo-login-img" src="./img/logo.png" alt="logo">
+            </div>
+            <a class="modal-btn facebook-btn" href="#">
+              <img class="modal-btn-img" src="./img/facebook.png" alt="facebook">
+              <span>Facebook ile bağlan</span>
+            </a>
+            <a class="modal-btn google-btn" href="#">
+              <img class="modal-btn-img" src="./img/facebook.png" alt="google">
+              <span>Google ile bağlan</span>
+            </a>
+            <span class="or-text">ya da</span>
+            <form action="" id="sign-up-form" class="login-form">
+              <div class="input-collection">
+                <div class="input-group">
+                  <input class="input-control" type="text" placeholder="İsim ve soyisim" value="" id="signupname" required>
+                </div>                          
+                <div class="input-group"> 
+                  <input class="input-control" type="email" placeholder="E-posta" value="" id="signupemail" required>
+                </div>
+                <div class="input-group"> 
+                  <input class="input-control" type="password" placeholder="Şifre" value="" id="signuppassword" required>
+                </div>
+              </div>
+              <button class="modal-btn modal-submit-btn" type="submit">Kaydol</button>
+            </form>                        
+          </div>
+          <span class="sign-text">Hesabın var mı? <a class="sign-link" href="#modal-login" data-modal-open data-translatable>Giriş yap</a></span>          
+        </div>
+        <div class="login-img-container">
+          <img class="login-img" src="./img/login-img.jpg" alt="img">
+        </div>        
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-inner">
+        <!-- <a class="modal-close" data-modal-close><img class="modal-close-icon" src="./img/modal-close.png" alt="close"></a> -->
+        <div class="modal-content"></div>
+      </div>
+    </div> 
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 

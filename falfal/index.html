@@ -12,7 +12,7 @@
   </head>
 
   <body>  
-    <header class="header">
+    <header class="header"> <!-- add class "logined" here to <header> if user is logined -->
       <div class="wrapper">
         <div class="header-container">
           <div class="nav-container first">            
@@ -56,10 +56,11 @@
               <li class="nav-item"><a class="nav-link" href="#;">nasıl ÇALIŞIR?</a></li>
               <li class="nav-item"><a class="nav-link" href="#;">BLOG</a></li>
               <li class="nav-item"><a class="nav-link" href="#;">SSS</a></li> 
-            </ul>            
-            <!-- add class "logined" here to <a> if user is logined -->
-            <a class="account-btn" href="#;">                 
-              <span class="account-btn-text">gİRİŞ YAP</span>              
+            </ul>
+            <a class="account-btn-login" href="#;">                 
+              <span class="account-btn-text">gİRİŞ YAP</span>
+            </a> 
+            <a class="account-btn-logined" href="#;">
               <svg class="account-btn-img" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 896 887">
                 <path d="M745.1,297.1C745.1,133,612.1,0,448,0C283.9,0,150.9,133,150.9,297.1c0,78.8,31.3,154.4,87,210.1c18.2,18.2,38.6,34,60.9,47
                   c-138.2,46-247.6,152.9-296.9,290c-6,16.6,2.7,35,19.3,40.9c16.6,6,35-2.7,40.9-19.3C120.3,703.3,275.4,594.2,448,594.2
@@ -68,7 +69,7 @@
                   c-15-9.4-34.7-4.9-44.1,10.1c-9.4,15-4.9,34.7,10.1,44.1c0.2,0.1,0.4,0.3,0.6,0.4c79.7,48.9,140.5,123.5,172.2,211.5
                   c6,16.6,24.3,25.3,40.9,19.3C891.4,879.2,900.1,860.8,894.1,844.2L894.1,844.2z"/>
               </svg>
-            </a>            
+            </a>           
           </div>
           <div class="hamb-btn-container">
             <button class="hamb-btn">
@@ -132,9 +133,18 @@
             </li>
           </ul>
           <div class="account-btn-container">
-            <a class="account-btn" href="#;">                 
-              <span class="account-btn-text">gİRİŞ YAP</span>
-              <img class="account-btn-img" src="./img/account-img.png" alt="account">
+            <a class="account-btn-login" href="#;">                 
+              <span class="account-btn-text">gİRİŞ YAP</span>              
+            </a>
+            <a class="account-btn-logined" href="#;">
+              <svg class="account-btn-img" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 896 887">
+                <path d="M745.1,297.1C745.1,133,612.1,0,448,0C283.9,0,150.9,133,150.9,297.1c0,78.8,31.3,154.4,87,210.1c18.2,18.2,38.6,34,60.9,47
+                  c-138.2,46-247.6,152.9-296.9,290c-6,16.6,2.7,35,19.3,40.9c16.6,6,35-2.7,40.9-19.3C120.3,703.3,275.4,594.2,448,594.2
+                  C612.1,594.2,745.1,461.2,745.1,297.1C745.1,297.1,745.1,297.1,745.1,297.1z M448,530.2c-128.5,0-233.1-104.6-233.1-233.1
+                  S319.5,64,448,64s233.1,104.6,233.1,233.1S576.5,530.2,448,530.2z M894.1,844.2c-36.7-101.7-106.8-188-199-244.5
+                  c-15-9.4-34.7-4.9-44.1,10.1c-9.4,15-4.9,34.7,10.1,44.1c0.2,0.1,0.4,0.3,0.6,0.4c79.7,48.9,140.5,123.5,172.2,211.5
+                  c6,16.6,24.3,25.3,40.9,19.3C891.4,879.2,900.1,860.8,894.1,844.2L894.1,844.2z"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -143,12 +153,81 @@
 
     <main role="main" class="main">
 
-      <section class="mslider-section">
-        <div class="wrapper">
-          <div class="mslider-section-container">
-                               
-          </div>        
-        </div>                                   
+      <section class="mslider-section">        
+        <div class="mslider-section-container wrapper">
+
+          <div class="mslider">
+            <div>
+              <div class="mslide-container ">
+                <div class="percent-container">
+                  <span class="percent-text">
+                    %50
+                  </span>
+                </div>
+                <div class="slide-text-container">
+                  <h3 class="slide-title">
+                    İLK FALINDA <span class="accent-text">İNDİRİM</span> SENİ BEKLİYOR!
+                  </h3>
+                  <p class="slide-text">
+                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                  </p>
+                </div>                  
+              </div>
+            </div>
+            <div>
+              <div class="mslide-container ">
+                <div class="percent-container">
+                  <span class="percent-text">
+                    %30
+                  </span>
+                </div>
+                <div class="slide-text-container">
+                  <h3 class="slide-title">                    
+                    Lorem ipsum dolor <span class="accent-text">sit amet,</span> consectetur adipisicing elit.
+                  </h3>
+                  <p class="slide-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque aliquam et quis reiciendis est quaerat, consectetur assumenda! Quos, quisquam illo libero adipisci voluptate excepturi hic.
+                  </p>
+                </div>                  
+              </div>             
+            </div>
+            <div>
+              <div class="mslide-container ">
+                <div class="percent-container">
+                  <span class="percent-text">
+                    %40
+                  </span>
+                </div>
+                <div class="slide-text-container">
+                  <h3 class="slide-title">                    
+                    Lorem ipsum dolor sit amet, <span class="accent-text">consectetur</span> adipisicing elit. Hic officia eius atque?
+                  </h3>
+                  <p class="slide-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos autem adipisci, earum, accusamus inventore dolorum. Nisi, vitae in ratione eligendi!
+                  </p>
+                </div>                  
+              </div>              
+            </div>
+            <div>
+              <div class="mslide-container ">
+                <div class="percent-container">
+                  <span class="percent-text">
+                    %80
+                  </span>
+                </div>
+                <div class="slide-text-container">
+                  <h3 class="slide-title">                    
+                    <span class="accent-text">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. <span class="accent-text">Nemo</span> vel maxime nobis alias aliquam!
+                  </h3>
+                  <p class="slide-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nisi voluptatibus quasi, odit ut assumenda nihil? Ipsam, similique, minima. Reprehenderit, voluptatem!
+                  </p>
+                </div>                  
+              </div>              
+            </div>
+          </div>
+
+        </div>                            
       </section> 
 
       <section class="services-section">
@@ -1222,11 +1301,10 @@
       </div>  
     </footer>
 
-    <!-- For slider-->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
-        
-    <!-- <script src="./script/plugin.js"></script> -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="./script/plugin.js"></script>
     <script src="./script/app.js"></script>
 
   </body>

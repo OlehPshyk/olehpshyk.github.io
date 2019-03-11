@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+
+  <body>      
+    <header class="header"> 
+      <div class="wrapper">
+        <div class="header-container">
+          <div class="header-top">
+            <a href="#">
+              <div class="logo-container">
+                <!-- <img class="logo-img" src="./" alt="logo"> -->
+                <span class="logo">Simplicant</span>
+              </div>
+            </a>
+            <div class="header-form-container hidden-xs hidden-sm">              
+              <form class="search-form" action="">                
+                <div class="input-group navbar-search">
+                  <div class="input-group-btn">
+                    <button type="button" class="search-dropdown-btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="btn-text">All</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">???</a></li>
+                      <li><a href="#">???</a></li>
+                      <li><a href="#">???</a></li>                      
+                    </ul>
+                  </div>
+                  <button class="btn search-btn" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button> 
+                  <input type="text" class="form-control input-group" placeholder="Search...">
+                </div>
+              </form>
+              <i data-toggle="tooltip" title="???" class="fas fa-question-circle tooltip-question"></i>              
+            </div>
+            <div class="header-account-container">
+              <ul class="account-icon-list hidden-xs hidden-sm">
+                <li class="icon-item"><a href="#"><i class="fas fa-bell"><span class="icon-badge">2</span></i></a></li>
+                <li class="icon-item"><a href="#"><i class="fas fa-envelope"><span class="icon-badge">1</span></i></a></li>
+                <li class="icon-item"><a href="#"><i class="fas fa-cog"></i></a></li>
+              </ul>
+              <div class="dropdown menu-right">
+                <button class="user-dropdown-btn dropdown-toggle" type="button" data-toggle="dropdown">
+                  <span class="user-icon-container">
+                    <img class="user-icon" src="./img/user.png" alt="user">
+                  </span>
+                  <span class="user-dropdown-text hidden-xs">Adam Fisher</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">???</a></li>
+                  <li><a href="#">???</a></li>
+                  <li><a href="#">Log Out</a></li>
+                </ul>
+                <button type="button" class="hamb-toggle" data-toggle="collapse" data-target=".header-bottom">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+            </div>            
+          </div>
+          <div class="header-bottom collapse">  <!-- header-bottom -->
+            <ul class="account-icon-list hidden-md hidden-lg">
+              <li class="icon-item"><a href="#"><i class="fas fa-bell"><span class="icon-badge">2</span></i></a></li>
+              <li class="icon-item"><a href="#"><i class="fas fa-envelope"><span class="icon-badge">1</span></i></a></li>
+              <li class="icon-item"><a href="#"><i class="fas fa-cog"></i></a></li>
+            </ul>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="far fa-question-circle"></i>
+                  <span class="nav-text text-semi-bold">Dashboard</span>                  
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fas fa-briefcase"></i>
+                  <span class="nav-text">Jobs</span>
+                </a>
+              </li>
+              <li class="nav-item">                
+                <div class="dropdown">
+                  <button class="nav-dropdown-btn dropdown-toggle" type="button" data-toggle="dropdown">
+                    <i class="fas fa-user-alt"></i>
+                    <span class="nav-dropdown-text">Candidates</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="drop-nav-link" href="#">???</a></li>
+                    <li><a class="drop-nav-link" href="#">???</a></li>
+                    <li><a class="drop-nav-link" href="#">???</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">                
+                <div class="dropdown">
+                  <button class="nav-dropdown-btn dropdown-toggle" type="button" data-toggle="dropdown">
+                    <i class="fas fa-check"></i>
+                    <span class="nav-dropdown-text">Tasks</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="drop-nav-link" href="#">???</a></li>
+                    <li><a class="drop-nav-link" href="#">???</a></li>
+                    <li><a class="drop-nav-link" href="#">???</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span class="nav-text">Calendar</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="far fa-question-circle"></i>
+                  <span class="nav-text">Messages</span>
+                </a>
+              </li>
+              <li class="nav-item active">                
+                <div class="dropdown">
+                  <button class="nav-dropdown-btn dropdown-toggle" type="button" data-toggle="dropdown">
+                    <i class="fas fa-chart-bar"></i>
+                    <span class="nav-dropdown-text">Reports</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="drop-nav-link" href="#">???</a></li>
+                    <li><a class="drop-nav-link" href="#">???</a></li>
+                    <li><a class="drop-nav-link" href="#">???</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>       
+    </header>      
+
+    <main role="main" class="main">
+      <section class="top-section">
+        <div class="wrapper">
+          <div class="top-section-container">
+            <h2 class="page-title">Reports</h2>
+            <p class="page-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>        
+      </section> 
+      <section class="report-section fullheight">        
+        <div class="report-section-container wrapper">
+          <ul class="nav nav-tabs report-nav-tabs">
+            <li class="active">
+              <a href="#preBuiltReports" data-toggle="tab">Pre-built reports</a>
+            </li>
+            <li>
+              <a href="#savedReports" data-toggle="tab">Saved reports</a>
+            </li>
+            <li>
+              <a href="#customReport" data-toggle="tab">Custom Report</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane report-pane active" id="preBuiltReports">
+              <div class="report-sidebar">
+                <!-- <div class="list-group-header after-line"><a class="header-link" href="">Candidates</a></div> -->
+                <div class="list-group-header after-line"><span class="header-link" href="">Candidates</span></div>                
+                <ul class="list-group">                  
+                  <li class="list-item"><a class="item-link" href="#">Activity Summary</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Candidates Sources</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Source Quality</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Time to Hire</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Duplicate Candidates</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Candidates Pre Tag</a></li>
+                  <li class="list-item"><a class="item-link" href="#">External Recruiters</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Hiring Funnel</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Stagnant Candidates</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Time Per Status</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Status Pipeline Activity</a></li>                  
+                </ul>
+                <!-- <div class="list-group-header after-line"><a class="header-link" href="">Job Listing</a></div> -->
+                <div class="list-group-header after-line"><span class="header-link" href="">Job Listing</span></div>
+                <ul class="list-group">                  
+                  <li class="list-item"><a class="item-link" href="#">Job Stats</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Department Stats</a></li>                                 
+                </ul>
+                <!-- <div class="list-group-header after-line"><a class="header-link" href="">Compliance</a></div> -->
+                <div class="list-group-header after-line"><span class="header-link" href="">Compliance</span></div>
+                <ul class="list-group">                  
+                  <li class="list-item"><a class="item-link" href="#">Race / Ethnicity</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Veteran Status</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Disability Status</a></li>
+                </ul>
+                <!-- <div class="list-group-header after-line"><a class="header-link" href="">Referral Activity</a></div> -->
+                <div class="list-group-header after-line"><span class="header-link" href="">Referral Activity</span></div>
+                <ul class="list-group">                  
+                  <li class="list-item"><a class="item-link" href="#">By Employee</a></li>
+                  <li class="list-item"><a class="item-link" href="#">By Jobs</a></li>                 
+                </ul>
+                <!-- <div class="list-group-header"><a class="header-link" href="">User activity</a></div> -->
+                <div class="list-group-header"><span class="header-link" href="">User activity</span></div>
+              </div>
+              <div class="report-container">                
+                <div class="preBuiltReports-img-container">
+                  <svg width="180px" height="216px" viewBox="0 0 180 216">                   
+                    <defs>
+                      <linearGradient x1="47.0220318%" y1="97.1729629%" x2="52.9887664%" y2="2.81013515%" id="linearGradient-1">
+                        <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+                      </linearGradient>
+                      <linearGradient x1="56.8264778%" y1="93.8256693%" x2="43.1691545%" y2="6.18851271%" id="linearGradient-2">
+                        <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+                      </linearGradient>
+                      <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-3">
+                        <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+                      </linearGradient>
+                      <linearGradient x1="49.9922994%" y1="100%" x2="49.9922994%" y2="0%" id="linearGradient-4">
+                        <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+                      </linearGradient>
+                    </defs>
+                    <g id="2018-Platform-::-Reports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Reports---Pre-built-Reports" transform="translate(-510.000000, -281.000000)" fill-rule="nonzero">
+                        <g id="Group-11" transform="translate(510.000000, 281.000000)">
+                          <g id="undraw_files_6b3d">
+                            <polygon id="Path" fill="url(#linearGradient-1)" points="164.812024 216 27 204.767168 42.187976 18 180 29.2328322"></polygon>
+                            <polygon id="Path" fill-opacity="0.716209572" fill="#213C68" points="162.307445 213 29 202.047658 43.6925549 20 177 30.9495397"></polygon>
+                            <polygon id="Path" fill="url(#linearGradient-2)" points="171 184.778455 35.2881256 211 0 26.2215447 135.711874 0"></polygon>
+                            <polygon id="Path" fill="#E0E0E0" points="169 182.522959 37.2563738 208 3 28.4742358 134.743626 3"></polygon>
+                            <rect id="Rectangle" fill="url(#linearGradient-3)" x="17" y="14" width="138" height="188"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" x="19" y="17" width="134" height="183"></rect>
+                            <circle id="Oval" stroke="#FFFFFF" fill="#FFFFFF" cx="85.5" cy="42.5" r="8.5"></circle>
+                            <path d="M85.5,53 L85.5,53 C81.3479052,53.0271121 77.9968103,56.4911119 78.0000023,60.7526873 L78.0000023,66.6527317 C82.846833,68.4490894 88.153167,68.4490894 92.9999977,66.6527317 L92.9999977,60.7526873 C93.0031897,56.4911119 89.6520948,53.0271121 85.5,53 L85.5,53 Z" id="Path" stroke="#FFFFFF" fill="#FFFFFF"></path>
+                            <path d="M77.920698,42.5464769 C77.2378861,41.2192787 76.9251425,39.7337273 77.0151245,38.2449482 C77.1119499,36.7523273 77.7878036,35.3558343 78.8996201,34.3510807 C80.1380835,33.2911615 81.8166387,32.9172377 83.4387718,32.7879107 C85.0609049,32.6585837 86.7056069,32.7373045 88.3023501,32.4196099 C90.9727078,31.8739094 93.3108439,30.2813074 94.7908827,28 C94.8924423,29.2510982 94.994002,30.530311 94.7542084,31.7561061 C94.5144148,32.9819012 93.8824881,34.2020734 92.8161119,34.8487085 C94.1081762,34.2498682 93.9671212,35.6555966 93.6878322,36.4962221 C94.3282221,37.2721842 95.8826488,37.4015112 95.9616397,38.4052012 C96.0406305,39.4088912 96.026525,40.4463187 95.637213,41.371288 C95.2479011,42.2962572 95.6654241,43.9297136 94.6667543,44" id="Path" stroke="#FFFFFF" fill="#FFFFFF"></path>
+                            <path d="M92,34 C92,34 97.5138837,34.5001502 93.5911493,43" id="Path" fill="#FFFFFF"></path>
+                            <g id="Group-9" transform="translate(31.000000, 161.000000)">
+                              <rect id="Rectangle" fill="url(#linearGradient-4)" x="0" y="0" width="18" height="18"></rect>
+                              <rect id="Rectangle" fill="#5C6F8E" x="2" y="1" width="15" height="15"></rect>
+                            </g>
+                            <g id="Group-9-Copy" transform="translate(31.000000, 122.000000)">
+                              <rect id="Rectangle" fill="url(#linearGradient-4)" x="0" y="0" width="18" height="18"></rect>
+                              <rect id="Rectangle" fill="#5C6F8E" x="2" y="1" width="15" height="15"></rect>
+                            </g>
+                            <g id="Group-9-Copy-2" transform="translate(31.000000, 82.000000)">
+                              <rect id="Rectangle" fill="url(#linearGradient-4)" x="0" y="0" width="18" height="18"></rect>
+                              <rect id="Rectangle" fill="#5C6F8E" x="2" y="1" width="15" height="15"></rect>
+                            </g>
+                            <g id="Group-9-Copy-3" transform="translate(31.000000, 42.000000)">
+                              <rect id="Rectangle" fill="url(#linearGradient-4)" x="0" y="0" width="18" height="18"></rect>
+                              <rect id="Rectangle" fill="#5C6F8E" x="2" y="1" width="15" height="15"></rect>
+                            </g>
+                            <g id="Group-5" transform="translate(64.000000, 85.000000)">
+                              <rect id="Rectangle" fill="#213C68" x="0" y="0" width="44" height="3"></rect>
+                              <rect id="Rectangle" fill="#E0E0E0" x="0" y="5" width="74" height="3"></rect>
+                              <rect id="Rectangle" fill="#E0E0E0" x="0" y="9" width="74" height="3"></rect>
+                            </g>
+                            <g id="Group-5-Copy" transform="translate(64.000000, 45.000000)">
+                              <rect id="Rectangle" fill="#213C68" x="0" y="0" width="44" height="3"></rect>
+                              <rect id="Rectangle" fill="#E0E0E0" x="0" y="5" width="74" height="3"></rect>
+                              <rect id="Rectangle" fill="#E0E0E0" x="0" y="9" width="74" height="3"></rect>
+                            </g>
+                            <rect id="Rectangle" fill="#213C68" x="64" y="125" width="44" height="3"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="64" y="129" width="74" height="3"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="64" y="133" width="74" height="3"></rect>
+                            <rect id="Rectangle" fill="#213C68" x="64" y="164" width="44" height="3"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="64" y="169" width="74" height="3"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="64" y="173" width="74" height="3"></rect>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="preBuiltReports-text">
+                  Please, select a report
+                </p>
+              </div>
+            </div>
+            <div class="tab-pane report-pane" id="savedReports">
+              <div class="report-sidebar">
+                <!-- <div class="list-group-header after-line"><a class="header-link" href="">Summary</a></div> -->
+                <div class="list-group-header"><span class="header-link" href="">Summary</span></div>
+                <ul class="list-group">                  
+                  <li class="list-item"><a class="item-link" href="#">Report name number one</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Some report name</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Some report name</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Report name number two</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Some report name</a></li>
+                  <li class="list-item"><a class="item-link" href="#">Report name number three</a></li>
+                </ul>                
+              </div>
+              <div class="report-container"> 
+                <div class="table-container">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Category</th>
+                          <th>Created by</th>
+                          <th class="text-center">Created Date</th>
+                          <th class="text-center">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>                      
+                        <tr>
+                          <td>Report name number one</td>
+                          <td>Candidats</td>
+                          <td>Darren Adams</td>
+                          <td class="text-center">02/06/2018</td>
+                          <td class="text-center">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g fill="#777B8E" fill-rule="nonzero">
+                                  <path d="M12.5,7 C13.875,7 15,5.875 15,4.5 C15,3.125 13.875,2 12.5,2 C11.125,2 10,3.125 10,4.5 C10,5.875 11.125,7 12.5,7 Z M12.5,9.5 C11.125,9.5 10,10.625 10,12 C10,13.375 11.125,14.5 12.5,14.5 C13.875,14.5 15,13.375 15,12 C15,10.625 13.875,9.5 12.5,9.5 Z M12.5,17 C11.125,17 10,18.125 10,19.5 C10,20.875 11.125,22 12.5,22 C13.875,22 15,20.875 15,19.5 C15,18.125 13.875,17 12.5,17 Z"></path>
+                                </g>
+                              </g>
+                            </svg>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Some report name</td>
+                          <td>Candidats</td>
+                          <td>Oea Romana</td>
+                          <td class="text-center">03/06/2018</td>
+                          <td class="text-center">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g fill="#777B8E" fill-rule="nonzero">
+                                  <path d="M12.5,7 C13.875,7 15,5.875 15,4.5 C15,3.125 13.875,2 12.5,2 C11.125,2 10,3.125 10,4.5 C10,5.875 11.125,7 12.5,7 Z M12.5,9.5 C11.125,9.5 10,10.625 10,12 C10,13.375 11.125,14.5 12.5,14.5 C13.875,14.5 15,13.375 15,12 C15,10.625 13.875,9.5 12.5,9.5 Z M12.5,17 C11.125,17 10,18.125 10,19.5 C10,20.875 11.125,22 12.5,22 C13.875,22 15,20.875 15,19.5 C15,18.125 13.875,17 12.5,17 Z"></path>
+                                </g>
+                              </g>
+                            </svg>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Some report name</td>
+                          <td>Job Listing</td>
+                          <td>Anne-Marije Markink</td>
+                          <td class="text-center">04/06/2018</td>
+                          <td class="text-center">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g fill="#777B8E" fill-rule="nonzero">
+                                  <path d="M12.5,7 C13.875,7 15,5.875 15,4.5 C15,3.125 13.875,2 12.5,2 C11.125,2 10,3.125 10,4.5 C10,5.875 11.125,7 12.5,7 Z M12.5,9.5 C11.125,9.5 10,10.625 10,12 C10,13.375 11.125,14.5 12.5,14.5 C13.875,14.5 15,13.375 15,12 C15,10.625 13.875,9.5 12.5,9.5 Z M12.5,17 C11.125,17 10,18.125 10,19.5 C10,20.875 11.125,22 12.5,22 C13.875,22 15,20.875 15,19.5 C15,18.125 13.875,17 12.5,17 Z"></path>
+                                </g>
+                              </g>
+                            </svg>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Report name number two</td>
+                          <td>Compliance</td>
+                          <td>Pol Soria</td>
+                          <td class="text-center">05/06/2018</td>
+                          <td class="text-center">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g fill="#777B8E" fill-rule="nonzero">
+                                  <path d="M12.5,7 C13.875,7 15,5.875 15,4.5 C15,3.125 13.875,2 12.5,2 C11.125,2 10,3.125 10,4.5 C10,5.875 11.125,7 12.5,7 Z M12.5,9.5 C11.125,9.5 10,10.625 10,12 C10,13.375 11.125,14.5 12.5,14.5 C13.875,14.5 15,13.375 15,12 C15,10.625 13.875,9.5 12.5,9.5 Z M12.5,17 C11.125,17 10,18.125 10,19.5 C10,20.875 11.125,22 12.5,22 C13.875,22 15,20.875 15,19.5 C15,18.125 13.875,17 12.5,17 Z"></path>
+                                </g>
+                              </g>
+                            </svg>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Some report name</td>
+                          <td>Compliance</td>
+                          <td>Débora Barbosa</td>
+                          <td class="text-center">06/06/2018</td>
+                          <td class="text-center">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g fill="#777B8E" fill-rule="nonzero">
+                                  <path d="M12.5,7 C13.875,7 15,5.875 15,4.5 C15,3.125 13.875,2 12.5,2 C11.125,2 10,3.125 10,4.5 C10,5.875 11.125,7 12.5,7 Z M12.5,9.5 C11.125,9.5 10,10.625 10,12 C10,13.375 11.125,14.5 12.5,14.5 C13.875,14.5 15,13.375 15,12 C15,10.625 13.875,9.5 12.5,9.5 Z M12.5,17 C11.125,17 10,18.125 10,19.5 C10,20.875 11.125,22 12.5,22 C13.875,22 15,20.875 15,19.5 C15,18.125 13.875,17 12.5,17 Z"></path>
+                                </g>
+                              </g>
+                            </svg>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Report name number three</td>
+                          <td>Referal activity</td>
+                          <td>Neeshaan El Pasha</td>
+                          <td class="text-center">06/06/2018</td>
+                          <td class="text-center">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g fill="#777B8E" fill-rule="nonzero">
+                                  <path d="M12.5,7 C13.875,7 15,5.875 15,4.5 C15,3.125 13.875,2 12.5,2 C11.125,2 10,3.125 10,4.5 C10,5.875 11.125,7 12.5,7 Z M12.5,9.5 C11.125,9.5 10,10.625 10,12 C10,13.375 11.125,14.5 12.5,14.5 C13.875,14.5 15,13.375 15,12 C15,10.625 13.875,9.5 12.5,9.5 Z M12.5,17 C11.125,17 10,18.125 10,19.5 C10,20.875 11.125,22 12.5,22 C13.875,22 15,20.875 15,19.5 C15,18.125 13.875,17 12.5,17 Z"></path>
+                                </g>
+                              </g>
+                            </svg>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane report-pane" id="customReport">
+              <div class="report-sidebar">                
+                <ul class="list-group">                  
+                  <li class="list-item"><a class="item-link" href="./building_report.html">Building report</a></li>
+                  <li class="list-item"><a class="item-link" href="./reviewing_report.html">Reviewing report</a></li>
+                </ul>                
+              </div>
+              <div class="report-container">
+                <div class="customReport-img-container">
+                  <svg width="129px" height="125px" viewBox="0 0 129 125">                    
+                    <defs>
+                      <linearGradient x1="50.0009871%" y1="100%" x2="50.0009871%" y2="0%" id="linearGradient-1">
+                        <stop stop-color="#808080" stop-opacity="0.25" offset="1%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+                      </linearGradient>
+                      <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+                        <stop stop-color="#B3B3B3" stop-opacity="0.25" offset="0%"></stop>
+                        <stop stop-color="#B3B3B3" stop-opacity="0.1" offset="54%"></stop>
+                        <stop stop-color="#B3B3B3" stop-opacity="0.05" offset="100%"></stop>
+                      </linearGradient>
+                      <linearGradient x1="50%" y1="100.011179%" x2="50%" y2="0%" id="linearGradient-3">
+                        <stop stop-color="#B3B3B3" stop-opacity="0.25" offset="0%"></stop>
+                        <stop stop-color="#B3B3B3" stop-opacity="0.1" offset="54%"></stop>
+                        <stop stop-color="#B3B3B3" stop-opacity="0.05" offset="100%"></stop>
+                      </linearGradient>
+                      <linearGradient x1="49.9990129%" y1="100%" x2="49.9990129%" y2="0%" id="linearGradient-4">
+                        <stop stop-color="#808080" stop-opacity="0.25" offset="1%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+                        <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+                      </linearGradient>
+                      <linearGradient x1="49.9938748%" y1="100%" x2="49.9938748%" y2="0%" id="linearGradient-5">
+                        <stop stop-color="#B3B3B3" stop-opacity="0.25" offset="0%"></stop>
+                        <stop stop-color="#B3B3B3" stop-opacity="0.1" offset="54%"></stop>
+                        <stop stop-color="#B3B3B3" stop-opacity="0.05" offset="100%"></stop>
+                      </linearGradient>
+                    </defs>
+                    <g id="2018-Platform-::-Reports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Reports---Custom-Reports" transform="translate(-564.000000, -264.000000)">
+                        <g id="Group" transform="translate(550.000000, 264.000000)">
+                          <g id="undraw_files1_9ool" transform="translate(14.000000, 0.000000)">
+                            <polygon id="Path" fill="url(#linearGradient-1)" points="79.7633588 124.076336 0 124.076336 0 30.2738487 12.051667 16.740458 79.7633588 16.740458"></polygon>
+                            <polygon id="Path" fill="#FAFAFA" points="78.778626 121.122137 0.984732824 121.122137 0.984732824 31.6229743 12.737847 18.7099237 78.778626 18.7099237"></polygon>
+                            <rect id="Rectangle" fill="#E0E0E0" x="7.8778626" y="29.5419847" width="38.4045802" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="9.84732824" y="46.2824427" width="27.5725191" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#2C559C" x="9.84732824" y="73.8549618" width="61.0534351" height="23.6335878"></rect>
+                            <rect id="Rectangle" fill="#F5F5F5" x="58.0992366" y="29.5419847" width="13.7862595" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#F5F5F5" x="58.0992366" y="38.4045802" width="13.7862595" height="6.89312977"></rect>
+                            <polygon id="Path" fill="url(#linearGradient-2)" points="13.7862595 18.7099237 13.7862595 32.4961832 1.96946565 32.4961832 1.96946565 31.2909451 12.6526465 18.7099237"></polygon>
+                            <polygon id="Path" fill="#EEEEEE" points="1.96946565 31.5114504 12.8015267 18.7099237 12.8015267 31.5114504"></polygon>
+                            <polygon id="Path" fill="url(#linearGradient-1)" points="105.366412 115.21374 25.6030534 115.21374 25.6030534 21.4098597 37.6547204 7.8778626 105.366412 7.8778626"></polygon>
+                            <polygon id="Path" fill="#FAFAFA" points="104.381679 112.259542 26.5877863 112.259542 26.5877863 22.7603789 38.3409005 9.84732824 104.381679 9.84732824"></polygon>
+                            <rect id="Rectangle" fill="#E0E0E0" x="33.480916" y="20.6793893" width="38.4045802" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="34.4656489" y="37.4198473" width="27.5725191" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#2C559C" x="34.4656489" y="63.0229008" width="61.0534351" height="23.6335878"></rect>
+                            <rect id="Rectangle" fill="#F5F5F5" x="81.7328244" y="20.6793893" width="13.7862595" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#F5F5F5" x="81.7328244" y="30.5267176" width="13.7862595" height="6.89312977"></rect>
+                            <polygon id="Path" fill="url(#linearGradient-3)" points="38.4045802 8.86259542 38.4045802 22.648855 26.5877863 22.648855 26.5877863 21.4436168 37.2709671 8.86259542"></polygon>
+                            <polygon id="Path" fill="#EEEEEE" points="26.5877863 21.6641221 37.4198473 8.86259542 37.4198473 21.6641221"></polygon>
+                            <polygon id="Path" fill="url(#linearGradient-4)" points="129 107.335878 49.2366412 107.335878 49.2366412 13.5333907 61.2867334 0 129 0"></polygon>
+                            <polygon id="Path" fill="#FFFFFF" points="128.015267 103.396947 50.221374 103.396947 50.221374 13.8962016 61.9760767 0.984732824 128.015267 0.984732824"></polygon>
+                            <rect id="Rectangle" fill="#E0E0E0" x="57.1145038" y="11.8167939" width="38.4045802" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="58.0992366" y="29.5419847" width="27.5725191" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#2C559C" x="59.0839695" y="56.129771" width="61.0534351" height="23.6335878"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="106.351145" y="11.8167939" width="13.7862595" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="106.351145" y="22.648855" width="13.7862595" height="6.89312977"></rect>
+                            <rect id="Rectangle" fill="#E0E0E0" x="106.351145" y="32.4961832" width="13.7862595" height="6.89312977"></rect>
+                            <polygon id="Path" fill="url(#linearGradient-5)" points="63.0229008 1.96946565 63.0229008 15.7557252 50.221374 15.7557252 50.221374 14.5489458 61.7949704 1.96946565"></polygon>
+                            <polygon id="Path" fill="#EEEEEE" points="50.221374 13.7862595 61.0534351 0.984732824 61.0534351 13.7862595"></polygon>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="btn-container center">
+                  <a class="btn report-btn mw132" href="#">Built Report</a>                
+                  <!-- <button type="button" class="btn report-btn mw132">Built Report</button> -->
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>        
+      </section>     
+    </main> 
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="./script/plugin.js"></script>
+
+    <script src="./script/app.js"></script>  
+    
+    
+  </body>
+
+</html>

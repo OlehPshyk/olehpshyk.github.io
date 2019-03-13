@@ -468,12 +468,19 @@
                         </span>
                       </div>
                       <select id="selectRows" multiple="multiple">
-                        <option value="1">Candidates Sources</option>
-                        <option value="2">Option2</option>
-                        <option value="3">Option3</option>
-                        <option value="4">Option4</option>
-                        <option value="5">Option5</option>
-                        <option value="6">Option6</option>
+                        <optgroup label="title for optgroup rows" class="optgroup-rows">
+                          <option value="Candidates Sources" selected>Candidates Sources</option>
+                          <option
+                            value="2"
+                            data-subtext-1="xxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxx xxxxxxx xxxxxxxxxx xxxxxxx xxxxxxx xxxx xxx xxx"
+                            data-subtext-2="yy yyy">
+                            Option2
+                          </option>
+                          <option value="Option3">Option3</option>
+                          <option value="Option4">Option4</option>
+                          <option value="Option5">Option5</option>
+                          <option value="Option6">Option6</option>
+                        </optgroup>
                       </select>
                     </div>
 
@@ -497,54 +504,70 @@
                         </span>
                       </div>
                       <div class="checkbox-container">                        
-                        <label class="label-checkbox">                  
-                          <input class="input" type="checkbox" name="" id="">
-                          <div class="custom-checkbox">
-                            <!-- <svg class="checked-icon" viewBox="0 0 24 24" version="1.1" width="16px" height="16px">
-                              <g>
-                                <path fill="#ffffff" d="M 19.28125 5.28125 L 9 15.5625 L 4.71875 11.28125 L 3.28125 12.71875 L 8.28125 17.71875 L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z "/>
-                              </g>
-                            </svg> -->
-                            <!-- <svg class="checked-icon" viewBox="0 0 50 50" width="12px" height="12px">
-                              <g>
-                                <path fill="#ffffff" d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z "/>
-                              </g>
-                            </svg> -->
-                            <svg class="checked-icon" viewBox="0 0 50 50" width="12px" height="12px">
-                              <g>
-                                <path fill="#ffffff" d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z "/>
-                              </g>
-                            </svg>
-                          </div>                          
+                        <label class="labeled-checkbox">                  
+                          <input type="checkbox">
+                          <span class="custom-checkbox"></span>                          
                           Hide unavailable data fields                  
                         </label>
                       </div> 
                       <select id="selectColumns" multiple="multiple">
-                        <option value="1">Maximum Time-To-Hire</option>
-                        <option value="2">Maximum Time-To-Start</option>
-                        <option value="3">Minimum Time-To-Hire</option>
-                        <option value="4">Minimum Time-To-Start</option>
-                        <option value="5">Number of positions</option> 
-                        <option value="6">Maximum Time-To-Hire</option>
-                        <option value="7">Maximum Time-To-Start</option>
-                        <option value="8">Minimum Time-To-Hire</option>
-                        <option value="9">Minimum Time-To-Start</option>
-                        <option value="10">Number of positions</option> 
-                        <option value="11">Maximum Time-To-Hire</option>
-                        <option value="12">Maximum Time-To-Start</option>
-                        <option value="13">Minimum Time-To-Hire</option>
-                        <option value="14">Minimum Time-To-Start</option>
-                        <option value="15">Number of positions</option> 
-                        <option value="16">Maximum Time-To-Hire</option>
-                        <option value="17">Maximum Time-To-Start</option>
-                        <option value="18">Minimum Time-To-Hire</option>
-                        <option value="19">Minimum Time-To-Start</option>
-                        <option value="20">Number of positions</option> 
-                        <option value="21">Maximum Time-To-Hire</option>
-                        <option value="22">Maximum Time-To-Start</option>
-                        <option value="23">Minimum Time-To-Hire</option>
-                        <option value="24">Minimum Time-To-Start</option>
-                        <option value="25">Number of positions</option>                      
+                        <optgroup label="Latest date when the position is being / was opened" class="group-1">
+                          <option
+                            value="Maximum Time-To-Hire"
+                            data-subtext-1="Maximum number of days between a posotion`s open date and the hire date of the candidate for that position"
+                            data-subtext-2="Position"
+                          >
+                            Maximum Time-To-Hire                            
+                          </option>                          
+                          <option
+                            value="Maximum Time-To-Start"
+                            data-subtext-1="Maximum number of days between a posotion`s open date and date that the new hire starts"
+                            data-subtext-2="Position"
+                          >
+                            Maximum Time-To-Start
+                          </option>
+                          <option
+                            value="Minimum Time-To-Hire"
+                            data-subtext-1="Minimum number of days between a posotion`s open date and the hire date of the candidate for that position"
+                            data-subtext-2="Position"
+                          >
+                            Minimum Time-To-Hire
+                          </option>
+                          <option
+                            value="Minimum Time-To-Start"
+                            data-subtext-1="Minimum number of days between a posotion`s open date and the hire date of the candidate for that position"
+                            data-subtext-2="Position"
+                            >
+                              Minimum Time-To-Start
+                          </option>
+                          <option
+                            value="Number of positions"
+                            data-subtext-1="Aggregates the total number of positions"
+                            data-subtext-2="Position"
+                          >
+                            Number of positions
+                          </option> 
+                          <!-- next options for test -->
+                          <!-- <option value="6">Maximum Time-To-Hire</option>
+                          <option value="7">Maximum Time-To-Start</option>
+                          <option value="8">Minimum Time-To-Hire</option>
+                          <option value="9">Minimum Time-To-Start</option>
+                          <option value="10">Number of positions</option> 
+                          <option value="11">Maximum Time-To-Hire</option>
+                          <option value="12">Maximum Time-To-Start</option>
+                          <option value="13">Minimum Time-To-Hire</option>
+                          <option value="14">Minimum Time-To-Start</option>
+                          <option value="15">Number of positions</option> 
+                          <option value="16">Maximum Time-To-Hire</option>
+                          <option value="17">Maximum Time-To-Start</option>
+                          <option value="18">Minimum Time-To-Hire</option>
+                          <option value="19">Minimum Time-To-Start</option>
+                          <option value="20">Number of positions</option> 
+                          <option value="21">Maximum Time-To-Hire</option>
+                          <option value="22">Maximum Time-To-Start</option>
+                          <option value="23">Minimum Time-To-Hire</option>
+                          <option value="24">Minimum Time-To-Start</option> -->                           
+                        </optgroup>                                      
                       </select>                   
                     </div>
                     <div class="btn-container">

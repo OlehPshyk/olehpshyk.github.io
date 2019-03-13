@@ -466,35 +466,69 @@
                             </svg>
                           </span>
                         </span>
-                      </div>                      
-                      <select id="selectRows" multiple="multiple">
-                        <optgroup label="title for optgroup rows" class="optgroup-rows">
-                          <option value="Candidates Sources" selected>Candidates Sources</option>
-                          <option
-                            value="2"
-                            data-subtext-1="text1 is present xxxxxxxxxxxx xxxxxxx xxxxxxxxxx xxxxxxx xxxxxxx xxxx xxx xxx"
-                            data-subtext-2="text2">
-                            Option2
-                          </option>
-                          <option value="Option3"
-                            disabled
-                          >Option3 test disabled</option>
-                          <option
-                            value="Option4"
-                            data-subtext-1=""
-                            data-subtext-2="text"
-                          >
-                            Option4
-                          </option>
-                          <option
-                            value="Option5"
-                            data-subtext-1="text text text"                            
-                          >
-                            Option5
-                          </option>
-                          <option value="Option6">Option6</option>
-                        </optgroup>
-                      </select>
+                      </div> 
+
+                      <div class="multiselect-sortable-container">
+                        <div class="select-container">                     
+                          <select id="selectRows" multiple="multiple">
+                            <optgroup label="title for optgroup rows" class="optgroup-rows">
+                              <option value="Candidates Sources" selected>Candidates Sources</option>
+                              <option
+                                value="2"
+                                data-subtext-1="text1 is present xxxxxxxxxxxx xxxxxxx xxxxxxxxxx xxxxxxx xxxxxxx xxxx xxx xxx"
+                                data-subtext-2="text2">
+                                Option2
+                              </option>
+                              <option value="Option3"
+                                disabled
+                              >Option3 test disabled</option>
+                              <option
+                                value="Option4"
+                                data-subtext-1=""
+                                data-subtext-2="text"
+                              >
+                                Option4
+                              </option>
+                              <option
+                                value="Option5"
+                                data-subtext-1="text text text"                            
+                              >
+                                Option5
+                              </option>
+                              <option value="Option6">Option6</option>
+                            </optgroup>
+                          </select>
+                        </div>
+                        <div class="sortable-container v1">
+                          <div class="sortable-title-container">
+                            <span class="title">Chosen rows. Re-order them as needed</span>                            
+                          </div>
+                          <ol class='chosen-columns-list'>
+                            <li>
+                              <div class="chosen-column">
+                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                <span class="chosen-text1">Candidates Sources</span>
+                                <span class="chosen-text2"></span>
+                              </div>
+                            </li> 
+                            <li>                         
+                              <div class="chosen-column">
+                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                <span class="chosen-text1">Option2</span>
+                                <span class="chosen-text2">Text2</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chosen-column">
+                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                <span class="chosen-text1">Option4</span>
+                                <span class="chosen-text2">text</span>
+                              </div>
+                            </li>                                                                                 
+                          </ol>                                                   
+                        </div>
+                      </div>
+
                     </div>
 
                     <div class="columns-group-container">
@@ -522,66 +556,112 @@
                           <span class="custom-checkbox"></span>                          
                           Hide unavailable data fields                  
                         </label>
+                      </div>
+                      <div class="multiselect-sortable-container">
+                        <div class="select-container">
+                          <select id="selectColumns" multiple="multiple">
+                            <optgroup label="Latest date when the position is being / was opened" class="group-1">
+                              <option
+                                value="Maximum Time-To-Hire"
+                                data-subtext-1="Maximum number of days between a posotion`s open date and the hire date of the candidate for that position"
+                                data-subtext-2="Position"                            
+                              >
+                                Maximum Time-To-Hire                            
+                              </option>                          
+                              <option
+                                value="Maximum Time-To-Start"
+                                data-subtext-1="Maximum number of days between a posotion`s open date and date that the new hire starts"
+                                data-subtext-2="Position"
+                              >
+                                Maximum Time-To-Start
+                              </option>
+                              <option
+                                value="Minimum Time-To-Hire"
+                                data-subtext-1="Minimum number of days between a posotion`s open date and the hire date of the candidate for that position"
+                                data-subtext-2="Position"
+                              >
+                                Minimum Time-To-Hire
+                              </option>
+                              <option
+                                value="Minimum Time-To-Start"
+                                data-subtext-1="Minimum number of days between a posotion`s open date and the hire date of the candidate for that position"
+                                data-subtext-2="Position"
+                                >
+                                  Minimum Time-To-Start
+                              </option>
+                              <option
+                                value="Number of positions"
+                                data-subtext-1="Aggregates the total number of positions"
+                                data-subtext-2="Position"
+                              >
+                                Number of positions
+                              </option> 
+                              <!-- next options for test -->
+                              <!-- <option value="6">Maximum Time-To-Hire</option>
+                              <option value="7">Maximum Time-To-Start</option>
+                              <option value="8">Minimum Time-To-Hire</option>
+                              <option value="9">Minimum Time-To-Start</option>
+                              <option value="10">Number of positions</option> 
+                              <option value="11">Maximum Time-To-Hire</option>
+                              <option value="12">Maximum Time-To-Start</option>
+                              <option value="13">Minimum Time-To-Hire</option>
+                              <option value="14">Minimum Time-To-Start</option>
+                              <option value="15">Number of positions</option> 
+                              <option value="16">Maximum Time-To-Hire</option>
+                              <option value="17">Maximum Time-To-Start</option>
+                              <option value="18">Minimum Time-To-Hire</option>
+                              <option value="19">Minimum Time-To-Start</option>
+                              <option value="20">Number of positions</option> 
+                              <option value="21">Maximum Time-To-Hire</option>
+                              <option value="22">Maximum Time-To-Start</option>
+                              <option value="23">Minimum Time-To-Hire</option>
+                              <option value="24">Minimum Time-To-Start</option> -->                           
+                            </optgroup>                                      
+                          </select>
+                        </div>
+                        <div class="sortable-container v1">
+                          <div class="sortable-title-container">
+                            <span class="title">Chosen coloumns. Re-order them as needed</span>                            
+                          </div>
+                          <ol class='chosen-columns-list'>
+                            <li>
+                              <div class="chosen-column">
+                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                <span class="chosen-text1">Maximum Time-To-Hire</span>
+                                <span class="chosen-text2">Position</span>
+                              </div>
+                            </li> 
+                            <li>                         
+                              <div class="chosen-column">
+                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                <span class="chosen-text1">Maximum Time-To-Start</span>
+                                <span class="chosen-text2">Position</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chosen-column">
+                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                <span class="chosen-text1">Minimum Time-To-Hire</span>
+                                <span class="chosen-text2">Position</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chosen-column">
+                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                <span class="chosen-text1">Minimum Time-To-Start</span>
+                                <span class="chosen-text2">Position</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chosen-column">
+                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                <span class="chosen-text1">Number of positions</span>
+                                <span class="chosen-text2">Position</span>
+                              </div> 
+                            </li>                            
+                          </ol>                                                   
+                        </div>
                       </div> 
-                      <select id="selectColumns" multiple="multiple">
-                        <optgroup label="Latest date when the position is being / was opened" class="group-1">
-                          <option
-                            value="Maximum Time-To-Hire"
-                            data-subtext-1="Maximum number of days between a posotion`s open date and the hire date of the candidate for that position"
-                            data-subtext-2="Position"                            
-                          >
-                            Maximum Time-To-Hire                            
-                          </option>                          
-                          <option
-                            value="Maximum Time-To-Start"
-                            data-subtext-1="Maximum number of days between a posotion`s open date and date that the new hire starts"
-                            data-subtext-2="Position"
-                          >
-                            Maximum Time-To-Start
-                          </option>
-                          <option
-                            value="Minimum Time-To-Hire"
-                            data-subtext-1="Minimum number of days between a posotion`s open date and the hire date of the candidate for that position"
-                            data-subtext-2="Position"
-                          >
-                            Minimum Time-To-Hire
-                          </option>
-                          <option
-                            value="Minimum Time-To-Start"
-                            data-subtext-1="Minimum number of days between a posotion`s open date and the hire date of the candidate for that position"
-                            data-subtext-2="Position"
-                            >
-                              Minimum Time-To-Start
-                          </option>
-                          <option
-                            value="Number of positions"
-                            data-subtext-1="Aggregates the total number of positions"
-                            data-subtext-2="Position"
-                          >
-                            Number of positions
-                          </option> 
-                          <!-- next options for test -->
-                          <!-- <option value="6">Maximum Time-To-Hire</option>
-                          <option value="7">Maximum Time-To-Start</option>
-                          <option value="8">Minimum Time-To-Hire</option>
-                          <option value="9">Minimum Time-To-Start</option>
-                          <option value="10">Number of positions</option> 
-                          <option value="11">Maximum Time-To-Hire</option>
-                          <option value="12">Maximum Time-To-Start</option>
-                          <option value="13">Minimum Time-To-Hire</option>
-                          <option value="14">Minimum Time-To-Start</option>
-                          <option value="15">Number of positions</option> 
-                          <option value="16">Maximum Time-To-Hire</option>
-                          <option value="17">Maximum Time-To-Start</option>
-                          <option value="18">Minimum Time-To-Hire</option>
-                          <option value="19">Minimum Time-To-Start</option>
-                          <option value="20">Number of positions</option> 
-                          <option value="21">Maximum Time-To-Hire</option>
-                          <option value="22">Maximum Time-To-Start</option>
-                          <option value="23">Minimum Time-To-Hire</option>
-                          <option value="24">Minimum Time-To-Start</option> -->                           
-                        </optgroup>                                      
-                      </select>                   
                     </div>
                     <div class="btn-container">
                       <a type="submit" class="btn report-btn mw132" href="#">Next</a>                

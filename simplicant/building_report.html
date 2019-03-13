@@ -466,19 +466,32 @@
                             </svg>
                           </span>
                         </span>
-                      </div>
+                      </div>                      
                       <select id="selectRows" multiple="multiple">
                         <optgroup label="title for optgroup rows" class="optgroup-rows">
                           <option value="Candidates Sources" selected>Candidates Sources</option>
                           <option
                             value="2"
-                            data-subtext-1="xxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxx xxxxxxx xxxxxxxxxx xxxxxxx xxxxxxx xxxx xxx xxx"
-                            data-subtext-2="yy yyy">
+                            data-subtext-1="text1 is present xxxxxxxxxxxx xxxxxxx xxxxxxxxxx xxxxxxx xxxxxxx xxxx xxx xxx"
+                            data-subtext-2="text2">
                             Option2
                           </option>
-                          <option value="Option3">Option3</option>
-                          <option value="Option4">Option4</option>
-                          <option value="Option5">Option5</option>
+                          <option value="Option3"
+                            disabled
+                          >Option3 test disabled</option>
+                          <option
+                            value="Option4"
+                            data-subtext-1=""
+                            data-subtext-2="text"
+                          >
+                            Option4
+                          </option>
+                          <option
+                            value="Option5"
+                            data-subtext-1="text text text"                            
+                          >
+                            Option5
+                          </option>
                           <option value="Option6">Option6</option>
                         </optgroup>
                       </select>
@@ -515,7 +528,7 @@
                           <option
                             value="Maximum Time-To-Hire"
                             data-subtext-1="Maximum number of days between a posotion`s open date and the hire date of the candidate for that position"
-                            data-subtext-2="Position"
+                            data-subtext-2="Position"                            
                           >
                             Maximum Time-To-Hire                            
                           </option>                          

@@ -28,10 +28,10 @@
               </div>
             </a>
             <div class="header-form-container hidden-xs hidden-sm">              
-              <form class="search-form" action="">                
+              <form class="search-form" action="" method="">                
                 <div class="input-group navbar-search">
                   <div class="input-group-btn">
-                    <button type="button" class="search-dropdown-btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <button type="button" class="search-dropdown-btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="btn-text">All</span>
                       <span class="caret"></span>
                     </button>
@@ -39,8 +39,13 @@
                       <li><a href="#">???</a></li>
                       <li><a href="#">???</a></li>
                       <li><a href="#">???</a></li>                      
-                    </ul>
-                  </div>
+                    </ul> -->
+                    <select class="selectpicker" title="All" data-style="search-select-btn" data-width="65px">                    
+                      <option selected>All</option>
+                      <option>Op3</option>
+                      <option>Op4</option>                    
+                    </select>
+                  </div> 
                   <button class="btn search-btn" type="submit">
                     <i class="fa fa-search"></i>
                   </button> 
@@ -321,7 +326,25 @@
                 </ul>                
               </div>
               <div class="report-container"> 
-                <div class="table-container">
+                <div class="saved-reports-container">
+                  <div class="filters-container right">
+                    <select class="selectpicker" title="Any Date" data-style="select-btn" data-width="130px">
+                      <option selected value="fa-calendar">&#xf073;&nbsp;&nbsp;Any Date</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option2</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option3</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option4</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option5</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option6</option>
+                    </select>
+                    <select class="selectpicker" title="All Categories" data-style="select-btn" data-width="130px">
+                      <option>Option1</option>
+                      <option>Option2</option>
+                      <option>Option3</option>
+                      <option>Option4</option>
+                      <option>Option5</option>
+                      <option>Option6</option>
+                    </select>
+                  </div>
                   <div class="table-responsive">
                     <table class="table">
                       <thead>
@@ -335,9 +358,9 @@
                       </thead>
                       <tbody>                      
                         <tr>
-                          <td class="text-slim">Report name number one</td>
-                          <td class="text-slim">Candidats</td>
-                          <td class="text-slim">Darren Adams</td>
+                          <td>Report name number one</td>
+                          <td>Candidats</td>
+                          <td>Darren Adams</td>
                           <td class="text-center">02/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -352,9 +375,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Some report name</td>
-                          <td class="text-slim">Candidats</td>
-                          <td class="text-slim">Oea Romana</td>
+                          <td>Some report name</td>
+                          <td>Candidats</td>
+                          <td>Oea Romana</td>
                           <td class="text-center">03/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -369,9 +392,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Some report name</td>
-                          <td class="text-slim">Job Listing</td>
-                          <td class="text-slim">Anne-Marije Markink</td>
+                          <td>Some report name</td>
+                          <td>Job Listing</td>
+                          <td>Anne-Marije Markink</td>
                           <td class="text-center">04/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -386,9 +409,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Report name number two</td>
-                          <td class="text-slim">Compliance</td>
-                          <td class="text-slim">Pol Soria</td>
+                          <td>Report name number two</td>
+                          <td>Compliance</td>
+                          <td>Pol Soria</td>
                           <td class="text-center">05/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -403,9 +426,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Some report name</td>
-                          <td class="text-slim">Compliance</td>
-                          <td class="text-slim">Débora Barbosa</td>
+                          <td>Some report name</td>
+                          <td>Compliance</td>
+                          <td>Débora Barbosa</td>
                           <td class="text-center">06/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -420,9 +443,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Report name number three</td>
-                          <td class="text-slim">Referal activity</td>
-                          <td class="text-slim">Neeshaan El Pasha</td>
+                          <td>Report name number three</td>
+                          <td>Referal activity</td>
+                          <td>Neeshaan El Pasha</td>
                           <td class="text-center">06/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -450,7 +473,7 @@
                 </ul>                
               </div>
               <div class="report-container">
-                <form>
+                <form action="" method="">
                   <div class="container-fluid reviewing-form-container">
                     <div class="row">
                       <div class="col-sm-6 col-lg-3">
@@ -538,7 +561,7 @@
                   
                 </form>  
                 
-                <div class="table-container">
+                <div class="reviewing-table-container">
                   <div class="table-responsive v2">
                     <table class="table">
                       <thead>
@@ -618,36 +641,154 @@
       </section>           
     </main>
 
-    <div class="modal fade" id="scheduleReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabelschedule">
+    <div class="modal fade modal-schedule" id="scheduleReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabelschedule">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
          <!--  <div class="modal-header">            
           </div> -->
           <div class="modal-body">
             <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
-            <h4 class="modal-title" id="myModalLabelschedule">Shedule Report</h4>
-            <p>You can schedule this report to be auto-emailed</p>
-            <form>
-              <button type="button" class="btn" data-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn">Shedule Email</button>
+            <form action="" method="">
+              <div class="modal-title-container">
+                <span class="modal-title">
+                  Shedule Report
+                  <i data-toggle="tooltip" title="???" class="fa fa-info-circle fa-tooltip"></i>
+                </span>
+              </div>
+              <div class="modal-info-container">
+                <div class="inner-box">
+                  <span class="modal-info">
+                    You can schedule this report to be auto-emailed
+                  </span>                  
+                  <span class="modal-info-mail">
+                    From: anastasia.chorniychuk@lasoft.org
+                  </span>
+                </div>
+              </div>
+              <div class="modal-flex-group vert">
+                <span class="modal-group-title">
+                  1. Repeat every
+                </span>
+                <div class="modal-radio-container">
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Mon" />
+                      <span class="custom-radio"></span> 
+                      Mon
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Tue" />
+                      <span class="custom-radio"></span> 
+                      Tue
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Wed" />
+                      <span class="custom-radio"></span> 
+                      Wed
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Thu" />
+                      <span class="custom-radio"></span> 
+                      Thu
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Fri" />
+                      <span class="custom-radio"></span> 
+                      Fri
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Sat" />
+                      <span class="custom-radio"></span> 
+                      Sat
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Sun" />
+                      <span class="custom-radio"></span> 
+                      Sun
+                  </label>                 
+                </div> 
+              </div> 
+              <div class="modal-flex-group">
+                <span class="modal-group-title">
+                  2. Select a time
+                </span>
+                <select class="selectpicker" title="Time" data-style="select-btn" data-width="100px">
+                  <option selected>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 AM</option>
+                  <option>13:00 AM</option>
+                  <option>14:00 AM</option>
+                  <option>15:00 AM</option>
+                </select>
+              </div> 
+              <div class="modal-flex-group">
+                <span class="modal-group-title">
+                  2. Select a time
+                </span>
+                <input type="text" class="form-control v1" id="" name="" placeholder="Time" value="input variant">
+              </div>
+              <div class="modal-flex-group">
+                <span class="modal-group-title">
+                  3. To
+                </span>
+                <select class="selectpicker" title="Select recepient" data-style="select-btn" data-width="100%">
+                  <option>Option1</option>
+                  <option>Option2</option>
+                  <option>Option3</option>
+                  <option>Option4</option>
+                  <option>Option5</option>
+                  <option>Option6</option>
+                </select>
+              </div> 
+              <div class="modal-flex-group">
+                <span class="modal-group-title">
+                  4. Subject
+                </span>
+                <input type="text" class="form-control" id="" name="" placeholder="Indicate a subject">
+              </div> 
+              <div class="modal-flex-group v-start">
+                <span class="modal-group-title">
+                  5. Body
+                </span>
+                <textarea name="" id=""></textarea>
+              </div>                        
+              
+              <div class="modal-btn-container bnt-center">           
+                <button type="button" class="btn transparent-btn" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn report-btn">Shedule Email</button>
+              </div>
             </form>
           </div>
-          <!-- <div class="modal-footer">            
+          <!-- <div class="modal-footer">
           </div> -->
         </div>
       </div>
     </div> 
 
-    <div class="modal fade" id="saveReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabelsave">
+    <div class="modal fade modal-save" id="saveReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabelsave">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
          <!--  <div class="modal-header">            
           </div> -->
           <div class="modal-body">
             <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->            
-            <form>
-              <button type="button" class="btn" data-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn">Save</button>
+            <form action="" method="">
+              <div class="modal-title-container">
+                <span class="modal-title">
+                  Save Report
+                </span>
+              </div>
+              <div class="form-group">
+                <label for="first_name">Report name</label>
+                <input type="text" class="form-control" id="reportName" name="report_name" placeholder="New Report">
+              </div>
+              <div class="form-group">
+                <label for="last_name">Report permission</label>
+                <input type="text" class="form-control" id="reportPermission" name="report_permission" placeholder="Enter emails">
+              </div>
+              <div class="modal-btn-container bnt-center">
+                <button type="button" class="btn transparent-btn" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn report-btn">Save</button>
+              </div>
             </form>
           </div>
           <!-- <div class="modal-footer">            
@@ -656,26 +797,45 @@
       </div>
     </div>
 
-    <div class="modal fade" id="exportReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabelexport">
+    <div class="modal fade modal-export" id="exportReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabelexport">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
          <!--  <div class="modal-header">            
           </div> -->
           <div class="modal-body">
             <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
-            <h4 class="modal-title" id="myModalLabelexport">Export Report</h4>
-            <p>This Report will be exported on your email anastasia.chorniychuk@lasoft.org</p>
-            <form >              
-              <div>
-                <label>
-                    <input type="radio" id="Exel" name="exportReport" value="Exel" /> Exel
+            <form action="" method="">
+              <div class="modal-title-container">
+                <span class="modal-title">
+                  Export Report
+                </span>
+              </div>
+              <div class="modal-info-container">
+                <div class="inner-box text-center">
+                  <span class="modal-info">
+                    This Report will be exported on your email
+                  </span>
+                  <span class="modal-info-mail">
+                    anastasia.chorniychuk@lasoft.org
+                  </span>
+                </div>
+              </div>                                      
+              <div class="modal-radio-container">
+                <label class="labeled-radio">
+                    <input type="radio" id="" name="exportReport" value="Exel" />
+                    <span class="custom-radio"></span> 
+                    Exel
                 </label> 
-                <label>
-                    <input type="radio" id="PDF" name="exportReport" value="PDF" /> PDF
+                <label class="labeled-radio">
+                    <input type="radio" id="" name="exportReport" value="PDF" />
+                    <span class="custom-radio"></span> 
+                    PDF
                 </label>                 
-              </div>                  
-              <button type="button" class="btn" data-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn">Export</button>
+              </div> 
+              <div class="modal-btn-container bnt-center">
+                <button type="button" class="btn transparent-btn" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn report-btn">Export</button>
+              </div>
             </form>
           </div>
           <!-- <div class="modal-footer">            

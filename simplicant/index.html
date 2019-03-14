@@ -28,10 +28,10 @@
               </div>
             </a>
             <div class="header-form-container hidden-xs hidden-sm">              
-              <form class="search-form" action="">                
+              <form class="search-form" action="" method="">                
                 <div class="input-group navbar-search">
                   <div class="input-group-btn">
-                    <button type="button" class="search-dropdown-btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <button type="button" class="search-dropdown-btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="btn-text">All</span>
                       <span class="caret"></span>
                     </button>
@@ -39,8 +39,13 @@
                       <li><a href="#">???</a></li>
                       <li><a href="#">???</a></li>
                       <li><a href="#">???</a></li>                      
-                    </ul>
-                  </div>
+                    </ul> -->
+                    <select class="selectpicker" title="All" data-style="search-select-btn" data-width="65px">                    
+                      <option selected>All</option>
+                      <option>Op3</option>
+                      <option>Op4</option>                    
+                    </select>
+                  </div>                  
                   <button class="btn search-btn" type="submit">
                     <i class="fa fa-search"></i>
                   </button> 
@@ -315,8 +320,26 @@
                   <li class="list-item"><a class="item-link" href="#">Report name number three</a></li>
                 </ul>                
               </div>
-              <div class="report-container"> 
-                <div class="table-container">
+              <div class="report-container">
+                <div class="saved-reports-container">
+                  <div class="filters-container right">
+                    <select class="selectpicker" title="Any Date" data-style="select-btn" data-width="130px">
+                      <option selected value="fa-calendar">&#xf073;&nbsp;&nbsp;Any Date</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option2</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option3</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option4</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option5</option>
+                      <option value="fa-calendar">&#xf073;&nbsp;&nbsp;Option6</option>
+                    </select>
+                    <select class="selectpicker" title="All Categories" data-style="select-btn" data-width="130px">
+                      <option selected>All Categories</option>
+                      <option>Option2</option>
+                      <option>Option3</option>
+                      <option>Option4</option>
+                      <option>Option5</option>
+                      <option>Option6</option>
+                    </select>
+                  </div>                
                   <div class="table-responsive">
                     <table class="table">
                       <thead>
@@ -330,9 +353,9 @@
                       </thead>
                       <tbody>                      
                         <tr>
-                          <td class="text-slim">Report name number one</td>
-                          <td class="text-slim">Candidats</td>
-                          <td class="text-slim">Darren Adams</td>
+                          <td>Report name number one</td>
+                          <td>Candidats</td>
+                          <td>Darren Adams</td>
                           <td class="text-center">02/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -347,9 +370,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Some report name</td>
-                          <td class="text-slim">Candidats</td>
-                          <td class="text-slim">Oea Romana</td>
+                          <td>Some report name</td>
+                          <td>Candidats</td>
+                          <td>Oea Romana</td>
                           <td class="text-center">03/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -364,9 +387,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Some report name</td>
-                          <td class="text-slim">Job Listing</td>
-                          <td class="text-slim">Anne-Marije Markink</td>
+                          <td>Some report name</td>
+                          <td>Job Listing</td>
+                          <td>Anne-Marije Markink</td>
                           <td class="text-center">04/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -381,9 +404,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Report name number two</td>
-                          <td class="text-slim">Compliance</td>
-                          <td class="text-slim">Pol Soria</td>
+                          <td>Report name number two</td>
+                          <td>Compliance</td>
+                          <td>Pol Soria</td>
                           <td class="text-center">05/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -398,9 +421,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Some report name</td>
-                          <td class="text-slim">Compliance</td>
-                          <td class="text-slim">Débora Barbosa</td>
+                          <td>Some report name</td>
+                          <td>Compliance</td>
+                          <td>Débora Barbosa</td>
                           <td class="text-center">06/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -415,9 +438,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="text-slim">Report name number three</td>
-                          <td class="text-slim">Referal activity</td>
-                          <td class="text-slim">Neeshaan El Pasha</td>
+                          <td>Report name number three</td>
+                          <td>Referal activity</td>
+                          <td>Neeshaan El Pasha</td>
                           <td class="text-center">06/06/2018</td>
                           <td class="text-center">
                             <a href="#">
@@ -513,7 +536,7 @@
                   </svg>
                 </div>
                 <div class="btn-container center">
-                  <a class="btn report-btn mw132" href="./building_report.html">Built Report</a>                
+                  <a class="btn report-btn" href="./building_report.html">Built Report</a>                
                   <!-- <button type="button" class="btn report-btn mw132">Built Report</button> -->
                 </div>
               </div>

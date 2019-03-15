@@ -16,7 +16,7 @@
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
   </head>
 
-  <body>      
+  <body class="modal-open">      
     <header class="header"> 
       <div class="wrapper">
         <div class="header-container">
@@ -52,7 +52,7 @@
                   <input type="text" class="form-control input-group" placeholder="Search...">
                 </div>
               </form>
-              <i data-toggle="tooltip" title="???" class="fa fa-question-circle tooltip-question"></i>             
+              <i data-toggle="tooltip" title="???" class="fa fa-question-circle tooltip-question"></i>              
             </div>
             <div class="header-account-container">
               <ul class="account-icon-list hidden-xs hidden-sm">
@@ -169,6 +169,11 @@
             <p class="page-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
+            <div class="top-section-btn-container">
+              <button class="btn report-btn" data-toggle="modal" data-target="#scheduleReport"><i class="fa fa-calendar"></i>Schedule Report</button>
+              <button class="btn report-btn" data-toggle="modal" data-target="#saveReport"><i class="fa fa-save"></i>Save Report</button>
+              <button class="btn report-btn" data-toggle="modal" data-target="#exportReport"><i class="fa fa-download"></i>Export Report</button>
+            </div>
           </div>
         </div>        
       </section> 
@@ -320,7 +325,7 @@
                   <li class="list-item"><a class="item-link" href="#">Report name number three</a></li>
                 </ul>                
               </div>
-              <div class="report-container">
+              <div class="report-container"> 
                 <div class="saved-reports-container">
                   <div class="filters-container right">
                     <select class="selectpicker" title="Any Date" data-style="select-btn" data-width="130px">
@@ -463,227 +468,383 @@
             <div class="tab-pane report-pane active" id="customReport">
               <div class="report-sidebar">                
                 <ul class="list-group">                  
-                  <li class="list-item active"><a class="item-link" href="./building_report.html">Building report</a></li>
-                  <li class="list-item"><a class="item-link" href="./reviewing_report.html">Reviewing report</a></li>
+                  <li class="list-item"><a class="item-link" href="./building_report.html">Building report</a></li>
+                  <li class="list-item active"><a class="item-link" href="./reviewing_report.html">Reviewing report</a></li>
                 </ul>                
               </div>
-
               <div class="report-container">
-                <div class="building-report-container">
-                  <form action="" method="">
-                    <div class="row-group-container">
-                      <div class="title-container">
-                        <span class="title">
-                          Select Row for this report
-                          <span data-toggle="tooltip" title="?????????">
-                            <svg class="toolltips-icon" width="10px" height="10px" viewBox="0 0 10 10">
-                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g transform="translate(-173.000000, 0.000000)" fill="#2C559C" fill-rule="nonzero">
-                                  <g id="Select-row">
-                                    <g id="Icon-/-Information" transform="translate(173.000000, 0.000000)">
-                                      <path d="M5,0 C7.75692308,0 10,2.24292308 10,5 C10,7.75707692 7.75692308,10 5,10 C2.24307692,10 0,7.75707692 0,5 C0,2.24292308 2.24307692,0 5,0 Z M5,9.38461538 C7.41769231,9.38461538 9.38461538,7.41769231 9.38461538,5 C9.38461538,2.58230769 7.41769231,0.615384615 5,0.615384615 C2.58230769,0.615384615 0.615384615,2.58230769 0.615384615,5 C0.615384615,7.41769231 2.58230769,9.38461538 5,9.38461538 Z M5.07969231,3.52092308 C4.79547808,3.52092308 4.56507692,3.29052192 4.56507692,3.00630769 C4.56507692,2.72209346 4.79547808,2.49169231 5.07969231,2.49169231 C5.36390654,2.49169231 5.59430769,2.72209346 5.59430769,3.00630769 C5.59430769,3.29052192 5.36390654,3.52092308 5.07969231,3.52092308 Z M4.94415385,4.36030769 C5.114,4.36030769 5.25184615,4.498 5.25184615,4.668 L5.25184615,7.28338462 C5.25184615,7.45323077 5.114,7.59107692 4.94415385,7.59107692 C4.77430769,7.59107692 4.63646154,7.45323077 4.63646154,7.28338462 L4.63646154,4.668 C4.63646154,4.49815385 4.77430769,4.36030769 4.94415385,4.36030769 Z" id="Combined-Shape"></path>
-                                    </g>
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </span>
-                        </span>
-                      </div> 
-
-                      <div class="multiselect-sortable-container">
-                        <div class="select-container">                     
-                          <select id="selectRows" multiple="multiple">
-                            <optgroup label="title for optgroup rows" class="optgroup-rows">
-                              <option value="Candidates Sources" selected>Candidates Sources</option>
-                              <option
-                                value="2"
-                                data-subtext-1="text1 is present xxxxxxxxxxxx xxxxxxx xxxxxxxxxx xxxxxxx xxxxxxx xxxx xxx xxx"
-                                data-subtext-2="text2">
-                                Option2
-                              </option>
-                              <option value="Option3"
-                                disabled
-                              >Option3 test disabled</option>
-                              <option
-                                value="Option4"
-                                data-subtext-1=""
-                                data-subtext-2="text"
-                              >
-                                Option4
-                              </option>
-                              <option
-                                value="Option5"
-                                data-subtext-1="text text text"                            
-                              >
-                                Option5
-                              </option>
-                              <option value="Option6">Option6</option>
-                            </optgroup>
-                          </select>
-                        </div>                        
+                <form action="" method="">
+                  <div class="container-fluid reviewing-form-container">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Row</label>
+                          <input type="email" class="form-control" id="" placeholder="xxx">
+                        </div>
                       </div>
-                    </div>
-
-                    <div class="columns-group-container">
-                      <div class="title-container">                   
-                        <span class="title">
-                          Select columns
-                          <span data-toggle="tooltip" title="?????????">
-                            <svg class="toolltips-icon" width="10px" height="10px" viewBox="0 0 10 10">
-                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g transform="translate(-173.000000, 0.000000)" fill="#2C559C" fill-rule="nonzero">
-                                  <g id="Select-row">
-                                    <g id="Icon-/-Information" transform="translate(173.000000, 0.000000)">
-                                      <path d="M5,0 C7.75692308,0 10,2.24292308 10,5 C10,7.75707692 7.75692308,10 5,10 C2.24307692,10 0,7.75707692 0,5 C0,2.24292308 2.24307692,0 5,0 Z M5,9.38461538 C7.41769231,9.38461538 9.38461538,7.41769231 9.38461538,5 C9.38461538,2.58230769 7.41769231,0.615384615 5,0.615384615 C2.58230769,0.615384615 0.615384615,2.58230769 0.615384615,5 C0.615384615,7.41769231 2.58230769,9.38461538 5,9.38461538 Z M5.07969231,3.52092308 C4.79547808,3.52092308 4.56507692,3.29052192 4.56507692,3.00630769 C4.56507692,2.72209346 4.79547808,2.49169231 5.07969231,2.49169231 C5.36390654,2.49169231 5.59430769,2.72209346 5.59430769,3.00630769 C5.59430769,3.29052192 5.36390654,3.52092308 5.07969231,3.52092308 Z M4.94415385,4.36030769 C5.114,4.36030769 5.25184615,4.498 5.25184615,4.668 L5.25184615,7.28338462 C5.25184615,7.45323077 5.114,7.59107692 4.94415385,7.59107692 C4.77430769,7.59107692 4.63646154,7.45323077 4.63646154,7.28338462 L4.63646154,4.668 C4.63646154,4.49815385 4.77430769,4.36030769 4.94415385,4.36030769 Z" id="Combined-Shape"></path>
-                                    </g>
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </span>
-                        </span>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Columns</label>
+                          <input type="email" class="form-control" id="" placeholder="xxx">
+                        </div>
                       </div>
-                      <div class="checkbox-container">                        
-                        <label class="labeled-checkbox">                  
-                          <input type="checkbox">
-                          <span class="custom-checkbox"></span>                          
-                          Hide unavailable data fields                  
-                        </label>
-                      </div>
-                      <div class="multiselect-sortable-container">
-                        <div class="select-container">
-                          <select id="selectColumns" multiple="multiple">
-                            <optgroup label="Latest date when the position is being / was opened" class="group-1">
-                              <option
-                                value="Maximum Time-To-Hire"
-                                data-subtext-1="Maximum number of days between a posotion`s open date and the hire date of the candidate for that position"
-                                data-subtext-2="Position"                            
-                              >
-                                Maximum Time-To-Hire                            
-                              </option>                          
-                              <option
-                                value="Maximum Time-To-Start"
-                                data-subtext-1="Maximum number of days between a posotion`s open date and date that the new hire starts"
-                                data-subtext-2="Position"
-                              >
-                                Maximum Time-To-Start
-                              </option>
-                              <option
-                                value="Minimum Time-To-Hire"
-                                data-subtext-1="Minimum number of days between a posotion`s open date and the hire date of the candidate for that position"
-                                data-subtext-2="Position"
-                              >
-                                Minimum Time-To-Hire
-                              </option>
-                              <option
-                                value="Minimum Time-To-Start"
-                                data-subtext-1="Minimum number of days between a posotion`s open date and the hire date of the candidate for that position"
-                                data-subtext-2="Position"
-                                >
-                                  Minimum Time-To-Start
-                              </option>
-                              <option
-                                value="Number of positions"
-                                data-subtext-1="Aggregates the total number of positions"
-                                data-subtext-2="Position"
-                              >
-                                Number of positions
-                              </option> 
-                              <!-- next options for test -->
-                              <!-- <option value="6">Maximum Time-To-Hire</option>
-                              <option value="7">Maximum Time-To-Start</option>
-                              <option value="8">Minimum Time-To-Hire</option>
-                              <option value="9">Minimum Time-To-Start</option>
-                              <option value="10">Number of positions</option> 
-                              <option value="11">Maximum Time-To-Hire</option>
-                              <option value="12">Maximum Time-To-Start</option>
-                              <option value="13">Minimum Time-To-Hire</option>
-                              <option value="14">Minimum Time-To-Start</option>
-                              <option value="15">Number of positions</option> 
-                              <option value="16">Maximum Time-To-Hire</option>
-                              <option value="17">Maximum Time-To-Start</option>
-                              <option value="18">Minimum Time-To-Hire</option>
-                              <option value="19">Minimum Time-To-Start</option>
-                              <option value="20">Number of positions</option> 
-                              <option value="21">Maximum Time-To-Hire</option>
-                              <option value="22">Maximum Time-To-Start</option>
-                              <option value="23">Minimum Time-To-Hire</option>
-                              <option value="24">Minimum Time-To-Start</option> -->                           
-                            </optgroup>                                      
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Job Filter</label>
+                          <select class="selectpicker" title="xxx" data-style="select-btn" data-width="100%">
+                            <option>Option1</option>
+                            <option>Option2</option>
+                            <option>Option3</option>
+                            <option>Option4</option>
+                            <option>Option5</option>
+                            <option>Option6</option>
                           </select>
                         </div>
-                        <div class="sortable-container v1">
-                          <div class="sortable-title-container">
-                            <span class="title">Chosen coloumns. Re-order them as needed</span>                            
-                          </div>
-                          <ol class='chosen-columns-list'>
-                            <!-- <li class="chosen-item">
-                              <div class="chosen-column">
-                                <i class="fa fa-sort" aria-hidden="true"></i>
-                                <span class="chosen-text1">Maximum Time-To-Hire</span>
-                                <span class="chosen-text2">Position</span>
-                              </div>
-                              <div class="chosen-btn-container">
-                                <button class="chosen-delete-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
-                              </div>
-                            </li> 
-                            <li class="chosen-item">                         
-                              <div class="chosen-column">
-                                <i class="fa fa-sort" aria-hidden="true"></i>
-                                <span class="chosen-text1">Maximum Time-To-Start</span>
-                                <span class="chosen-text2">Position</span>
-                              </div>
-                              <div class="chosen-btn-container">
-                                <button class="chosen-delete-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
-                              </div>
-                            </li>
-                            <li class="chosen-item">
-                              <div class="chosen-column">
-                                <i class="fa fa-sort" aria-hidden="true"></i>
-                                <span class="chosen-text1">Minimum Time-To-Hire</span>
-                                <span class="chosen-text2">Position</span>
-                              </div>
-                              <div class="chosen-btn-container">
-                                <button class="chosen-delete-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
-                              </div>
-                            </li> -->
-                            <li class="chosen-item">
-                              <div class="chosen-column">
-                                <i class="fa fa-sort" aria-hidden="true"></i>
-                                <span class="chosen-text1">Number of positions</span>
-                                <span class="chosen-text2">Position</span>
-                              </div>
-                              <div class="chosen-btn-container">
-                                <button class="chosen-delete-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
-                              </div>
-                            </li> 
-                            <li class="chosen-item" >
-                              <div class="chosen-column">
-                                <i class="fa fa-sort" aria-hidden="true"></i>
-                                <span class="chosen-text1">Minimum Time-To-Start</span>
-                                <span class="chosen-text2">Position</span>
-                              </div>
-                              <div class="chosen-btn-container">
-                                <button class="chosen-delete-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
-                              </div>
-                            </li>                                                       
-                          </ol>                                                   
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Activity Date</label>
+                          <select class="selectpicker" title="xxx" data-style="select-btn" data-width="100%">
+                            <option>17.01.2018 – 17.02.2018</option>
+                            <option>17.02.2018 – 17.03.2018</option>
+                            <option>17.03.2018 – 17.04.2018</option>
+                            <option>17.04.2018 – 17.05.2018</option>
+                            <option>17.05.2018 – 17.06.2018</option>
+                            <option>17.06.2018 – 17.07.2018</option>
+                          </select>                          
                         </div>
-                      </div> 
+                      </div>                                        
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">open/closed</label>
+                          <input type="email" class="form-control" id="" placeholder="xxx">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">department</label>
+                          <input type="email" class="form-control" id="" placeholder="xxx">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">location</label>
+                          <select class="selectpicker" title="xxx" multiple data-max-options="2" data-style="select-btn" data-width="100%">
+                            <option>Option1</option>
+                            <option>Option2</option>
+                            <option>Option3</option>
+                            <option>Option4</option>
+                            <option>Option5</option>
+                            <option>Option6</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">xxx</label>
+                          <select class="selectpicker" title="xxx" multiple data-style="select-btn" data-width="100%">
+                            <option>Option1</option>
+                            <option>Option2</option>
+                            <option>Option3</option>
+                            <option>Option4</option>
+                            <option>Option5</option>
+                            <option>Option6</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="btn-container right">
+                      <button type="submit" class="transparent-btn">Apply</button>
                     </div>
-                    <div class="btn-container">
-                      <a type="submit" class="btn report-btn" href="#">Next</a>                
-                      <!-- <button type="button" class="btn report-btn mw132">Built Report</button> -->
-                    </div>
-                  </form>
-                </div>
+                    
+                  </div>
+                  
+                </form>  
+                
+                <div class="reviewing-table-container">
+                  <div class="table-responsive v2">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Jobs</th>
+                          <th class="text-right">Candidats Rejected</th>
+                          <th class="text-right">Candidats Added</th>
+                          <th class="text-right">Candidats Referred</th>
+                          <th class="text-right">Prospects Added</th>
+                          <th class="text-right">Offers Extended</th>
+                          <th class="text-right">Offers Extended</th>
+                        </tr>
+                      </thead>
+                      <tbody>                      
+                        <tr class="accent-text">
+                          <td>Total</td>
+                          <td class="text-right">471</td>
+                          <td class="text-right">1503</td>
+                          <td class="text-right">11</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                        </tr>
+                        <tr>
+                          <td>iOS Developer</td>
+                          <td class="text-right">471</td>
+                          <td class="text-right">1503</td>
+                          <td class="text-right">11</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                        </tr>
+                        <tr>
+                          <td>Learning Coordinator</td>
+                          <td class="text-right">471</td>
+                          <td class="text-right">1503</td>
+                          <td class="text-right">11</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                        </tr>
+                        <tr>
+                          <td>Social Engineer</td>
+                          <td class="text-right">471</td>
+                          <td class="text-right">1503</td>
+                          <td class="text-right">11</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                        </tr>
+                        <tr>
+                          <td>Sales Development Rep</td>
+                          <td class="text-right">471</td>
+                          <td class="text-right">1503</td>
+                          <td class="text-right">11</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                        </tr>
+                        <tr>
+                          <td>Business Sales Manager</td>
+                          <td class="text-right">471</td>
+                          <td class="text-right">1503</td>
+                          <td class="text-right">11</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                          <td class="text-right">5</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>              
               </div>
             </div>
           </div>          
         </div>        
-      </section>     
+      </section>           
     </main>
+
+    <div class="modal fade modal-schedule" id="scheduleReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabelschedule">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+         <!--  <div class="modal-header">            
+          </div> -->
+          <div class="modal-body">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+            <form action="" method="">
+              <div class="modal-title-container">
+                <span class="modal-title">
+                  Shedule Report
+                  <i data-toggle="tooltip" title="???" class="fa fa-info-circle fa-tooltip"></i>
+                </span>
+              </div>
+              <div class="modal-info-container">
+                <div class="inner-box">
+                  <span class="modal-info">
+                    You can schedule this report to be auto-emailed
+                  </span>                  
+                  <span class="modal-info-mail">
+                    From: anastasia.chorniychuk@lasoft.org
+                  </span>
+                </div>
+              </div>
+              <div class="modal-flex-group vert">
+                <span class="modal-group-title">
+                  1. Repeat every
+                </span>
+                <div class="modal-radio-container">
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Mon" />
+                      <span class="custom-radio"></span> 
+                      Mon
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Tue" />
+                      <span class="custom-radio"></span> 
+                      Tue
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Wed" />
+                      <span class="custom-radio"></span> 
+                      Wed
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Thu" />
+                      <span class="custom-radio"></span> 
+                      Thu
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Fri" />
+                      <span class="custom-radio"></span> 
+                      Fri
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Sat" />
+                      <span class="custom-radio"></span> 
+                      Sat
+                  </label> 
+                  <label class="labeled-radio">
+                      <input type="radio" id="" name="repeatEvery" value="Sun" />
+                      <span class="custom-radio"></span> 
+                      Sun
+                  </label>                 
+                </div> 
+              </div> 
+              <div class="modal-flex-group">
+                <span class="modal-group-title">
+                  2. Select a time
+                </span>
+                <select class="selectpicker" title="Time" data-style="select-btn" data-width="100px">
+                  <option selected>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 AM</option>
+                  <option>13:00 AM</option>
+                  <option>14:00 AM</option>
+                  <option>15:00 AM</option>
+                </select>
+              </div> 
+              <div class="modal-flex-group">
+                <span class="modal-group-title">
+                  2. Select a time
+                </span>
+                <input type="text" class="form-control v1" id="" name="" placeholder="Time" value="input variant">
+              </div>
+              <div class="modal-flex-group">
+                <span class="modal-group-title">
+                  3. To
+                </span>
+                <select class="selectpicker" title="Select recepient" data-style="select-btn" data-width="100%">
+                  <option>Option1</option>
+                  <option>Option2</option>
+                  <option>Option3</option>
+                  <option>Option4</option>
+                  <option>Option5</option>
+                  <option>Option6</option>
+                </select>
+              </div> 
+              <div class="modal-flex-group">
+                <span class="modal-group-title">
+                  4. Subject
+                </span>
+                <input type="text" class="form-control" id="" name="" placeholder="Indicate a subject">
+              </div> 
+              <div class="modal-flex-group v-start">
+                <span class="modal-group-title">
+                  5. Body
+                </span>
+                <textarea name="" id=""></textarea>
+              </div>                        
+              
+              <div class="modal-btn-container bnt-center">           
+                <button type="button" class="btn transparent-btn" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn report-btn">Shedule Email</button>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+          </div> -->
+        </div>
+      </div>
+    </div> 
+
+    
+    <div class="modal fade modal-save in" id="saveReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabelsave" style="display: block;">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+         <!--  <div class="modal-header">            
+          </div> -->
+          <div class="modal-body">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->            
+            <form action="" method="">
+              <div class="modal-title-container">
+                <span class="modal-title">
+                  Save Report
+                </span>
+              </div>
+              <div class="form-group">
+                <label for="first_name">Report name</label>
+                <input type="text" class="form-control" id="reportName" name="report_name" placeholder="New Report">
+              </div>
+              <div class="form-group">
+                <label for="last_name">Report permission</label>
+                <input type="text" class="form-control" id="reportPermission" name="report_permission" placeholder="Enter emails">
+              </div>
+              <div class="modal-btn-container bnt-center">
+                <button type="button" class="btn transparent-btn" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn report-btn">Save</button>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">            
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-export" id="exportReport" tabindex="-1" role="dialog" aria-labelledby="myModalLabelexport">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+         <!--  <div class="modal-header">            
+          </div> -->
+          <div class="modal-body">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+            <form action="" method="">
+              <div class="modal-title-container">
+                <span class="modal-title">
+                  Export Report
+                </span>
+              </div>
+              <div class="modal-info-container">
+                <div class="inner-box text-center">
+                  <span class="modal-info">
+                    This Report will be exported on your email
+                  </span>
+                  <span class="modal-info-mail">
+                    anastasia.chorniychuk@lasoft.org
+                  </span>
+                </div>
+              </div>                                      
+              <div class="modal-radio-container">
+                <label class="labeled-radio">
+                    <input type="radio" id="" name="exportReport" value="Exel" />
+                    <span class="custom-radio"></span> 
+                    Exel
+                </label> 
+                <label class="labeled-radio">
+                    <input type="radio" id="" name="exportReport" value="PDF" />
+                    <span class="custom-radio"></span> 
+                    PDF
+                </label>                 
+              </div> 
+              <div class="modal-btn-container bnt-center">
+                <button type="button" class="btn transparent-btn" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn report-btn">Export</button>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">            
+          </div> -->
+        </div>
+      </div>
+    </div> 
+    
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
 
@@ -691,7 +852,9 @@
 
     <script src="./script/plugin.js"></script>
 
-    <script src="./script/app.js"></script>  
+    <script src="./script/app.js"></script> 
+
+    <div class="modal-backdrop fade in"></div> 
     
     
   </body>

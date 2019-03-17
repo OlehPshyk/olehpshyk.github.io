@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+  </head>
+
+  <body>  
+    <!-- add/remove class "logined" to <body>, or to <header> if user is logined (for show account-btn-login/account-btn-logined buttons) -->
+    <header class="header"> 
+      <div class="wrapper">
+        <div class="header-container">
+          <div class="nav-container first">            
+            <ul class="nav-list">
+              <li class="nav-item">
+                <div class="nav-link-dropdown js-dropdown">
+                  <a href="#;" class="dropbtn js-dropbtn">
+                    <span class="dropbtn-text">
+                      FAL TÜRLERİ
+                    </span>                 
+                    <svg class="dropdown-icon" width="14px" height="14px" x="0px" y="0px" viewBox="0 0 512 512">
+                      <path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179
+                      c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816
+                      c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z" fill="#6d1028"/>
+                    </svg>
+                  </a>
+                  <div class="dropdown-content">
+                    <ul class="content-list">
+                      <li class="content-item"><a class="content-link" href="#;">Kahve falı</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">Tarot falı</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">Katina</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">İskambil falı</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">Rüya yorumu</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">Astroloji</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">El falı</a></li>
+                    </ul>
+                  </div>                
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#;">FALCILAR</a></li>
+              <li class="nav-item"><a class="nav-link" href="#;">ASTROLOJİ</a></li>                       
+            </ul>
+          </div>
+          <div class="logo-container">
+            <a href="./">
+              <img class="header-logo" src="./img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="nav-container second">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav-link" href="#;">nasıl ÇALIŞIR?</a></li>
+              <li class="nav-item"><a class="nav-link" href="#;">BLOG</a></li>
+              <li class="nav-item"><a class="nav-link" href="#;">SSS</a></li> 
+            </ul>
+            <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
+              <span class="account-btn-text">gİRİŞ YAP</span>
+            </a> 
+            <a class="account-btn-logined" href="#;">
+              <svg class="account-btn-img" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 896 887">
+                <path d="M745.1,297.1C745.1,133,612.1,0,448,0C283.9,0,150.9,133,150.9,297.1c0,78.8,31.3,154.4,87,210.1c18.2,18.2,38.6,34,60.9,47
+                  c-138.2,46-247.6,152.9-296.9,290c-6,16.6,2.7,35,19.3,40.9c16.6,6,35-2.7,40.9-19.3C120.3,703.3,275.4,594.2,448,594.2
+                  C612.1,594.2,745.1,461.2,745.1,297.1C745.1,297.1,745.1,297.1,745.1,297.1z M448,530.2c-128.5,0-233.1-104.6-233.1-233.1
+                  S319.5,64,448,64s233.1,104.6,233.1,233.1S576.5,530.2,448,530.2z M894.1,844.2c-36.7-101.7-106.8-188-199-244.5
+                  c-15-9.4-34.7-4.9-44.1,10.1c-9.4,15-4.9,34.7,10.1,44.1c0.2,0.1,0.4,0.3,0.6,0.4c79.7,48.9,140.5,123.5,172.2,211.5
+                  c6,16.6,24.3,25.3,40.9,19.3C891.4,879.2,900.1,860.8,894.1,844.2L894.1,844.2z"/>
+              </svg>
+            </a>           
+          </div>
+          <div class="hamb-btn-container">
+            <button class="hamb-btn">
+              <span class="hamb-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div> 
+      <div class="xs-nav">
+        <div class="xs-nav-body">
+          <ul class="xs-nav-list">          
+            <li class="nav-item">
+              <div class="nav-link-dropdown js-dropdown">
+                <a href="#;" class="dropbtn js-dropbtn">
+                  <span class="dropbtn-text">
+                    FAL TÜRLERİ
+                  </span>                 
+                  <svg class="dropdown-icon" width="14px" height="14px" x="0px" y="0px" viewBox="0 0 512 512">
+                    <path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179
+                    c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816
+                    c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z" fill="#6d1028"/>
+                  </svg>
+                </a>
+                <div class="dropdown-content">
+                  <ul class="content-list">
+                    <li class="content-item"><a class="content-link" href="#;">Kahve falı</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">Tarot falı</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">Katina</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">İskambil falı</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">Rüya yorumu</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">Astroloji</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">El falı</a></li>
+                  </ul>
+                </div>                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                FALCILAR             
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                ASTROLOJİ
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                nasıl ÇALIŞIR?
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                BLOG
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                SSS
+              </a>
+            </li>
+          </ul>
+          <div class="account-btn-container">
+            <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
+              <span class="account-btn-text">gİRİŞ YAP</span>              
+            </a>
+            <a class="account-btn-logined" href="#;">
+              <svg class="account-btn-img" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 896 887">
+                <path d="M745.1,297.1C745.1,133,612.1,0,448,0C283.9,0,150.9,133,150.9,297.1c0,78.8,31.3,154.4,87,210.1c18.2,18.2,38.6,34,60.9,47
+                  c-138.2,46-247.6,152.9-296.9,290c-6,16.6,2.7,35,19.3,40.9c16.6,6,35-2.7,40.9-19.3C120.3,703.3,275.4,594.2,448,594.2
+                  C612.1,594.2,745.1,461.2,745.1,297.1C745.1,297.1,745.1,297.1,745.1,297.1z M448,530.2c-128.5,0-233.1-104.6-233.1-233.1
+                  S319.5,64,448,64s233.1,104.6,233.1,233.1S576.5,530.2,448,530.2z M894.1,844.2c-36.7-101.7-106.8-188-199-244.5
+                  c-15-9.4-34.7-4.9-44.1,10.1c-9.4,15-4.9,34.7,10.1,44.1c0.2,0.1,0.4,0.3,0.6,0.4c79.7,48.9,140.5,123.5,172.2,211.5
+                  c6,16.6,24.3,25.3,40.9,19.3C891.4,879.2,900.1,860.8,894.1,844.2L894.1,844.2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>        
+    </header>
+
+
+    <main role="main" class="main">      
+
+      <section class="privacy-section">
+        <div class="wrapper">
+          <div class="privacy-section-container">
+            <h2 class="title">KULLANICI SÖZLEŞMESİ</h2> 
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </p>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </p>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.            
+            </p> 
+            <h2 class="title">KULLANICI SÖZLEŞMESİ</h2> 
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>           
+          </div>
+        </div>                                   
+      </section>      
+       
+      <section class="news-section">
+        <div class="wrapper">
+          <div class="news-section-container">
+            <h3 class="news-title">
+              AVANJLARDAN HABERDAR OLMAK İSTER MİSİN?
+            </h3>
+            <p class="news-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+            </p>
+            <div class="form-container">
+              <form class="form news-form" id="news-form" action="" method="POST" enctype="application/x-www-form-urlencoded">              
+                <div class="input-group">
+                  <input class="input-control news-input-control" type="email" placeholder="E-POSTA" value="" id="news-e-mail" required>
+                  <button class="news-submit-button">GÖNDER</button>
+                </div>                
+                <div class="news-form-message" id="news-form-message"></div>              
+              </form> 
+            </div>                         
+          </div>        
+        </div>                                   
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-container">
+          <div class="footer-grid">
+            <div class="first-f">              
+              <ul class="first-f-list-1">
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">KAHVE FALI</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">TAROT FALI</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">KATİNA</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">İLİŞKİ DANIŞMANI</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">RÜYA YORUMU</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">ASTROLOJİ</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">EL FALI</a></li>
+              </ul>
+              <ul class="first-f-list-2">
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">NASIL ÇALIŞIR?</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">FAL BAKMAK</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">FAL BAKTIRMAK</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">BLOG</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">SSS</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">HAKKIMIZDA</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">İLETİŞİM</a></li>
+              </ul>
+              <ul class="first-f-socials">
+                <li class="social-item">
+                  <a class="social-link" href="#;">
+                    FACEBOOK
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#;">
+                    TWITTER
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#;">
+                    PINTEREST
+                  </a>
+                </li>
+              </ul>              
+            </div>
+            <div class="second-f">
+              <ul class="second-f-list">
+                <li class="second-f-item">
+                  <a href="#;">
+                    <img src="./img/appStore.png" alt="appStore">
+                  </a>
+                </li>
+                <li class="second-f-item">
+                  <a href="#;">
+                    <img src="./img/googlePlay.png" alt="googlePlay">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="third-f">
+              <div class="third-f-img-box-1">
+                <img src="./img/secure.png" alt="secure">
+              </div>
+              <span class="third-f-text-1">GÜVENLİ ÖDEME</span>
+              <div class="third-f-img-box-2">
+                <img src="./img/visa-mastercard-paypal.png" alt="visa-mastercard-paypal">
+              </div>
+              <span class="copyright">
+                fal&fal &copy; 2018. tüm hakları saklıdır.
+              </span>
+            </div>
+          </div>
+        </div>        
+      </div>  
+    </footer>
+
+    <div id="modal-login" style="display:none"> 
+      <div class="login-section-container">
+        <div class="login-info-container">
+          <div class="inner-login-container">
+            <div class="logo-login-container">
+              <img class="logo-login-img" src="./img/logo.png" alt="logo">
+            </div>
+            <a class="modal-btn facebook-btn" href="#">
+              <img class="modal-btn-img" src="./img/facebook.png" alt="facebook">
+              <span>Facebook ile giriş yap</span>
+            </a>            
+            <span class="or-text">ya da</span>
+            <form action="" id="login-form" class="login-form" method="POST" enctype="application/x-www-form-urlencoded">
+              <div class="input-collection">                                        
+                <div class="input-group"> 
+                  <input class="input-control" type="email" placeholder="E-posta" value="" id="loginemail" required>
+                </div>
+                <div class="input-group"> 
+                  <input class="input-control" type="password" placeholder="Şifre" value="" id="loginpassword" required>
+                </div>
+              </div>
+              <button class="modal-btn modal-submit-btn" type="submit">Giriş yap</button>
+            </form>
+            <div class="forgot-container">
+              <a class="forget-p" href="#">Şifreni mi unuttun?</a>
+            </div>            
+          </div>
+          <span class="sign-text">Yoksa hala üye olmadın mı? <a class="sign-link" href="#modal-sign-up" data-modal-open data-translatable>Hemen kaydol!</a></span>
+        </div>
+        <div class="login-img-container">
+          <img class="login-img" src="./img/login-img.jpg" alt="img">
+        </div>        
+      </div>
+    </div>
+
+    <div id="modal-sign-up" style="display:none"> 
+      <div class="login-section-container">
+        <div class="login-info-container">
+          <div class="inner-login-container">
+            <div class="logo-login-container">
+              <img class="logo-login-img" src="./img/logo.png" alt="logo">
+            </div>
+            <a class="modal-btn facebook-btn" href="#">
+              <img class="modal-btn-img" src="./img/facebook.png" alt="facebook">
+              <span>Facebook ile bağlan</span>
+            </a>            
+            <span class="or-text">ya da</span>
+            <form action="" id="sign-up-form" class="login-form" method="POST" enctype="application/x-www-form-urlencoded">
+              <div class="input-collection">
+                <div class="input-group">
+                  <input class="input-control" type="text" placeholder="İsim ve soyisim" value="" id="signupname" required>
+                </div>                          
+                <div class="input-group"> 
+                  <input class="input-control" type="email" placeholder="E-posta" value="" id="signupemail" required>
+                </div>
+                <div class="input-group"> 
+                  <input class="input-control" type="password" placeholder="Şifre" value="" id="signuppassword" required>
+                </div>
+              </div>
+              <button class="modal-btn modal-submit-btn" type="submit">Kaydol</button>
+            </form>                        
+          </div>
+          <span class="sign-text">Hesabın var mı? <a class="sign-link" href="#modal-login" data-modal-open data-translatable>Giriş yap</a></span>          
+        </div>
+        <div class="login-img-container">
+          <img class="login-img" src="./img/login-img.jpg" alt="img">
+        </div>        
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-inner">
+        <!-- <a class="modal-close" data-modal-close><img class="modal-close-icon" src="./img/modal-close.png" alt="close"></a> -->
+        <div class="modal-content"></div>
+      </div>
+    </div> 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="./script/plugin.js"></script>
+    <script src="./script/app.js"></script>
+
+  </body>
+
+</html>

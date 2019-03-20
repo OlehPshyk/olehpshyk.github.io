@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+  </head>
+
+  <body>  
+    <!-- add/remove class "logined" to <body>, or to <header> if user is logined (for show account-btn-login/account-btn-logined buttons) -->
+    <header class="header"> 
+      <div class="wrapper">
+        <div class="header-container">
+          <div class="nav-container first">            
+            <ul class="nav-list">
+              <li class="nav-item">
+                <div class="nav-link-dropdown js-dropdown">
+                  <a href="#;" class="dropbtn js-dropbtn">
+                    <span class="dropbtn-text">
+                      FAL TÜRLERİ
+                    </span>                 
+                    <svg class="dropdown-icon" width="14px" height="14px" x="0px" y="0px" viewBox="0 0 512 512">
+                      <path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179
+                      c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816
+                      c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z" fill="#6d1028"/>
+                    </svg>
+                  </a>
+                  <div class="dropdown-content">
+                    <ul class="content-list">
+                      <li class="content-item"><a class="content-link" href="#;">Kahve falı</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">Tarot falı</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">Katina</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">İskambil falı</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">Rüya yorumu</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">Astroloji</a></li>
+                      <li class="content-item"><a class="content-link" href="#;">El falı</a></li>
+                    </ul>
+                  </div>                
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#;">FALCILAR</a></li>
+              <li class="nav-item"><a class="nav-link" href="#;">ASTROLOJİ</a></li>                       
+            </ul>
+          </div>
+          <div class="logo-container">
+            <a href="./">
+              <img class="header-logo" src="./img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="nav-container second">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav-link" href="#;">nasıl ÇALIŞIR?</a></li>
+              <li class="nav-item"><a class="nav-link" href="#;">BLOG</a></li>
+              <li class="nav-item"><a class="nav-link" href="#;">SSS</a></li> 
+            </ul>
+            <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
+              <span class="account-btn-text">gİRİŞ YAP</span>
+            </a> 
+            <a class="account-btn-logined" href="#;">
+              <svg class="account-btn-img" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 896 887">
+                <path d="M745.1,297.1C745.1,133,612.1,0,448,0C283.9,0,150.9,133,150.9,297.1c0,78.8,31.3,154.4,87,210.1c18.2,18.2,38.6,34,60.9,47
+                  c-138.2,46-247.6,152.9-296.9,290c-6,16.6,2.7,35,19.3,40.9c16.6,6,35-2.7,40.9-19.3C120.3,703.3,275.4,594.2,448,594.2
+                  C612.1,594.2,745.1,461.2,745.1,297.1C745.1,297.1,745.1,297.1,745.1,297.1z M448,530.2c-128.5,0-233.1-104.6-233.1-233.1
+                  S319.5,64,448,64s233.1,104.6,233.1,233.1S576.5,530.2,448,530.2z M894.1,844.2c-36.7-101.7-106.8-188-199-244.5
+                  c-15-9.4-34.7-4.9-44.1,10.1c-9.4,15-4.9,34.7,10.1,44.1c0.2,0.1,0.4,0.3,0.6,0.4c79.7,48.9,140.5,123.5,172.2,211.5
+                  c6,16.6,24.3,25.3,40.9,19.3C891.4,879.2,900.1,860.8,894.1,844.2L894.1,844.2z"/>
+              </svg>
+            </a>           
+          </div>
+          <div class="hamb-btn-container">
+            <button class="hamb-btn">
+              <span class="hamb-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div> 
+      <div class="xs-nav">
+        <div class="xs-nav-body">
+          <ul class="xs-nav-list">          
+            <li class="nav-item">
+              <div class="nav-link-dropdown js-dropdown">
+                <a href="#;" class="dropbtn js-dropbtn">
+                  <span class="dropbtn-text">
+                    FAL TÜRLERİ
+                  </span>                 
+                  <svg class="dropdown-icon" width="14px" height="14px" x="0px" y="0px" viewBox="0 0 512 512">
+                    <path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179
+                    c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816
+                    c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z" fill="#6d1028"/>
+                  </svg>
+                </a>
+                <div class="dropdown-content">
+                  <ul class="content-list">
+                    <li class="content-item"><a class="content-link" href="#;">Kahve falı</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">Tarot falı</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">Katina</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">İskambil falı</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">Rüya yorumu</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">Astroloji</a></li>
+                    <li class="content-item"><a class="content-link" href="#;">El falı</a></li>
+                  </ul>
+                </div>                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                FALCILAR             
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                ASTROLOJİ
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                nasıl ÇALIŞIR?
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                BLOG
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#;">
+                SSS
+              </a>
+            </li>
+          </ul>
+          <div class="account-btn-container">
+            <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
+              <span class="account-btn-text">gİRİŞ YAP</span>              
+            </a>
+            <a class="account-btn-logined" href="#;">
+              <svg class="account-btn-img" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 896 887">
+                <path d="M745.1,297.1C745.1,133,612.1,0,448,0C283.9,0,150.9,133,150.9,297.1c0,78.8,31.3,154.4,87,210.1c18.2,18.2,38.6,34,60.9,47
+                  c-138.2,46-247.6,152.9-296.9,290c-6,16.6,2.7,35,19.3,40.9c16.6,6,35-2.7,40.9-19.3C120.3,703.3,275.4,594.2,448,594.2
+                  C612.1,594.2,745.1,461.2,745.1,297.1C745.1,297.1,745.1,297.1,745.1,297.1z M448,530.2c-128.5,0-233.1-104.6-233.1-233.1
+                  S319.5,64,448,64s233.1,104.6,233.1,233.1S576.5,530.2,448,530.2z M894.1,844.2c-36.7-101.7-106.8-188-199-244.5
+                  c-15-9.4-34.7-4.9-44.1,10.1c-9.4,15-4.9,34.7,10.1,44.1c0.2,0.1,0.4,0.3,0.6,0.4c79.7,48.9,140.5,123.5,172.2,211.5
+                  c6,16.6,24.3,25.3,40.9,19.3C891.4,879.2,900.1,860.8,894.1,844.2L894.1,844.2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>        
+    </header>
+
+
+    <main role="main" class="main">      
+
+      <section class="howto-section">
+        <div class="wrapper">
+          <div class="howto-section-container">
+            <h2 class="title">FAL&FAL NASIL ÇALIŞIR?</h2>
+            <ul class="howto-list">
+              <li class="howto-item">
+                <div class="item-img-container">
+                  <div class="item-img-box">
+                    <svg width="90" height="115" x="0px" y="0px" viewBox="0 0 67 89.5" style="enable-background:new 0 0 67 89.5;" xml:space="preserve" fill="#ffffff">
+                      <path d="M29.9,21.1c-12.7,0-23,10.3-23,23s10.3,23,23,23s23-10.3,23-23S42.6,21.1,29.9,21.1zM31.4,59.5c-5.2-0.2-10.4-2.7-13.7-6.9c-3.3-4.3-4-10.5-1.7-15.5c1.1-2.5,2.9-4.8,5.3-6.4s5.4-2.3,8.2-2c2.9,0.2,5.7,1.5,7.8,3.5c2.2,2,3.6,5.1,3.5,8.2c-0.1,3.1-1.4,6.2-3.8,8.3c-2.5,2.1-6.2,2.7-9.2,1.6c-1.5-0.6-2.8-1.6-3.9-2.9c-1-1.3-1.7-3-1.6-4.7c0-1.7,0.5-3.3,1.5-4.6c0.9-1.3,2.5-2.4,4.2-2.6c1.6-0.2,3.4,0.2,4.6,1.2c1.3,0.9,2.1,2.7,1.9,4.2c-0.2,1.6-1.1,3-2.5,3.6s-3.1,0.2-3.9-0.9l0.3-0.3c0.9,0.7,2.2,0.7,3,0.1c0.8-0.6,1.2-1.7,1.1-2.6c-0.1-1.9-2.4-3-4-2.5c-1.6,0.4-2.7,2.4-2.5,4.1c0.1,0.9,0.4,1.6,1,2.3c0.6,0.6,1.4,1.2,2.2,1.4c1.7,0.6,3.6,0.2,5-0.9c1.4-1.2,2.4-3,2.5-5c0.1-1.9-0.6-3.9-2-5.4c-1.5-1.5-3.4-2.5-5.6-2.8c-2.1-0.3-4.4,0.1-6.2,1.3c-1.8,1.1-3.4,2.9-4.4,4.9c-2.1,4.1-1.7,9.3,0.9,13.1c2.7,3.8,7.2,6.5,12.1,6.9c4.8,0.5,9.9-1.2,13.5-4.7l0.3,0.3C41.8,57.6,36.6,59.7,31.4,59.5z"/>
+                      <path d="M58.2,58.7c-2.4,1.3-2.7,1.8-2.2,4.5c-1.3-2.4-1.8-2.7-4.5-2.2c2.4-1.3,2.7-1.8,2.2-4.5C55,58.9,55.5,59.1,58.2,58.7z"/>
+                      <path d="M21.9,7.1c-1.7,1.1-1.8,1.5-1.3,3.5c-1.1-1.7-1.5-1.8-3.5-1.3c1.7-1.1,1.8-1.5,1.3-3.5C19.6,7.5,20,7.6,21.9,7.1z"/>
+                      <path d="M16.1,20.3c-4.8-1.3-5.7-1-8.5,3.1c1.3-4.8,1-5.7-3.1-8.5c4.8,1.3,5.7,1,8.5-3.1C11.7,16.6,12,17.4,16.1,20.3z"/>
+                      <circle cx="21.2" cy="16.9" r="1.3"/>
+                      <circle cx="57.8" cy="53.3" r="1.3"/>
+                      <circle cx="60.9" cy="57.1" r="0.6"/>
+                      <path d="M47.4,70.8v-2.7c0-1.1-1-2.1-2.9-2.8c-4.1,2.8-9.1,4.5-14.5,4.5c-5.3,0-10.3-1.6-14.4-4.4c-1.8,0.8-2.7,1.7-2.7,2.7v2.7c-1.9,0.9-2.9,1.9-2.9,3v4.8c0,3.7,10.1,5.6,20.1,5.6s20.1-1.9,20.1-5.6v-4.8C50.2,72.6,49.2,71.6,47.4,70.8z M12.1,79.3c-0.3-0.3-0.5-0.5-0.5-0.7v-2.4c0.1,0.1,0.3,0.2,0.5,0.3V79.3z M45.4,70.4c0.2-0.1,0.3-0.2,0.5-0.3v2c0,0.2-0.2,0.4-0.5,0.7V70.4zM41.9,71.7c0.5-0.1,0.9-0.2,1.3-0.4v2.6c-0.4,0.1-0.8,0.3-1.3,0.4V71.7z M19,71.9c3.1,0.7,7.1,1,11,1c4,0,8-0.4,11.2-1.1v2.6c-2.6,0.6-6.4,1.1-11.2,1.1c-4.7,0-8.4-0.5-11-1.1V71.9zM17,71.4c0.4,0.1,0.8,0.2,1.3,0.4v2.6c-0.5-0.1-0.9-0.3-1.3-0.4V71.4zM15.6,70.8c0.2,0.1,0.5,0.2,0.8,0.3v2.6c-0.3-0.1-0.6-0.2-0.8-0.3V70.8zM13.6,80.1c-0.3-0.1-0.6-0.3-0.8-0.4v-2.9c0.3,0.1,0.5,0.2,0.8,0.3V80.1zM14.3,70.2c0.2,0.1,0.4,0.2,0.6,0.3V73c-0.4-0.3-0.6-0.5-0.6-0.8V70.2z M15.6,80.8c-0.5-0.1-0.9-0.3-1.3-0.4v-3c0.4,0.1,0.8,0.3,1.3,0.4V80.8zM43.9,81c-3.1,0.8-7.7,1.5-13.8,1.5S19.4,81.9,16.3,81v-3c3.8,0.9,8.8,1.4,13.8,1.4s10-0.5,13.8-1.4V81zM43.9,71.1c0.3-0.1,0.5-0.2,0.8-0.3v2.5c-0.2,0.1-0.5,0.2-0.8,0.4V71.1z M45.9,80.4c-0.4,0.1-0.8,0.3-1.3,0.4v-3c0.5-0.1,0.9-0.3,1.3-0.4V80.4z M47.4,79.7c-0.2,0.1-0.5,0.3-0.8,0.4v-3c0.3-0.1,0.5-0.2,0.8-0.3V79.7zM48.5,78.6c0,0.2-0.2,0.4-0.4,0.7v-2.8c0.1-0.1,0.3-0.2,0.4-0.2V78.6z"/>
+                      </svg>
+                  </div>
+                </div>
+                <div class="item-text-container">
+                  <h3 class="item-title">
+                    FALCINI SEÇ
+                  </h3>
+                  <p class="item-text">Deneyimli ve gerçek yorumcu kadromuzdan dilediğin birini seç!</p>                  
+                </div>
+              </li>
+              <li class="howto-item">
+                <div class="item-img-container">
+                  <div class="item-img-box">
+                    <svg width="110" height="110" x="0px" y="0px" viewBox="-45 47 130 20" style="enable-background:new 0 0 67.6 69.9;" xml:space="preserve" fill="#ffffff">
+                      <g>
+                        <path d="M62,8.5H41.1l-3-5.3c-1.1-2-3.3-3.2-5.5-3.2c-1.1,0-2.2,0.3-3.1,0.8l-26.2,15c-1.5,0.8-2.5,2.2-3,3.9S0,23,0.8,24.5
+                          l24.1,42.1c0.8,1.4,2.1,2.4,3.6,2.9c0.7,0.3,1.4,0.4,2.2,0.4H62c3.1,0,5.6-2.5,5.6-5.6V14.1C67.6,11,65,8.5,62,8.5z M62.8,34.8
+                          l-4.7,3.4l0,0l-1.6,1.2l-3.3,2.4l0.6,1.7c0,0,0,0,0,0l3.1,9.6c0,0,0,0.1,0,0.1c0,0.1,0,0.3,0,0.4c0,0,0,0,0,0
+                          c0,0.1-0.1,0.2-0.2,0.3C56.5,54,56.4,54,56.2,54c-0.1,0-0.3,0-0.4-0.1l-9.6-7l-9.6,7c-0.2,0.2-0.6,0.2-0.8,0
+                          c-0.2-0.2-0.4-0.5-0.3-0.8l3-9.2c0,0,0,0,0,0l0.7-2.1l0,0l-9.6-7c-0.2-0.2-0.4-0.5-0.3-0.8c0.1-0.3,0.4-0.5,0.7-0.5c0,0,0,0,0,0
+                          l10.4,0l1.5,0l0.1-0.2l3.6-11.1c0.1-0.3,0.4-0.5,0.7-0.5c0,0,0,0,0,0l0,0c0.2,0,0.3,0.1,0.4,0.1c0,0,0,0,0,0c0.1,0,0.1,0.1,0.1,0.1
+                          c0,0.1,0.1,0.1,0.1,0.2l3.7,11.3h0.5l1.9,0l0,0l1.6,0l7.8,0c0,0,0,0,0,0c0.3,0,0.6,0.2,0.7,0.5C63.2,34.3,63.1,34.6,62.8,34.8z
+                           M2.7,23.4c-0.6-1-0.7-2.1-0.4-3.2s1-2,2-2.6l26.2-15c0.6-0.4,1.4-0.6,2.1-0.6c1.5,0,2.9,0.8,3.7,2.1l2.4,4.2h-7.9
+                          c-3.1,0-5.6,2.5-5.6,5.6v48.6L2.7,23.4z"/>
+                        <polygon points="39.9,44.1 39.9,44.3 39.9,44.3 37.5,51.4 45,46 40.4,42.6  "/>
+                        <polygon points="49.5,35 42.9,34.9 40.9,41.2 46.2,45.1 51.5,41.2  "/>
+                        <polygon points="41.4,35 40.4,34.9 40,34.9 40,34.9 32.2,34.9 39.7,40.3  "/>
+                        <polygon points="46.2,24.7 43.4,33.5 49,33.5  "/>
+                        <polygon points="47.4,46 54.9,51.4 52,42.6  "/>
+                        <polygon points="56.2,34.9 55,34.9 51.3,35 51.3,35 51,35 51,35 52.7,40.3 55.7,38.2 55.7,38.2 55.9,38 60.2,34.9  "/>
+                      </g>
+                      <g style="transform:translate(-31%,107%) scale(0.78)">
+                        <path d="M28.7,0C11.4,11.4,0,31,0,53.3c0,35.3,28.7,64,64,64c22.3,0,41.9-11.4,53.3-28.7C107.2,95.4,95.1,99.3,82,99.3c-35.3,0-64-28.7-64-64C18,22.2,21.9,10.1,28.7,0z"/>                        
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="item-text-container">
+                  <h3 class="item-title">
+                    FALINI SEÇ
+                  </h3>
+                  <p class="item-text">Kahve falı, tarot falı, katina falı, astroloji falı ve daha birçok fal çeşidinden sana uygun olanı seçip formu doldur!</p>                  
+                </div>
+              </li>
+              <li class="howto-item">
+                <div class="item-img-container">
+                  <div class="item-img-box">
+                    <svg width="87" height="87" x="0px" y="0px" viewBox="0 0 98 96.3" style="enable-background:new 0 0 98 96.3;" xml:space="preserve" fill="#ffffff">
+                      <path d="M0.1,60.1c-0.2-0.8,0-1.7,0.5-2.4l13.2-16.5c2-2.5,4.7-4.2,7.7-5c0.5-0.1,1-0.2,1.5-0.3l5.3,20.5c0.3,1.3,1.1,2.5,2.2,3.3c1.9,1.3,4.4,1.3,6.2-0.1l20-14.5c0.7-0.5,1.4-0.8,2.2-1l0,0c2.7-0.7,5.5,0.4,7.1,2.7c1.7,2.6,1.4,6-0.8,8.3l-9.7,10.5L69,62.1c1.2-0.3,2.4,0.4,2.7,1.6c0,0,0,0,0,0l2.2,8.3c0.6,3.2-1.5,6.2-4.7,6.8c-1.6,0.3-3.3-0.1-4.6-1.1c-0.3,3.2-3.1,5.6-6.3,5.3c-1.8-0.1-3.4-1.1-4.4-2.6c-1.3,3-4.7,4.4-7.7,3.1c-1.2-0.5-2.3-1.5-2.9-2.7C37.8,87,30.7,91.3,22.9,93.4l-4.6,1.2l-6.3,1.7c-1.3,0.3-2.6-0.4-2.9-1.7c0,0,0,0,0-0.1L0.1,60.1z M27.4,25.9l61.6-16l-1.9-7.1c-0.5-2-2.6-3.2-4.6-2.7l-54.3,14c-2,0.5-3.3,2.6-2.7,4.6c0,0,0,0,0,0L27.4,25.9z M34.5,53.1l18.3-13.2c1.3-1,2.8-1.7,4.4-2.1c5.4-1.4,11.1,0.7,14.2,5.3c2.2,3.2,2.8,7.3,1.7,11l22-5.7c2-0.5,3.3-2.6,2.7-4.6c0,0,0,0,0,0l-7-26.9l-61.6,16L34.5,53.1z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="item-text-container mw550">
+                  <h3 class="item-title">
+                    ÖDEMENİ YAP
+                  </h3>
+                  <p class="item-text">Fal formunu doldurup sana uygun olan seçeneklerle ödemeni tamamla!</p>                  
+                </div>
+              </li>
+              <li class="howto-item">
+                <div class="item-img-container">
+                  <div class="item-img-box">
+                    <svg width="91" height="90" x="0px" y="0px" viewBox="0 0 58.6 55.5" style="enable-background:new 0 0 58.6 55.5;" xml:space="preserve" fill="#ffffff">
+                    <path d="M18.6,5.8c0,5-0.5,10.1,0.1,15.1c0.4,3.2,5.4,3.2,5,0c-0.6-5-0.2-10-0.1-15.1C23.7,2.6,18.7,2.6,18.6,5.8L18.6,5.8z"/>
+                    <path d="M36.6,3.7c0.4,5.6-0.9,11.1-1,16.7c-0.1,3.2,4.9,3.2,5,0c0.1-5.6,1.4-11.1,1-16.7C41.4,0.6,36.4,0.5,36.6,3.7L36.6,3.7z"/>
+                    <path d="M0.1,36.1C3.5,49.3,16,55.6,28.9,55.5c13.7-0.1,24.7-6.9,29.6-19.9c1.1-3-3.7-4.3-4.8-1.3c-4.1,11.1-13.4,15.9-24.8,16.2c-10.6,0.3-21.2-4.9-24-15.8C4.1,31.6-0.7,33,0.1,36.1L0.1,36.1z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="item-text-container mw550">
+                  <h3 class="item-title">
+                    MERAK ETTİĞİN HER ŞEYİ ÖĞREN!
+                  </h3>
+                  <p class="item-text">
+                    Kısa bir süre sonra falın sana mail olarak gelsin...
+                  </p>
+                  <p class="item-text">
+                    Neyse halin çıksın falın! :)
+                  </p>                  
+                </div>
+              </li>
+            </ul>
+            <div class="btn-container">
+              <a class="howto-btn" href="#">BENİ FALCILARA GÖTÜR</a>
+            </div>
+          </div>          
+        </div>                                   
+      </section>      
+       
+      <section class="news-section">
+        <div class="wrapper">
+          <div class="news-section-container">
+            <h3 class="news-title">
+              AVANJLARDAN HABERDAR OLMAK İSTER MİSİN?
+            </h3>
+            <p class="news-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+            </p>
+            <div class="form-container">
+              <form class="form news-form" id="news-form" action="" method="POST" enctype="application/x-www-form-urlencoded">              
+                <div class="input-group">
+                  <input class="input-control news-input-control" type="email" placeholder="E-POSTA" value="" id="news-e-mail" required>
+                  <button class="news-submit-button">GÖNDER</button>
+                </div>                
+                <div class="news-form-message" id="news-form-message"></div>              
+              </form> 
+            </div>                         
+          </div>        
+        </div>                                   
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-container">
+          <div class="footer-grid">
+            <div class="first-f">              
+              <ul class="first-f-list-1">
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">KAHVE FALI</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">TAROT FALI</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">KATİNA</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">İLİŞKİ DANIŞMANI</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">RÜYA YORUMU</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">ASTROLOJİ</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">EL FALI</a></li>
+              </ul>
+              <ul class="first-f-list-2">
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">NASIL ÇALIŞIR?</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">FAL BAKMAK</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">FAL BAKTIRMAK</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">BLOG</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">SSS</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">HAKKIMIZDA</a></li>
+                <li class="first-f-list-item"><a class="first-f-list-link" href="#;">İLETİŞİM</a></li>
+              </ul>
+              <ul class="first-f-socials">
+                <li class="social-item">
+                  <a class="social-link" href="#;">
+                    FACEBOOK
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#;">
+                    TWITTER
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#;">
+                    PINTEREST
+                  </a>
+                </li>
+              </ul>              
+            </div>
+            <div class="second-f">
+              <ul class="second-f-list">
+                <li class="second-f-item">
+                  <a href="#;">
+                    <img src="./img/appStore.png" alt="appStore">
+                  </a>
+                </li>
+                <li class="second-f-item">
+                  <a href="#;">
+                    <img src="./img/googlePlay.png" alt="googlePlay">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="third-f">
+              <div class="third-f-img-box-1">
+                <img src="./img/secure.png" alt="secure">
+              </div>
+              <span class="third-f-text-1">GÜVENLİ ÖDEME</span>
+              <div class="third-f-img-box-2">
+                <img src="./img/visa-mastercard-paypal.png" alt="visa-mastercard-paypal">
+              </div>
+              <span class="copyright">
+                fal&fal &copy; 2018. tüm hakları saklıdır.
+              </span>
+            </div>
+          </div>
+        </div>        
+      </div>  
+    </footer>
+
+    <div id="modal-login" style="display:none"> 
+      <div class="login-section-container">
+        <div class="login-info-container">
+          <div class="inner-login-container">
+            <div class="logo-login-container">
+              <img class="logo-login-img" src="./img/logo.png" alt="logo">
+            </div>
+            <a class="modal-btn facebook-btn" href="#">
+              <img class="modal-btn-img" src="./img/facebook.png" alt="facebook">
+              <span>Facebook ile giriş yap</span>
+            </a>            
+            <span class="or-text">ya da</span>
+            <form action="" id="login-form" class="login-form" method="POST" enctype="application/x-www-form-urlencoded">
+              <div class="input-collection">                                        
+                <div class="input-group"> 
+                  <input class="input-control" type="email" placeholder="E-posta" value="" id="loginemail" required>
+                </div>
+                <div class="input-group"> 
+                  <input class="input-control" type="password" placeholder="Şifre" value="" id="loginpassword" required>
+                </div>
+              </div>
+              <button class="modal-btn modal-submit-btn" type="submit">Giriş yap</button>
+            </form>
+            <div class="forgot-container">
+              <a class="forget-p" href="#">Şifreni mi unuttun?</a>
+            </div>            
+          </div>
+          <span class="sign-text">Yoksa hala üye olmadın mı? <a class="sign-link" href="#modal-sign-up" data-modal-open data-translatable>Hemen kaydol!</a></span>
+        </div>
+        <div class="login-img-container">
+          <img class="login-img" src="./img/login-img.jpg" alt="img">
+        </div>        
+      </div>
+    </div>
+
+    <div id="modal-sign-up" style="display:none"> 
+      <div class="login-section-container">
+        <div class="login-info-container">
+          <div class="inner-login-container">
+            <div class="logo-login-container">
+              <img class="logo-login-img" src="./img/logo.png" alt="logo">
+            </div>
+            <a class="modal-btn facebook-btn" href="#">
+              <img class="modal-btn-img" src="./img/facebook.png" alt="facebook">
+              <span>Facebook ile bağlan</span>
+            </a>            
+            <span class="or-text">ya da</span>
+            <form action="" id="sign-up-form" class="login-form" method="POST" enctype="application/x-www-form-urlencoded">
+              <div class="input-collection">
+                <div class="input-group">
+                  <input class="input-control" type="text" placeholder="İsim ve soyisim" value="" id="signupname" required>
+                </div>                          
+                <div class="input-group"> 
+                  <input class="input-control" type="email" placeholder="E-posta" value="" id="signupemail" required>
+                </div>
+                <div class="input-group"> 
+                  <input class="input-control" type="password" placeholder="Şifre" value="" id="signuppassword" required>
+                </div>
+              </div>
+              <button class="modal-btn modal-submit-btn" type="submit">Kaydol</button>
+            </form>                        
+          </div>
+          <span class="sign-text">Hesabın var mı? <a class="sign-link" href="#modal-login" data-modal-open data-translatable>Giriş yap</a></span>          
+        </div>
+        <div class="login-img-container">
+          <img class="login-img" src="./img/login-img.jpg" alt="img">
+        </div>        
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-inner">
+        <!-- <a class="modal-close" data-modal-close><img class="modal-close-icon" src="./img/modal-close.png" alt="close"></a> -->
+        <div class="modal-content"></div>
+      </div>
+    </div> 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="./script/plugin.js"></script>
+    <script src="./script/app.js"></script>
+
+  </body>
+
+</html>

@@ -89,9 +89,9 @@
               <li class="nav-item"><a class="nav-link" href="#;">BLOG</a></li>
               <li class="nav-item"><a class="nav-link" href="#;">SSS</a></li> 
             </ul>
-            <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
+            <!-- <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
               <span class="account-btn-text">gİRİŞ YAP</span>
-            </a> 
+            </a> --> 
             <a class="account-btn-logined" href="#;">
               <svg class="account-btn-img" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 896 887">
                 <path d="M745.1,297.1C745.1,133,612.1,0,448,0C283.9,0,150.9,133,150.9,297.1c0,78.8,31.3,154.4,87,210.1c18.2,18.2,38.6,34,60.9,47
@@ -165,9 +165,9 @@
             </li>
           </ul>
           <div class="account-btn-container">
-            <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
+            <!-- <a class="account-btn-login" href="#modal-login" data-modal-open data-translatable>                 
               <span class="account-btn-text">gİRİŞ YAP</span>              
-            </a>
+            </a> -->
             <a class="account-btn-logined" href="#;">
               <svg class="account-btn-img" x="0px" y="0px" width="25px" height="24px" viewBox="0 0 896 887">
                 <path d="M745.1,297.1C745.1,133,612.1,0,448,0C283.9,0,150.9,133,150.9,297.1c0,78.8,31.3,154.4,87,210.1c18.2,18.2,38.6,34,60.9,47
@@ -205,24 +205,30 @@
                     <div class="tab-info-container">
                       <form id="account-form" action="" method="POST" enctype="application/x-www-form-urlencoded">
                         <div class="account-form-container">
-                          <div class="account-input-grid">                                  
-                            <label class="label" for="acc-name">Kullanıcı adı:</label>                 
-                            <input class="input" type="text" placeholder="Name" value="" id="acc-name" required>
-                            <label class="label" for="acc-email">E-posta:</label>                 
-                            <input class="input" type="text" placeholder="Email" value="" id="acc-email" required>
-                            <label class="label" for="acc-password">E-posta:</label>                 
-                            <input class="input" type="password" placeholder="*******" value="" id="acc-password" required>                    
-                            <label class="label" for="acc-phone">Telefon numarası:</label>                 
-                            <input class="input" type="text" placeholder="Phone" value="" id="acc-phone" required>
-                            <label class="label" for="acc-gender">Cinsiyet:</label>
-                            <select id="acc-gender">
+                          <div class="account-input-grid">  
+
+                            <label class="label" for="account-name">Kullanıcı adı:</label>                 
+                            <input class="input" type="text" placeholder="Name" value="" id="account-name" required>
+
+                            <label class="label" for="account-email">E-posta:</label>                 
+                            <input class="input" type="text" placeholder="Email" value="" id="account-email" required>
+
+                            <label class="label" for="account-password">Şifre:</label>                 
+                            <input class="input" type="password" placeholder="*******" value="" id="account-password" required>
+
+                            <label class="label" for="account-phone">Telefon numarası:</label>                 
+                            <input class="input" type="text" placeholder="Phone" value="" id="account-phone" required>
+
+                            <label class="label" for="account-gender">Cinsiyet:</label>
+                            <select id="account-gender">
                               <option value="hide">Select cinsiyet</option>
                               <option value="Man">Man</option>
                               <option value="Kadın">Kadın</option>                              
                             </select> 
-                            <label class="label" for="acc-birth">Doğum tarihi:</label>
+
+                            <label class="label">Doğum tarihi:</label>
                             <div class="flex-select-container">
-                              <select id="acc-data-birth">
+                              <select id="account-data-birth">
                                 <option value="hide">Date</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -256,7 +262,7 @@
                                 <option value="30">30</option>
                                 <option value="31">31</option>                              
                               </select>
-                              <select id="acc-month-birth">
+                              <select id="account-month-birth">
                                 <option value="hide">Month</option>
                                 <option value="Ocak">Ocak</option>
                                 <option value="Şubat">Şubat</option>
@@ -273,7 +279,7 @@
                               </select>
                             </div>
                             <div class="year-select-container">
-                              <select id="acc-month-year">
+                              <select id="account-year-birth">
                                 <option value="hide">Year</option>
                                 <option value="2000">2000</option>
                                 <option value="2001">2001</option>
@@ -299,7 +305,7 @@
                             </div>
                             
                             <div class="btn-container">
-                              <div class="message" id="message"></div>
+                              <div class="account-form-message" id="account-form-message"></div>
                               <button class="account-submit-btn">KAYDET</button>
                             </div>                  
                           </div>
@@ -332,7 +338,7 @@
             <div class="form-container">
               <form class="form news-form" id="news-form" action="" method="POST" enctype="application/x-www-form-urlencoded">              
                 <div class="input-group">
-                  <input class="input-control news-input-control" type="email" placeholder="E-POSTA" value="" id="news-e-mail" required>
+                  <input class="input-control news-input-control" type="email" placeholder="E-POSTA" value="" id="news-email" required>
                   <button class="news-submit-button">GÖNDER</button>
                 </div>                
                 <div class="news-form-message" id="news-form-message"></div>              
@@ -438,6 +444,7 @@
                 </div>
               </div>
               <button class="modal-btn modal-submit-btn" type="submit">Giriş yap</button>
+              <div class="login-form-message" id="login-form-message"></div>
             </form>
             <div class="forgot-container">
               <a class="forget-p" href="#">Şifreni mi unuttun?</a>
@@ -476,6 +483,7 @@
                 </div>
               </div>
               <button class="modal-btn modal-submit-btn" type="submit">Kaydol</button>
+              <div class="sign-up-form-message" id="sign-up-form-message"></div>
             </form>                        
           </div>
           <span class="sign-text">Hesabın var mı? <a class="sign-link" href="#modal-login" data-modal-open data-translatable>Giriş yap</a></span>          

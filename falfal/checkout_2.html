@@ -235,10 +235,9 @@
               </div>                               
             </div>
 
-            <div class="payments-container">
-
+            <div class="payments-container" id="payment-select">              
               <div class="payment-container">
-                <a class="payment-item-link" href="#">
+                <a class="payment-item-link" id="select-card" href="#">
                   <div class="payment-item-container">
                     <div class="item-body">
                       <h3 class="item-title">
@@ -274,9 +273,8 @@
                   </div>                   
                 </div>                  
               </div>
-
               <div class="payment-container">
-                <a class="payment-item-link" href="#">
+                <a class="payment-item-link" id="select-mobil" href="#">
                   <div class="payment-item-container">
                     <div class="item-body">
                       <h3 class="item-title">
@@ -293,7 +291,7 @@
                     </div>
                   </div> 
                 </a> 
-                <div class="cards-container">
+                <div class="mobcards-container">
                   <div class="mob i1">
                     <img class="mob-img" src="./img/turkcell.png" alt="img">
                   </div>                      
@@ -303,11 +301,143 @@
                   <div class="mob i3">
                     <img class="mob-img" src="./img/telekom.png" alt="img">
                   </div>                   
-                </div>               
+                </div>
               </div>
+            </div> 
 
-            </div>  
-                              
+            <div class="mobil-container" id="mobil-container">
+              <form class="mobil-form" id="mobil-form" action="" method="POST" enctype="application/x-www-form-urlencoded">
+                <h3 class="mobil-title">
+                  MOBİL BİLGİLERİN
+                </h3>
+                <p class="mobil-text">
+                  Lütfen cep telefonu numaranızı giriniz
+                </p>
+                <div class="input-container">
+                  <input class="mobil-phone-input" id="mobil-phone-input" type="text">
+                </div>
+                <div class="mobcards-container">
+                  <div class="mob i1">
+                    <img class="mob-img" src="./img/turkcell.png" alt="img">
+                  </div>                      
+                  <div class="mob i2">
+                    <img class="mob-img" src="./img/vodafone.png" alt="img">
+                  </div>                      
+                  <div class="mob i3">
+                    <img class="mob-img" src="./img/telekom.png" alt="img">
+                  </div>                   
+                </div>
+                <div class="checkbox-container">
+                  <label class="label-checkbox">
+                    <input class="input" type="checkbox" name="" required>
+                    <div class="custom-checkbox"></div>
+                    <span>                    
+                      Kullanıcı sözleşmesini <span class="text-bold">okudum</span> ve <span class="text-bold">onaylıyorum.</span>
+                    </span>
+                  </label>                     
+                </div>
+                <div class="cards-container">
+                  <div class="card i1">
+                    <svg width="37px" height="49px" x="0px" y="0px" viewBox="0 0 41.6 55.8">
+                      <path fill="#ffffff" d="M34.7,13.9C34.7,6.2,28.5,0,20.8,0S6.9,6.3,6.9,13.9v10.7H0v31.2h41.6V24.6h-6.9C34.7,24.6,34.7,13.9,34.7,13.9z M31.2,24.6
+                      H10.4V13.9c0-5.7,4.7-10.4,10.4-10.4s10.4,4.7,10.4,10.4V24.6z"/>
+                    </svg>
+                    <span class="card-text">
+                      GÜVENLİ<br/> ÖDEME
+                    </span>
+                  </div>                      
+                  <div class="card i2">
+                    <img src="./img/check-icon2.png" alt="img">
+                    <span class="card-text">SSL İLE<br/> KORUNUR</span>
+                  </div>          
+                </div>
+                <div class="btn-container">
+                  <button class="checkout2-btn">ÖDEMEYİ TAMAMLA</button>
+                  <!-- <a class="mobil-form-btn">ÖDEMEYİ TAMAMLA</a> -->
+                  <div class="mobil-form-message" id="mobil-form-message"></div>
+                </div>
+              </form>
+            </div>
+
+            <div class="card-container" id="card-container">
+              <form class="card-form" id="card-form" action="" method="POST" enctype="application/x-www-form-urlencoded">
+                <h3 class="mobil-title">
+                  KART BİLGİLERİN
+                </h3>  
+                <div class="card-inputs-container">
+                  <div class="input-group">
+                    <label class="label" for="card-name">Kart üzerindeki isim:</label>                 
+                    <input class="input" type="text" placeholder="İsminizi yazınız" value="" id="card-name" required>
+                  </div>
+                  <div class="input-group">                  
+                    <label class="label" for="card-number">Kart numarası:</label>                                 
+                    <input class="input" type="text" id="card-number" required>
+                  </div>
+                  <div class="input-group">
+                    <label class="label">Son kullanım tarihi:</label> 
+                    <div class="input-row33">
+                      <select id="card-moon">
+                        <option value="hide">Ay</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option> 
+                        <option value="11">11</option>
+                        <option value="12">12</option>                            
+                      </select>
+                      <select id="card-year">
+                        <option value="hide">Year</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>                                                  
+                      </select>                      
+                    </div>                    
+                  </div>
+                  <div class="input-group">
+                    <label class="label" for="card-cvv">CVV:</label>
+                    <div class="input-row33">
+                      <input class="input w142" type="text" placeholder="CVV" value="" id="card-cvv" required>
+                    </div>
+                  </div>
+                </div>                            
+                <div class="checkbox-container">
+                  <label class="label-checkbox">
+                    <input class="input" type="checkbox" name="" required>
+                    <div class="custom-checkbox"></div>
+                    <span>                    
+                      Kullanıcı sözleşmesini <span class="text-bold">okudum</span> ve <span class="text-bold">onaylıyorum.</span>
+                    </span>
+                  </label>                     
+                </div>
+                <div class="cards-container">
+                  <div class="card i1">
+                    <svg width="37px" height="49px" x="0px" y="0px" viewBox="0 0 41.6 55.8">
+                      <path fill="#ffffff" d="M34.7,13.9C34.7,6.2,28.5,0,20.8,0S6.9,6.3,6.9,13.9v10.7H0v31.2h41.6V24.6h-6.9C34.7,24.6,34.7,13.9,34.7,13.9z M31.2,24.6
+                      H10.4V13.9c0-5.7,4.7-10.4,10.4-10.4s10.4,4.7,10.4,10.4V24.6z"/>
+                    </svg>
+                    <span class="card-text">
+                      GÜVENLİ<br/> ÖDEME
+                    </span>
+                  </div>                      
+                  <div class="card i2">
+                    <img src="./img/check-icon2.png" alt="img">
+                    <span class="card-text">SSL İLE<br/> KORUNUR</span>
+                  </div>          
+                </div>                
+                <div class="btn-container">
+                  <button class="checkout2-btn">ÖDEMEYİ TAMAMLA</button>
+                  <!-- <a class="mobil-form-btn">ÖDEMEYİ TAMAMLA</a> -->
+                  <div class="mobil-form-message" id="mobil-form-message"></div>
+                </div>
+              </form>
+            </div>                                  
           </div>          
         </div>                                   
       </section>      

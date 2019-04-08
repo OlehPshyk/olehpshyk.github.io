@@ -17,43 +17,59 @@
     <header class="header"> 
       <div class="wrapper">
         <div class="header-container">
-          <a href="./">
-            <div class="logo-container">            
-              <img class="logo-img" src="./images/logo.png" alt="logo">            
-            </div>
-          </a>
-          <div class="nav-container">
-            <ul class="nav-list">
-              <li class="nav-item"><a class="nav-link" href="./">Main</a></li>
-              <li class="nav-item"><a class="nav-link" href="./company.html">Company Overview</a></li>              
-              <li class="nav-item"><a class="nav-link" href="./business.html">Business Introduction</a></li>
-              <li class="nav-item"><a class="nav-link" href="./platform.html">Platform</a></li>
-              <li class="nav-item"><a class="nav-link" href="./partners.html">Partners</a></li>
-              <li class="nav-item"><a class="nav-link active" href="./contact.html">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="r-container">
-            <div class="lang-container">
-              <ul class="lang-list">
-                <li class="lang-item">
-                  <a class="lang-link active" href="#">
-                    en
-                  </a>
-                </li>              
-                <li class="lang-item">
-                  <a class="lang-link" href="#">
-                    de
-                  </a>
-                </li>
+          <div class="header-inner-container">
+            <a href="./">
+              <div class="logo-container">
+                <svg class="logo-svg" width="47px" height="46px" viewBox="0 0 47 46">                    
+                  <defs>
+                      <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="logoLinearGradient">
+                          <stop stop-color="#F87801" offset="0%"></stop>
+                          <stop stop-color="#340F54" offset="100%"></stop>
+                      </linearGradient>
+                  </defs>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-91.000000, -8.000000)" fill="url(#logoLinearGradient)" fill-rule="nonzero">
+                      <g transform="translate(91.000000, 8.000000)">
+                        <path d="M20.3203469,45.7580641 C17.0845935,45.107947 15.0456255,44.2194536 14.4029074,43.1792663 C13.8931654,42.3557846 13.8710027,41.8790321 14.3142566,40.6438096 C15.0013001,38.7801405 16.2867364,38 18.7467956,38 C20.8079262,38 22.4701283,38.455082 26.703203,40.167057 C30.1384207,41.5539735 33.529313,42.6158314 34.5266343,42.6158314 C34.8147493,42.6158314 35,42.5500467 35,42.6583996 C35,42.7319169 33.529313,43.3309603 32.7757814,43.6776894 C30.4708611,44.7395473 29.894631,44.956253 28.1659409,45.4330056 C25.9939968,46.018111 22.3814775,46.1914755 20.3203469,45.7580641 Z M8.60344256,40.7138725 C6.6990347,39.8754987 3.06945737,35.2304544 1.79238387,32.0129115 C0.851382337,29.5657662 0,26.3482234 0,25.0793332 C0,23.0400455 0.94100153,21.431274 2.6885758,20.5249239 C3.56236294,20.0490901 4.0104589,19.9811139 6.04929555,20.0037726 C8.40179938,20.0264314 9.67887288,20.2530189 12.7483303,21.2726628 C13.7117366,21.5898853 15.3920965,22.5642117 17.9462435,24.3089356 C20.0298897,25.736437 26.7513292,29.3844962 28.5661179,30.0416001 C31.1874793,30.9479502 32.9350536,31.2198552 35.9597013,31.2425139 C37.550442,31.2425139 39.3204211,31.1065614 39.880541,30.9706089 C40.440661,30.8346564 41.2920433,30.6307276 41.7849489,30.5174339 C42.2778545,30.4041401 43.0396176,30.2002113 43.4653088,30.0642588 C45.3697166,29.49779 45.436931,29.8376713 44.0254287,32.7606504 C43.0396176,34.8225969 40.1966763,37.4332596 40.017438,37.6145296 C39.8157948,37.7957996 38.6706819,38.4253385 37.9761332,38.6972436 C36.8334885,39.1277599 36.3629877,39.1730774 33.7416263,39.0824424 C30.6497641,38.9691486 29.327881,38.6292673 23.0545375,36.4087095 C19.5817938,35.1851369 17.0500515,35.1171606 14.8767861,36.2047808 C14.1598326,36.5446621 13.4876886,37.1791071 12.5242823,38.470656 C11.6953047,39.5809349 10.8663272,40.4193088 10.3510168,40.6912138 C9.54444409,41.0990713 9.4996345,41.0990713 8.60344256,40.7138725 Z M32.6282782,28.5956504 C29.4144443,27.8772291 27.5133031,26.9792024 18.3697195,21.8155491 C12.3720718,18.4479492 11.6251949,18.2009919 5.08436402,17.6621759 C3.02479443,17.4825705 2.09685649,16.8988532 2.00632596,15.6416159 C1.96106069,14.8782932 2.14212175,14.3843786 3.09269233,12.7230292 C3.72640605,11.6229466 4.63171136,10.3432586 5.08436402,9.87179461 C6.39705672,8.52475463 8.34346314,7.33486931 10.018278,6.88585598 C11.4667665,6.50419465 11.6478275,6.50419465 13.7300298,6.86340531 C14.9521919,7.06546131 17.3059857,7.6716293 18.9808006,8.2104453 C27.6490989,11.0616799 29.3918117,11.3086373 32.0171971,10.1636533 C33.3525224,9.57993595 34.1672972,8.81661329 35.1857657,7.24506664 C36.3626626,5.404112 36.7926826,5 37.6074574,5 C38.5806606,5 39.7575575,5.80822399 41.8171271,7.91858663 C45.2572873,11.4433413 46.9773674,16.1804319 47,22.0849571 L47,24.6667838 L46.2304905,25.5648104 C44.6235736,27.4506664 39.9386186,29.0222131 36.1363362,28.9997624 C35.2083983,28.9997624 33.624114,28.7977064 32.6282782,28.5956504 Z M24.9864686,7.72960078 C23.4578802,7.38246302 21.5642558,6.82704261 20.7657394,6.47990485 C20.5147772,6.36419226 18.872115,5.73934429 17.1153791,5.09135381 C15.3586432,4.44336332 13.6931663,3.81851536 13.3965745,3.70280277 C13.0999827,3.56394767 12.6665024,3.4713776 12.4383549,3.4713776 C10.6359895,3.4713776 14.7426449,1.38855104 18.3701905,0.485992864 C19.8303346,0.115712587 20.9938869,0 23.4122507,0 C28.2033486,0 31.4202287,0.856273141 32.4697073,2.38367928 C33.5191859,3.98051298 32.948817,6.5493324 31.3061549,7.52131813 C30.4163796,8.05359603 26.971352,8.16930861 24.9864686,7.72960078 Z"></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a>
+            <div class="nav-container">
+              <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="./">Main</a></li>
+                <li class="nav-item"><a class="nav-link" href="./company.html">Company Overview</a></li>              
+                <li class="nav-item"><a class="nav-link" href="./business.html">Business Introduction</a></li>
+                <li class="nav-item"><a class="nav-link" href="./platform.html">Platform</a></li>
+                <li class="nav-item"><a class="nav-link" href="./partners.html">Partners</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./contact.html">Contact us</a></li>
               </ul>
             </div>
-            <div class="burger-container">              
-              <button class="hamb-btn">
-                <!-- <span class="hamb-icon"></span> -->
-                <span></span>
-              </button>
+            <div class="r-container">
+              <div class="lang-container">
+                <ul class="lang-list">
+                  <li class="lang-item">
+                    <a class="lang-link active" href="#">
+                      en
+                    </a>
+                  </li>              
+                  <li class="lang-item">
+                    <a class="lang-link" href="#">
+                      de
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="burger-container">              
+                <button class="hamb-btn">
+                  <!-- <span class="hamb-icon"></span> -->
+                  <span></span>
+                </button>
+              </div>
             </div>
-          </div>        
+          </div>
         </div>
       </div>
       <div class="xs-nav">        
@@ -95,9 +111,9 @@
 
     <main role="main" class="main">
 
-      <section class="top-section">
+      <section class="top-section contact-bg">
         <div class="wrapper">
-          <div class="top-section-container contact-bg">
+          <div class="top-section-container">
             <h2 class="title">Contact us</h2>
             <p class="title-text">Vestibulum vehicula bibendum massa non aliquet. Nunc ac augue fermentum orci dictum rhoncus eget ac enim.</p>
           </div>        
@@ -153,32 +169,38 @@
     </main>
 
     <footer class="footer">
-      <div class="wrapper">
-        <div class="footer-container">
-          <div class="f-item">
-            <span class="list-title">tel:</span>
-            <ul class="f-list">
-              <li class="f-list-item">+43(0)1 205551 7044</li>               
-              <li class="f-list-item">+43(0)1 205551 7097</li>
-            </ul>
-          </div>
-          <div class="f-item">
-            <span class="list-title">fax:</span>
-            <ul class="f-list">
-              <li class="f-list-item">+43(0)1 205551 7044</li>
-            </ul>
-          </div>
-          <div class="f-item">
-            <span class="list-title">email:</span>
-            <ul class="f-list">
-              <li class="f-list-item">+43(0)1 205551 7044</li>
-            </ul>
-          </div>
-        </div> 
-        <div class="footer-bottom-container">
-          <span>Copyright 2018 Jupiter Media GmbH</span>
-        </div>       
-      </div>  
+      <div class="footer-top">
+        <div class="wrapper">
+          <div class="footer-top-container">
+            <div class="f-item">
+              <span class="list-title">tel:</span>
+              <ul class="f-list">
+                <li class="f-list-item">+43(0)1 205551 7044</li>               
+                <li class="f-list-item">+43(0)1 205551 7097</li>
+              </ul>
+            </div>
+            <div class="f-item">
+              <span class="list-title">fax:</span>
+              <ul class="f-list">
+                <li class="f-list-item">+43(0)1 205551 7044</li>
+              </ul>
+            </div>
+            <div class="f-item">
+              <span class="list-title">email:</span>
+              <ul class="f-list">
+                <li class="f-list-item">+43(0)1 205551 7044</li>
+              </ul>
+            </div>
+          </div>              
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <div class="footer-bottom-container">
+            <span>Copyright 2018 Jupiter Media GmbH</span>
+          </div> 
+        </div>
+      </div>
     </footer>
 
     

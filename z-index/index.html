@@ -28,6 +28,7 @@
                 <img src="./img/img1.gif" alt="img">
               </div>              
             </div>
+            
             <div class="page p3">
               <div class="content">
                 <p class="t-center"><b>Синтаксис</b></p>
@@ -37,8 +38,13 @@
                 <ul>
                   <li>Чим більше значення z-index тим вище(ближче до глядача) знаходиться елемент. </li>
                   <li>"auto" те саме що "0" <br/>(! але "0" створює новий контекст накладення, "auto" - ні.</li>
-                  <li><b>&lt;integer&gt;</b>  додатне або від’ємне число.</li>                  
+                  <li><b>&lt;integer&gt;</b> додатнє або від’ємне число.</li>                  
                 </ul>                 
+              </div>              
+            </div>
+            <div class="page p22">
+              <div class="img-box">
+                <img src="./img/img0.png" alt="img">
               </div>              
             </div>
             <div class="page p4">
@@ -46,8 +52,8 @@
                 <h2 class="t-center">Приклади впливу зміни z-index. Накладання елементів без z-index</h2>              
                 <ul>
                   <li>Якщо у сусідніх елементів однакові значення z-index, тоді працює стандартний порядок накладання в html.</li>
-                  <li>z-index  не працює з position: static;</li>
-                  <li>працює тільки з position: relative, absolute, fixed, sticky.</li>
+                  <li>z-index не працює з position: static;</li>
+                  <li>z-index працює тільки з position: relative, absolute, fixed, sticky.</li>
                 </ul>
                 <a class="link" href="https://codepen.io/Scorpio79/pen/wZpddx" target="_blank">Приклад. Поки все просто.</a>
               </div>              
@@ -57,10 +63,10 @@
                 <h2 class="t-center">z-index. Parents + children</h2>              
                 <ul>
                   <li>ще раз !!</br>z-index  не працює з position: static;</li>
-                  <li>ще раз !!</br>z-indexпрацює тільки з position: relative, absolute, fixed, sticky.</li>
+                  <li>ще раз !!</br>z-index працює тільки з position: relative, absolute, fixed, sticky.</li>
                   <li><a class="link" href="https://codepen.io/Scorpio79/pen/GLyqeK" target="_blank">Приклад. Все ще просто</a></li>
-                  <li>z-index створює контекст накладення.(при умові що він працює))</li>
-                  <li>цей контекст накладення має значення <b>!!тільки для його child-елементів!!</b></li>
+                  <li>z-index створює контекст накладення(примітка: не auto, є position: не static).</li>
+                  <li>цей контекст накладення має значення/вплив <b>!!тільки для його child-елементів!!</b></li>
                 </ul>                
               </div>              
             </div> 
@@ -70,23 +76,102 @@
                 <ul>
                   <li><a class="link" href="https://codepen.io/Scorpio79/pen/VNyWpB" target="_blank">Перший шок</a>
                   <li>!!!child-елементи елемента-батька(з контекстом накладення) живуть у свому ізольованому просторі</li>
-                  <li>!!!child-елементи не можуть бути нижче елемента-батька(з контекстом накладення)</li>                   
+                  <li>!!!child-елементи не можуть бути нижче елемента-батька(з контекстом накладення)</li>
+                  <li>opacity&lt;0  Просто вважайте його рівнозначним z-index:0;</li>
+                  <li>opacity&lt;0 --- створює контекст накладення!!!</li>                   
                 </ul>                
               </div>              
-            </div>                               
+            </div>
+            <div class="page p7">
+              <div class="content">
+                <h2 class="t-center">
+                  Новий контекст створюється для наступних елементів: 
+                </h2>  
+                <ul>
+                  <li><b>&lt;body&gt; (&lt;html&gt;)</b></li>
+                  <li>елементи з <b>z-index не “auto”</b> і position іншим ніж “static”; fixed(створює контекст навіть без z-index)</li>
+                  <li>елементи з <b>opacity<1</b></li>
+                  <li><b>Flex-</b> та <b>Grid-</b>елементів зі значенням z-index не “auto”. Навіть якщо він “static”.</li>
+                  <li>елементи з властивістю <b>transform не “none”</b></li>
+                  <li>елементи з властивістю “will-change”, filter, transform-style зі значенням preserve-3d; perspective зі значенням не “none”, CSS Regions: встановлене значения flow-from не“none”, для елемента з content не "normal".</li>
+                </ul>                           
+              </div>
+            </div>
+            <div class="page p8">
+              <h2>Стандартне накладання елементів в HTML</h2>
+              <div class="img-box">
+                <img src="./img/normal.jpg" alt="img">
+              </div>              
+            </div> 
+            <div class="page p9">
+              <h2>Стандартне накладання елементів в HTML +z-index-овані елементи</h2>
+              <div class="img-box">
+                <img src="./img/flow-new.png" alt="img">
+              </div>              
+            </div>
+            <div class="page p10">
+              <div class="content">
+                <h2 class="title t-center">z-index деяких фреймворків</h2>                  
+                  <div class="fl-box">
+                    <ul>
+                      <li>Bootstrap 3 z-index:</li>
+                      <li>@zindex-navbar: 1000;</li>
+                      <li>@zindex-dropdown: 1000;</li>
+                      <li>@zindex-popover:  1060;</li>
+                      <li>@zindex-tooltip:  1070;</li>
+                      <li>@zindex-navbar-fixed:  1030;</li>
+                      <li>@zindex-modal-background:  1040;</li>
+                      <li>@zindex-modal: 1050;</li>
+                    </ul>                    
+                    <ul>
+                      <li>Material UI  z-index:</li>
+                      <li>mobile stepper: 1000</li>
+                      <li>app bar: 1100</li>
+                      <li>drawer: 1200</li>
+                      <li>modal: 1300</li>
+                      <li>snackbar: 1400</li>
+                      <li>tooltip: 1500</li>
+                    </ul>
+                  </div>                  
+                </div>
+            </div>
+            <div class="page p11">
+              <div class="content">                             
+                <h2 class="t-center" style="padding-top: 35px;">Приклади використання:</h2>
+                <ul>
+                  <li><a href="https://codepen.io/Scorpio79/pen/QPaONW" target="_blank">боротьба з тінню</a></li>
+                  <li><a href="https://olehpshyk.github.io/falfal/" target="_blank">круглі бордери навколо картинки, дропдаун, гамбургер меню, абсолютний хедер</a></li>
+                  <li><a href="https://olehpshyk.github.io/falfal/horoscope.html" target="_blank">issue з тінню, flex- контекст</a></li>
+                  <li><a href="https://dataengi.com" target="_blank">бекграунди секцій з двох частин, :after</a></li>
+                  <li><a href="https://dataengi.com/contact/" target="_blank">z-index для анімаційних штук</a></li>
+                  <li><a href="https://olehpshyk.github.io/sinyalleri/" target="_blank">затемнення, z-index в секції з колами, футер</a></li>
+                  <li><a href="https://olehpshyk.github.io/jupiter/" target="_blank">мобільне меню накриває хедер кнопки</a></li>
+                  <li><a href="https://olehpshyk.github.io/phathemarket/" target="_blank">багато z-index</a></li>
+                  <li><a href="https://olehpshyk.github.io/sutliff/" target="_blank">шок від сайдбара, z-index</a></li>
+                  <li><a href="https://olehpshyk.github.io/t51/" target="_blank">багато z-index слайдер Japan</a></li>
+                  <li><a href="https://olehpshyk.github.io/t51-pink/" target="_blank">ще трішки складностей</a></li>
+                </ul>
+              </div>
+            </div> 
+            <div class="page p12">
+              <div class="content">
+                <h2>Тестове завдання LaSoft</h2>
+                <a href="https://codepen.io/Scorpio79/pen/GLyOzV">LaSoft</a>
+              </div>
+            </div>                              
           </div>
         </div>        
       </section>         
     </main> 
     
     
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+   <!--  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script src="./script/plugin.js"></script>
 
-    <script src="./script/app.js"></script>  
+    <script src="./script/app.js"></script>   -->
     
     
   </body>

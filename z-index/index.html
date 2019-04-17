@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="./img/favicon.ico" type="image/x-icon" rel="icon" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>    
+  </head>
+
+  <body> 
+    <main role="main" class="main">
+      <section class="lection-section">
+        <div class="wrapper">
+          <div class="lection-section-container">
+            <div class="page p1">
+              <div class="content">
+                <h1 class="title">z-index</h1>
+                <h2 class="subtitle">Контекст накладення</h2>  
+              </div>              
+            </div>
+            <div class="page p2">
+              <div class="img-box">
+                <img src="./img/img1.gif" alt="img">
+              </div>              
+            </div>
+            <div class="page p3">
+              <div class="content">
+                <p class="t-center"><b>Синтаксис</b></p>
+                <p class="t-center">
+                  <b>z-index: auto | &lt;integer&gt;</b>
+                </p>
+                <ul>
+                  <li>Чим більше значення z-index тим вище(ближче до глядача) знаходиться елемент. </li>
+                  <li>"auto" те саме що "0" <br/>(! але "0" створює новий контекст накладення, "auto" - ні.</li>
+                  <li><b>&lt;integer&gt;</b>  додатне або від’ємне число.</li>                  
+                </ul>                 
+              </div>              
+            </div>
+            <div class="page p4">
+              <div class="content">
+                <h2 class="t-center">Приклади впливу зміни z-index. Накладання елементів без z-index</h2>              
+                <ul>
+                  <li>Якщо у сусідніх елементів однакові значення z-index, тоді працює стандартний порядок накладання в html.</li>
+                  <li>z-index  не працює з position: static;</li>
+                  <li>працює тільки з position: relative, absolute, fixed, sticky.</li>
+                </ul>
+                <a class="link" href="https://codepen.io/Scorpio79/pen/wZpddx" target="_blank">Приклад. Поки все просто.</a>
+              </div>              
+            </div> 
+            <div class="page p5">
+              <div class="content">
+                <h2 class="t-center">z-index. Parents + children</h2>              
+                <ul>
+                  <li>ще раз !!</br>z-index  не працює з position: static;</li>
+                  <li>ще раз !!</br>z-indexпрацює тільки з position: relative, absolute, fixed, sticky.</li>
+                  <li><a class="link" href="https://codepen.io/Scorpio79/pen/GLyqeK" target="_blank">Приклад. Все ще просто</a></li>
+                  <li>z-index створює контекст накладення.(при умові що він працює))</li>
+                  <li>цей контекст накладення має значення <b>!!тільки для його child-елементів!!</b></li>
+                </ul>                
+              </div>              
+            </div> 
+            <div class="page p6">
+              <div class="content">
+                <h2 class="t-center">z-index. Перший шок і тонкощі пошуку контексту</h2>              
+                <ul>
+                  <li><a class="link" href="https://codepen.io/Scorpio79/pen/VNyWpB" target="_blank">Перший шок</a>
+                  <li>!!!child-елементи елемента-батька(з контекстом накладення) живуть у свому ізольованому просторі</li>
+                  <li>!!!child-елементи не можуть бути нижче елемента-батька(з контекстом накладення)</li>                   
+                </ul>                
+              </div>              
+            </div>                               
+          </div>
+        </div>        
+      </section>         
+    </main> 
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="./script/plugin.js"></script>
+
+    <script src="./script/app.js"></script>  
+    
+    
+  </body>
+
+</html>

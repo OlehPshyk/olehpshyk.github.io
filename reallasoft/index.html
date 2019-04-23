@@ -161,8 +161,13 @@
             </ul> 
             <div class="shifted-container">
               <div class="image-container">
-                <div class="ratio-box">
-                  <img class="img" src="./images/sh-img.jpg" alt="img">
+                <div class="ratio-box">                  
+                  <picture>
+                    <source media="(max-width: 575px)" srcset="./images/sh-img-720.jpg")>
+                    <source media="(max-width: 991px)" srcset="./images/sh-img-1200.jpg")>
+                    <source media="(min-width: 1200px)" srcset="./images/sh-img.jpg")>
+                    <img class="img" src="./images/sh-img.jpg" alt="img">
+                  </picture>                   
                 </div>                
               </div> 
               <div class="bg-image-container">                               
@@ -827,7 +832,14 @@
       <section class="ibg-section">
         <div class="wrapper-max">
           <div class="ibg-section-container">
-            <div class="ratio-img" style="background-image: url('./images/ibg.jpg')" >              
+            <!-- <div class="ratio-img" style="background-image: url('./images/ibg.jpg')" > -->
+            <div class="ratio-img">
+              <picture>
+                <source media="(max-width: 575px)" srcset="./images/ibg-720.jpg")>
+                <source media="(max-width: 991px)" srcset="./images/ibg-1200.jpg")>
+                <source media="(min-width: 1200px)" srcset="./images/ibg.jpg")>
+                <img class="img" src="./images/ibg.jpg" alt="img">
+              </picture>
             </div>
           </div>
         </div>
@@ -839,29 +851,49 @@
             <div class="drag-slider">
               <div>
                 <div class="dragslide-container v-top">
-                  <div class="drag-image-box">
-                    <img class="drag-image" src="./images/isl1.jpg" alt="">
+                  <div class="drag-image-box">                    
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl1-720.jpg")>
+                      <source media="(max-width: 991px)" srcset="./images/isl1-1200.jpg")>
+                      <source media="(min-width: 1200px)" srcset="./images/isl1.jpg")>
+                      <img class="img" src="./images/isl1.jpg" alt="img">
+                    </picture>
                   </div>
                 </div>
               </div>
               <div>
                 <div class="dragslide-container v-center">
-                  <div class="drag-image-box">
-                    <img class="drag-image" src="./images/isl2.jpg" alt="">
+                  <div class="drag-image-box">                    
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl2-720.jpg")>
+                      <source media="(max-width: 991px)" srcset="./images/isl2-1200.jpg")>
+                      <source media="(min-width: 1200px)" srcset="./images/isl2.jpg")>
+                      <img class="img" src="./images/isl2.jpg" alt="img">
+                    </picture>
                   </div>
                 </div>
               </div>
               <div>
                 <div class="dragslide-container v-bottom">
                   <div class="drag-image-box">
-                    <img class="drag-image" src="./images/isl3.jpg" alt="">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl3-720.jpg")>
+                      <source media="(max-width: 991px)" srcset="./images/isl3-1200.jpg")>
+                      <source media="(min-width: 1200px)" srcset="./images/isl3.jpg")>
+                      <img class="img" src="./images/isl3.jpg" alt="img">
+                    </picture>
                   </div>
                 </div>
               </div>  
               <div>
                 <div class="dragslide-container v-center">
                   <div class="drag-image-box">
-                    <img class="drag-image" src="./images/isl4.jpg" alt="">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl4-720.jpg")>
+                      <source media="(max-width: 991px)" srcset="./images/isl4-1200.jpg")>
+                      <source media="(min-width: 1200px)" srcset="./images/isl4.jpg")>
+                      <img class="img" src="./images/isl4.jpg" alt="img">
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -913,7 +945,14 @@
       </section>
 
       <footer class="footer">
-        <div class="footer-img-ratio-box" style="background-image: url('./images/bottom.jpg')">            
+        <!-- <div class="footer-img-ratio-box" style="background-image: url('./images/bottom.jpg')">  -->
+        <div class="footer-img-ratio-box">          
+          <picture>
+            <source media="(max-width: 575px)" srcset="./images/bottom-720.jpg")>
+            <source media="(max-width: 991px)" srcset="./images/bottom-1200.jpg")>
+            <source media="(min-width: 1200px)" srcset="./images/bottom.jpg")>
+            <img class="img" src="./images/bottom.jpg" alt="img">
+          </picture>            
         </div>                      
         <div class="footer-middle-container">
           <h2 class="f-slogan">Contact us</h2>

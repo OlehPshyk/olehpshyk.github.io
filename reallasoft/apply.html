@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Work+Sans:300,400,500,700" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+  </head>
+
+  <body> 
+
+    <main role="main" class="main">
+      <div class="close-btn-container">              
+        <button class="close-btn" onClick="history.back()">
+          <span></span>
+        </button>              
+      </div>  
+
+      <section class="apply-section">
+        <div class="bg-image-xl">          
+          <img class="img" src="./images/apply.jpg" alt="img">          
+        </div>  
+        <div class="wrapper-1440">
+          <div class="apply-section-container">
+
+            <div class="img-container">
+              <div class="img-ratio-box">                               
+                <img class="img" src="./images/apply-1200.jpg" alt="img">                 
+              </div>
+            </div>
+
+            <div class="apply-info-container">
+              <div class="apply-info-inner-container">
+                <div class="info-container">
+                  <h2 class="title">Interested?</h2>
+                  <h3 class="subtitle">You know what to do</h3>
+                  <div class="text">                
+                    <p>No need to be formal. Just send us your contact info and we'll be in touch.</p>
+                    <p>Or contact our recruiters <a class="recr-link" href="https://www.linkedin.com/in/anna-lavrys-38a371131/" target="_blank">Anna</a> or <a class="recr-link" href="https://www.linkedin.com/in/yuliya-tsuper-b64079168/" target="_blank">Yulia</a> directly via Linkedin</p>
+                  </div>              
+                </div>
+
+                <div class="form-container">
+                  <form class="info-form" action="">
+                    <div class="form-input-group">
+                      <div class="input-container">
+                        <input class="input-contr" type="text" required placeholder="Name">
+                      </div>
+                      <div class="input-container">
+                        <input class="input-contr" type="email" required placeholder="Email">
+                      </div>
+                      <div class="input-container">                      
+                        <label class="ffi custom-placeholder" data-ffi-button-text="Attach CV" data-ffi-placeholder="Attach CV">
+                          <input type="file" required aria-label="Required file">                        
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="opt-soc-container">
+                      <span class="opt-soc-title">(Optional)</span>
+                      <ul class="opt-soc-list">
+                        <li class="opt-soc-item"><button class="opt-soc-btn js-opt-soc-btn" data-opt="phone" type="button">Phone</button></li>
+                        <li class="opt-soc-item"><button class="opt-soc-btn js-opt-soc-btn" data-opt="skype" type="button">Skype</button></li>
+                        <li class="opt-soc-item"><button class="opt-soc-btn js-opt-soc-btn" data-opt="linkedin" type="button">Linkedin</button></li>
+                      </ul>
+                    </div>
+
+                    <div class="opt-input-container js-opt-input" data-opt="phone">
+                      <input class="input-contr" type="text" placeholder="Enter your Phone...">
+                      <div class="opt-btn-box">
+                        <button class="close-opt-btn js-close-opt-btn" type="button" data-opt="phone">
+                          <svg width="19px" height="19px" viewBox="0 0 19 19">                        
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g class="svg-fill" transform="translate(-340.000000, -2224.000000)" fill="#8E8F95" fill-rule="nonzero">
+                                <g transform="translate(16.000000, 1968.000000)">
+                                  <path d="M340.218,258.782 C342.012,260.576 343,262.961 343,265.499 C343,268.037 342.013,270.423 340.218,272.217 C338.423,274.011 336.038,274.999 333.5,274.999 C330.962,274.999 328.576,274.012 326.782,272.217 C324.988,270.422 324,268.036 324,265.499 C324,262.962 324.987,260.576 326.782,258.782 C328.577,256.988 330.962,256 333.5,256 C336.038,256 338.424,256.988 340.218,258.782 Z M333.5,274 C338.187,274 342,270.187 342,265.5 C342,260.813 338.187,257 333.5,257 C328.813,257 325,260.813 325,265.5 C325,270.187 328.813,274 333.5,274 Z M339.5,266 L327.5,266 C327.224,266 327,265.776 327,265.5 C327,265.224 327.224,265 327.5,265 L339.5,265 C339.776,265 340,265.224 340,265.5 C340,265.776 339.776,266 339.5,266 Z"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div> 
+
+                    <div class="opt-input-container js-opt-input" data-opt="skype">
+                      <input class="input-contr" type="text" placeholder="Enter your Skype ID...">
+                      <div class="opt-btn-box">
+                        <button class="close-opt-btn js-close-opt-btn" type="button" data-opt="skype">
+                          <svg width="19px" height="19px" viewBox="0 0 19 19">                        
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g class="svg-fill" transform="translate(-340.000000, -2224.000000)" fill="#8E8F95" fill-rule="nonzero">
+                                <g transform="translate(16.000000, 1968.000000)">
+                                  <path d="M340.218,258.782 C342.012,260.576 343,262.961 343,265.499 C343,268.037 342.013,270.423 340.218,272.217 C338.423,274.011 336.038,274.999 333.5,274.999 C330.962,274.999 328.576,274.012 326.782,272.217 C324.988,270.422 324,268.036 324,265.499 C324,262.962 324.987,260.576 326.782,258.782 C328.577,256.988 330.962,256 333.5,256 C336.038,256 338.424,256.988 340.218,258.782 Z M333.5,274 C338.187,274 342,270.187 342,265.5 C342,260.813 338.187,257 333.5,257 C328.813,257 325,260.813 325,265.5 C325,270.187 328.813,274 333.5,274 Z M339.5,266 L327.5,266 C327.224,266 327,265.776 327,265.5 C327,265.224 327.224,265 327.5,265 L339.5,265 C339.776,265 340,265.224 340,265.5 C340,265.776 339.776,266 339.5,266 Z"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    
+                    <div class="opt-input-container js-opt-input" data-opt="linkedin">
+                      <input class="input-contr" type="text" placeholder="Enter your Linkedin ID...">
+                      <div class="opt-btn-box">
+                        <button class="close-opt-btn js-close-opt-btn" type="button" data-opt="linkedin">
+                          <svg width="19px" height="19px" viewBox="0 0 19 19">                        
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g class="svg-fill" transform="translate(-340.000000, -2224.000000)" fill="#8E8F95" fill-rule="nonzero">
+                                <g transform="translate(16.000000, 1968.000000)">
+                                  <path d="M340.218,258.782 C342.012,260.576 343,262.961 343,265.499 C343,268.037 342.013,270.423 340.218,272.217 C338.423,274.011 336.038,274.999 333.5,274.999 C330.962,274.999 328.576,274.012 326.782,272.217 C324.988,270.422 324,268.036 324,265.499 C324,262.962 324.987,260.576 326.782,258.782 C328.577,256.988 330.962,256 333.5,256 C336.038,256 338.424,256.988 340.218,258.782 Z M333.5,274 C338.187,274 342,270.187 342,265.5 C342,260.813 338.187,257 333.5,257 C328.813,257 325,260.813 325,265.5 C325,270.187 328.813,274 333.5,274 Z M339.5,266 L327.5,266 C327.224,266 327,265.776 327,265.5 C327,265.224 327.224,265 327.5,265 L339.5,265 C339.776,265 340,265.224 340,265.5 C340,265.776 339.776,266 339.5,266 Z"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        </button>                        
+                      </div>                      
+                    </div> 
+
+                    <div class="submit-btn-container">
+                      <button class="vac-submit-btn" type="submit">Become one of LaSoftians</button>
+                    </div>                  
+                  </form>
+                </div>
+              </div>             
+            </div>            
+
+          </div>
+        </div>
+      </section>   
+      
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+    <script src="./script/plugin.js"></script>
+    <script src="./script/app.js"></script>
+
+  </body>
+
+</html>

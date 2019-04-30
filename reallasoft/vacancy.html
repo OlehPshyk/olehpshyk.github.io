@@ -101,8 +101,10 @@
                     <div class="input-container">
                       <input class="input-contr" type="email" required placeholder="Email">
                     </div>
-                    <div class="input-container">
-                      <input class="input-contr" type="file" required>
+                    <div class="input-container">                      
+                      <label class="ffi custom-placeholder" data-ffi-button-text="Attach CV" data-ffi-placeholder="Attach CV">
+                        <input type="file" required aria-label="Required file">                        
+                      </label>
                     </div>
                   </div>
 
@@ -119,7 +121,7 @@
                   <div class="opt-input-container js-opt-input" data-opt="phone">
                     <input class="input-contr" type="text" placeholder="Enter your Phone...">
                     <div class="opt-btn-box">
-                      <button class="close-opt-btn js-close-opt-btn" type="button">
+                      <button class="close-opt-btn js-close-opt-btn" type="button" data-opt="phone">
                         <svg width="19px" height="19px" viewBox="0 0 19 19">                        
                           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g class="svg-fill" transform="translate(-340.000000, -2224.000000)" fill="#8E8F95" fill-rule="nonzero">
@@ -138,7 +140,7 @@
                   <div class="opt-input-container js-opt-input" data-opt="skype">
                     <input class="input-contr" type="text" placeholder="Enter your Skype ID...">
                     <div class="opt-btn-box">
-                      <button class="close-opt-btn js-close-opt-btn" type="button">
+                      <button class="close-opt-btn js-close-opt-btn" type="button" data-opt="skype">
                         <svg width="19px" height="19px" viewBox="0 0 19 19">                        
                           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g class="svg-fill" transform="translate(-340.000000, -2224.000000)" fill="#8E8F95" fill-rule="nonzero">
@@ -156,7 +158,7 @@
                   <div class="opt-input-container js-opt-input" data-opt="linkedin">
                     <input class="input-contr" type="text" placeholder="Enter your Linkedin ID...">
                     <div class="opt-btn-box">
-                      <button class="close-opt-btn js-close-opt-btn" type="button">
+                      <button class="close-opt-btn js-close-opt-btn" type="button" data-opt="linkedin">
                         <svg width="19px" height="19px" viewBox="0 0 19 19">                        
                           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g class="svg-fill" transform="translate(-340.000000, -2224.000000)" fill="#8E8F95" fill-rule="nonzero">
@@ -229,6 +231,7 @@
     </main>
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
     <script src="./script/plugin.js"></script>
     <script src="./script/app.js"></script>
 

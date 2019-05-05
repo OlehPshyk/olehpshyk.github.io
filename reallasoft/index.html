@@ -8,32 +8,19 @@
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Work+Sans:300,400,500,700" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
-    <link rel="stylesheet" type="text/css" href="./style/app.css"/>    
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-      
-        if (window.location.hash) {
-          setTimeout(function() {          
-            $('html, body').scrollTop(0);                   
-            $('html, body').animate({
-              scrollTop: $(window.location.hash).offset().top
-            }, 1900, 'swing')
-          }, 0);
-
-          // setTimeout(function() {          
-          //   $('html, body').stop().animate({
-          //     scrollTop: $(window.location.hash).offset().top
-          //   }, 1900, 'swing')
-          // }, 0);
-        } 
-              
-    </script>
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+    
+    
 
   </head>
 
-  <body>      
+  <body>     
+    <script type="text/javascript"> 
+      if (window.location.hash) {
+        // hide scroll to anchor
+        document.getElementsByTagName("body")[0].style.visibility = "hidden";        
+      }         
+    </script> 
     <header class="header">
       <div class="wrapper-max">
         <div class="header-container">        
@@ -1121,9 +1108,28 @@
         </div>               
       </footer>
       
-    </main>   
+    </main>  
     
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+
+   
+    <script type="text/javascript">
+      $(document).ready(function() {       
+        if (window.location.hash) {          
+          setTimeout(function() {   
+            window.scrollTo(0,0);  
+            document.getElementsByTagName("body")[0].style.visibility = "visible";                            
+            $('html, body').animate({
+              scrollTop: $(window.location.hash).offset().top                
+            }, 1900, 'swing')
+          }, 0)
+        } 
+      })              
+    </script>
+    
 
     <script src="./script/plugin.js"></script>
     <script src="./script/app.js"></script>

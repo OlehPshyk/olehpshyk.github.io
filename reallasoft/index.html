@@ -150,9 +150,11 @@
             <h2 class="title">
               Work at LaSoft
             </h2>            
-            <h3 class="title2">
-              Real <span class="accent">People</span>
-            </h3>            
+            <h3 class="title2">              
+              <div class="animation">
+                <span>Real <span class="accent">People</span></span>&nbsp;<span>Meaningful <span class="accent">Projects</span></span>&nbsp;<span>Spirit of <span class="accent">Adventure</span></span>
+              </div>              
+            </h3>                        
             <span class="pos-link-container"><a class="pos-link" href="./dev_position.html">9 open positions</a></span>
             <span class="pos-info">Join the team of 73 experts whose uniqueness is hugely respected</span>
           </div>        
@@ -1061,6 +1063,102 @@
                   </div>
                 </div>
               </div>
+              <div>
+                <div class="dragslide-container v-bottom">
+                  <div class="drag-image-box">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl16-720.jpg">
+                      <source media="(max-width: 991px)" srcset="./images/isl16-1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="./images/isl16.jpg">
+                      <img class="drag-image" src="./images/isl16.jpg" alt="img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="dragslide-container v-bottom">
+                  <div class="drag-image-box">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl17-720.jpg">
+                      <source media="(max-width: 991px)" srcset="./images/isl17-1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="./images/isl17.jpg">
+                      <img class="drag-image" src="./images/isl17.jpg" alt="img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="dragslide-container v-bottom">
+                  <div class="drag-image-box">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl18-720.jpg">
+                      <source media="(max-width: 991px)" srcset="./images/isl18-1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="./images/isl18.jpg">
+                      <img class="drag-image" src="./images/isl18.jpg" alt="img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="dragslide-container v-bottom">
+                  <div class="drag-image-box">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl19-720.jpg">
+                      <source media="(max-width: 991px)" srcset="./images/isl19-1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="./images/isl19.jpg">
+                      <img class="drag-image" src="./images/isl19.jpg" alt="img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="dragslide-container v-bottom">
+                  <div class="drag-image-box">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl20-720.jpg">
+                      <source media="(max-width: 991px)" srcset="./images/isl20-1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="./images/isl20.jpg">
+                      <img class="drag-image" src="./images/isl20.jpg" alt="img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="dragslide-container v-bottom">
+                  <div class="drag-image-box">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl21-720.jpg">
+                      <source media="(max-width: 991px)" srcset="./images/isl21-1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="./images/isl21.jpg">
+                      <img class="drag-image" src="./images/isl21.jpg" alt="img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="dragslide-container v-bottom">
+                  <div class="drag-image-box">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl22-720.jpg">
+                      <source media="(max-width: 991px)" srcset="./images/isl22-1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="./images/isl22.jpg">
+                      <img class="drag-image" src="./images/isl22.jpg" alt="img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="dragslide-container v-bottom">
+                  <div class="drag-image-box">
+                    <picture>
+                      <source media="(max-width: 575px)" srcset="./images/isl23-720.jpg">
+                      <source media="(max-width: 991px)" srcset="./images/isl23-1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="./images/isl23.jpg">
+                      <img class="drag-image" src="./images/isl23.jpg" alt="img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
             </div>             
           </div>
         </div>
@@ -1151,7 +1249,16 @@
     <script src="./script/app.js"></script>
 
 
-
+    <script>      
+      $('.animation').atrotating({
+        type: 'html',
+        animation: 'animateCss',
+        // animateCssAnimation:['bounceIn', 'bounceOut'],
+        animateCssAnimation:['bounceIn', 'fadeOut'],
+        animationSpeed: [3000, 2000], 
+        separator: "&nbsp;",       
+      });      
+    </script>
     
 
   </body>

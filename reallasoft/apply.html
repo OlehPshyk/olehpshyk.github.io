@@ -14,7 +14,7 @@
   <body> 
 
     <main class="main">
-      <div class="close-btn-container">              
+      <div class="close-btn-container md-lg-hide">              
         <button class="close-btn" onClick="history.back()">
           <span></span>
         </button>              
@@ -34,6 +34,11 @@
             </div>
 
             <div class="apply-info-container">
+              <div class="close-btn-container md-lg-only">              
+                <button class="close-btn" onClick="history.back()">
+                  <span></span>
+                </button>              
+              </div>
               <div class="apply-info-inner-container">
                 <div class="info-container">
                   <h2 class="title">Interested?</h2>
@@ -70,7 +75,7 @@
                     </div>
 
                     <div class="opt-input-container js-opt-input" data-opt="phone">
-                      <input class="input-contr" type="text" placeholder="Enter your Phone...">
+                      <input class="input-contr" id="opt-phone" type="text" placeholder="Enter your Phone...">
                       <div class="opt-btn-box">
                         <button class="close-opt-btn js-close-opt-btn" type="button" data-opt="phone">
                           <svg width="19px" height="19px" viewBox="0 0 19 19">                        

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Admin Lasoft</title>
+    <title>Vacancies</title>
     <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
     <link rel="stylesheet" type="text/css" href="./style/app.css"/>
@@ -16,10 +16,11 @@
 
   <body>
     <header class="header">
-      <div class="wrapper-max">
-        <div class="header-container">        
-          <a href="./">
-            <div class="logo-container">
+      <div class="wrapper">
+        <div class="header-container">
+
+          <div class="logo-container">
+            <a href="./">
               <svg width="96" height="32" viewBox="0 0 96 32">
                 <g fill="none" fill-rule="evenodd">
                   <g fill="#FFF">
@@ -28,31 +29,33 @@
                   <path fill="#FFF" d="M3 2.01h28v28H3z"/>
                   <path fill="#EDA923" d="M8.973 26.512c0-.239.007-.652.007-.882-.08-.004-.804-.117-1.098-.197a3.922 3.922 0 0 1-2.091-1.395c-.616-.779-.614-1.117-.614-2.104.003-5.431.002-10.863 0-16.295 0-.09.02-.185-.027-.278h-.89V22.022c0 .944.129 1.593.532 2.192.932 1.389 2.092 2.088 3.743 2.28.143.017.242.022.438.018zm14.491-.338V13.796h-.928v2.837c-2.303-3.636-6.85-3.969-9.608-1.766-2.758 2.202-3.355 6.238-1.077 9.15 1.073 1.373 2.498 2.21 4.23 2.407 2.77.315 4.885-.812 6.46-3.084v2.834h.923zm5.84-14.576h1.14l-3.586-3.1h-1.14l3.586 3.1zm3.367-7.254v23.322a4.323 4.323 0 0 1-4.322 4.323H4.323A4.323 4.323 0 0 1 0 27.666V4.344A4.323 4.323 0 0 1 4.323.02h24.026a4.323 4.323 0 0 1 4.322 4.323zm-15.695 10.06c-2.897-.026-5.806 2.42-5.587 5.977.164 2.66 2.418 5.18 5.584 5.18 3.059 0 5.554-2.507 5.56-5.579.001-3.031-2.475-5.551-5.557-5.579z"/>
                 </g>
-              </svg>                
-            </div>
-          </a>
+              </svg>
+            </a>
+          </div>          
+          
+          <div class="nav-container">
+            <ul class="nav-list">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="./">                    
+                  <span class="link-text">
+                    List of vacancies
+                  </span>                      
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./templates.html">                   
+                  <span class="link-text">
+                    Templates
+                  </span>
+                </a>
+              </li>
+                                         
+            </ul>
+          </div>
+
           <div class="r-container">
-            <div class="nav-container">
-              <ul class="nav-list">
-
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">                    
-                    <span class="link-text">
-                      List of vacancies
-                    </span>                      
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">                   
-                    <span class="link-text">
-                      Templates
-                    </span>
-                  </a>
-                </li>
-                                           
-              </ul>
-            </div>
             <div class="btn-container">
               <a class="y-btn" href="#">Add new</a>
             </div>              
@@ -61,7 +64,8 @@
                 <span></span>
               </button>
             </div>
-          </div>                       
+          </div> 
+
         </div>   
 
         <div class="xs-nav">
@@ -69,8 +73,8 @@
             <div class="xs-nav-body">
               <ul class="xs-nav-list"> 
 
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">                    
+                <li class="nav-item active">
+                  <a class="nav-link" href="./">                    
                     <span class="link-text">
                       List of vacancies
                     </span>                      
@@ -78,7 +82,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">                    
+                  <a class="nav-link" href="./templates.html">                    
                     <span class="link-text">
                       Templates
                     </span>
@@ -97,9 +101,22 @@
     <main class="main">
 
       <section class="search-section">
-        <div class="wrapper">
+        <div class="wrapper-max">
           <div class="search-section-container">
-            <input type="text" pleaceholder="Search for vacancies">
+            <div class="input-box">
+              <svg class="search-icon" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 485.213 485.213">
+                <g fill="#B9B9B9">
+                  <path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324
+                    c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z"/>
+                  <path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951
+                    C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46
+                    c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465
+                    C318.424,257.208,257.206,318.416,181.956,318.416z"/>
+                  <path d="M75.817,181.955h30.322c0-41.803,34.014-75.814,75.816-75.814V75.816C123.438,75.816,75.817,123.437,75.817,181.955z"/>
+                </g>                           
+              </svg>
+              <input class="input" type="text" placeholder="Search for 4 vacancies">
+            </div>
           </div>        
         </div>                                
       </section> 

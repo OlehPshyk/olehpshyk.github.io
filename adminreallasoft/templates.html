@@ -57,7 +57,7 @@
 
           <div class="r-container">
             <div class="btn-container">
-              <a class="y-btn" href="#">Add new</a>
+              <a class="y-btn" href="./vacancy.html">Add new</a>
               <a class="exit-btn" href="#">
                 <svg class="exit-icon" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 512 512">                  
                   <g fill="#EDA923">
@@ -147,7 +147,7 @@
           <ul class="template-list">
 
             <li class="template-item">              
-              <a href="" class="template-item-container">
+              <a href="./vacancy.html" class="template-item-container">
                 <span class="t1">Template one name</span>
                 <span class="t2">Category</span>
                 <span class="t3">Other</span>                
@@ -164,17 +164,17 @@
                 </button>
                 <ul class="drop-menu-list a-right">
                   <li class="menu-item js-menu-item">
-                    <a href="#;" class="item-btn">Edit</a>
+                    <a href="./vacancy.html" class="item-btn">Edit</a>
                   </li>
                   <li class="menu-item js-menu-item">
-                    <button class="item-btn">Remove</button>
+                    <a href="#template-remove-modal" data-modal-open class="item-btn">Remove</a>
                   </li>                        
                 </ul>
               </div>
             </li>
 
             <li class="template-item">             
-              <a href="" class="template-item-container">
+              <a href="./vacancy.html" class="template-item-container">
                 <span class="t1">Dealing With Technical Support 10 Useful Tips</span>
                 <span class="t2">Category</span>
                 <span class="t3">Development</span>                
@@ -191,17 +191,17 @@
                 </button>
                 <ul class="drop-menu-list a-right">
                   <li class="menu-item js-menu-item">
-                    <a href="#;" class="item-btn">Edit</a>
+                    <a href="./vacancy.html" class="item-btn">Edit</a>
                   </li>
                   <li class="menu-item js-menu-item">
-                    <button class="item-btn">Remove</button>
+                    <a href="#template-remove-modal" data-modal-open class="item-btn">Remove</a>
                   </li>                        
                 </ul>
               </div>
             </li>
 
             <li class="template-item">              
-              <a href="" class="template-item-container">
+              <a href="./vacancy.html" class="template-item-container">
                 <span class="t1">How To Meet That Special Someone</span>
                 <span class="t2">Category</span>
                 <span class="t3">Design</span>                
@@ -218,17 +218,17 @@
                 </button>
                 <ul class="drop-menu-list a-right">
                   <li class="menu-item js-menu-item">
-                    <a href="#;" class="item-btn">Edit</a>
+                    <a href="./vacancy.html" class="item-btn">Edit</a>
                   </li>
                   <li class="menu-item js-menu-item">
-                    <button class="item-btn">Remove</button>
+                    <a href="#template-remove-modal" data-modal-open class="item-btn">Remove</a>
                   </li>                        
                 </ul>
               </div>
             </li>
 
             <li class="template-item">              
-              <a href="" class="template-item-container">
+              <a href="./vacancy.html" class="template-item-container">
                 <span class="t1">Addiction When Gambling Becomes A Problem</span>
                 <span class="t2">Category</span>
                 <span class="t3">No category</span>                
@@ -245,10 +245,10 @@
                 </button>
                 <ul class="drop-menu-list a-right">
                   <li class="menu-item js-menu-item">
-                    <a href="#;" class="item-btn">Edit</a>
+                    <a href="./vacancy.html" class="item-btn">Edit</a>
                   </li>
                   <li class="menu-item js-menu-item">
-                    <button class="item-btn">Remove</button>
+                    <a href="#template-remove-modal" data-modal-open class="item-btn">Remove</a>
                   </li>                        
                 </ul>
               </div>
@@ -261,6 +261,22 @@
       </section>      
       
     </main>  
+
+    <div id="template-remove-modal" class="modal-hider" style="display:none;position: absolute;left: 0;">
+      <h2 class="modal-title">Do you want to remove the template?</h2>
+      <p class="modal-text">You are going to remove the template. The template will be removed permanently.</p>
+      <div class="btn-container">
+        <button class="modal-cancel-btn" data-modal-close>Close</button>
+        <button class="modal-btn red" data-modal-close onClick="console.log('removed template');">Remove</button>
+        <!-- <a href="#;" class="modal-btn red" data-modal-close onClick="console.log('removed template');">Remove</a> -->
+      </div>
+    </div>    
+    
+    <div class="modal" id="modal">
+      <div class="modal-inner">        
+        <div class="modal-content"></div>
+      </div>
+    </div>
     
 
 

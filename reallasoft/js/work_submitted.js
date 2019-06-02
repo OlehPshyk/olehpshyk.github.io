@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(){var t=document.querySelector(".hamb-btn"),n=document.querySelector(".xs-nav"),o=document.querySelector(".header");t&&t.addEventListener("click",function(e){t.classList.toggle("open"),n.classList.toggle("open"),o.classList.toggle("xs-nav-open")})});

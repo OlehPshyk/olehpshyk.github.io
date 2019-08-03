@@ -1,0 +1,478 @@
+/*
+Theme Name: TrendFX
+Theme URI: https://trendfx
+Author: Bledi
+Author URI: https://www.upwork.com/o/profiles/users/_~017d25e81d220f2635/
+Description:  This theme is build only for trendfx.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: wp-bootstrap-starter
+Tags: forex, trendfx,news,economy
+*/
+.baner{position:absolute;z-index:8;right:0;top:90px;width:20%;max-width:180px}.baner .baner-img{-o-object-fit:contain;object-fit:contain;-o-object-position:right center;object-position:right center;width:100%;height:100%}
+.loadingtr{width: 60px;display: block;margin: auto;}
+.spacing span{cursor: pointer;}
+.pointer-a{cursor: pointer;}
+.left-menu li a{color: #33383d;}
+.transform-ul .current-menu-item a {color: #004b5f;background: #fff;}
+.transform-ul.orange .current-menu-item a{
+	border-bottom: 3px solid #fff;
+    line-height: 5px;
+    background: #fa6135;
+    color: #fff;
+}
+.alignleft{
+	float:left;
+	display:block;
+}
+img.alignleft{
+	float: left;
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+    margin-right: 43px;
+}
+img.aligncenter{
+    display: block;
+    max-width: 100%;
+    margin: 50px auto;
+	height: auto !important;
+}
+
+.hak-text-2 p {
+    margin-top: 15px;
+}
+
+.wpcf7-form-control-wrap {
+	width: 95%;
+}
+
+.metatrader ul{
+	display: block;
+    overflow: hidden;
+    padding-left: 5px;
+    font-size: 20px;
+    color: #2e3441;
+    font-family: "TitilliumWeb-Regular";
+    line-height: 36px;
+}
+.metatrader ul li{
+	padding-left:22px;
+	position: relative;
+}
+.metatrader ul li::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #009c70;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 14px;
+    left: 0;
+}
+.metatrader p{
+	font-size: 18px;
+    font-family: "SourceSansPro-Regular";
+    text-align: center;
+    color: #2e3441;
+}
+.metatrader h1{
+	font-size: 36px;
+    color: #004c61;
+    font-family: "TitilliumWeb-SemiBold";
+    margin-bottom: 10px;
+}
+.metatrader h5{
+	 font-family: "SourceSansPro-Bold";
+    text-align: center;
+    font-size: 21px;
+    margin: 10px 0;
+    color: #2f3742;
+}
+strong, b {
+    font-weight: bold;
+}
+i, cite, em, var, address, dfn {
+    font-style: italic;
+	line-height: 2em;
+}
+ 
+.wp-post h1{
+	font-weight: 700;
+    font-size: 2em;
+}
+.wp-post h2{
+	font-weight: 700;
+    font-size: 1.7em;
+}
+.wp-post h3{
+	font-weight: 700;
+    font-size: 1.5em;
+}
+.wp-post h4{
+	font-weight: 700;
+    font-size: 1.2em;
+}
+.wp-post h5{
+	font-weight: 700;
+    font-size: 1em;
+}
+.wp-post h6{
+	font-weight: 700;
+    font-size: 0.9em;
+}
+.wp-post ul{
+	padding-left:18px;
+}
+.wp-post ul li{
+	padding-left:22px;
+	position: relative;
+}
+.wp-post ul li::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #009c70;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 9px;
+    left: 0;
+}
+.owl-carousel .owl-stage-outer {
+	max-height: 500px;
+	min-height: 500px;
+}
+.mountain, .owl-carousel .owl-item img {
+	/* max-width:650px; */
+	width: auto;
+}
+.tags ul li a{color: #585c61;}
+.owl-carousel .owl-item {
+    margin-bottom: -4px;
+}
+.slider-index {
+    background: #F7F7F7;
+	padding-top: 0;
+}
+
+/**.slider-cntent{
+	text-align:right;
+	font-family: "TitilliumWeb-ExtraLight";
+	margin-left: auto;
+}**/
+.slider-index .slide{
+	height:500px;
+}
+.slider-cntent {
+    text-align: right;
+    font-family: "TitilliumWeb-ExtraLight";
+    margin-left: auto;
+    padding: 20px 20px 30px 20px;
+    background: none;
+    border-radius: 2px;
+}
+.slider-cntent .title-slider{
+	font-size:40px;
+	font-family: "TitilliumWeb-ExtraLight";
+    color: #575a6a;
+	text-align:center;
+	font-weight: 700;
+	max-width: 450px;
+}
+.slider-cntent p.moto{
+	text-align:center;
+	
+}
+/**.slider-cntent a{
+	background: #6918ea;
+    color: #fff;
+    text-align: right;
+    float: right;
+    padding: 10px 40px;
+}**/
+
+
+.slider-cntent a {
+/*     color: #545253;
+    font-family: "TitilliumWeb-regular";
+    font-size: 19px;
+    background: rgba(255, 255, 255, 0.61);
+    padding: 7px 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 50px;
+    border: 1px solid #545253;
+    border-radius: 2px; */
+}
+
+.slider-index .slide p {
+    max-width: 450px;
+    text-align: center;
+    font-size: 34px;
+    font-family: "TitilliumWeb-ExtraLight";
+    color: #575a6a;
+    line-height: 45px;
+}
+@media (max-width : 480px){
+	.slider-index .slide p {
+    	font-size: 20px;
+    	line-height: 34px;
+     }
+}
+.blog-post img {
+    width: 100%;
+}
+.avatar{
+	border-radius:50%;
+}
+
+
+.img-form .form-gerc  .checkbox-d{
+	
+}
+.img-form .form-gerc  .checkbox-d span{
+	 width: 100%;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2e373f;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+.img-form .form-gerc  .checkbox-d span label{
+	
+}
+.img-form .form-gerc  .checkbox-d span label input{
+	width: 22px;
+    float: left;
+    height: 16px;
+}
+.img-form .form-gerc .wpcf7-not-valid{
+	border: 2px solid #ff8e8e;
+}
+.img-form .form-gerc .checkbox-d.wpcf7-not-valid{
+	border: 0px solid #ff8e8e;
+}
+.img-form .form-gerc .checkbox-d.wpcf7-not-valid span{
+	margin-bottom: 10px;
+}
+
+span.wpcf7-not-valid-tip{
+	 color: #ffffff;
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+    background: #ff8e8e;
+    padding: 5px 10px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+	font-family: 'Titillium Web', sans-serif;
+}
+ #wpcf7-f369-o1 span.wpcf7-not-valid-tip {
+    margin-top: 10px;
+}
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    border: 2px solid #009c70;
+    margin: 0;
+    width: 243px;
+    border-radius: 4px;
+    background: #e0fdf5;
+    padding: 4px 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+div.wpcf7 {
+	margin: 0 auto!important;
+}
+#wpcf7-f369-o1 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {   
+	 margin: auto;
+     max-width: 500px;
+	 min-width: 243px;
+	 width: 100%;
+}
+.archive-container{
+	background: #d8d8d8;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 40px;
+
+}
+.gray-bgr .hakki-base.col-d-3{
+    width: 33.333%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.gray-bgr .hakki-base .hakki-text{
+	min-height: 240px;
+}
+.gray-bgr .hakki-base.col-d-3 .hak-text-1 {
+	font-size: 22px;
+}
+.gray-bgr .hakki-base.col-d-3 .hak-text-2 {
+	margin-top: 0;
+}
+.gray-bgr .hakki-base.col-d-3 .tags{
+	margin-top: 0;
+	display: block;
+}
+
+.gray-bgr .hakki-base.col-d-3 .tags ul{
+	display: block;
+}
+.gray-bgr .hakki-base.col-d-3 .tags ul li {
+    padding: 3px 10px;
+	float: left;
+    margin-left: 10px;
+}
+.gray-bgr .hakki-base.col-d-3 .colum-link {
+    top: 0;
+}
+.gray-bgr .hakki-base.col-d-3 .tags p{ 
+	display: inline-block;
+}
+.archive-p{
+	min-height: 500px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1200px;
+    background: #fff;
+    margin: auto;
+    margin-top: -120px !important;
+}
+.margin-top-text{
+	margin-top: 40px;
+}
+.hakki .blog-post{
+	display: block;
+    margin: auto;
+}
+.hakki .blog-post .hint-post {
+	min-height:210px;
+}
+
+@media (max-width: 420px){
+	.mob-trade-img{
+	   padding-left:0;
+    }
+	.meta-bgr .meta-trader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; 
+	}
+	.display-img{
+	width:100%;
+		margin-top:30px;
+}
+	.meta-bgr .meta-trader .trader button {
+    margin-left: auto;
+}
+	
+	.meta-bgr .meta-trader .trader2 {
+    margin-top: 0px;
+}
+	.archive-p{
+	display:block;
+		padding:15px;
+    }
+	.gray-bgr .hakki-base.col-d-3{
+    	width: 100%;
+		margin: 0;
+    
+    }
+	.gray-bgr .hakki-base.col-d-3 .colum-link {
+       top: 10px; 
+	}
+	
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #009c71;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 12px 20px;
+    color: #313841;
+}
+
+.green-bgr {
+    background: #009b71;
+    padding: 50px 0;
+    margin-top: 44px;
+}
+
+.mountain {
+	bottom: 0!important;
+}
+
+@media screen and (max-width:1100px){ 
+	.slider-index .slide {
+	  -webkit-box-orient:   vertical;
+	  -webkit-box-direction:   normal;
+	  -webkit-flex-direction:   column;
+		  -ms-flex-direction:   column;
+			  flex-direction:   column;
+	  -webkit-box-align:center;
+	  -webkit-align-items:center;
+		  -ms-flex-align:center;
+			  align-items:center;
+	  height: auto;
+	}
+	.owl-item {
+	  height:auto!important;
+	}
+	.owl-carousel .owl-stage-outer {
+	  height:auto;
+	  max-height:1000px;
+	}
+	.slider-cntent {
+	  margin: 0px 0 10px;
+	}
+	.mountain, .owl-carousel .owl-item img {
+	  width: 100%;
+	}
+	.owl-carousel .owl-item {
+	  margin-bottom: 0px;
+	}
+	.mountain {
+	  bottom: 0;
+	}
+	.slider-index .slide {
+  width: calc(100% + 20px);
+}
+
+.slider-index {
+  padding: 0;
+}
+	.slider-cntent {
+		padding: 10px 20px 20px 0px;
+	}
+  }
+
+  body {
+	--mouseX: 0!important;
+	--mouseY: 0!important;
+  }
+.owl-stage-outer {
+  background: rgb(236, 239, 245);
+}
+
+#menu-education .current-menu-item a{
+	    background: #004b5e;
+    	color: #fff !important;
+    	-webkit-transition: 0.5s;
+    	-o-transition: 0.5s;
+    	transition: 0.5s;
+}
+@media screen and (max-width:480px) {
+  .slider-cntent .title-slider {
+    font-size: 24px;
+  }
+.gray-bgr, .slider-index, .page-menu, .sozluk-base.bgr-grn {
+    margin-top: 62px;
+}
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Nunito:400,600,600i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+  </head>
+
+  <body>      
+    <header class="header">
+
+      <div class="wrapper">
+        <div class="header-container">
+          
+          <button class="hamb-btn">            
+            <!-- <img class="hamb-btn-img" src="./img/hmb.png" alt="btn"> 
+            <img class="hamb-btn-img" src="./img/hmb-close.png" alt="close">   -->           
+          </button>          
+          
+          <a href="./">
+            <div class="logo-container">            
+              <img class="logo" src="./img/logo.png" alt="logo">            
+            </div>
+          </a>
+
+          <div class="nav-container">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav-link" href="#;">Fal Çeşitleri</a></li>
+              <li class="nav-item"><a class="nav-link" href="#;">Falcılar</a></li> 
+              <li class="nav-item"><a class="nav-link" href="#;">Nasıl Kullanacağım?</a></li> 
+              <li class="nav-item"><a class="nav-link" href="#;">Günlük Burç Yorumları</a></li> 
+              <li class="nav-item"><a class="nav-link accent" href="#;">Yamiba Mistik</a></li>                       
+              <li class="nav-item"><a class="nav-link" href="#;">TR</a></li> 
+            </ul>
+            <!-- if user isn't loggined -->
+            <a class="account-btn-login" href="#modal-login" data-modal-open>                 
+              <span class="account-btn-text">Giriş yap</span>
+            </a> 
+            <a class="account-btn-signup" href="#modal-signup" data-modal-open>                 
+              <span class="account-btn-text">Kaydol</span>
+            </a> 
+            <!-- if user is loggined -->            
+            <!-- <span class="user-name-container">
+              <span class="user-t1">Hoşgeldin,</span>
+              <span class="user-t2">Sabrina Spellman</span>
+            </span> 
+            <a href="#">             
+              <span class="user-img-container"><img class="user-img" src="./img/man-user.png" alt="user"></span>
+            </a> -->
+          </div>  
+
+          <a href="#">             
+            <span class="user-xs-img-container"><img class="user-img" src="./img/man-user.png" alt="user"></span>
+          </a>
+
+        </div>
+      </div> 
+
+      <div class="xs-nav">
+        <div class="xs-nav-body">
+          <div class="xs-nav-body-container">
+            <ul class="xs-nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Fal Çeşitleri             
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Falcılar
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Nasıl Kullanacağım?
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Günlük Burç Yorumları
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link accent" href="#;">
+                  Yamiba Mistik
+                </a>
+              </li>              
+            </ul>
+            <ul class="xs-nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  yamiba.com hakkında            
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  SSS           
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Paylaş            
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Destek/İletişim           
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Kullanıcı sözleşmesi         
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Gizlilik sözleşmesi           
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  TR          
+                </a>
+              </li>
+            </ul>
+
+            <div class="play-containers">
+              <div class="play-container">
+                <a href="#">
+                  <svg class="play-icon" viewBox="0 10 155 40">
+                    <defs>
+                      <style>
+                        .google-cls-1,.cls-9{fill:#8500d1;}
+                        .google-cls-2{fill:url(#Adsız_degrade);}
+                        .google-cls-3{fill:url(#Adsız_degrade_2);}
+                        .google-cls-4{fill:url(#Adsız_degrade_3);}
+                        .google-cls-5{fill:url(#Adsız_degrade_4);}
+                        .google-cls-6{opacity:0.2;}
+                        .google-cls-6,.google-cls-7,.google-cls-8{isolation:isolate;}
+                        .google-cls-7{opacity:0.12;}
+                        .google-cls-8{fill:#fff;opacity:0.25;}
+                        .google-cls-9{stroke:#8500d1;stroke-miterlimit:10;stroke-width:0.2px;}
+                      </style>
+                      <linearGradient id="Adsız_degrade" x1="31.77" y1="894.68" x2="14.99" y2="911.46" gradientTransform="translate(0 -876)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#00a0ff"/>
+                        <stop offset="0.01" stop-color="#00a1ff"/>
+                        <stop offset="0.26" stop-color="#00beff"/>
+                        <stop offset="0.51" stop-color="#00d2ff"/>
+                        <stop offset="0.76" stop-color="#00dfff"/>
+                        <stop offset="1" stop-color="#00e3ff"/>
+                      </linearGradient>
+                      <linearGradient id="Adsız_degrade_2" x1="43.83" y1="906.05" x2="19.64" y2="906.05" gradientTransform="translate(0 -876)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ffe000"/>
+                        <stop offset="0.41" stop-color="#ffbd00"/>
+                        <stop offset="0.78" stop-color="orange"/>
+                        <stop offset="1" stop-color="#ff9c00"/>
+                      </linearGradient>
+                      <linearGradient id="Adsız_degrade_3" x1="34.82" y1="908.28" x2="12.06" y2="931.04" gradientTransform="translate(0 -876)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ff3a44"/>
+                        <stop offset="1" stop-color="#c31162"/>
+                      </linearGradient>
+                      <linearGradient id="Adsız_degrade_4" x1="17.26" y1="886.21" x2="27.42" y2="896.37" gradientTransform="translate(0 -876)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#32a071"/>
+                        <stop offset="0.07" stop-color="#2da771"/>
+                        <stop offset="0.48" stop-color="#15cf74"/>
+                        <stop offset="0.8" stop-color="#06e775"/>
+                        <stop offset="1" stop-color="#00f076"/>
+                      </linearGradient>
+                    </defs>
+                    <g>
+                      <path class="google-cls-1" d="M74.7,22.8A3.63,3.63,0,0,0,71,26.5a3.69,3.69,0,0,0,3.7,3.7,3.63,3.63,0,0,0,3.7-3.7A3.57,3.57,0,0,0,74.7,22.8Zm0,6a2.16,2.16,0,0,1-2.1-2.3,2.23,2.23,0,0,1,2.1-2.3,2.16,2.16,0,0,1,2.1,2.3A2.16,2.16,0,0,1,74.7,28.8Zm-8.1-6a3.63,3.63,0,0,0-3.7,3.7,3.7,3.7,0,1,0,3.7-3.7Zm0,6a2.16,2.16,0,0,1-2.1-2.3,2.23,2.23,0,0,1,2.1-2.3,2.16,2.16,0,0,1,2.1,2.3A2.23,2.23,0,0,1,66.6,28.8Zm-9.7-4.9v1.6h3.8a3.12,3.12,0,0,1-.9,2,3.94,3.94,0,0,1-2.9,1.2,4.2,4.2,0,0,1,0-8.4,3.82,3.82,0,0,1,2.8,1.1l1.1-1.1a5.47,5.47,0,0,0-4-1.6,5.8,5.8,0,1,0,0,11.6A5.13,5.13,0,0,0,62.2,25a3.08,3.08,0,0,0-.1-1l-5.2-.1Zm39.6,1.3a3.57,3.57,0,0,0-3.2-2.4,3.53,3.53,0,0,0-3.5,3.7,3.63,3.63,0,0,0,3.7,3.7,3.69,3.69,0,0,0,3.1-1.6l-1.3-.8a2.1,2.1,0,0,1-1.8,1,2,2,0,0,1-1.8-1.1l5-2.1Zm-5.1,1.2a2.11,2.11,0,0,1,1.9-2.2,1.49,1.49,0,0,1,1.4.8Zm-4,3.6H89V19.1H87.4Zm-2.7-6.4h0a2.85,2.85,0,0,0-2-.8,3.7,3.7,0,0,0,0,7.4,2.85,2.85,0,0,0,2-.8h.1v.5a2,2,0,0,1-2,2.2,2.14,2.14,0,0,1-1.9-1.3l-1.4.6a3.53,3.53,0,0,0,3.3,2.2c1.9,0,3.5-1.1,3.5-3.9V23H84.8l-.1.6Zm-1.9,5.2a2.14,2.14,0,0,1-2.1-2.2,2.06,2.06,0,1,1,4.1,0A2.06,2.06,0,0,1,82.8,28.8Zm21.4-9.7h-3.9V30h1.6V25.9h2.3a3.41,3.41,0,1,0,0-6.8Zm0,5.2h-2.3V20.6h2.3a1.85,1.85,0,1,1,0,3.7Zm10.1-1.5a3,3,0,0,0-2.9,1.7l1.4.6a1.76,1.76,0,0,1,3.2.6v.1a3.23,3.23,0,0,0-1.7-.4c-1.6,0-3.1.9-3.1,2.5a2.51,2.51,0,0,0,2.7,2.4,2.33,2.33,0,0,0,2.1-1.1h.1V30h1.6V25.8A3.17,3.17,0,0,0,114.3,22.8Zm-.2,6c-.5,0-1.3-.3-1.3-.9,0-.8.9-1.2,1.7-1.2a3,3,0,0,1,1.5.4A2,2,0,0,1,114.1,28.8Zm9.2-5.8-1.9,4.7h-.1L119.4,23h-1.8l2.9,6.6-1.7,3.7h1.7L125,23Zm-14.7,7h1.6V19.1h-1.6Z"/>
+                      <path class="google-cls-2" d="M20.4,17.5a2,2,0,0,0-.5,1.4V41a2,2,0,0,0,.5,1.4l.1.1L32.9,30.1v-.2L20.4,17.5Z"/>
+                      <path class="google-cls-3" d="M37,34.3l-4.1-4.1v-.3L37,25.8l.1.1L42,28.7c1.4.8,1.4,2.1,0,2.9l-5,2.7Z"/>
+                      <path class="google-cls-4" d="M37.1,34.2,32.9,30,20.4,42.5c.5.5,1.2.5,2.1.1l14.6-8.4"/>
+                      <path class="google-cls-5" d="M37.1,25.8,22.5,17.5a1.62,1.62,0,0,0-2.1.1L32.9,30Z"/>
+                      <path class="google-cls-6" d="M37,34.1,22.5,42.3a1.64,1.64,0,0,1-2,0h0l-.1.1h0l.1.1h0a1.64,1.64,0,0,0,2,0L37,34.1Z"/>
+                      <path class="google-cls-7" d="M20.4,42.3a2,2,0,0,1-.4-1.4V41a2,2,0,0,0,.5,1.4v-.1Z"/>
+                      <path class="google-cls-7" d="M42,31.3l-5,2.8.1.1L42,31.3A1.44,1.44,0,0,0,43,30h0C43,30.5,42.6,30.9,42,31.3Z"/>
+                      <path class="google-cls-8" d="M22.5,17.6,42,28.7c.6.4,1,.8,1,1.3h0a1.66,1.66,0,0,0-1-1.4L22.5,17.5c-1.4-.8-2.5-.1-2.5,1.5v.1C20,17.5,21.1,16.8,22.5,17.6Z"/>
+                    </g>
+                    <g>
+                      <path class="cls-9" d="M51.8,38.9h-.7V37h.7Z"/>
+                      <path class="cls-9" d="M53.1,43V36.9H55a3.11,3.11,0,0,1,2.2.8,2.86,2.86,0,0,1,.8,2.2,3.29,3.29,0,0,1-.8,2.2,2.86,2.86,0,0,1-2.2.8l-1.9.1Zm.8-.7H55a2.3,2.3,0,1,0,0-4.6H53.9Z"/>
+                      <path class="cls-9" d="M62.7,37.7H59.9v1.9h2.5v.7H59.9v1.9h2.8V43H59.1V36.9h3.6Z"/>
+                      <path class="cls-9" d="M63.8,43V36.9h1l3,4.7h0V36.8h.8V43h-.8l-3.1-5h0v5Z"/>
+                      <path class="cls-9" d="M71.1,43l2.3-6.1h.9L76.6,43h-.9l-.6-1.6H72.5L71.9,43Zm1.7-2.4h2l-1-2.7h0Z"/>
+                      <path class="cls-9" d="M77.3,43V36.9h.8v5.3h2.6V43Z"/>
+                      <path class="cls-9" d="M81.6,43V36.9h.8V43Z"/>
+                      <path class="cls-9" d="M83.8,43V36.9h1l3,4.7h0V36.8h.8V43h-.8l-3.1-5h0v5Z"/>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="play-container">
+                <a href="#">
+                  <svg class="play-icon" viewBox="-5 0 146.3 40">
+                    <defs>
+                      <style>
+                        .app-cls-1{fill:#7f7f7f;}.app-cls-2{fill:#8500d1;}
+                      </style>
+                    </defs>
+                    <g>
+                      <g>
+                        <path class="app-cls-1" d="M24.8,20.3a4.91,4.91,0,0,1,2.4-4.2,5.26,5.26,0,0,0-4-2.2c-1.7-.2-3.3,1-4.2,1s-2.2-1-3.6-1a5.43,5.43,0,0,0-4.5,2.7c-1.9,3.3-.5,8.3,1.4,11,.9,1.3,2,2.8,3.4,2.8s1.9-.9,3.6-.9,2.1.9,3.6.9,2.4-1.3,3.3-2.7a8.92,8.92,0,0,0,1.5-3.1A4.46,4.46,0,0,1,24.8,20.3Z"/>
+                        <path class="app-cls-1" d="M22,12.2a4.91,4.91,0,0,0,1.1-3.5,4.64,4.64,0,0,0-3.2,1.7,4.53,4.53,0,0,0-1.1,3.4A4,4,0,0,0,22,12.2Z"/>
+                      </g>
+                    </g>
+                    <g>
+                      <path class="app-cls-2" d="M35.6,24.5a.55.55,0,1,1,.5.6.56.56,0,0,1-.5-.6Zm.1,7.1v-6h.9v6Z"/>
+                      <path class="app-cls-2" d="M38.1,27.1H39v.7h0a1.44,1.44,0,0,1,1.3-.8,1.47,1.47,0,0,1,1.6,1.4v3.2H41V28.9c0-.7-.3-1.1-1-1.1a1,1,0,0,0-1.1,1v2.8H38l.1-4.5Z"/>
+                      <path class="app-cls-2" d="M43.1,29.3c0-1.4.7-2.3,1.9-2.3a1.6,1.6,0,0,1,1.4.8h.1V25.3h.9v6.3h-.9v-.7h-.1a1.6,1.6,0,0,1-1.4.8A2.11,2.11,0,0,1,43.1,29.3Zm.9,0c0,1,.5,1.5,1.2,1.5s1.2-.6,1.2-1.5-.5-1.5-1.2-1.5-1.2.6-1.2,1.5Z"/>
+                      <path class="app-cls-2" d="M48.6,25.7a.55.55,0,1,1,.6.5h0c-.3.1-.5-.1-.6-.5Zm.2,1.4h.9v4.5h-.9Z"/>
+                      <path class="app-cls-2" d="M51.1,27.1H52v.7h0a1.3,1.3,0,0,1,1.2-.8h.4v.9c-.2,0-.3-.1-.5-.1a1,1,0,0,0-1.1,1v2.8h-.9Z"/>
+                      <path class="app-cls-2" d="M54.6,25.7a.55.55,0,1,1,.6.5h0c-.4.1-.6-.1-.6-.5Zm.1,1.4h.9v4.5h-.9Z"/>
+                      <path class="app-cls-2" d="M57,27.1h.9v.7H58a1.44,1.44,0,0,1,1.3-.8,1.47,1.47,0,0,1,1.6,1.4v3.2H60V28.9c0-.7-.3-1.1-1-1.1a1,1,0,0,0-1.1,1v2.8H57Z"/>
+                    </g>
+                    <path class="app-cls-2" d="M40.9,15.9H37l-.9,2.8H34.5L38.2,8.5h1.6l3.7,10.2H41.9Zm-3.4-1.4h3.1L39,10.1h-.1Z"/>
+                    <path class="app-cls-2" d="M51.5,14.9c0,2.3-1.2,3.8-3.1,3.8a2.36,2.36,0,0,1-2.3-1.3h0V21H44.5V11.2H46v1.2h0a2.81,2.81,0,0,1,2.4-1.3C50.2,11.1,51.5,12.6,51.5,14.9Zm-1.6,0c0-1.5-.7-2.5-2-2.5-1.1,0-2,1-2,2.5s.8,2.5,2,2.5,2-1,2-2.5Z"/>
+                    <path class="app-cls-2" d="M59.6,14.9c0,2.3-1.2,3.8-3.1,3.8a2.36,2.36,0,0,1-2.3-1.3h0V21H52.6V11.2h1.5v1.2h0a2.81,2.81,0,0,1,2.4-1.3C58.4,11.1,59.6,12.6,59.6,14.9Zm-1.5,0c0-1.5-.7-2.5-2-2.5-1.1,0-2,1-2,2.5s.8,2.5,2,2.5,2-1,2-2.5Z"/>
+                    <path class="app-cls-2" d="M65,15.8c.1,1,1.1,1.6,2.5,1.6s2.2-.7,2.2-1.6-.6-1.2-1.9-1.6L66.5,14c-1.9-.5-2.7-1.3-2.7-2.7,0-1.7,1.6-3,3.7-3s3.6,1.2,3.7,3H69.6a1.86,1.86,0,0,0-2.1-1.6c-1.2,0-2.1.7-2.1,1.6,0,.7.6,1.1,1.9,1.5l1.1.2c2.1.5,3,1.3,3,2.8,0,1.9-1.6,3.1-3.9,3.1s-3.8-1.1-3.9-3H65Z"/>
+                    <path class="app-cls-2" d="M74.6,9.4v1.7H76v1.2H74.6v4.1c0,.7.2.9.9.9H76v1.2a2.2,2.2,0,0,1-.8.1c-1.5,0-2.1-.6-2.1-2V12.3H72V11.1h1.1V9.4Z"/>
+                    <path class="app-cls-2" d="M76.9,14.9c0-2.3,1.4-3.8,3.5-3.8s3.5,1.5,3.5,3.8-1.4,3.8-3.5,3.8A3.44,3.44,0,0,1,76.9,14.9Zm5.5,0c0-1.6-.7-2.5-2-2.5s-2,1-2,2.5.7,2.5,2,2.5S82.4,16.5,82.4,14.9Z"/>
+                    <path class="app-cls-2" d="M85.1,11.2h1.5v1.2h0a1.72,1.72,0,0,1,1.8-1.3.9.9,0,0,1,.5.1v1.4a1.7,1.7,0,0,0-.7-.1A1.63,1.63,0,0,0,86.6,14v4.6H85C85.1,18.6,85.1,11.2,85.1,11.2Z"/>
+                    <path class="app-cls-2" d="M96,16.4a3.1,3.1,0,0,1-3.2,2.3c-2.1,0-3.5-1.5-3.5-3.8S90.6,11,92.7,11s3.4,1.4,3.4,3.7v.5H90.8v.1a1.92,1.92,0,0,0,1.7,2.1h.2a1.52,1.52,0,0,0,1.7-1.1Zm-5.2-2.2h3.7a1.79,1.79,0,0,0-1.7-1.9h-.2a1.82,1.82,0,0,0-1.8,1.9Z"/>
+                    <path class="app-cls-2" d="M97,12.2l.8-3.7h1.5l-1,3.7Z"/>
+                    <path class="app-cls-2" d="M99.3,14.9c0-2.3,1.2-3.8,3.1-3.8a2.36,2.36,0,0,1,2.3,1.3h0v-4h1.6V18.6h-1.5V17.4h0a2.43,2.43,0,0,1-2.4,1.3C100.6,18.6,99.3,17.2,99.3,14.9Zm1.6,0c0,1.6.7,2.5,2,2.5,1.1,0,2-1,2-2.5s-.8-2.5-2-2.5-2,1-2,2.5Z"/>
+                    <path class="app-cls-2" d="M107.6,16.5c0-1.3,1-2.1,2.8-2.2l2.1-.1v-.6a1.32,1.32,0,0,0-1.5-1.3,1.42,1.42,0,0,0-1.6,1.1H108a2.74,2.74,0,0,1,3-2.3c1.8,0,3,1,3,2.5v5.1h-1.5V17.5h0a2.61,2.61,0,0,1-2.4,1.3,2.33,2.33,0,0,1-2.5-2.1Zm4.9-.7v-.6l-1.8.1c-.9.1-1.4.5-1.4,1.1s.6,1.1,1.4,1.1a1.76,1.76,0,0,0,1.8-1.7Z"/>
+                    <path class="app-cls-2" d="M115.5,11.2H117v1.2h0a2.21,2.21,0,0,1,2.3-1.3c1.6,0,2.5,1.1,2.5,2.8v4.8h-1.6V14.3c0-1.1-.5-1.7-1.6-1.7a1.77,1.77,0,0,0-1.8,1.7v4.5h-1.6V11.2Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <ul class="xs-soc-list">
+              <li class="xs-soc-list-item">
+                <a href="#">
+                  <div class="xs-soc-list-iconbox">
+                    <svg class="xs-soc-list-icon" viewBox="0 0 93.18 86.04">
+                      <defs>
+                        <style>
+                          .fb-cls-1{isolation:isolate;}
+                          .fb-cls-2,.fb-cls-3{mix-blend-mode:multiply;}
+                          .fb-cls-2{fill:url(#Degradado_sin_nombre_17);}
+                          .fb-cls-3{fill:url(#Degradado_sin_nombre_17-2);}
+                          .fb-cls-4{fill:#fff;fill-rule:evenodd;}
+                        </style>
+                        <linearGradient id="Degradado_sin_nombre_17" x1="49.76" y1="4.94" x2="50.17" y2="91.09" gradientUnits="userSpaceOnUse">
+                          <stop offset="0" stop-color="#33338e"/>
+                          <stop offset="0.54" stop-color="#6e5acc"/>
+                          <stop offset="1" stop-color="#22b5cc"/>
+                        </linearGradient>
+                        <linearGradient id="Degradado_sin_nombre_17-2" x1="0" y1="42.15" x2="86.85" y2="42.15" xlink:href="#Degradado_sin_nombre_17"/>
+                      </defs>
+                      <g class="fb-cls-1">
+                        <g id="OBJECTS">
+                          <path class="fb-cls-2" d="M92.59,66A17.76,17.76,0,0,1,75.95,78.57c-5.51,0-10.71-2.62-16.2-3-6.43-.48-12.67,2.1-18.55,4.77-7.37,3.36-15,7-23.39,5.27a13.85,13.85,0,0,1-9-5.93c-4.36-6.84-.39-14.27,3.61-20.35,3.42-5.21,7.18-11,6.13-17.15-.62-3.64-2.86-6.78-4.1-10.26A19.32,19.32,0,0,1,17.34,14,19.17,19.17,0,0,1,27.18,7.4c.76-.22,1.52-.44,2.26-.71a24.57,24.57,0,0,1,29.89,11c4.19,7.4,4.81,17.23,11.56,22.41,4.1,3.13,9.6,3.77,14,6.44A17.76,17.76,0,0,1,92.59,66Z"/>
+                          <path class="fb-cls-3" d="M84.56,36.44c-2.5,4.4-6.25,8.07-8.27,12.71-3.6,8.25-1.21,18.35-5.51,26.27a17.79,17.79,0,0,1-21.46,7.76c-4.81-1.91-8.6-5.93-13.49-7.6-7-2.39-14.75.36-21.91-1.32A18.57,18.57,0,0,1,.05,58.13,18.59,18.59,0,0,1,11.17,40c5.27-2.17,11.56-1.86,16.18-5.21,4.21-3,6-8.37,7.1-13.43S36.24,10.9,39.2,6.65C44.09-.37,53-3.76,58.63,6.33c1.54,2.77,2.32,6,4.45,8.35,5.27,5.76,16.35,1.75,21.59,7.56C88.07,26,87.07,32,84.56,36.44Z"/>
+                          <path class="fb-cls-4" d="M50.31,37.46V33.4A2.13,2.13,0,0,1,52.53,31H58.2V22.33H50.39c-8.69,0-10.64,6.42-10.64,10.58v4.55h-5V47.58h5.1V72.86H49.92V47.58h7.48l.33-4,.6-6.14Z"/>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="xs-soc-list-item">
+                <a href="#">
+                  <div class="xs-soc-list-iconbox">
+                    <svg class="xs-soc-list-icon" viewBox="0 0 100.5 92.47">
+                      <defs>
+                        <style>
+                        .tw-cls-1{isolation:isolate;}
+                        .tw-cls-2,.tw-cls-3{mix-blend-mode:multiply;}
+                        .tw-cls-2{fill:url(#Degradado_sin_nombre_124);}
+                        .tw-cls-3{fill:url(#Degradado_sin_nombre_124-2);}
+                        .tw-cls-4{fill:#fff;fill-rule:evenodd;}
+                        </style>
+                        <linearGradient id="Degradado_sin_nombre_124" x1="-42.08" y1="24.52" x2="-38.7" y2="-97.06" gradientTransform="translate(19.33 5.45) rotate(-165.82)" gradientUnits="userSpaceOnUse">
+                          <stop offset="0" stop-color="#1a83c6"/>
+                          <stop offset="0.54" stop-color="#32dadf"/>
+                          <stop offset="1" stop-color="#30edef"/>
+                        </linearGradient>
+                        <linearGradient id="Degradado_sin_nombre_124-2" x1="-22.74" y1="-78.32" x2="-23.02" y2="16.81" gradientTransform="translate(38.4 3.22) rotate(-157.57)" xlink:href="#Degradado_sin_nombre_124"/>
+                      </defs>
+                      <g class="tw-cls-1">
+                        <g>
+                          <path class="tw-cls-2" d="M17.3,5.16A18.54,18.54,0,0,1,38.89,2.21c5,2.83,8.39,7.87,13.18,11.05,5.6,3.73,12.6,4.58,19.32,5.16,8.42.72,17.22,1.29,24,7.19a14.46,14.46,0,0,1,5.11,10c.46,8.45-7,13.18-13.7,16.66-5.78,3-12.17,6.34-14.36,12.46-1.3,3.63-.87,7.63-1.53,11.43a19.68,19.68,0,0,1-24.1,15.77c-.8-.19-1.61-.38-2.42-.51A25.64,25.64,0,0,1,22.82,66.08c0-8.87,4.46-18.13,1-26.3-2.12-4.95-6.8-8.34-9.44-13A18.54,18.54,0,0,1,17.3,5.16Z"/>
+                          <path class="tw-cls-3" d="M85,62.82c-5,1.76-10.44,2.07-15.22,4.35-8.49,4-13.52,13.62-22.33,16.91A18.57,18.57,0,0,1,25.2,75.49c-2.48-4.8-2.71-10.56-5.42-15.23-3.84-6.65-11.86-9.81-16.35-16A19.38,19.38,0,0,1,3.55,22a19.4,19.4,0,0,1,21.18-6.68c5.64,1.91,10.38,6.45,16.3,7,5.39.49,10.46-2.48,14.79-5.72s8.56-7,13.81-8.31c8.66-2.17,18,1.27,15.52,13.05-.69,3.23-2.29,6.32-2.22,9.63.21,8.15,11.68,12.58,11.83,20.74C94.88,57,90,61.06,85,62.82Z"/>
+                          <path class="tw-cls-4" d="M78.5,31.52a22.1,22.1,0,0,1-5.95,1.62,10.23,10.23,0,0,0,4.58-5.68A21.13,21.13,0,0,1,70.52,30a10.42,10.42,0,0,0-18,7,10.67,10.67,0,0,0,.3,2.33A29.44,29.44,0,0,1,31.48,28.58a10.08,10.08,0,0,0,3.18,13.63A10,10,0,0,1,30,40.95v.14a9.66,9.66,0,0,0,.71,3.67,10.34,10.34,0,0,0,7.62,6.31,10.19,10.19,0,0,1-2.74.38,9.26,9.26,0,0,1-1.95-.22,10.46,10.46,0,0,0,9.68,7.13,21,21,0,0,1-12.86,4.36c-.85,0-1.64-.06-2.49-.14a29.94,29.94,0,0,0,15.9,4.58c16.2,0,26.21-11.21,28.82-22.87a28.06,28.06,0,0,0,.69-6.17V36.81a21.45,21.45,0,0,0,5.16-5.29Z"/>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="xs-soc-list-item">
+                <a href="#">
+                  <div class="xs-soc-list-iconbox">
+                    <svg class="xs-soc-list-icon" viewBox="0 0 94.85 88.2">
+                      <defs>
+                        <style>
+                        .ins-cls-1{isolation:isolate;}
+                        .ins-cls-2,.ins-cls-3{mix-blend-mode:multiply;}
+                        .ins-cls-2{fill:url(#Degradado_sin_nombre_45);}
+                        .ins-cls-3{fill:url(#Degradado_sin_nombre_45-2);}
+                        .ins-cls-4{fill:#fff;fill-rule:evenodd;}
+                        </style>
+                        <linearGradient id="Degradado_sin_nombre_45" x1="57.12" y1="100.59" x2="60.34" y2="-15.39" gradientTransform="translate(2.04 -15.67) rotate(14.18)" gradientUnits="userSpaceOnUse">
+                          <stop offset="0" stop-color="#7818c6"/>
+                          <stop offset="0.54" stop-color="#ff65a5"/>
+                          <stop offset="1" stop-color="#ffc641"/>
+                        </linearGradient>
+                        <linearGradient id="Degradado_sin_nombre_45-2" x1="73.11" y1="2.4" x2="72.81" y2="104.2" gradientTransform="matrix(0.85, 0.35, -0.35, 0.84, 4.72, -20.62)" xlink:href="#Degradado_sin_nombre_45"/>
+                      </defs>
+                      <g class="ins-cls-1">
+                        <g>
+                          <path class="ins-cls-2" d="M79.36,83.28a17.69,17.69,0,0,1-20.6,2.81c-4.78-2.7-8-7.51-12.57-10.54-5.34-3.56-12-4.37-18.43-4.92-8-.69-16.43-1.23-22.87-6.86A13.79,13.79,0,0,1,0,54.25c-.44-8.06,6.63-12.57,13.07-15.89,5.51-2.84,11.61-6,13.7-11.88,1.24-3.46.83-7.28,1.46-10.9a18.77,18.77,0,0,1,23-15c.77.18,1.53.36,2.31.49A24.46,24.46,0,0,1,74.09,25.17c0,8.46-4.25,17.3-.92,25.09,2,4.72,6.49,8,9,12.43A17.68,17.68,0,0,1,79.36,83.28Z"/>
+                          <path class="ins-cls-3" d="M11.55,28c4.88-1.71,10.23-2,14.9-4.22,8.3-3.93,13.21-13.31,21.83-16.5,8-3,17.86.89,21.78,8.45,2.44,4.7,2.68,10.34,5.34,14.92,3.78,6.51,11.64,9.63,16,15.74a19,19,0,0,1-.07,21.73,18.94,18.94,0,0,1-20.73,6.49c-5.53-1.88-10.18-6.34-16-6.87-5.28-.5-10.24,2.41-14.48,5.56s-8.37,6.83-13.51,8.11C18.21,83.48,9,80.09,11.45,68.56c.66-3.16,2.23-6.18,2.15-9.42C13.38,51.16,2.14,46.8,2,38.81,1.86,33.64,6.67,29.67,11.55,28Z"/>
+                          <path class="ins-cls-4" d="M35.74,47.25A12.68,12.68,0,1,1,48.41,59.94,12.7,12.7,0,0,1,35.74,47.25ZM61.51,22.43H35.33A11.77,11.77,0,0,0,23.59,34.17V60.35A11.78,11.78,0,0,0,35.33,72.09H61.51A11.77,11.77,0,0,0,73.25,60.35V34.17A11.75,11.75,0,0,0,61.51,22.43ZM35.33,25.37H61.51a8.81,8.81,0,0,1,8.8,8.8V60.35a8.81,8.81,0,0,1-8.8,8.8H35.33a8.81,8.81,0,0,1-8.8-8.8V34.17a8.81,8.81,0,0,1,8.8-8.8Zm28.79,3.7a2.58,2.58,0,1,0,2.58,2.58,2.57,2.57,0,0,0-2.58-2.58Zm.3,18.18a16,16,0,1,0-16,16,16,16,0,0,0,16-16Z"/>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="xs-soc-list-item">
+                <a href="#">
+                  <div class="xs-soc-list-iconbox">
+                    <svg class="xs-soc-list-icon" viewBox="0 0 94.78 92.99">
+                      <defs>
+                        <style>
+                        .ytube-cls-1{isolation:isolate;}
+                        .ytube-cls-2,.ytube-cls-3{mix-blend-mode:multiply;}
+                        .ytube-cls-2{fill:url(#Degradado_sin_nombre_85);}
+                        .ytube-cls-3{fill:url(#Degradado_sin_nombre_85-2);}
+                        .ytube-cls-4{fill:#fff;fill-rule:evenodd;}
+                        </style>
+                        <linearGradient id="Degradado_sin_nombre_85" x1="-127.18" y1="18.53" x2="-40.18" y2="18.53" gradientTransform="matrix(0.88, -0.47, 0.47, 0.88, 116.72, -2.35)" gradientUnits="userSpaceOnUse">
+                          <stop offset="0" stop-color="#692237"/>
+                          <stop offset="0.54" stop-color="#ff2828"/>
+                          <stop offset="1" stop-color="#ff9c58"/>
+                        </linearGradient>
+                        <linearGradient id="Degradado_sin_nombre_85-2" x1="15.86" y1="-52.47" x2="15.58" y2="42.66" gradientTransform="translate(64.22 46.59) rotate(-157.57)" xlink:href="#Degradado_sin_nombre_85"/>
+                      </defs>
+                      <g class="ytube-cls-1">
+                        <g>
+                          <path class="ytube-cls-2" d="M85.93,88.41a18.47,18.47,0,0,1-21.62,2c-4.86-3-8-8.2-12.62-11.59-5.41-4-12.33-5.12-19-6-8.35-1.09-17.08-2.05-23.53-8.22A14.4,14.4,0,0,1,4.53,54.42C4.44,46,12,41.62,18.9,38.46c5.88-2.71,12.39-5.76,14.84-11.75,1.46-3.55,1.21-7.55,2-11.3A19.6,19.6,0,0,1,60.46.78c.79.23,1.58.44,2.39.62a25.54,25.54,0,0,1,20.3,26.15c-.37,8.83-5.24,17.85-2.13,26.12,1.89,5,6.39,8.6,8.81,13.39A18.46,18.46,0,0,1,85.93,88.41Z"/>
+                          <path class="ytube-cls-3" d="M85,67.57c-5,1.76-10.44,2.07-15.22,4.35-8.49,4-13.52,13.62-22.33,16.91A18.57,18.57,0,0,1,25.2,80.24c-2.48-4.8-2.71-10.56-5.42-15.23C15.94,58.37,7.92,55.2,3.43,49a19.38,19.38,0,0,1,.12-22.2,19.4,19.4,0,0,1,21.18-6.68c5.64,1.91,10.38,6.45,16.3,7,5.39.49,10.46-2.48,14.79-5.72s8.56-7,13.81-8.31c8.66-2.17,18,1.27,15.52,13.05-.69,3.23-2.29,6.32-2.22,9.63.21,8.15,11.68,12.58,11.83,20.74C94.88,61.74,90,65.82,85,67.57Z"/>
+                          <path class="ytube-cls-4" d="M74.1,40.6s-.52-3.65-2-5.24a7.24,7.24,0,0,0-5-2.25c-7.07-.52-17.68-.52-17.68-.52h-.06s-10.58,0-17.66.52a7.21,7.21,0,0,0-5.07,2.25c-1.51,1.59-2,5.24-2,5.24A80.53,80.53,0,0,0,24,49.1v4a79.19,79.19,0,0,0,.52,8.5s.52,3.65,2,5.26c1.92,2.11,4.44,2,5.59,2.25,4,.41,17.19.55,17.19.55S60,69.64,67,69.14a7.12,7.12,0,0,0,5-2.25c1.51-1.62,2-5.26,2-5.26a83.81,83.81,0,0,0,.49-8.5v-4c0-4.22-.49-8.5-.49-8.5Zm-16.34,10L44.08,58V43.15l6.2,3.37Z"/>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+          </div>          
+        </div>
+      </div>        
+    </header>
+
+
+    <main role="main" class="main">
+
+      <section class="mslider-section">             
+        <div class="mslider-section-container wrapper">          
+          <div class="mslider">
+            <div>
+              <div class="mslide-container">
+                <p class="slide-text">
+                  Sorular çoksa<br/> cevaplar Yamiba’da! 1
+                </p>                
+              </div>
+            </div>
+            <div>
+              <div class="mslide-container">
+                <p class="slide-text">
+                  Sorular çoksa<br/> cevaplar Yamiba’da! 2
+                </p>                
+              </div>             
+            </div>
+            <div>
+              <div class="mslide-container">
+                <p class="slide-text">
+                  Sorular çoksa<br/> cevaplar Yamiba’da! 3
+                </p>                
+              </div>              
+            </div>
+            <div>
+              <div class="mslide-container">
+                <p class="slide-text">
+                  Sorular çoksa<br/> cevaplar Yamiba’da! 4
+                </p>                
+              </div>              
+            </div>
+          </div>
+        </div>                            
+      </section> 
+
+      <section class="service-section">
+        <div class="wrapper">
+          <div class="service-section-container">
+                
+          </div>        
+        </div>                                   
+      </section>
+
+      <section class="select-section">
+        <div class="wrapper">
+          <div class="select-section-container">
+            
+          </div>        
+        </div>                                   
+      </section> 
+       
+      <section class="invite-section">
+        <div class="wrapper">
+          <div class="invite-section-container">
+                                  
+          </div>        
+        </div>                                   
+      </section>
+
+      <section class="testimonial-section">
+        <div class="wrapper">
+          <div class="testimonial-section-container">
+                                  
+          </div>        
+        </div>                                   
+      </section>
+
+      <section class="advantage-section">
+        <div class="wrapper">
+          <div class="advantage-section-container">
+                                  
+          </div>        
+        </div>                                   
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-container">
+          
+        </div>        
+      </div>  
+    </footer>
+
+    <div id="modal-login" style="display:none"> 
+     
+    </div>
+
+    <div id="modal-signup" style="display:none"> 
+      
+    </div>    
+
+    <div class="modal">
+      <div class="modal-inner">        
+        <div class="modal-content"></div>
+      </div>
+    </div>
+
+    <div class="modalintscroll">
+      <div class="modalintscroll-inner">        
+        <div class="modalintscroll-content"></div>
+      </div>
+    </div>    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="./script/plugin.js"></script>
+    <script src="./script/app.js"></script>
+
+  </body>
+
+</html>

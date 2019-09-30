@@ -652,7 +652,115 @@ video {
 }
 
 .footer .footer-container {
-  padding: 24px 15px 14px;
+  padding: 22px 15px 14px;
+}
+
+.footer .f-mlink-list {
+  display: none;
+}
+
+.footer .f-mlink-list.first {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 0 59px;
+}
+
+.footer .f-mlink-list.second {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 0 59px;
+}
+
+.footer .f-link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer .f-link {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.86;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer .f-link:hover,
+.footer .f-link:focus,
+.footer .f-link:active {
+  color: #ffb0e9;
+}
+
+.footer .soc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 0 30px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer .soc-list-item {
+  width: 48px;
+}
+
+.footer .ag-play-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 0 10px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer .ag-play-container .app-play-container {
+  border-radius: 5px;
+  background-image: linear-gradient(85deg, #fffeff, #ffc8f3);
+  width: 141px;
+  height: 41px;
+}
+
+.footer .ag-play-container .app-play-container .f-play-icon {
+  width: 141px;
+  height: 41px;
+  display: block;
+}
+
+.footer .ag-play-container .google-play-container {
+  border-radius: 5px;
+  background-image: linear-gradient(85deg, #fffeff, #ffc8f3);
+  width: 119px;
+  height: 41px;
+}
+
+.footer .ag-play-container .google-play-container .f-google-play-icon {
+  width: 119px;
+  height: 41px;
+  display: block;
 }
 
 .mslider,
@@ -2488,6 +2596,27 @@ body.modal-visible {
 
   .xs-nav.open {
     display: none;
+  }
+
+  .footer .f-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 0 69px;
+  }
+
+  .footer .f-mlink-list {
+    display: -ms-grid;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -ms-grid-columns: (auto)[4];
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 0 59px;
   }
 
   .login-section-container {

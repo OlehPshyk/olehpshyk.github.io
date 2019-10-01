@@ -2427,11 +2427,20 @@
             </div>
           </div>          
         </div>        
-      </div>  
+      </div>        
+      <!-- <a href="#modal-login" data-modalsmright-open>test login</a>
+      <a href="#modal-signup" data-modalsmright-open>test signup</a>
+
+      <a href="#modal-invite" data-modal-open>test invite</a>
+      <a href="#modal-forget" data-modal-open>test forget</a>
+      <a href="#modal-comment" data-modal-open>test comment</a>
+
+      <a href="#modal-agree" data-modalscr-open>test agree</a> -->
     </footer>
 
     <div id="modal-login" style="display:none">
       <div class="modal-container">
+        <span class="close-modal" data-modalsmright-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
         <h2 class="modal-title">yamiba.com’a hoşgeldin!</h2>
         <p class="modal-text">yamiba'ya üyeysen bilgilerini yazarak giriş yap veya yeni üye ol.</p>
         <a class="facebook-btn" href="#">          
@@ -2453,12 +2462,13 @@
           <button class="modal-subm-btn" type="submit">Giriş yap</button>
           <div class="login-form-message" id="login-form-message"></div>
         </form>
-        <span class="sign-text">Hala üye değil misin? <a class="sign-link" href="#modal-signup" data-modalsmright-open>Kayıt ol!</a></span>        
+        <span class="sign-text"><span>Hala üye değil misin?</span> <a class="sign-link" href="#modal-signup" data-modalsmright-open>Kayıt ol!</a></span>        
       </div>     
     </div>
 
     <div id="modal-signup" style="display:none"> 
       <div class="modal-container">
+        <span class="close-modal" data-modalsmright-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
         <h2 class="modal-title">yamiba.com’a hoşgeldin!</h2>
         <p class="modal-text">yamiba'ya üyeysen bilgilerini yazarak giriş yap veya yeni üye ol.</p>
         <a class="facebook-btn" href="#">          
@@ -2478,7 +2488,7 @@
             </div>
             <div class="input-group"> 
               <div class="select-box">
-                <select class="js-select2" name="" id="signup-1" data-placeholder="Cinsiyetin" required>
+                <select class="js-select2" name="" id="signupgender" data-placeholder="Cinsiyetin" required>
                   <option></option>
                   <option value="Erkek">Erkek</option>
                   <option value="Kadın">Kadın</option>
@@ -2487,91 +2497,85 @@
               </div>
             </div>
             <div class="input-group">              
-              <div class="input-row">
-                <div class="col33">
-                  <div class="select-box">
-                    <select class="js-select2" name="" id="signup-2" data-placeholder="Gün" required>
-                      <option></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option> 
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option> 
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option> 
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                      <option value="17">17</option>
-                      <option value="18">18</option> 
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="22">22</option> 
-                      <option value="23">23</option>
-                      <option value="24">24</option>
-                      <option value="25">25</option>
-                      <option value="26">26</option> 
-                      <option value="27">27</option>
-                      <option value="28">28</option> 
-                      <option value="29">29</option>
-                      <option value="30">30</option>
-                      <option value="31">31</option>                                                 
-                    </select>
-                  </div>
-                </div>
-                <div class="col33"> 
-                  <div class="select-box">
-                    <select class="js-select2" name="" id="signup-3" data-placeholder="Ay" required>
-                      <option></option>
-                      <option value="1">01</option>
-                      <option value="2">02</option>
-                      <option value="3">03</option>
-                      <option value="4">04</option>
-                      <option value="5">05</option>
-                      <option value="6">06</option>
-                      <option value="7">07</option>
-                      <option value="8">08</option>
-                      <option value="9">09</option>
-                      <option value="10">10</option> 
-                      <option value="11">11</option>
-                      <option value="12">12</option>                            
-                    </select>
-                  </div>
-                </div>
-                <div class="col33">
-                  <div class="select-box">
-                    <select class="js-select2" name="" id="signup-4" data-placeholder="Yıl" required>
-                      <option></option>
-                      <option value="2000">2000</option>
-                      <option value="2001">2001</option>
-                      <option value="2002">2002</option>
-                      <option value="2003">2003</option>
-                      <option value="2004">2004</option>
-                      <option value="2005">2005</option>
-                      <option value="2006">2006</option>
-                      <option value="2007">2007</option>
-                      <option value="2008">2008</option>
-                      <option value="2009">2009</option>
-                      <option value="2010">2010</option>
-                      <option value="2011">2011</option> 
-                      <option value="2012">2012</option>
-                      <option value="2013">2013</option>
-                      <option value="2014">2014</option>
-                      <option value="2015">2015</option>
-                      <option value="2016">2016</option>
-                      <option value="2017">2017</option>
-                      <option value="2018">2018</option>
-                      <option value="2019">2019</option>                                                 
-                    </select> 
-                  </div>
-                </div>          
+              <div class="input-row-33">                
+                <div class="select-box">
+                  <select class="js-select2" name="" id="signupday" data-placeholder="Gün" required>
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option> 
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option> 
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option> 
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option> 
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option> 
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option> 
+                    <option value="27">27</option>
+                    <option value="28">28</option> 
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>                                                 
+                  </select>
+                </div>                 
+                <div class="select-box">
+                  <select class="js-select2" name="" id="signupmoon" data-placeholder="Ay" required>
+                    <option></option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option> 
+                    <option value="11">11</option>
+                    <option value="12">12</option>                            
+                  </select>
+                </div>                
+                <div class="select-box">
+                  <select class="js-select2" name="" id="signupyear" data-placeholder="Yıl" required>
+                    <option></option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option> 
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>                                                 
+                  </select> 
+                </div>                         
               </div> 
             </div>
           </div>
@@ -2581,12 +2585,13 @@
           <button class="modal-subm-btn" type="submit">Kaydol</button>
           <div class="signup-form-message" id="signup-form-message"></div>
         </form>
-        <span class="sign-text">Zaten üye misin? <a class="sign-link" href="#modal-login" data-modalsmright-open>Giriş yap</a></span>
+        <span class="sign-text"><span>Zaten üye misin?</span> <a class="sign-link" href="#modal-login" data-modalsmright-open>Giriş yap</a></span>        
       </div>
     </div>
 
     <div id="modal-invite" style="display:none"> 
       <div class="modal-container">
+        <span class="close-modal" data-modal-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
         <h2 class="modal-title">Şifreni mi unuttun?</h2>
         <p class="modal-text">Şifreni unuttuysan kayıtlı e-posta adresini yazarak yeni şifreni alabilirsin.</p>
         <form action="" id="invite-form" class="invite-form" method="POST" enctype="application/x-www-form-urlencoded">
@@ -2606,6 +2611,7 @@
 
     <div id="modal-forget" style="display:none"> 
       <div class="modal-container">
+        <span class="close-modal" data-modal-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
         <h2 class="modal-title">Şifreni mi unuttun?</h2>
         <p class="modal-text">Şifreni unuttuysan kayıtlı e-posta adresini yazarak yeni şifreni alabilirsin.</p>
         <form action="" id="forget-form" class="forget-form" method="POST" enctype="application/x-www-form-urlencoded">
@@ -2621,11 +2627,18 @@
     </div>
 
     <div id="modal-comment" style="display:none"> 
-      <div class="modal-container">
-        <h2 class="modal-title">Şifreni mi unuttun?</h2>
-        <p class="modal-text">Şifreni unuttuysan kayıtlı e-posta adresini yazarak yeni şifreni alabilirsin.</p>
+      <div class="modal-container wide-854">
+        <span class="close-modal" data-modal-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
+        <h2 class="modal-title">Falını değerlendir</h2>        
         <form action="" id="comment-form" class="comment-form" method="POST" enctype="application/x-www-form-urlencoded">
-          comment   comment comment comment comment comment 
+          <div class="modal-rating-container">
+            <div class="modal-rating"></div>
+          </div>
+          <div class="input-collection">                                     
+            <div class="input-group"> 
+              <textarea class="textarea-control" type="text" placeholder="İstersen yorum da yazabilirsin" value="" id="commenttext" required></textarea>
+            </div>
+          </div> 
           <button class="modal-subm-btn" type="submit">GÖNDER</button>
           <div class="comment-form-message" id="comment-form-message"></div>
         </form>                    
@@ -2633,7 +2646,8 @@
     </div>
 
     <div id="modal-agree" style="display:none">
-      <div class="modal-container scrolled">        
+      <div class="modal-container scrolled wide-1170"> 
+        <span class="close-modal" data-modalscr-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>       
         <h2 class="modal-title">Şifreni mi unuttun?</h2>
         <div class="modal-sc-text-container">
           <p class="modal-sc-text">
@@ -2644,11 +2658,7 @@
           </p> 
         </div>                        
       </div>        
-    </div>
-
-    
-    
-       
+    </div> 
 
     <div class="modal">
       <div class="modal-inner">        
@@ -2671,6 +2681,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <script src="./script/plugin.js"></script>
+    <script src="./script/modals.js"></script>
     <script src="./script/app.js"></script>
 
   </body>

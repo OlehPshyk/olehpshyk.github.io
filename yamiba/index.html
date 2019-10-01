@@ -38,10 +38,10 @@
               <li class="nav-item"><a class="nav-link" href="#;">TR</a></li> 
             </ul>
             <!-- if user isn't loggined -->
-            <a class="account-btn-login" href="#modal-login" data-modal-open>                 
+            <a class="account-btn-login" href="#modal-login" data-modalsmright-open>                 
               <span class="account-btn-text">Giriş yap</span>
             </a> 
-            <a class="account-btn-signup" href="#modal-signup" data-modal-open>                 
+            <a class="account-btn-signup" href="#modal-signup" data-modalsmright-open>                 
               <span class="account-btn-text">Kaydol</span>
             </a> 
             <!-- if user is loggined -->            
@@ -54,7 +54,7 @@
             </a> -->
           </div>  
 
-          <a href="#">             
+          <a href="#modal-login" data-modalsmright-open>             
             <span class="user-xs-img-container"><img class="user-img" src="./img/man-user.png" alt="user"></span>
           </a>
 
@@ -1711,7 +1711,7 @@
         <div class="wrapper">
           <div class="invite-section-container">
             <p class="invite-text">Arkadaşını davet et, hemen <span class="accent">ücretsiz</span> fal kazan!</p>  
-            <button class="invite-btn">Davet et</button>                                  
+            <a class="invite-btn" href="#modal-invite" data-modal-open>Davet et</a>                                  
           </div>        
         </div> 
       </section>
@@ -2430,13 +2430,225 @@
       </div>  
     </footer>
 
-    <div id="modal-login" style="display:none"> 
-     
+    <div id="modal-login" style="display:none">
+      <div class="modal-container">
+        <h2 class="modal-title">yamiba.com’a hoşgeldin!</h2>
+        <p class="modal-text">yamiba'ya üyeysen bilgilerini yazarak giriş yap veya yeni üye ol.</p>
+        <a class="facebook-btn" href="#">          
+          Facebook ile giriş yap
+        </a>
+        <span class="or-text">ya da</span>
+        <form action="" id="login-form" class="login-form" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="input-collection">                                        
+            <div class="input-group"> 
+              <input class="input-control" type="email" placeholder="E-posta adresin" value="" id="loginemail" required>
+            </div>
+            <div class="input-group"> 
+              <input class="input-control" type="password" placeholder="Şifren" value="" id="loginpassword" required>
+            </div>
+          </div>
+          <div class="forgot-container">
+            <a class="forget-p" href="#modal-forget" data-modal-open data-modalsmright-close>Şifreni mi unuttun?</a>
+          </div> 
+          <button class="modal-subm-btn" type="submit">Giriş yap</button>
+          <div class="login-form-message" id="login-form-message"></div>
+        </form>
+        <span class="sign-text">Hala üye değil misin? <a class="sign-link" href="#modal-signup" data-modalsmright-open>Kayıt ol!</a></span>        
+      </div>     
     </div>
 
     <div id="modal-signup" style="display:none"> 
-      
-    </div>    
+      <div class="modal-container">
+        <h2 class="modal-title">yamiba.com’a hoşgeldin!</h2>
+        <p class="modal-text">yamiba'ya üyeysen bilgilerini yazarak giriş yap veya yeni üye ol.</p>
+        <a class="facebook-btn" href="#">          
+          Facebook ile giriş yap
+        </a>
+        <span class="or-text">ya da</span>
+        <form action="" id="signup-form" class="signup-form" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="input-collection">
+            <div class="input-group">
+              <input class="input-control" type="text" placeholder="İsim ve soyisim" value="" id="signupname" required>
+            </div>                          
+            <div class="input-group"> 
+              <input class="input-control" type="email" placeholder="E-posta" value="" id="signupemail" required>
+            </div>
+            <div class="input-group"> 
+              <input class="input-control" type="password" placeholder="Şifre" value="" id="signuppassword" required>
+            </div>
+            <div class="input-group"> 
+              <div class="select-box">
+                <select class="js-select2" name="" id="signup-1" data-placeholder="Cinsiyetin" required>
+                  <option></option>
+                  <option value="Erkek">Erkek</option>
+                  <option value="Kadın">Kadın</option>
+                  <option value="LGBTI">LGBTI</option>                                                                 
+                </select>
+              </div>
+            </div>
+            <div class="input-group">              
+              <div class="input-row">
+                <div class="col33">
+                  <div class="select-box">
+                    <select class="js-select2" name="" id="signup-2" data-placeholder="Gün" required>
+                      <option></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option> 
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option> 
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option> 
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option> 
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option> 
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option> 
+                      <option value="27">27</option>
+                      <option value="28">28</option> 
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>                                                 
+                    </select>
+                  </div>
+                </div>
+                <div class="col33"> 
+                  <div class="select-box">
+                    <select class="js-select2" name="" id="signup-3" data-placeholder="Ay" required>
+                      <option></option>
+                      <option value="1">01</option>
+                      <option value="2">02</option>
+                      <option value="3">03</option>
+                      <option value="4">04</option>
+                      <option value="5">05</option>
+                      <option value="6">06</option>
+                      <option value="7">07</option>
+                      <option value="8">08</option>
+                      <option value="9">09</option>
+                      <option value="10">10</option> 
+                      <option value="11">11</option>
+                      <option value="12">12</option>                            
+                    </select>
+                  </div>
+                </div>
+                <div class="col33">
+                  <div class="select-box">
+                    <select class="js-select2" name="" id="signup-4" data-placeholder="Yıl" required>
+                      <option></option>
+                      <option value="2000">2000</option>
+                      <option value="2001">2001</option>
+                      <option value="2002">2002</option>
+                      <option value="2003">2003</option>
+                      <option value="2004">2004</option>
+                      <option value="2005">2005</option>
+                      <option value="2006">2006</option>
+                      <option value="2007">2007</option>
+                      <option value="2008">2008</option>
+                      <option value="2009">2009</option>
+                      <option value="2010">2010</option>
+                      <option value="2011">2011</option> 
+                      <option value="2012">2012</option>
+                      <option value="2013">2013</option>
+                      <option value="2014">2014</option>
+                      <option value="2015">2015</option>
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>                                                 
+                    </select> 
+                  </div>
+                </div>          
+              </div> 
+            </div>
+          </div>
+          <div class="agree-container">
+            <input type="checkbox"><span class="agree-label"><a class="agree-link" href="#modal-agree" data-modalscr-open data-modalsmright-close>Kullanıcı sözleşmesini</a>&nbsp;okudum ve onaylıyorum.</span>
+          </div>
+          <button class="modal-subm-btn" type="submit">Kaydol</button>
+          <div class="signup-form-message" id="signup-form-message"></div>
+        </form>
+        <span class="sign-text">Zaten üye misin? <a class="sign-link" href="#modal-login" data-modalsmright-open>Giriş yap</a></span>
+      </div>
+    </div>
+
+    <div id="modal-invite" style="display:none"> 
+      <div class="modal-container">
+        <h2 class="modal-title">Şifreni mi unuttun?</h2>
+        <p class="modal-text">Şifreni unuttuysan kayıtlı e-posta adresini yazarak yeni şifreni alabilirsin.</p>
+        <form action="" id="invite-form" class="invite-form" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="input-collection"> 
+            <div class="input-group">
+              <input class="input-control" type="text" placeholder="Kendi adını yaz" value="" id="invitename" required>
+            </div>                                     
+            <div class="input-group"> 
+              <input class="input-control" type="email" placeholder="Arkadaşının e-posta adresini yaz" value="" id="inviteemail" required>
+            </div>
+          </div>          
+          <button class="modal-subm-btn" type="submit">GÖNDER</button>
+          <div class="invite-form-message" id="invite-form-message"></div>
+        </form>                    
+      </div> 
+    </div> 
+
+    <div id="modal-forget" style="display:none"> 
+      <div class="modal-container">
+        <h2 class="modal-title">Şifreni mi unuttun?</h2>
+        <p class="modal-text">Şifreni unuttuysan kayıtlı e-posta adresini yazarak yeni şifreni alabilirsin.</p>
+        <form action="" id="forget-form" class="forget-form" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="input-collection">                                     
+            <div class="input-group"> 
+              <input class="input-control" type="email" placeholder="E-posta" value="" id="forgetemail" required>
+            </div>
+          </div>          
+          <button class="modal-subm-btn" type="submit">GÖNDER</button>
+          <div class="forget-form-message" id="forget-form-message"></div>
+        </form>                    
+      </div>      
+    </div>
+
+    <div id="modal-comment" style="display:none"> 
+      <div class="modal-container">
+        <h2 class="modal-title">Şifreni mi unuttun?</h2>
+        <p class="modal-text">Şifreni unuttuysan kayıtlı e-posta adresini yazarak yeni şifreni alabilirsin.</p>
+        <form action="" id="comment-form" class="comment-form" method="POST" enctype="application/x-www-form-urlencoded">
+          comment   comment comment comment comment comment 
+          <button class="modal-subm-btn" type="submit">GÖNDER</button>
+          <div class="comment-form-message" id="comment-form-message"></div>
+        </form>                    
+      </div>         
+    </div>
+
+    <div id="modal-agree" style="display:none">
+      <div class="modal-container scrolled">        
+        <h2 class="modal-title">Şifreni mi unuttun?</h2>
+        <div class="modal-sc-text-container">
+          <p class="modal-sc-text">
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+          </p>
+          <p class="modal-sc-text">
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+          </p> 
+        </div>                        
+      </div>        
+    </div>
+
+    
+    
+       
 
     <div class="modal">
       <div class="modal-inner">        
@@ -2444,9 +2656,15 @@
       </div>
     </div>
 
-    <div class="modalintscroll">
-      <div class="modalintscroll-inner">        
-        <div class="modalintscroll-content"></div>
+    <div class="modalsmright">
+      <div class="modalsmright-inner">        
+        <div class="modalsmright-content"></div>
+      </div>
+    </div>    
+
+    <div class="modalscr">
+      <div class="modalscr-inner">        
+        <div class="modalscr-content"></div>
       </div>
     </div>    
     

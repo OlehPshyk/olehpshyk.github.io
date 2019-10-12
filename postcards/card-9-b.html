@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" style="-webkit-box-sizing: border-box; box-sizing: border-box;">
+  <head style="-webkit-box-sizing: inherit; box-sizing: inherit;">
+    <meta charset="UTF-8" style="-webkit-box-sizing: inherit; box-sizing: inherit;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" style="-webkit-box-sizing: inherit; box-sizing: inherit;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" style="-webkit-box-sizing: inherit; box-sizing: inherit;">
+    <title style="-webkit-box-sizing: inherit; box-sizing: inherit;"></title>    
+    
+
+    <style style="-webkit-box-sizing: inherit; box-sizing: inherit;">
+      @font-face {
+        font-family: 'Nexa';
+        src: local("Nexa Bold"), local("Nexa-Bold"), url("./fonts/nexa-bold.woff") format("woff"), url("./fonts/nexa-bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Nexa';
+        src: local("Nexa Thin"), local("Nexa-Thin"), url("./fonts/nexa-thin.woff") format("woff"), url("./fonts/nexa-thin.ttf") format("truetype");
+        font-weight: 300;        
+        font-style: normal;
+      }  
+      @font-face {
+        font-family: 'AlpineScript';
+        src: local("AlpineScript Regular"), local("AlpineScript-Regular"), url("./fonts/AlpineScript-Regular.woff") format("woff"), url("./fonts/AlpineScript-Regular.ttf") format("truetype");
+        font-weight: 400;        
+        font-style: normal;
+      }          
+    </style> 
+
+  </head>
+
+  <body style="-webkit-box-sizing: inherit; background-color: #fff; box-sizing: inherit; margin: 0;">          
+    
+    <div class="p-card-container" style="-ms-flex-direction: column; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-box-sizing: inherit; box-sizing: inherit; display: flex; flex-direction: column; height: 1875px; overflow: hidden; width: 2775px;">
+      <div class="p-card-header" style="-ms-flex: 0 0 auto; -webkit-box-flex: 0; -webkit-box-sizing: inherit; box-sizing: inherit; flex: 0 0 auto; height: 622px; padding: 75px 0; position: relative; z-index: 1;">        
+        <div class="p-header2-bg" style="-webkit-box-sizing: inherit; -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNzc1IDMzMyI+ICAgIA0KICA8Zz4NCiAgICA8cGF0aCBkPSJNNywzMzNIMFYwSDI3NzVWMjk2Yy0zLjMtLjQtNi42LS43LTkuOS0xLjQtMzYuNS04LjMtNzIuOC0xNy41LTEwOS41LTI0LjgtNjgtMTMuNS0xMzYuMi0yNi43LTIwNC42LTM4LjQtNTIuMS04LjktMTA0LjctMTUuOC0xNTcuMi0yMi41cS02OS43LTktMTQwLTE1LjZjLTQ3LjItNC41LTk0LjUtOC41LTE0MS45LTExLjQtNjUuNS0zLjktMTMxLjEtNy43LTE5Ni43LTkuNS03My40LTIuMS0xNDYuOS0yLjUtMjIwLjQtMi41LTUxLjMtLjEtMTAyLjcsMS4xLTE1NCwyLjdzLTEwNC41LDQtMTU2LjgsNi41Yy0zNS43LDEuNy03MS41LDMuOS0xMDcuMiw2LjNxLTU3LjUsMy45LTExNC43LDguNi01NC4xLDQuNC0xMDguNSw5LjRjLTM1LDMuMy02OS45LDYuOS0xMDQuOSwxMC42cS01Ni4xLDUuOS0xMTIuMiwxMi40Yy00Miw0LjktODQsMTAuMi0xMjUuOSwxNS42cy04Mi4yLDEwLjctMTIzLjMsMTYuNFE0MTcuNywyNjguMywzNDcsMjc5cS03NS45LDExLjQtMTUxLjUsMjMuNGMtNTIuMSw4LjMtMTA0LjIsMTctMTU2LjIsMjUuN0MyOC41LDMyOS44LDE3LjgsMzMyLDcsMzMzWiIvPg0KICA8L2c+ICANCjwvc3ZnPg=='); -webkit-mask-position: center; -webkit-mask-size: 101% auto; background-color: #8CBAC4; bottom: -42px; box-sizing: inherit; height: 333px; left: 0; mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNzc1IDMzMyI+ICAgIA0KICA8Zz4NCiAgICA8cGF0aCBkPSJNNywzMzNIMFYwSDI3NzVWMjk2Yy0zLjMtLjQtNi42LS43LTkuOS0xLjQtMzYuNS04LjMtNzIuOC0xNy41LTEwOS41LTI0LjgtNjgtMTMuNS0xMzYuMi0yNi43LTIwNC42LTM4LjQtNTIuMS04LjktMTA0LjctMTUuOC0xNTcuMi0yMi41cS02OS43LTktMTQwLTE1LjZjLTQ3LjItNC41LTk0LjUtOC41LTE0MS45LTExLjQtNjUuNS0zLjktMTMxLjEtNy43LTE5Ni43LTkuNS03My40LTIuMS0xNDYuOS0yLjUtMjIwLjQtMi41LTUxLjMtLjEtMTAyLjcsMS4xLTE1NCwyLjdzLTEwNC41LDQtMTU2LjgsNi41Yy0zNS43LDEuNy03MS41LDMuOS0xMDcuMiw2LjNxLTU3LjUsMy45LTExNC43LDguNi01NC4xLDQuNC0xMDguNSw5LjRjLTM1LDMuMy02OS45LDYuOS0xMDQuOSwxMC42cS01Ni4xLDUuOS0xMTIuMiwxMi40Yy00Miw0LjktODQsMTAuMi0xMjUuOSwxNS42cy04Mi4yLDEwLjctMTIzLjMsMTYuNFE0MTcuNywyNjguMywzNDcsMjc5cS03NS45LDExLjQtMTUxLjUsMjMuNGMtNTIuMSw4LjMtMTA0LjIsMTctMTU2LjIsMjUuN0MyOC41LDMyOS44LDE3LjgsMzMyLDcsMzMzWiIvPg0KICA8L2c+ICANCjwvc3ZnPg=='); mask-position: center; mask-size: 101% auto; position: absolute; width: 100%;">          
+        </div>
+        <div class="p-header1-bg" style="-webkit-box-sizing: inherit; -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNzc1IDYyMyI+DQogIDxnPg0KICAgIDxwYXRoIGQ9Ik0wLDYxN1YwSDI3NzVWNTIwbC0xMC4xLTJjLTI3LjktNi4yLTU1LjktMTIuNy04My45LTE4LjYtMjIuMy00LjgtNDQuNy05LTY3LTEzLjQtMTctMy4zLTM0LjEtNi42LTUxLjItOS43cy0zMy42LTUuNS01MC40LTguM2MtMTEuNC0xLjktMjIuOS0zLjktMzQuNC01LjdsLTM1LjQtNS4zYy04LjMtMS4yLTE2LjYtMi4xLTI0LjktMy4ybC0zNC42LTQuOC0yNS40LTMuMmMtMTMuMi0xLjYtMjYuNC0zLjMtMzkuNi00LjgtMTAuNi0xLjItMjEuMy0xLjktMzEuOS0zLjEtMTQtMS41LTI4LTMuNC00Mi00LjgtMTIuMS0xLjMtMjQuMi0yLjEtMzYuNC0zLjFsLTUwLjctNGMtMTEuMi0uOC0yMi40LTEuMy0zMy42LTItMTYuOC0xLTMzLjYtMi4xLTUwLjQtMy0xNS0uOC0zMC4xLTEuNC00NS4xLTJsLTUyLjYtMi0zOC44LTFjLTE4LjMtLjQtMzYuNS0xLTU0LjgtLjktNTUuNi4xLTExMS4yLjUtMTY2LjguOS0xMS4zLjEtMjIuNS43LTMzLjgsMWwtNDAuMywxYy03LjguMi0xNS41LjctMjMuMywxLTE5LjIuNy0zOC40LDEuMi01Ny42LDItMTIuNC41LTI0LjcsMS4zLTM3LjEsMi0xOC4zLDEtMzYuNiwxLjktNTQuOSwzbC0yOC4xLDItNDQuOSwzLTM4LjEsMi0xNi4zLDEtNDguMiw0Yy04LjQuNy0xNi44LDEuMy0yNS4xLDIuMWwtNDAuMiwzLjljLTguNC44LTE2LjgsMS4zLTI1LjEsMi4xLTEyLjgsMS4yLTI1LjUsMi43LTM4LjIsMy45LTguOS44LTE3LjgsMS4yLTI2LjYsMi4xLTEyLDEuMi0yMy44LDIuNi0zNS43LDMuOS03LjIuOC0xNC40LDEuMy0yMS42LDIuMS0xMS4zLDEuMi0yMi41LDIuNi0zMy43LDMuOWwtMjkuNCwzLjFMOTg4LDQ2OWwtMjYuOSwzLjJMOTI1LjQsNDc3Yy04LjYsMS4xLTE3LjMsMi4xLTI1LjksMy4zTDg2NS40LDQ4NWwtMzIuMiw0LjNMODAwLDQ5NGwtMzAuNiw0LjNjLTEyLjksMS44LTI1LjcsMy44LTM4LjUsNS43bC0zNi42LDUuM2MtMTIuNSwxLjgtMjQuOSwzLjgtMzcuNCw1LjdsLTM1LjUsNS4zTDU4NC45LDUyNmwtMzQuNSw1LjNMNTA4LjYsNTM4bC00MC45LDYuNEw0MjYuOSw1NTFsLTQwLjQsNi4zTDMzOS4zLDU2NSwyOTMsNTcyLjMsMjQ1LjIsNTgwYy0xMy41LDIuMi0yNyw0LjItNDAuNSw2LjNMMTU2LjQsNTk0Yy0xNCwyLjItMjgsNC41LTQyLDYuNmwtNDMsNi40Yy0xMi4yLDEuOC0yNC40LDMuOS0zNi42LDUuNlMxMi4zLDYxNS41LDAsNjE3WiIvPiAgICAgIA0KICA8L2c+ICANCjwvc3ZnPg=='); -webkit-mask-position: center; -webkit-mask-size: 101% auto; background: url('./img/bg8-b.jpg') 50% 100% no-repeat; background-size: cover; box-sizing: inherit; height: 100%; left: 0; mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNzc1IDYyMyI+DQogIDxnPg0KICAgIDxwYXRoIGQ9Ik0wLDYxN1YwSDI3NzVWNTIwbC0xMC4xLTJjLTI3LjktNi4yLTU1LjktMTIuNy04My45LTE4LjYtMjIuMy00LjgtNDQuNy05LTY3LTEzLjQtMTctMy4zLTM0LjEtNi42LTUxLjItOS43cy0zMy42LTUuNS01MC40LTguM2MtMTEuNC0xLjktMjIuOS0zLjktMzQuNC01LjdsLTM1LjQtNS4zYy04LjMtMS4yLTE2LjYtMi4xLTI0LjktMy4ybC0zNC42LTQuOC0yNS40LTMuMmMtMTMuMi0xLjYtMjYuNC0zLjMtMzkuNi00LjgtMTAuNi0xLjItMjEuMy0xLjktMzEuOS0zLjEtMTQtMS41LTI4LTMuNC00Mi00LjgtMTIuMS0xLjMtMjQuMi0yLjEtMzYuNC0zLjFsLTUwLjctNGMtMTEuMi0uOC0yMi40LTEuMy0zMy42LTItMTYuOC0xLTMzLjYtMi4xLTUwLjQtMy0xNS0uOC0zMC4xLTEuNC00NS4xLTJsLTUyLjYtMi0zOC44LTFjLTE4LjMtLjQtMzYuNS0xLTU0LjgtLjktNTUuNi4xLTExMS4yLjUtMTY2LjguOS0xMS4zLjEtMjIuNS43LTMzLjgsMWwtNDAuMywxYy03LjguMi0xNS41LjctMjMuMywxLTE5LjIuNy0zOC40LDEuMi01Ny42LDItMTIuNC41LTI0LjcsMS4zLTM3LjEsMi0xOC4zLDEtMzYuNiwxLjktNTQuOSwzbC0yOC4xLDItNDQuOSwzLTM4LjEsMi0xNi4zLDEtNDguMiw0Yy04LjQuNy0xNi44LDEuMy0yNS4xLDIuMWwtNDAuMiwzLjljLTguNC44LTE2LjgsMS4zLTI1LjEsMi4xLTEyLjgsMS4yLTI1LjUsMi43LTM4LjIsMy45LTguOS44LTE3LjgsMS4yLTI2LjYsMi4xLTEyLDEuMi0yMy44LDIuNi0zNS43LDMuOS03LjIuOC0xNC40LDEuMy0yMS42LDIuMS0xMS4zLDEuMi0yMi41LDIuNi0zMy43LDMuOWwtMjkuNCwzLjFMOTg4LDQ2OWwtMjYuOSwzLjJMOTI1LjQsNDc3Yy04LjYsMS4xLTE3LjMsMi4xLTI1LjksMy4zTDg2NS40LDQ4NWwtMzIuMiw0LjNMODAwLDQ5NGwtMzAuNiw0LjNjLTEyLjksMS44LTI1LjcsMy44LTM4LjUsNS43bC0zNi42LDUuM2MtMTIuNSwxLjgtMjQuOSwzLjgtMzcuNCw1LjdsLTM1LjUsNS4zTDU4NC45LDUyNmwtMzQuNSw1LjNMNTA4LjYsNTM4bC00MC45LDYuNEw0MjYuOSw1NTFsLTQwLjQsNi4zTDMzOS4zLDU2NSwyOTMsNTcyLjMsMjQ1LjIsNTgwYy0xMy41LDIuMi0yNyw0LjItNDAuNSw2LjNMMTU2LjQsNTk0Yy0xNCwyLjItMjgsNC41LTQyLDYuNmwtNDMsNi40Yy0xMi4yLDEuOC0yNC40LDMuOS0zNi42LDUuNlMxMi4zLDYxNS41LDAsNjE3WiIvPiAgICAgIA0KICA8L2c+ICANCjwvc3ZnPg=='); mask-position: center; mask-size: 101% auto; position: absolute; top: 0; width: 100%;"> 
+          <span class="p-header1-bg-1" style="-webkit-box-sizing: inherit; background-color: #b21f28; box-sizing: inherit; height: 100%; left: 0; opacity: 0.8; position: absolute; top: 0; width: 100%;">            
+          </span>         
+        </div>
+        <div class="p-header-text" style="-webkit-box-sizing: inherit; box-sizing: inherit; overflow: hidden; padding: 20px 40px; position: relative;">
+          <div class="p-t1" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa, sans-serif; font-size: 158.3px; font-weight: 700; letter-spacing: 0.79px; line-height: 1; margin-bottom: 25px; min-height: 1em; text-align: center; text-shadow: 23.6px 8.1px 55.9px rgba(0, 0, 0, 0.77); text-transform: uppercase; white-space: nowrap;">
+            WE CLEAN GUTTERS
+          </div>
+          <div class="p-t2" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #fff; font-family: Nexa, sans-serif; font-size: 87.5px; font-weight: 700; letter-spacing: 0.44px; line-height: 1; min-height: 1em; text-align: center; white-space: nowrap;">
+            Twin Cities Gutter Cleaning Experts                          
+          </div>           
+        </div>        
+      </div>      
+      
+      <div class="p-card-body" style="-ms-flex: 1 1 auto; -webkit-box-flex: 1; -webkit-box-sizing: inherit; box-sizing: inherit; flex: 1 1 auto; position: relative;"> 
+                 
+          
+        <div class="p-row1" style="-webkit-box-sizing: inherit; box-sizing: inherit; display: flex; margin-bottom: 55px;">
+          <div class="p-t1-panel" style="-ms-flex: 0 0 auto; -webkit-box-flex: 0; -webkit-box-shadow: -6.5px 2.5px 32px 0 rgba(0, 0, 0, 0.83); -webkit-box-sizing: inherit; background-color: #B31924; border: solid 12px #000000; border-radius: 10px; box-shadow: -6.5px 2.5px 32px 0 rgba(0, 0, 0, 0.83); box-sizing: inherit; flex: 0 0 auto; max-height: 446px; max-width: 68%; min-width: 0;">
+            <div class="p-text-box" style="-ms-flex-direction: column; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-box-sizing: inherit; box-sizing: inherit; display: flex; flex-direction: column; overflow: hidden; padding: 32px 50px 20px 90px;">
+              <div class="p-t1" style="-ms-flex: 0 0 auto; -webkit-box-flex: 0; -webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; flex: 0 0 auto; font-family: Nexa; font-size: 58.3px; font-weight: 700; letter-spacing: -1px; line-height: 1; margin-bottom: 42px; min-height: 1em; min-width: 200px; text-align: left; white-space: nowrap;">
+                FREE 7 POINT GUTTER INSPECTION
+              </div>
+              <ol class="p-ul1" style="-ms-flex: 1 1 auto; -ms-grid-rows: (75px)[4]; -webkit-box-flex: 1; -webkit-box-sizing: inherit; box-sizing: inherit; display: grid; flex: 1 1 auto; grid-auto-flow: column; grid-gap: 0 160px; grid-template-rows: repeat(4, 75px); list-style-position: inside; margin: 0 0 0 0; min-height: 0; padding: 0;">
+                <li class="p-ul1-item" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 50px; font-weight: 300; letter-spacing: 0.19px; line-height: 60px; min-height: 60px; min-width: 0; overflow: hidden; white-space: nowrap;">Complete Gutter Cleaning</li>
+                <li class="p-ul1-item" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 50px; font-weight: 300; letter-spacing: 0.19px; line-height: 60px; min-height: 60px; min-width: 0; overflow: hidden; white-space: nowrap;">Downspout Flush</li>
+                <li class="p-ul1-item" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 50px; font-weight: 300; letter-spacing: 0.19px; line-height: 60px; min-height: 60px; min-width: 0; overflow: hidden; white-space: nowrap;">Debris Disposal</li>
+                <li class="p-ul1-item" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 50px; font-weight: 300; letter-spacing: 0.19px; line-height: 60px; min-height: 60px; min-width: 0; overflow: hidden; white-space: nowrap;">Rivet Assessment</li>
+                <li class="p-ul1-item" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 50px; font-weight: 300; letter-spacing: 0.19px; line-height: 60px; min-height: 60px; min-width: 0; overflow: hidden; white-space: nowrap;">Hangers & Suspension Check</li>
+                <li class="p-ul1-item" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 50px; font-weight: 300; letter-spacing: 0.19px; line-height: 60px; min-height: 60px; min-width: 0; overflow: hidden; white-space: nowrap;">System Pitch</li>
+                <li class="p-ul1-item" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 50px; font-weight: 300; letter-spacing: 0.19px; line-height: 60px; min-height: 60px; min-width: 0; overflow: hidden; white-space: nowrap;">Water Flow Test</li>
+              </ol>
+            </div>
+          </div>
+          <div class="p-right-container" style="-ms-flex: 1 1 auto; -ms-flex-pack: center; -webkit-box-flex: 1; -webkit-box-pack: center; -webkit-box-sizing: inherit; box-sizing: inherit; display: flex; flex: 1 1 auto; justify-content: center; min-width: 32%; overflow: hidden; padding: 0 40px;">
+            <div class="p-cupon" style="-webkit-box-sizing: inherit; border: dashed 13px #000000; box-sizing: inherit; min-width: 0;">  
+              <div class="p-c-text-container" style="-webkit-box-sizing: inherit; box-sizing: inherit; overflow: hidden; padding: 40px 40px 40px 40px;">
+                <div class="p-t1" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #000000; font-family: Nexa; font-size: 95px; font-weight: 700; letter-spacing: -2px; line-height: 1; margin-bottom: 60px; min-height: 1em; text-align: center; white-space: nowrap;">
+                  Gutter Cleaning 
+                </div>
+                <div class="p-t2-box" style="-webkit-box-sizing: inherit; box-sizing: inherit; display: flex; margin-bottom: 45px;">
+                  <div class="p-t2-1" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #000000; font-family: AlpineScript; font-size: 96px; font-weight: 700; letter-spacing: 0.55px; line-height: 1; margin-right: 20px; min-height: 1em; white-space: nowrap;">
+                    Starting at                  
+                  </div>
+                  <div class="p-t2-2" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #EF201F; font-family: Nexa; font-size: 109px; font-weight: 700; letter-spacing: 0.6px; line-height: 1; min-height: 1em; min-width: 200px; white-space: nowrap;">
+                    $139                  
+                  </div>   
+                </div>
+                <div class="p-t3" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #000000; font-family: Nexa; font-size: 50px; font-weight: 300; letter-spacing: 0.3px; line-height: 1; min-height: 1em; text-align: center; white-space: nowrap;">
+                  call for details
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-row2" style="-webkit-box-sizing: inherit; box-sizing: inherit;">
+          <div class="p-t2-panel" style="-webkit-box-shadow: -6.5px 2.5px 32px 0 rgba(0, 0, 0, 0.83); -webkit-box-sizing: inherit; background-color: #B31924; border: solid 10px #000000; border-radius: 10px; box-shadow: -6.5px 2.5px 32px 0 rgba(0, 0, 0, 0.83); box-sizing: inherit; display: inline-flex; max-width: 100%;">
+            <div class="p-text-box" style="-webkit-box-sizing: inherit; box-sizing: inherit; overflow: hidden; padding: 20px 40px 20px 40px;">
+              <div class="p-t1" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 62.5px; font-weight: 700; letter-spacing: 0.31px; line-height: 1; min-height: 1em; min-width: 200px; text-align: center; white-space: nowrap;">
+                CALL TODAY FOR
+              </div>
+              <div class="p-t2" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 62.5px; font-weight: 700; letter-spacing: 0.31px; line-height: 1; margin-bottom: 20px; min-height: 1em; min-width: 200px; text-align: center;">
+                A FREE ESTIMATE
+              </div>
+              <div class="p-t3" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #ffffff; font-family: Nexa; font-size: 30px; font-weight: 300; letter-spacing: -0.5px; line-height: 1; min-height: 1em; min-width: 200px; text-align: center; white-space: nowrap;">
+                ALL ESTIMATES WITHIN 48 HOURS 7 HOURS
+              </div>   
+            </div>         
+          </div>
+        </div>       
+                  
+      </div>
+
+      <div class="p-card-footer" style="-webkit-box-sizing: inherit; box-sizing: inherit; display: flex; height: 450px;">
+        <div class="p-footer-left" style="-ms-flex-align: center; -webkit-box-align: center; -webkit-box-sizing: inherit; align-items: center; box-sizing: inherit; display: flex; padding: 15px 15px 70px 130px; width: 55%;">
+          <div class="p-img1-contaner" style="-ms-flex: 0 0 auto; -webkit-box-flex: 0; -webkit-box-sizing: inherit; box-sizing: inherit; flex: 0 0 auto; width: 320px;"> 
+            <img class="p-img1" src="./img/lion3.png" alt style="-moz-user-select: none; -ms-user-select: none; -webkit-box-sizing: inherit; -webkit-user-drag: none; -webkit-user-select: none; box-sizing: inherit; height: auto; max-height: 100%; max-width: 100%; user-select: none; width: 100%;">           
+          </div>  
+          <div class="p-footer-text" style="-ms-flex: 1 1 auto; -webkit-box-flex: 1; -webkit-box-sizing: inherit; box-sizing: inherit; flex: 1 1 auto; overflow: hidden;">            
+            <div class="p-t1-box" style="-webkit-box-sizing: inherit; box-sizing: inherit; margin-bottom: 10px;">
+              <div class="p-t1-1" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #000000; font-family: Nexa, sans-serif; font-size: 79.2px; font-weight: 700; letter-spacing: -2px; line-height: 1; margin-bottom: 20px; min-height: 1em; text-align: left; white-space: nowrap;">
+                (651) 330-2810     
+              </div>
+              <div class="p-t1-2" style="-webkit-box-sizing: inherit; box-sizing: inherit; color: #000000; font-family: Nexa, sans-serif; font-size: 79.2px; font-weight: 700; letter-spacing: 0.4px; line-height: 1; margin-bottom: 20px; min-height: 1em; text-align: left; white-space: nowrap;">
+                www.LSMAIN.COM
+              </div>
+            </div>                        
+          </div>          
+        </div>
+        <div class="p-footer-right" style="-webkit-box-sizing: inherit; box-sizing: inherit;">
+        </div>   
+      </div>
+    </div>
+
+  </body>
+
+</html>

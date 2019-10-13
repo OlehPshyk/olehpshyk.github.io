@@ -2719,55 +2719,8 @@ span.flatpickr-weekday {
 }
 
 .horoscope-item-container .horoscope-icon {
+  width: 81%;
   fill: url("#svg-gradient2") #ffa0eb;
-}
-
-.horoscope-item-container .horoscope-icon.s1 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s2 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s3 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s4 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s5 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s6 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s7 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s8 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s9 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s10 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s11 {
-  width: 81%;
-}
-
-.horoscope-item-container .horoscope-icon.s12 {
-  width: 81%;
 }
 
 .horoscope-item-container .horoscope-item-title {
@@ -2901,6 +2854,51 @@ span.flatpickr-weekday {
   font-weight: 400;
   text-align: center;
   color: #a591b2;
+}
+
+.dhoroscope-section.details-horoscope .dhoroscope-section-container {
+  padding: 27px 0 30px;
+}
+
+.dhoroscope-section.details-horoscope .dhoroscope-grid {
+  position: relative;
+  padding: 0 15px;
+}
+
+.dhoroscope-section.details-horoscope .horoscope-bg {
+  background-color: #F9F9F9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.dhoroscope-section.details-horoscope .horoscope-bg-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+}
+
+.dhoroscope-section.details-horoscope .dhoroscope-title {
+  margin-bottom: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.dhoroscope-section.details-horoscope .h-item-name {
+  margin-bottom: 0;
+}
+
+.dhoroscope-section.details-horoscope .h-item-data {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #a591b2;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 576px) {
@@ -3619,5 +3617,10 @@ span.flatpickr-weekday {
   .dhoroscope-section .dhoroscope-grid {
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .dhoroscope-section.details-horoscope .horoscope-bg-img {
+    -o-object-fit: contain;
+    object-fit: contain;
   }
 }

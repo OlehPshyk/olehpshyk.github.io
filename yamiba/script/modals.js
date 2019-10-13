@@ -50,8 +50,29 @@ document.addEventListener('DOMContentLoaded', function(){
       clickOutside: true,
       closeKeys: [27],
       transitions: true,
-      onBeforeOpen: null,
-      onBeforeClose: null
+      onBeforeOpen: null,      
+      onOpen: function(){
+        console.log("open");
+        $('.js-modal-custom-scroll').niceScroll({    
+          cursorcolor: "#d10085",
+          cursoropacitymin: 0,
+          cursoropacitymax: 1,
+          cursorwidth: "20px",
+          cursorborder: "none",
+          emulatetouch: true,
+          cursorminheight: 32,
+          cursordragontouch: true,
+          background: "#ebebeb",      
+          cursorborderradius: "10px",  
+          autohidemode: "true",
+          zindex: "200"
+        });                
+      },
+      onBeforeClose: function(){
+        console.log("beforeClose");
+        $('.js-modal-custom-scroll').getNiceScroll()[0].hide();
+      },
+      onClose: null
     });
   }  
 })

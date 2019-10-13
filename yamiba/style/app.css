@@ -1679,6 +1679,10 @@ span.flatpickr-weekday {
   border: none;
 }
 
+.nicescroll-rails {
+  border-radius: 10px;
+}
+
 .csvg-checkbox {
   position: relative;
   cursor: pointer;
@@ -1776,7 +1780,7 @@ span.flatpickr-weekday {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 -22px -5px;
+  margin: 0 -22px 0;
   padding: 0;
   list-style: none;
 }
@@ -1913,6 +1917,15 @@ span.flatpickr-weekday {
 
 .premium .service-item-container:hover .service-item-text {
   color: #0aa7f5;
+}
+
+.service-title {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  color: #8600d0;
+  margin-bottom: 17px;
 }
 
 .select-section {
@@ -2746,8 +2759,102 @@ span.flatpickr-weekday {
   fill: url("#svg-gradient2-hover") #ffa0eb;
 }
 
+.dethoroscope-section {
+  background-image: url("../img/dethoroscope-bg.jpg"), linear-gradient(135deg, #ff00a2 0%, #ff77da 100%);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.dethoroscope-section-container {
+  padding: 20px 15px 30px;
+}
+
+.dethoroscope-section-container .horoscope-icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto 10px;
+  width: 61px;
+  height: 60px;
+  border-radius: 15px;
+  background-image: linear-gradient(315deg, #8600d0 7%, #33d4ff);
+}
+
+.dethoroscope-section-container .horoscope-icon {
+  width: 81%;
+  fill: url("#svg-gradient2") #ffa0eb;
+}
+
+.dethoroscope-title {
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.dethoroscope-info {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.dethoroscope-dates {
+  display: block;
+}
+
+.dethoroscope-manager {
+  display: block;
+}
+
+.dethoroscope-text-container {
+  padding: 26px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  background-color: #ffffff;
+}
+
+.dethoroscope-text-container p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  color: #776881;
+}
+
+.dethoroscope-text-container h2,
+.dethoroscope-text-container h3,
+.dethoroscope-text-container h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #8500d1;
+  margin-bottom: 0.5em;
+  word-break: break-word;
+}
+
+.dethoroscope-text-container p + h2,
+.dethoroscope-text-container p + h3,
+.dethoroscope-text-container p + h4 {
+  padding-top: 0.2em;
+}
+
 .dhoroscope-section {
-  background-color: #F6F6F6;
+  background-color: #fafafa;
 }
 
 .dhoroscope-section .dhoroscope-section-container {
@@ -2865,14 +2972,14 @@ span.flatpickr-weekday {
   padding: 0 15px;
 }
 
-.dhoroscope-section.details-horoscope .horoscope-bg {
+.dhoroscope-section.details-horoscope .dhoroscope-bg {
   background-color: #F9F9F9;
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.dhoroscope-section.details-horoscope .horoscope-bg-img {
+.dhoroscope-section.details-horoscope .dhoroscope-bg-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2899,6 +3006,112 @@ span.flatpickr-weekday {
   text-align: center;
   color: #a591b2;
   margin-bottom: 8px;
+}
+
+.herocomm-section {
+  background-color: #fafafa;
+}
+
+.herocomm-section-container {
+  padding: 5px 15px 20px;
+}
+
+.herocomm-title {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  color: #8600d0;
+  margin-bottom: 17px;
+}
+
+.herocomm-container {
+  max-height: 748px;
+  -webkit-box-shadow: 0 0 9.9px 0.1px rgba(36, 36, 36, 0.2);
+  box-shadow: 0 0 9.9px 0.1px rgba(36, 36, 36, 0.2);
+  background-color: #f5f5f5;
+}
+
+.herocomm-list {
+  padding: 20px 40px;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+  position: relative;
+}
+
+.herocomm-list:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: url("../img/comments-bg.svg");
+  opacity: 0.5;
+}
+
+.herocomm-box {
+  padding: 10px 15px 5px;
+  margin: 0 auto;
+  max-width: 850px;
+  border-radius: 0 10px 10px 10px;
+  -webkit-box-shadow: 0 0 7.8px 0.2px rgba(36, 36, 36, 0.2);
+  box-shadow: 0 0 7.8px 0.2px rgba(36, 36, 36, 0.2);
+  background-color: #ffffff;
+  position: relative;
+}
+
+.herocomm-box:after {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: -32px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/testi-appendix.png") 50% 50% no-repeat;
+}
+
+.herocomm-box:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.herocomm-rating-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.herocomm-rating-container .jq-star {
+  width: 14px;
+  height: 13px;
+}
+
+.herocomm-rating-container .jq-star:not(:last-child) {
+  margin-right: 4px;
+}
+
+.herocomm-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #776881;
+  max-width: 680px;
+  margin: 0 auto 6px;
+}
+
+.herocomm-data {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 8px;
+  color: #a591b2;
+  line-height: 1.71;
 }
 
 @media (min-width: 576px) {
@@ -2935,7 +3148,7 @@ span.flatpickr-weekday {
   }
 
   .service-grid {
-    margin: 0 -35px -5px;
+    margin: 0 -35px 0;
   }
 
   .service-item {
@@ -3256,9 +3469,49 @@ span.flatpickr-weekday {
     font-size: 16px;
   }
 
+  .dethoroscope-section-container .horoscope-icon-box {
+    width: 91px;
+    height: 91px;
+    border-radius: 30px;
+  }
+
+  .dethoroscope-title {
+    font-size: 28px;
+    margin-bottom: 9px;
+  }
+
+  .dethoroscope-text-container {
+    padding: 26px 40px;
+  }
+
   .dhoroscope-section .dhoroscope-grid {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .herocomm-container {
+    max-height: 482px;
+  }
+
+  .herocomm-box {
+    padding: 10px 15px 5px;
+  }
+
+  .herocomm-rating-container .jq-star {
+    width: 20px;
+    height: 18px;
+  }
+
+  .herocomm-rating-container .jq-star:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .herocomm-text {
+    font-size: 16px;
+  }
+
+  .herocomm-data {
+    font-size: 14px;
   }
 }
 
@@ -3619,7 +3872,7 @@ span.flatpickr-weekday {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .dhoroscope-section.details-horoscope .horoscope-bg-img {
+  .dhoroscope-section.details-horoscope .dhoroscope-bg-img {
     -o-object-fit: contain;
     object-fit: contain;
   }

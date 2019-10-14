@@ -720,6 +720,7 @@ video {
 
 .footer .soc-list .soc-list-item {
   width: 48px;
+  height: 48px;
 }
 
 .footer .ag-play-container {
@@ -3175,6 +3176,11 @@ span.flatpickr-weekday {
   text-align: center;
   color: #8600d0;
   margin-bottom: 17px;
+}
+
+.herocomm-title .herocomm-title-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .herocomm-container {

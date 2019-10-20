@@ -3842,6 +3842,170 @@ span.flatpickr-weekday {
   min-width: 0;
 }
 
+.rules-section {
+  background-color: #fafafa;
+}
+
+.rules-section-container {
+  padding: 11px 15px 19px;
+}
+
+.rules-title {
+  font-family: "Lobster", cursive;
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  color: #d10085;
+}
+
+.rules-text {
+  max-width: 750px;
+  margin: 0 auto 18px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #776881;
+}
+
+.rules-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 10px 10px;
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.rules-grid .r-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.rules-grid .r-item-container {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.rules-grid .r-img-container {
+  width: 119px;
+  height: 119px;
+  border-radius: 40px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#8500d1), to(#ff99f3));
+  background-image: linear-gradient(to top, #8500d1, #ff99f3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.rules-grid .r-img-box {
+  width: 80px;
+  height: 80px;
+}
+
+.rules-grid .r-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+}
+
+.rules-grid .r-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 7px;
+}
+
+.rules-grid .r-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #8500d1;
+  margin-bottom: 8px;
+}
+
+.rules-grid .r-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #776881;
+}
+
+.r-app-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #d10085;
+  margin-bottom: 20px;
+}
+
+.r-app-title .accent {
+  font-weight: 800;
+}
+
+.r-play-containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.r-play-containers .r-play-container {
+  width: 257px;
+  height: 75px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 7.8px 0.2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 7.8px 0.2px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fffeff), to(#ffc8f3));
+  background-image: linear-gradient(to top, #fffeff, #ffc8f3);
+}
+
+.r-play-containers .r-play-container:not(:last-child) {
+  margin: 0 0 18px 0;
+}
+
+.r-play-containers .r-play-container .play-icon {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 576px) {
   .select-item {
     -webkit-box-flex: 0;
@@ -3918,6 +4082,11 @@ span.flatpickr-weekday {
 
   .about-card {
     padding: 32px 40px;
+  }
+
+  .rules-grid {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -4387,6 +4556,23 @@ span.flatpickr-weekday {
   .support-form-container .textarea-group .label {
     padding: 15px 9px 0 0;
   }
+
+  .r-play-containers {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .r-play-containers .r-play-container:not(:last-child) {
+    margin: 0 18px 0 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -4830,6 +5016,11 @@ span.flatpickr-weekday {
 
   .answer-section-container .info-container {
     margin-bottom: 5px;
+  }
+
+  .rules-grid {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Nunito:400,600,600i,700,800&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/plugin.css"/>       
+    <link rel="stylesheet" type="text/css" href="./style/app.css"/>
+  </head>
+
+  <body class="page100vh">      
+    <header class="header">
+
+      <div class="wrapper">
+        <div class="header-container">
+          
+          <button class="hamb-btn" type="button">            
+            <!-- <img class="hamb-btn-img" src="./img/hmb.png" alt="btn"> 
+            <img class="hamb-btn-img" src="./img/hmb-close.png" alt="close">   -->           
+          </button>          
+          
+          <a href="./">
+            <div class="logo-container">            
+              <img class="logo" src="./img/logo.png" alt="logo">            
+            </div>
+          </a>
+
+          <div class="nav-container">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav-link" href="#;">Fal Çeşitleri</a></li>
+              <li class="nav-item"><a class="nav-link" href="#;">Falcılar</a></li> 
+              <li class="nav-item"><a class="nav-link" href="#;">Nasıl Kullanacağım?</a></li> 
+              <li class="nav-item"><a class="nav-link" href="#;">Günlük Burç Yorumları</a></li> 
+              <li class="nav-item"><a class="nav-link accent" href="#;">Yamiba Mistik</a></li>                       
+              <li class="nav-item"><a class="nav-link" href="#;">TR</a></li> 
+            </ul>
+            <!-- if user isn't loggined -->
+            <a class="account-btn-login" href="#modal-login" data-modalsmright-open>                 
+              <span class="account-btn-text">Giriş yap</span>
+            </a> 
+            <a class="account-btn-signup" href="#modal-signup" data-modalsmright-open>                 
+              <span class="account-btn-text">Kaydol</span>
+            </a> 
+            <!-- if user is loggined -->            
+            <!-- <span class="user-name-container">
+              <span class="user-t1">Hoşgeldin,</span>
+              <span class="user-t2">Sabrina Spellman</span>
+            </span> 
+            <a href="#">             
+              <span class="user-img-container"><img class="user-img" src="./img/man-user.png" alt="user"></span>
+            </a> -->
+          </div>  
+
+          <a href="#modal-login" data-modalsmright-open>             
+            <span class="user-xs-img-container"><img class="user-img" src="./img/man-user.png" alt="user"></span>
+          </a>
+
+        </div>
+      </div> 
+
+      <div class="xs-nav">
+        <div class="xs-nav-body">
+          <div class="xs-nav-body-container">
+            <ul class="xs-nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Fal Çeşitleri             
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Falcılar
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Nasıl Kullanacağım?
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Günlük Burç Yorumları
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link accent" href="#;">
+                  Yamiba Mistik
+                </a>
+              </li>              
+            </ul>
+            <ul class="xs-nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  yamiba.com hakkında            
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  SSS           
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Paylaş            
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Destek/İletişim           
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Kullanıcı sözleşmesi         
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  Gizlilik sözleşmesi           
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#;">
+                  TR          
+                </a>
+              </li>
+            </ul>
+
+            <div class="play-containers">
+              <div class="play-container">
+                <a href="#">
+                  <img class="play-icon" src="./img/google.svg" alt="google">
+                </a>
+              </div>
+              <div class="play-container">
+                <a href="#">
+                  <img class="play-icon" src="./img/appstore.svg" alt="appstore">
+                </a>
+              </div>
+            </div>
+
+            <ul class="xs-soc-list">
+              <li class="xs-soc-list-item">
+                <a href="#">
+                  <div class="xs-soc-list-iconbox">
+                    <img class="xs-soc-list-icon" src="./img/fb.svg" alt="fb">
+                  </div>
+                </a>
+              </li>
+              <li class="xs-soc-list-item">
+                <a href="#">
+                  <div class="xs-soc-list-iconbox">
+                    <img class="xs-soc-list-icon" src="./img/tw.svg" alt="tw">
+                  </div>
+                </a>
+              </li>
+              <li class="xs-soc-list-item">
+                <a href="#">
+                  <div class="xs-soc-list-iconbox">
+                    <img class="xs-soc-list-icon" src="./img/ins.svg" alt="ins">
+                  </div>
+                </a>
+              </li>
+              <li class="xs-soc-list-item">
+                <a href="#">
+                  <div class="xs-soc-list-iconbox">
+                    <img class="xs-soc-list-icon" src="./img/ytube.svg" alt="ytube"> 
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+          </div>          
+        </div>
+      </div>        
+    </header>
+
+
+    <main role="main" class="main">
+
+      <section class="delivered-section grow-element">       
+        <div class="wrapper">
+          <div class="delivered-section-container">
+            <div class="delivered-img-container">
+              <img class="delivered-img" src="./img/delivered-img.svg" alt="delivered">              
+            </div>            
+            <h2 class="delivered-title">Falın falcıya iletildi!</h2>
+            <div class="delivered-text">
+              <p>
+                Detaylarını girdiğin mesajın yorumcumuza gönderildi. Yorumcumuz en kısa sürede cevap verecektir. Mesajına verilen cevabı, sana göndereceğimiz maildeki link üzerinden okuyabilirsin.
+                <br/>
+                (Lütfen spam/junk/sosyal/diğer kutusunu da kontrol ediniz.)
+              </p>              
+            </div>
+            <div class="btn-container">
+              <a class="delivered-btn" href="/">FALLARINI GÖR</a>
+            </div>
+              
+            </div>                                           
+          </div>        
+        </div>                                   
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-container">
+          <div class="f-grid">
+            <ul class="f-mlink-list first">
+              <ul class="f-link-list">
+                <li><a class="f-link" href="#">Anasayfa</a></li>
+                <li><a class="f-link" href="#">Nasıl Kullanırım?</a></li>
+                <li><a class="f-link" href="#">Yorumcular</a></li>
+                <li><a class="f-link" href="#">yamiba.com hakkında</a></li>
+                <li><a class="f-link" href="#">Yamiba mistik</a></li>
+                <li><a class="f-link" href="#">Online fal baktır</a></li>                
+              </ul>
+              <ul class="f-link-list">
+                <li><a class="f-link" href="#">Online kahve falı</a></li>
+                <li><a class="f-link" href="#">Online tarot falı</a></li>
+                <li><a class="f-link" href="#">Online numeroloji</a></li>
+                <li><a class="f-link" href="#">Online katina aşk falı</a></li>
+                <li><a class="f-link" href="#">Online rüya yorumu</a></li>
+                <li><a class="f-link" href="#">Online yıldız falı</a></li>                
+              </ul>              
+            </ul>
+            <ul class="f-mlink-list second">
+              <ul class="f-link-list">
+                <li><a class="f-link" href="#">İlişki danışmanı</a></li>
+                <li><a class="f-link" href="#">Yaşam koçu</a></li>
+                <li><a class="f-link" href="#">Astroloji</a></li>
+                <li><a class="f-link" href="#">El falı</a></li>
+                <li><a class="f-link" href="#">Yüz falı</a></li>
+                <li><a class="f-link" href="#">Premium fal</a></li>                
+              </ul>
+              <ul class="f-link-list">
+                <li><a class="f-link" href="#">SSS</a></li>
+                <li><a class="f-link" href="#">Paylaş</a></li>
+                <li><a class="f-link" href="#">Destek</a></li>
+                <li><a class="f-link" href="#">İletişim</a></li>
+                <li><a class="f-link" href="#">Kullanıcı sözleşmesi</a></li>                
+                <li><a class="f-link" href="#">Gizlilik sözleşmesi</a></li>
+              </ul>
+            </ul>
+            <div class="f-spons-container">
+              <div class="f-spons-top-container">
+                <div class="f-sec-icon-container">
+                  <img class="f-sec-icon" src="./img/secure.png" alt="secure">
+                </div>                
+                <div class="f-r-spons-container">
+                  <div class="f-spons-text-container">
+                    <span class="spons-text">yamiba.com</span>
+                    <span class="spons-text">Güvenli Ödeme</span>
+                  </div>
+                  <div class="f-r-b-spons-container">
+                    <a class="f-spons-item-box" href="#"><img class="f-spons-item-icon" src="./img/visa.png" alt="visa"></a> 
+                    <a class="f-spons-item-box" href="#"><img class="f-spons-item-icon" src="./img/mastercard.png" alt="mastercard"></a>
+                  </div>
+                </div>
+              </div> 
+              <div class="f-spons-bottom-container">
+                <a class="f-spons-item-box" href="#"><img class="f-spons-item-icon" src="./img/turkcell.png" alt="turkcell"></a>  
+                <a class="f-spons-item-box" href="#"><img class="f-spons-item-icon" src="./img/turktelekom.png" alt="turktelekom"></a>  
+                <a class="f-spons-item-box" href="#"><img class="f-spons-item-icon" src="./img/vodafone.png" alt="vodafone"></a>  
+              </div>    
+            </div>            
+            <div class="f-copyright-container">
+              <span>Copyright © 2019 yamiba.com</span>
+            </div> 
+            <ul class="soc-list">
+              <li class="soc-list-item">
+                <a href="#">
+                  <img src="./img/fb.svg" alt="fb">                  
+                </a>
+              </li>
+              <li class="soc-list-item">
+                <a href="#">
+                  <img src="./img/tw.svg" alt="tw">                 
+                </a>
+              </li>
+              <li class="soc-list-item">
+                <a href="#">
+                  <img src="./img/ins.svg" alt="ins">                  
+                </a>
+              </li>
+              <li class="soc-list-item">
+                <a href="#">
+                  <img src="./img/ytube.svg" alt="ytube">                 
+                </a>
+              </li>
+            </ul>
+            <div class="ag-play-container">              
+              <a class="app-play-container" href="#">                  
+                <img class="f-play-icon" src="./img/appstore.svg" alt="appstore">                    
+              </a>
+              <a class="google-play-container" href="#">
+                <img class="f-google-play-icon" src="./img/google.svg" alt="appstore">
+              </a>                          
+            </div>
+          </div>          
+        </div>        
+      </div>        
+      <!-- <a href="#modal-login" data-modalsmright-open>test login</a>
+      <a href="#modal-signup" data-modalsmright-open>test signup</a>
+
+      <a href="#modal-invite" data-modal-open>test invite</a>
+      <a href="#modal-forget" data-modal-open>test forget</a>
+      <a href="#modal-comment" data-modal-open>test comment</a>
+
+      <a href="#modal-agree" data-modalscr-open>test agree</a> -->
+    </footer>
+
+    <div id="modal-login" style="display:none">
+      <div class="modal-container">
+        <span class="close-modal" data-modalsmright-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
+        <h2 class="modal-title">yamiba.com’a hoşgeldin!</h2>
+        <p class="modal-text">yamiba'ya üyeysen bilgilerini yazarak giriş yap veya yeni üye ol.</p>
+        <a class="facebook-btn" href="#">          
+          Facebook ile giriş yap
+        </a>
+        <span class="or-text">ya da</span>
+        <form action="" id="login-form" class="login-form" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="input-collection">                                        
+            <div class="input-group"> 
+              <input class="input-control" type="email" placeholder="E-posta adresin" value="" id="loginemail" required>
+            </div>
+            <div class="input-group"> 
+              <input class="input-control" type="password" placeholder="Şifren" value="" id="loginpassword" required>
+            </div>
+          </div>
+          <div class="forgot-container">
+            <a class="forget-p" href="#modal-forget" data-modal-open data-modalsmright-close>Şifreni mi unuttun?</a>
+          </div> 
+          <button class="modal-subm-btn" type="submit">Giriş yap</button>
+          <div class="login-form-message" id="login-form-message"></div>
+        </form>
+        <span class="sign-text"><span>Hala üye değil misin?</span> <a class="sign-link" href="#modal-signup" data-modalsmright-open>Kayıt ol!</a></span>        
+      </div>     
+    </div>
+
+    <div id="modal-signup" style="display:none"> 
+      <div class="modal-container">
+        <span class="close-modal" data-modalsmright-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
+        <h2 class="modal-title">yamiba.com’a hoşgeldin!</h2>
+        <p class="modal-text">yamiba'ya üyeysen bilgilerini yazarak giriş yap veya yeni üye ol.</p>
+        <a class="facebook-btn" href="#">          
+          Facebook ile giriş yap
+        </a>
+        <span class="or-text">ya da</span>
+        <form action="" id="signup-form" class="signup-form" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="input-collection">
+            <div class="input-group">
+              <input class="input-control" type="text" placeholder="İsim ve soyisim" value="" id="signupname" required>
+            </div>                          
+            <div class="input-group"> 
+              <input class="input-control" type="email" placeholder="E-posta" value="" id="signupemail" required>
+            </div>
+            <div class="input-group"> 
+              <input class="input-control" type="password" placeholder="Şifre" value="" id="signuppassword" required>
+            </div>
+            <div class="input-group"> 
+              <div class="select-box">
+                <select class="js-select2" name="" id="signupgender" data-placeholder="Cinsiyetin" required>
+                  <option></option>
+                  <option value="Erkek">Erkek</option>
+                  <option value="Kadın">Kadın</option>
+                  <option value="LGBTI">LGBTI</option>                                                                 
+                </select>
+              </div>
+            </div>
+            <div class="input-group">              
+              <div class="input-row-33">                
+                <div class="select-box">
+                  <select class="js-select2" name="" id="signupday" data-placeholder="Gün" required>
+                    <option></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option> 
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option> 
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option> 
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option> 
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option> 
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option> 
+                    <option value="27">27</option>
+                    <option value="28">28</option> 
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>                                                 
+                  </select>
+                </div>                 
+                <div class="select-box">
+                  <select class="js-select2" name="" id="signupmoon" data-placeholder="Ay" required>
+                    <option></option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option> 
+                    <option value="11">11</option>
+                    <option value="12">12</option>                            
+                  </select>
+                </div>                
+                <div class="select-box">
+                  <select class="js-select2" name="" id="signupyear" data-placeholder="Yıl" required>
+                    <option></option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option> 
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>                                                 
+                  </select> 
+                </div>                         
+              </div> 
+            </div>
+          </div>
+          <div class="agree-container">
+            <label class="csvg-checkbox">
+              <input class="ch2-input" type="checkbox" required id="">
+              <div class="custom-checkbox">                
+                <img class="c-check-svg" src="./img/check.svg" alt="check">
+              </div>
+              <span class="agree-label"><a class="agree-link" href="#modal-agree" data-modalscr-open data-modalsmright-close>Kullanıcı sözleşmesini</a>&nbsp;okudum ve onaylıyorum.</span>
+            </label>            
+          </div>
+          <button class="modal-subm-btn" type="submit">Kaydol</button>
+          <div class="signup-form-message" id="signup-form-message"></div>
+        </form>
+        <span class="sign-text"><span>Zaten üye misin?</span> <a class="sign-link" href="#modal-login" data-modalsmright-open>Giriş yap</a></span>        
+      </div>
+    </div>
+
+    <div id="modal-invite" style="display:none"> 
+      <div class="modal-container">
+        <span class="close-modal" data-modal-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
+        <h2 class="modal-title">Şifreni mi unuttun?</h2>
+        <p class="modal-text">Şifreni unuttuysan kayıtlı e-posta adresini yazarak yeni şifreni alabilirsin.</p>
+        <form action="" id="invite-form" class="invite-form" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="input-collection"> 
+            <div class="input-group">
+              <input class="input-control" type="text" placeholder="Kendi adını yaz" value="" id="invitename" required>
+            </div>                                     
+            <div class="input-group"> 
+              <input class="input-control" type="email" placeholder="Arkadaşının e-posta adresini yaz" value="" id="inviteemail" required>
+            </div>
+          </div>          
+          <button class="modal-subm-btn" type="submit">GÖNDER</button>
+          <div class="invite-form-message" id="invite-form-message"></div>
+        </form>                    
+      </div> 
+    </div> 
+
+    <div id="modal-forget" style="display:none"> 
+      <div class="modal-container">
+        <span class="close-modal" data-modal-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
+        <h2 class="modal-title">Şifreni mi unuttun?</h2>
+        <p class="modal-text">Şifreni unuttuysan kayıtlı e-posta adresini yazarak yeni şifreni alabilirsin.</p>
+        <form action="" id="forget-form" class="forget-form" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="input-collection">                                     
+            <div class="input-group"> 
+              <input class="input-control" type="email" placeholder="E-posta" value="" id="forgetemail" required>
+            </div>
+          </div>          
+          <button class="modal-subm-btn" type="submit">GÖNDER</button>
+          <div class="forget-form-message" id="forget-form-message"></div>
+        </form>                    
+      </div>      
+    </div>
+
+    <div id="modal-comment" style="display:none"> 
+      <div class="modal-container wide-854">
+        <span class="close-modal" data-modal-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>
+        <h2 class="modal-title">Falını değerlendir</h2>        
+        <form action="" id="comment-form" class="comment-form" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="modal-rating-container">
+            <div class="modal-rating"></div>
+          </div>
+          <div class="input-collection">                                     
+            <div class="input-group"> 
+              <textarea class="textarea-control" type="text" placeholder="İstersen yorum da yazabilirsin" value="" id="commenttext" required></textarea>
+            </div>
+          </div> 
+          <button class="modal-subm-btn" type="submit">GÖNDER</button>
+          <div class="comment-form-message" id="comment-form-message"></div>
+        </form>                    
+      </div>         
+    </div>
+
+    <div id="modal-agree" style="display:none">
+      <div class="modal-container scrolled wide-1170"> 
+        <span class="close-modal" data-modalscr-close><img class="modal-close-svg" src="./img/modal-close.svg" alt="close"></span>       
+        <h2 class="modal-title">Şifreni mi unuttun?</h2>
+        <div class="modal-sc-text-container js-modal-custom-scroll">
+          <p>
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+          </p>
+          <p>
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+          </p> 
+          <p>
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+          </p> 
+          <p>
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+          </p> 
+        </div>                        
+      </div>        
+    </div> 
+
+    <div class="modal">
+      <div class="modal-inner">        
+        <div class="modal-content"></div>
+      </div>
+    </div>
+
+    <div class="modalsmright">
+      <div class="modalsmright-inner">        
+        <div class="modalsmright-content"></div>
+      </div>
+    </div>    
+
+    <div class="modalscr">
+      <div class="modalscr-inner">        
+        <div class="modalscr-content"></div>
+      </div>
+    </div>    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="./script/plugin.js"></script>
+    <script src="./script/modals.js"></script>
+    <script src="./script/app.js"></script>
+
+  </body>
+
+</html>

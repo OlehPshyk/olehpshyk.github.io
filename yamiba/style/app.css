@@ -200,7 +200,8 @@ button {
 .account-btn-login,
 .account-btn-signup,
 .invite-btn,
-.support-submit-btn {
+.support-submit-btn,
+.delivered-btn {
   outline: 0;
   outline-offset: 0;
   cursor: pointer;
@@ -221,16 +222,19 @@ button {
 .account-btn-signup :active,
 .invite-btn :active,
 .support-submit-btn :active,
+.delivered-btn :active,
 .button :hover,
 .account-btn-login :hover,
 .account-btn-signup :hover,
 .invite-btn :hover,
 .support-submit-btn :hover,
+.delivered-btn :hover,
 .button :focus,
 .account-btn-login :focus,
 .account-btn-signup :focus,
 .invite-btn :focus,
-.support-submit-btn :focus {
+.support-submit-btn :focus,
+.delivered-btn :focus {
   outline: 0;
   outline-offset: 0;
 }
@@ -366,6 +370,30 @@ button {
 .support-submit-btn:hover,
 .support-submit-btn:focus,
 .support-submit-btn:active {
+  color: #ffffff;
+  background-color: #a9006c;
+}
+
+.delivered-btn {
+  border: none;
+  max-width: 100%;
+  width: 420px;
+  min-height: 60px;
+  border-radius: 10px;
+  background-color: #d10085;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.6s ease, color 0.6s ease;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.delivered-btn:hover,
+.delivered-btn:focus,
+.delivered-btn:active {
   color: #ffffff;
   background-color: #a9006c;
 }
@@ -3722,7 +3750,7 @@ span.flatpickr-weekday {
   font-weight: 400;
   text-align: center;
   color: #d10085;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .about-text {
@@ -3731,8 +3759,87 @@ span.flatpickr-weekday {
   font-weight: 600;
   text-align: justify;
   color: #776881;
-  max-width: 620px;
+  max-width: 600px;
   margin: 0 auto;
+}
+
+.delivered-section {
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.delivered-section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+}
+
+.delivered-section-container {
+  padding: 65px 15px 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-width: 0;
+}
+
+.delivered-img-container {
+  width: 132px;
+  height: 132px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-bottom: 12px;
+}
+
+.delivered-img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.delivered-title {
+  font-family: "Lobster", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #8500d1;
+  margin-bottom: 8px;
+}
+
+.delivered-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #776881;
+  max-width: 720px;
+  margin-bottom: 15px;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 0;
 }
 
 @media (min-width: 576px) {

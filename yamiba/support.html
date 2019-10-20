@@ -180,60 +180,48 @@
 
 
     <main role="main" class="main">
+      
+      
 
-      <section class="answer-section"> 
-        <div class="wrapper"> 
-          <div class="answer-section-container">
-            <h2 class="answer-title">Kahve falın cevaplandı</h2>
-
-            <div class="heroinfo3-card">
-              <div class="img-container">
-                <div class="img-ratiobox">
-                  <img class="hero-img" src="./img/testhero.jpg" alt="hero">
+      <section class="support-section">
+        <div class="wrapper">
+          <div class="support-section-container">
+            <h2 class="support-title">
+              İletişim/Destek
+            </h2>   
+            <div class="support-text">
+              <p>
+                Falınızın size ulaşmadığını düşünüyorsanız öncelikle sisteme eklediğiniz e-posta hesabınızda junk/gereksiz/spam bölümünü kontrol ediniz. Eğer falınız orada da yoksa bizimle iletişime geçiniz :)
+              </p>
+            </div>  
+            <form class="support-form" id="support-form" action="" method="POST" enctype="application/x-www-form-urlencoded">
+              <div class="support-form-container">
+                <div class="input-group">
+                  <label class="label" for="supportname">*Ad soyad</label>
+                  <div class="input-box">
+                    <input class="input" type="text" name="" id="supportname" placeholder="Adınızı soyadınızı yazınız">
+                  </div>                  
                 </div>
-              </div>              
-              <div class="first-container">
-                <ul class="info-list">
-                  <li class="info-item"><span class="item-label">Sipariş numarası:</span> 91654117</li>
-                  <li class="info-item"><span class="item-label">Seçilen falcı:</span> Sabrina Spellman</li>
-                  <li class="info-item"><span class="item-label">Fal türü:</span> Kahve falı</li>
-                  <li class="info-item"><span class="item-label">Sipariş tarihi:</span> 14.05.2020 15:20</li>
-                  <li class="info-item"><span class="item-label">Ad soyad:</span> Sabrina Spellman</li>
-                  <li class="info-item"><span class="item-label">E-posta:</span> sabrinaspellman@gmail.com</li>
-                </ul>              
+                <div class="input-group">
+                  <label class="label" for="supportemail">*E-posta</label>
+                  <div class="input-box">
+                    <input class="input" type="email" name="" id="supportemail" placeholder="E-posta adresinizi yazınız">
+                  </div>
+                </div>              
+                <div class="textarea-group">
+                  <label class="label" for="support-textarea">Mesajınız</label>
+                  <div class="textarea-box">
+                    <textarea class="textarea" name="" id="supporttextarea" placeholder="Mesajınızı yazınız"></textarea>
+                  </div>
+                </div> 
+                <div class="btn-container">
+                  <button type="submit" class="support-submit-btn">GÖNDER</button>
+                </div> 
+                <div class="support-form-message" id="support-form-message"></div>
               </div>
-              <div class="second-container">
-                <ul class="info-list">
-                  <li class="info-item"><span class="item-label">Doğum tarihi:</span> 17.07.1990</li>
-                  <li class="info-item"><span class="item-label">Cevaplanma tarihi:</span> 17.07.2020 15:25</li>
-                  <li class="info-item"><span class="item-label">Soru:</span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore verittis et quasi architecto beata.</li>
-                </ul> 
-              </div>
-            </div>
-            <div class="card-text">
-              <div class="card-text-internal">
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                </p>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                </p>
-              </div>
-            </div>
-
-            <h2 class="answercomment-title">Falını değerlendir</h2>
-            <form class="answercomment-form" id="answercomment-form" action="" method="POST" enctype="application/x-www-form-urlencoded">
-              <div class="answercomment-rating-container">
-                <div class="answercomment-rating" id="answercomment-rating" data-rating="5"></div>
-              </div>
-              <div class="textarea-group">
-                <textarea class="answercomment-text" name="" id="answercomment-textarea" placeholder="İstersen yorum da yazabilirsin"></textarea>
-              </div>              
-              <button type="submit" class="answercomment-submit-btn">FALINI DEĞERLENDİR</button>
-              <div class="answercomment-form-message" id="answercomment-form-message"></div>
-            </form>
-          </div>          
-        </div>                                  
+            </form>                                    
+          </div>        
+        </div>                                   
       </section>
 
     </main>

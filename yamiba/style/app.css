@@ -59,6 +59,7 @@ img {
   -webkit-user-drag: none;
 }
 
+input::-webkit-input-placeholder,
 input[type='text']::-webkit-input-placeholder,
 input[type='email']::-webkit-input-placeholder,
 input[type='tel']::-webkit-input-placeholder,
@@ -69,6 +70,7 @@ textarea::-webkit-input-placeholder {
   color: #c0a9d0;
 }
 
+input::-moz-placeholder,
 input[type='text']::-moz-placeholder,
 input[type='email']::-moz-placeholder,
 input[type='tel']::-moz-placeholder,
@@ -79,6 +81,7 @@ textarea::-moz-placeholder {
   color: #c0a9d0;
 }
 
+input:-ms-input-placeholder,
 input[type='text']:-ms-input-placeholder,
 input[type='email']:-ms-input-placeholder,
 input[type='tel']:-ms-input-placeholder,
@@ -89,6 +92,7 @@ textarea:-ms-input-placeholder {
   color: #c0a9d0;
 }
 
+input:-moz-placeholder,
 input[type='text']:-moz-placeholder,
 input[type='email']:-moz-placeholder,
 input[type='tel']:-moz-placeholder,
@@ -195,7 +199,8 @@ button {
 .button,
 .account-btn-login,
 .account-btn-signup,
-.invite-btn {
+.invite-btn,
+.support-submit-btn {
   outline: 0;
   outline-offset: 0;
   cursor: pointer;
@@ -215,14 +220,17 @@ button {
 .account-btn-login :active,
 .account-btn-signup :active,
 .invite-btn :active,
+.support-submit-btn :active,
 .button :hover,
 .account-btn-login :hover,
 .account-btn-signup :hover,
 .invite-btn :hover,
+.support-submit-btn :hover,
 .button :focus,
 .account-btn-login :focus,
 .account-btn-signup :focus,
-.invite-btn :focus {
+.invite-btn :focus,
+.support-submit-btn :focus {
   outline: 0;
   outline-offset: 0;
 }
@@ -335,6 +343,29 @@ button {
 .answercomment-submit-btn:hover,
 .answercomment-submit-btn:focus,
 .answercomment-submit-btn:active {
+  color: #ffffff;
+  background-color: #a9006c;
+}
+
+.support-submit-btn {
+  border: none;
+  width: 100%;
+  min-height: 60px;
+  border-radius: 10px;
+  background-color: #d10085;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.6s ease, color 0.6s ease;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.support-submit-btn:hover,
+.support-submit-btn:focus,
+.support-submit-btn:active {
   color: #ffffff;
   background-color: #a9006c;
 }
@@ -3358,6 +3389,10 @@ span.flatpickr-weekday {
   width: 37px;
 }
 
+.answer-section-container .textarea-group {
+  margin-bottom: 10px;
+}
+
 .answer-section-container .answercomment-text {
   width: 100%;
   min-height: 160px;
@@ -3365,7 +3400,6 @@ span.flatpickr-weekday {
   border: solid 1px #c1a6d2;
   background-color: #ffffff;
   padding: 20px;
-  margin-bottom: 10px;
   outline: 0;
   outline-offset: 0;
   font-family: "Nunito", sans-serif;
@@ -3515,6 +3549,94 @@ span.flatpickr-weekday {
   line-height: 1.71;
 }
 
+.support-section {
+  background-color: #fafafa;
+}
+
+.support-section-container {
+  padding: 11px 15px 19px;
+}
+
+.support-title {
+  font-family: "Lobster", cursive;
+  font-size: 36px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  text-align: center;
+  color: #d10085;
+}
+
+.support-text {
+  max-width: 750px;
+  margin: 0 auto 15px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #776881;
+}
+
+.support-form-container .label {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 8px 0;
+  color: #776881;
+}
+
+.support-form-container .input {
+  outline: 0;
+  outline-offset: 0;
+  height: 50px;
+  border-radius: 10px;
+  border: solid 1px #c1a6d2;
+  padding: 5px 20px;
+  width: 100%;
+}
+
+.support-form-container .input :active,
+.support-form-container .input :hover,
+.support-form-container .input :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.support-form-container .textarea {
+  outline: 0;
+  outline-offset: 0;
+  width: 100%;
+  min-height: 170px;
+  border-radius: 10px;
+  border: solid 1px #c1a6d2;
+  padding: 18px 20px;
+}
+
+.support-form-container .textarea :active,
+.support-form-container .textarea :hover,
+.support-form-container .textarea :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.support-form-container .input-group:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.support-form-container .textarea-group {
+  margin-bottom: 15px;
+}
+
+.support-form-container .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 @media (min-width: 576px) {
   .select-item {
     -webkit-box-flex: 0;
@@ -3595,6 +3717,11 @@ span.flatpickr-weekday {
     min-height: 68px;
     border-radius: 10px;
     font-size: 36px;
+  }
+
+  .support-submit-btn {
+    width: 420px;
+    max-width: 100%;
   }
 
   .footer .f-mlink-list.first {
@@ -4010,6 +4137,46 @@ span.flatpickr-weekday {
 
   .herocomm-data {
     font-size: 14px;
+  }
+
+  .support-form-container .label {
+    text-align: right;
+    padding: 0 9px 0 0;
+    margin: 0;
+  }
+
+  .support-form-container .input-box {
+    width: 420px;
+    max-width: 100%;
+  }
+
+  .support-form-container .textarea-box {
+    width: 420px;
+    max-width: 100%;
+  }
+
+  .support-form-container .input-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .support-form-container .textarea-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .support-form-container .textarea-group .label {
+    padding: 15px 9px 0 0;
   }
 }
 
@@ -4454,5 +4621,11 @@ span.flatpickr-weekday {
 
   .answer-section-container .info-container {
     margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .support-form-container .label {
+    display: block;
   }
 }

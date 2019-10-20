@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./modules/handle-hamb */ \"./src/js/modules/handle-hamb.js\");\n\n__webpack_require__(/*! ./modules/handle-mslider */ \"./src/js/modules/handle-mslider.js\");\n\n__webpack_require__(/*! ./modules/handle-testilider */ \"./src/js/modules/handle-testilider.js\");\n\n__webpack_require__(/*! ./modules/handle-datepicker.js */ \"./src/js/modules/handle-datepicker.js\");\n\n__webpack_require__(/*! ./modules/handle-rating */ \"./src/js/modules/handle-rating.js\");\n\n__webpack_require__(/*! ./modules/handle-selects */ \"./src/js/modules/handle-selects.js\");\n\n__webpack_require__(/*! ./modules/handle-custom-scroll */ \"./src/js/modules/handle-custom-scroll.js\");\n\n__webpack_require__(/*! ./modules/handle-answercomment-form */ \"./src/js/modules/handle-answercomment-form.js\");\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("\n\n__webpack_require__(/*! ./modules/handle-hamb */ \"./src/js/modules/handle-hamb.js\");\n\n__webpack_require__(/*! ./modules/handle-mslider */ \"./src/js/modules/handle-mslider.js\");\n\n__webpack_require__(/*! ./modules/handle-testilider */ \"./src/js/modules/handle-testilider.js\");\n\n__webpack_require__(/*! ./modules/handle-datepicker.js */ \"./src/js/modules/handle-datepicker.js\");\n\n__webpack_require__(/*! ./modules/handle-rating */ \"./src/js/modules/handle-rating.js\");\n\n__webpack_require__(/*! ./modules/handle-selects */ \"./src/js/modules/handle-selects.js\");\n\n__webpack_require__(/*! ./modules/handle-custom-scroll */ \"./src/js/modules/handle-custom-scroll.js\");\n\n__webpack_require__(/*! ./modules/handle-answercomment-form */ \"./src/js/modules/handle-answercomment-form.js\");\n\n__webpack_require__(/*! ./modules/handle-support-form */ \"./src/js/modules/handle-support-form.js\");\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
@@ -179,6 +179,18 @@ eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n\n  // $(
 
 "use strict";
 eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  $('.js-select2').select2({\n    minimumResultsForSearch: Infinity,\n    // dropdownAutoWidth : true,\n    width: '100%'\n  });\n});\n\n//# sourceURL=webpack:///./src/js/modules/handle-selects.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/handle-support-form.js":
+/*!***********************************************!*\
+  !*** ./src/js/modules/handle-support-form.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var supportForm = document.getElementById(\"support-form\"),\n      supportFormMessage = document.getElementById(\"support-form-message\");\n  supportForm && supportForm.addEventListener(\"submit\", checkSupportForm);\n  function checkSupportForm(e) {\n    e.preventDefault();\n    submitSupportForm(e);\n    return false;\n  }\n  function submitSupportForm(e) {\n    var supportname = encodeURIComponent(document.getElementById('supportname').value);\n    var supportemail = encodeURIComponent(document.getElementById('supportemail').value);\n    var supporttextarea = encodeURIComponent(document.getElementById('supporttextarea').value);\n\n    var supportparameters = 'supportname=' + supportname + '&supportemail=' + supportemail + '&supporttextarea=' + supporttextarea;\n    var xhr = new XMLHttpRequest();\n    // xhr.onreadystatechange = function (e) {\n    //   if (xhr.readyState === 4 && xhr.status === 200) {\n    //     supportForm.innerHTML = xhr.responseText;\n    //   }\n    // }\n    xhr.open(supportForm.method, supportForm.action);\n    xhr.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\n    // console.log(supportparameters);\n    xhr.send(supportparameters);\n  }\n});\n\n//# sourceURL=webpack:///./src/js/modules/handle-support-form.js?");
 
 /***/ }),
 

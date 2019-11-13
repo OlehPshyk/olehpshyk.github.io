@@ -94,7 +94,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./modules/handle-hamb */ \"./src/js/modules/handle-hamb.js\");\n\n__webpack_require__(/*! ./modules/handle-mslider */ \"./src/js/modules/handle-mslider.js\");\n\n__webpack_require__(/*! ./modules/handle-testilider */ \"./src/js/modules/handle-testilider.js\");\n\n__webpack_require__(/*! ./modules/handle-datepicker.js */ \"./src/js/modules/handle-datepicker.js\");\n\n__webpack_require__(/*! ./modules/handle-rating */ \"./src/js/modules/handle-rating.js\");\n\n__webpack_require__(/*! ./modules/handle-selects */ \"./src/js/modules/handle-selects.js\");\n\n__webpack_require__(/*! ./modules/handle-custom-scroll */ \"./src/js/modules/handle-custom-scroll.js\");\n\n__webpack_require__(/*! ./modules/handle-answercomment-form */ \"./src/js/modules/handle-answercomment-form.js\");\n\n__webpack_require__(/*! ./modules/handle-support-form */ \"./src/js/modules/handle-support-form.js\");\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("\n\n__webpack_require__(/*! ./modules/handle-hamb */ \"./src/js/modules/handle-hamb.js\");\n\n__webpack_require__(/*! ./modules/handle-mslider */ \"./src/js/modules/handle-mslider.js\");\n\n__webpack_require__(/*! ./modules/handle-testilider */ \"./src/js/modules/handle-testilider.js\");\n\n__webpack_require__(/*! ./modules/handle-datepicker.js */ \"./src/js/modules/handle-datepicker.js\");\n\n__webpack_require__(/*! ./modules/handle-rating */ \"./src/js/modules/handle-rating.js\");\n\n__webpack_require__(/*! ./modules/handle-selects */ \"./src/js/modules/handle-selects.js\");\n\n__webpack_require__(/*! ./modules/handle-account-list */ \"./src/js/modules/handle-account-list.js\");\n\n__webpack_require__(/*! ./modules/handle-custom-scroll */ \"./src/js/modules/handle-custom-scroll.js\");\n\n__webpack_require__(/*! ./modules/handle-answercomment-form */ \"./src/js/modules/handle-answercomment-form.js\");\n\n__webpack_require__(/*! ./modules/handle-support-form */ \"./src/js/modules/handle-support-form.js\");\n\n__webpack_require__(/*! ./modules/handle-profil-form */ \"./src/js/modules/handle-profil-form.js\");\n\n//# sourceURL=webpack:///./src/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/handle-account-list.js":
+/*!***********************************************!*\
+  !*** ./src/js/modules/handle-account-list.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n\n  var accountList = new List('account-list1', {\n    page: 10,\n    pagination: {\n      name: \"account-pagination\",\n      paginationClass: \"account-pagination\",\n      innerWindow: 1,\n      outerWindow: 1\n      // left: 1,\n      // right: 1,\n    }\n  });\n\n  var accountList = new List('account-list2', {\n    page: 10,\n    pagination: {\n      name: \"account-pagination\",\n      paginationClass: \"account-pagination\",\n      innerWindow: 1,\n      outerWindow: 1\n      // left: 1,\n      // right: 1,\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/modules/handle-account-list.js?");
 
 /***/ }),
 
@@ -130,7 +142,7 @@ eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  $('.js-
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var today = new Date();\n  var dd = String(today.getDate()).padStart(2, '0');\n  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!\n  var yyyy = today.getFullYear();\n\n  today = dd + '.' + mm + '.' + yyyy;\n\n  $('.js-dhoroscope-data').text(today);\n\n  flatpickr(\".flatpickr\", {\n    \"locale\": \"tr\", // locale for this instance only\n    wrap: true,\n    dateFormat: \"d.m.Y\",\n    //defaultDate=\"\",\n    onChange: function onChange(selectedDates, dateStr, instance) {\n      // console.log(dateStr);\n      $('.js-dhoroscope-data').text(dateStr);\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/modules/handle-datepicker.js?");
+eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var today = new Date();\n  var dd = String(today.getDate()).padStart(2, '0');\n  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!\n  var yyyy = today.getFullYear();\n\n  today = dd + '.' + mm + '.' + yyyy;\n\n  $('.js-dhoroscope-data').text(today);\n\n  flatpickr(\".flatpickr\", {\n    \"locale\": \"tr\", // locale for this instance only\n    wrap: true,\n    disableMobile: \"true\",\n    dateFormat: \"d.m.Y\",\n    //defaultDate=\"\",\n    onChange: function onChange(selectedDates, dateStr, instance) {\n      // console.log(dateStr);\n      $('.js-dhoroscope-data').text(dateStr);\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/modules/handle-datepicker.js?");
 
 /***/ }),
 
@@ -155,6 +167,18 @@ eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var ham
 
 "use strict";
 eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  $('.mslider').slick({\n    arrows: false,\n    autoplay: true,\n    autoplaySpeed: 3000,\n    infinite: true,\n    slidesToShow: 1,\n    slidesToScroll: 1,\n    //fade: true, \n    dots: false,\n    mobileFirst: true,\n    responsive: [{\n      breakpoint: 767,\n      settings: {\n        dots: true\n      }\n    }]\n  });\n});\n\n//# sourceURL=webpack:///./src/js/modules/handle-mslider.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/handle-profil-form.js":
+/*!**********************************************!*\
+  !*** ./src/js/modules/handle-profil-form.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var profilForm = document.getElementById(\"profil-form\"),\n      profilFormMessage = document.getElementById(\"profil-form-message\");\n\n  profilForm && profilForm.addEventListener(\"submit\", checkProfilForm);\n\n  function checkProfilForm(e) {\n    e.preventDefault();\n    checkingProfilForm() ? goodProfilForm(e) : badProfilForm(e);\n    return false;\n  }\n  function checkingProfilForm() {\n    return true;\n  }\n  function goodProfilForm(e) {\n    submitProfilForm(e);\n  }\n  function badProfilForm(e) {}\n  function submitProfilForm(e) {\n    var profilname = encodeURIComponent(document.getElementById('profilname').value);\n    var profilemail = encodeURIComponent(document.getElementById('profilemail').value);\n    var profilpassword = encodeURIComponent(document.getElementById('profilpassword').value);\n    var profilgender = encodeURIComponent(document.getElementById('profilgender').value);\n    var profildurumunu = encodeURIComponent(document.getElementById('profildurumunu').value);\n\n    var profilplaceborn = encodeURIComponent(document.getElementById('profilplaceborn').value);\n    var profilday = encodeURIComponent(document.getElementById('profilday').value);\n    var profilmoon = encodeURIComponent(document.getElementById('profilmoon').value);\n    var profilyear = encodeURIComponent(document.getElementById('profilyear').value);\n    var profilnumber1 = encodeURIComponent(document.getElementById('profilnumber1').value);\n    var profilnumber2 = encodeURIComponent(document.getElementById('profilnumber2').value);\n\n    var profilparameters = \"profilname=\" + profilname + \"&profilemail=\" + profilemail + \"&profilpassword=\" + profilpassword + \"&profilgender=\" + profilgender + \"&profildurumunu=\" + profildurumunu + \"&profilplaceborn=\" + profilplaceborn + \"&profilday=\" + profilday + \"&profilmoon=\" + profilmoon + \"&profilyear=\" + profilyear + \"&profilnumber1=\" + profilnumber1 + \"&profilnumber2=\" + profilnumber2;\n\n    var xhr = new XMLHttpRequest();\n    // xhr.onreadystatechange = function (e) {\n    //   if (xhr.readyState === 4 && xhr.status === 200) {\n    //     profilForm.innerHTML = xhr.responseText;\n    //   }\n    // }\n    xhr.open(profilForm.method, profilForm.action);\n    xhr.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\n    // console.log(profilparameters);\n    xhr.send(profilparameters);\n  }\n});\n\n//# sourceURL=webpack:///./src/js/modules/handle-profil-form.js?");
 
 /***/ }),
 

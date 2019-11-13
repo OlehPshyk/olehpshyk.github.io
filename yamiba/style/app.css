@@ -1774,13 +1774,17 @@ body.modalscr-visible {
 }
 
 .flatpickr .flatpickr-input {
-  width: 100%;
-  height: 100%;
-  border: none;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  width: 38px;
+  height: 38px;
   opacity: 0;
+}
+
+.flatpickr .input-button {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 0;
+  left: 0;
 }
 
 .flatpickr-day.today {
@@ -1809,6 +1813,40 @@ span.flatpickr-weekday {
 
 .nicescroll-rails {
   border-radius: 10px;
+}
+
+.account-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 16px 15px 17px;
+}
+
+.account-pagination li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.account-pagination li.disabled {
+  padding: 5px 18px;
+}
+
+.account-pagination li .page {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  color: #776881;
+}
+
+.account-pagination li.active .page {
+  font-weight: 800;
+  color: #d10085;
 }
 
 .csvg-checkbox {
@@ -3892,7 +3930,7 @@ span.flatpickr-weekday {
 }
 
 .rules-grid .r-item-container {
-  max-width: 350px;
+  max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4006,6 +4044,552 @@ span.flatpickr-weekday {
   height: 100%;
 }
 
+.account-section {
+  background-color: #fafafa;
+}
+
+.account-section .account-section-container {
+  padding: 14px 15px 21px;
+}
+
+.account-section .account-title {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  color: #d10085;
+}
+
+.account-section .account-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #776881;
+  margin-bottom: 12px;
+}
+
+.account-list {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  background-color: #fff;
+  padding: 35px 15px 0;
+}
+
+.account-list-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.account-list-container li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.account-item1 {
+  padding: 15px 16px 15px 16px;
+  -webkit-box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.account-item1 .account-item-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px 0;
+}
+
+.account-item1 .p-cols {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px 0;
+}
+
+.account-item1 .p-cols .p-title {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #776881;
+  margin-bottom: 7px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.account-item1 .p-cols .p-value {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #776881;
+}
+
+.account-item1 .p-action {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.account-item1 .p-action .com1-container {
+  width: 40px;
+  height: 50px;
+  margin-right: 10px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.account-item1 .p-action .com1-btn {
+  outline: 0;
+  outline-offset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 10px;
+  border: solid 2px #8500d1;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.account-item1 .p-action .com1-btn :active,
+.account-item1 .p-action .com1-btn :hover,
+.account-item1 .p-action .com1-btn :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.account-item1 .p-action .com1-btn:hover {
+  background-color: #8500d1;
+}
+
+.account-item1 .p-action .com1-btn:hover svg {
+  fill: #ffffff;
+}
+
+.account-item1 .p-action .com2-btn {
+  outline: 0;
+  outline-offset: 0;
+  border: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 50px;
+  padding: 0;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #bcbcbc;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.account-item1 .p-action .com2-btn :active,
+.account-item1 .p-action .com2-btn :hover,
+.account-item1 .p-action .com2-btn :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.account-item1 .p-action .com2-btn.active {
+  background-color: #4ad100;
+}
+
+.account-item1 .p-action .com2-btn.active:hover {
+  background-color: #5aff00;
+}
+
+.account-item1 .p-action .com3-container {
+  width: 40px;
+  height: 50px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.account-item1 .p-action .com3-btn {
+  outline: 0;
+  outline-offset: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.account-item1 .p-action .com3-btn :active,
+.account-item1 .p-action .com3-btn :hover,
+.account-item1 .p-action .com3-btn :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.account-item1 .p-action .com3-btn:hover svg {
+  fill: #919191;
+}
+
+.account-item2 {
+  padding: 15px 16px 15px 16px;
+  -webkit-box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.account-item2 .account-item-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px 0;
+}
+
+.account-item2 .p-cols {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -ms-grid-row-align: center;
+  align-self: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px 0;
+}
+
+.account-item2 .p-cols .p-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #776881;
+}
+
+.account-item2 .p-cols .p-value {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #776881;
+}
+
+.account-item2 .p-action {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.account-item2 .p-action .com2-btn {
+  outline: 0;
+  outline-offset: 0;
+  border: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 50px;
+  padding: 0;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #bcbcbc;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.account-item2 .p-action .com2-btn :active,
+.account-item2 .p-action .com2-btn :hover,
+.account-item2 .p-action .com2-btn :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.account-item2 .p-action .com2-btn.active {
+  background-color: #00b1e4;
+}
+
+.account-item2 .p-action .com2-btn.active:hover {
+  background-color: #00b1e4;
+}
+
+.account-item2 .p-action .com3-container {
+  width: 40px;
+  height: 50px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.account-item2 .p-action .com3-btn {
+  outline: 0;
+  outline-offset: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.account-item2 .p-action .com3-btn :active,
+.account-item2 .p-action .com3-btn :hover,
+.account-item2 .p-action .com3-btn :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.account-item2 .p-action .com3-btn:hover svg {
+  fill: #919191;
+}
+
+.profil-section {
+  background-color: #fafafa;
+}
+
+.profil-section .profil-section-container {
+  padding: 14px 15px 21px;
+}
+
+.profil-section .profil-title {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  color: #d10085;
+}
+
+.profil-section .profil-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #776881;
+  margin-bottom: 12px;
+}
+
+.profil-panel {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  background-color: #fff;
+  padding: 35px 15px 20px;
+}
+
+.profil-panel:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.profil-panel .panel-top {
+  margin-bottom: 10px;
+}
+
+.profil-panel .panel-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.29;
+  color: #d10085;
+}
+
+.profil-panel .panel-toptext {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #776881;
+}
+
+.profil-panel .panel-top-url {
+  font-weight: 800;
+  color: #d10085;
+  text-decoration: underline;
+}
+
+.exit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.exit-container .exit-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #776881;
+  margin-right: 10px;
+}
+
+.exit-container .exit-btn {
+  outline: 0;
+  outline-offset: 0;
+  border: none;
+  min-width: 204px;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #d10000;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.exit-container .exit-btn :active,
+.exit-container .exit-btn :hover,
+.exit-container .exit-btn :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.profil-form .profile-form-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 40px 0;
+  margin-bottom: 10px;
+}
+
+.profil-form .input-group:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.profil-form .input-group .input-row-33 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 9px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.profil-form .input-control {
+  outline: 0;
+  outline-offset: 0;
+  width: 100%;
+  height: 50px;
+  padding: 8px 12px;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9b9b9b;
+  border-radius: 5px;
+  border: solid 1px #c1a6d2;
+  background-color: #ffffff;
+}
+
+.profil-form .input-control :active,
+.profil-form .input-control :hover,
+.profil-form .input-control :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.profil-form .profil-form-text {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #c0a9d0;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profil-form .profil-form-text .accent {
+  color: #4ad100;
+}
+
+.profil-form .profil-subm-btn {
+  outline: 0;
+  outline-offset: 0;
+  border: none;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #d10085;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profil-form .profil-subm-btn :active,
+.profil-form .profil-subm-btn :hover,
+.profil-form .profil-subm-btn :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 @media (min-width: 576px) {
   .select-item {
     -webkit-box-flex: 0;
@@ -4087,6 +4671,32 @@ span.flatpickr-weekday {
   .rules-grid {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .account-item1 .p-action .com1-container {
+    width: 70px;
+  }
+
+  .account-item1 .p-action .com2-btn {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    min-width: 175px;
+  }
+
+  .account-item1 .p-action .com3-container {
+    width: 65px;
+  }
+
+  .account-item2 .p-action .com2-btn {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    min-width: 175px;
+  }
+
+  .account-item2 .p-action .com3-container {
+    width: 65px;
   }
 }
 
@@ -4573,6 +5183,67 @@ span.flatpickr-weekday {
   .r-play-containers .r-play-container:not(:last-child) {
     margin: 0 18px 0 0;
   }
+
+  .account-section .account-title {
+    font-size: 36px;
+  }
+
+  .account-section .account-text {
+    font-size: 18px;
+  }
+
+  .account-list {
+    padding: 35px 35px 0;
+  }
+
+  .account-item1 .p-cols {
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+
+  .account-item2 .p-cols {
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+
+  .profil-section .profil-title {
+    font-size: 36px;
+  }
+
+  .profil-section .profil-text {
+    font-size: 18px;
+  }
+
+  .profil-panel {
+    padding: 35px 35px 20px;
+  }
+
+  .profil-panel .panel-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .exit-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -5022,10 +5693,62 @@ span.flatpickr-weekday {
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .account-item1 {
+    padding: 15px 0 15px 16px;
+  }
+
+  .account-item1 .account-item-grid {
+    -ms-grid-columns: 1fr auto;
+    grid-template-columns: 1fr auto;
+    grid-gap: 0 60px;
+  }
+
+  .account-item1 .p-cols {
+    -ms-grid-columns: 22% 26% 30% 22%;
+    grid-template-columns: 22% 26% 30% 22%;
+  }
+
+  .account-item2 {
+    padding: 15px 0 15px 16px;
+  }
+
+  .account-item2 .account-item-grid {
+    -ms-grid-columns: 1fr auto;
+    grid-template-columns: 1fr auto;
+    grid-gap: 0 10px;
+  }
+
+  .account-item2 .p-cols {
+    -ms-grid-columns: 37% 36% 27%;
+    grid-template-columns: 37% 36% 27%;
+  }
+
+  .profil-form .profile-form-grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 40px;
+  }
+
+  .profil-form .input-group:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .profil-form .input-control {
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .support-form-container .label {
     display: block;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .flatpickr {
+    margin-left: -10px;
   }
 }

@@ -29,6 +29,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-size: 16px;
   font-family: "Nunito", sans-serif;
   color: rgba(0, 0, 0, 0.95);
@@ -5992,7 +5993,7 @@ span.flatpickr-weekday {
 }
 
 .record-tab-container .record-tab-panes {
-  padding: 24px 0 0;
+  padding: 24px 15px 0;
   background-color: #ffffff;
 }
 
@@ -6201,20 +6202,7 @@ span.flatpickr-weekday {
   box-shadow: 0 0 5.8px 2px rgba(0, 211, 232, 0.6);
 }
 
-.record-form .invalid-message-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .record-form .invalid-message-container .invalid-message {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 68%;
-  flex: 0 0 68%;
-  margin-left: auto;
   display: inline-block;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
@@ -6666,6 +6654,95 @@ span.flatpickr-weekday {
   font-weight: 700;
 }
 
+.question-section {
+  background-color: #fafafa;
+}
+
+.question-section .question-section-container {
+  padding: 20px 15px 10px;
+}
+
+.question-section .question-panel {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  box-shadow: 0 0 5.8px 0.2px rgba(36, 36, 36, 0.4);
+  background-color: #fff;
+  padding: 20px 15px;
+}
+
+.question-section .panel-title {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  color: #d10085;
+}
+
+.question-section .panel-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #776881;
+  margin-bottom: 12px;
+}
+
+.question-section .collapsible-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.question-section .collapsible-btn {
+  outline: 0;
+  outline-offset: 0;
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  padding: 10px 20px;
+  min-height: 56px;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #e6daed;
+}
+
+.question-section .collapsible-btn :active,
+.question-section .collapsible-btn :hover,
+.question-section .collapsible-btn :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.question-section .btn-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #776881;
+}
+
+.question-section .collapsible-content {
+  display: none;
+  padding: 13px 20px 15px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: #776881;
+}
+
+.question-section .collapsible-item.iscollapsed .collapsible-btn {
+  background-color: #d10085;
+}
+
+.question-section .collapsible-item.iscollapsed .btn-text {
+  color: #ffffff;
+}
+
 @media (min-width: 576px) {
   .select2-dropdown {
     border-radius: 10px;
@@ -6952,6 +7029,22 @@ span.flatpickr-weekday {
 
   .record-form .input-group .textarea {
     border-radius: 10px;
+  }
+
+  .record-form .invalid-message-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .record-form .invalid-message-container .invalid-message {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 68%;
+    flex: 0 0 68%;
+    margin-left: auto;
   }
 
   .record-form .checkbox-container {
@@ -7668,6 +7761,18 @@ span.flatpickr-weekday {
   .record-form .file-input-error-text {
     padding-top: 0;
     margin: 0 0 0 12px;
+  }
+
+  .question-section .question-panel {
+    padding: 20px 45px;
+  }
+
+  .question-section .panel-title {
+    font-size: 36px;
+  }
+
+  .question-section .panel-text {
+    font-size: 18px;
   }
 }
 

@@ -1,0 +1,46 @@
+$global-font-family: 'Source Sans Pro', sans-serif;//"SourceSansPro", sans-serif;  
+$secondary-font-family: 'Titillium Web', sans-serif;//'TitilliumWeb', sans-serif;
+$third-font-family: 'Montserrat', sans-serif;
+
+$global-font-size: 16px;
+
+// color
+$color_default: rgba(0, 0, 0, 1);
+$color_primary: #000000;
+$text-color: $color_default;
+$text-color-inverted: #ffffff;
+
+//width of page
+$width-site: 1920px;
+//$width-site: unset;
+$pad-x-xs: 10px;
+$pad-x-md: 20px;
+$pad-x-xl: 120px;
+
+//base of BS4 breakpoints
+$screen-xs:					0;
+$xs:						$screen-xs;
+$screen-sm:					576px;
+$sm:						$screen-sm;
+$screen-md:					768px;
+$md:						$screen-md;
+$screen-lg:					992px;
+$lg:						$screen-lg;
+$screen-xl:					1200px;
+$xl:						$screen-xl;
+$screen-xxl:				1920px;
+$xxl:						$screen-xxl;
+
+
+//headings
+$map-heading-size: (  
+  h1: 32px,
+  h2: 24px,
+  h3: 18px,
+  h4: 16px,
+  h5: 13px, 
+  h6: 10px, 
+);
+$scale-heading-for-xs:  1;
+$scale-heading-for-sm:  1;
+$scale-heading-for-md:  1;

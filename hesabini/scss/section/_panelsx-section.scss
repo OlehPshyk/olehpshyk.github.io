@@ -1,0 +1,136 @@
+.panelsx-section{
+	$panel-top-height: 75px; 	
+	
+	.panelsx-grid{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		margin: 0 0 25px;		
+		padding: 0 50px 0;    
+    @include breakpoint(md){    
+      padding: 0 50px 0;
+    }
+    @include breakpoint(lg){          
+      justify-content: space-between;
+    }
+    @include breakpoint(xl){
+      padding: 0 $pad-x-xl 0;
+      margin: 0 0 38px;
+    } 
+	}
+	.panel-container{	
+		@include breakpoint(sm){ 	
+			padding: 0 10px;
+		}
+		@include breakpoint(lg){    
+      padding: 0;      
+    }
+    margin-bottom: 32px;
+	}
+	.panel{
+		//padding: 51px 30px 58px;
+    padding: 10px 20px 25px;
+		max-width: 371px;
+    height: 100%;
+		@include breakpoint(sm){
+			width: 371px;
+			max-width: unset;
+			padding: 40px 20px 40px;
+		}		
+		@include breakpoint(lg){
+			width: 25.76vw;
+			padding: 2.2vw 2.2vw 1.8vw;
+		}
+		@include breakpoint(xxl){
+			width: 495px;
+			padding: 42px 42px 35px;
+		}
+		
+		background: url('../img/conic-gradient-bg.jpg') 50% 50%/cover no-repeat;
+	}
+	.panel-top{
+		height: 75px;
+		margin-bottom: 23px;
+		@media screen and (max-width: 431px){
+			height: 17.4vw;
+			margin-bottom: 5.34vw;
+		}
+		@include breakpoint(lg){
+			height: 5.21vw;
+			margin-bottom: 1.6vw;
+		}
+		@include breakpoint(xxl){
+			height: 100px;
+			margin-bottom: 31px;
+		}
+		display: flex;
+		justify-content: center;
+		align-items: center;		
+		overflow: hidden;	
+		position: relative;	
+	}	
+	.top-img{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center center;
+	}
+	.sub-text{
+		font-family: $secondary-font-family;
+		font-size: 19px;
+		right: 34px;
+		@media screen and (max-width: 431px){
+			font-size: 4.41vw;
+			right: 7.89vw;
+		}
+		@include breakpoint(lg){
+			font-size: 1.32vw;
+			right: 2.36vw;
+		}
+		@include breakpoint(xxl){
+			font-size: 25px;
+			right: 45px;
+		}
+		font-weight: 600;
+		line-height: 1;
+		letter-spacing: 0.5px;
+		text-align: center;
+		color: #ffffff;
+		position: absolute;
+		bottom: 0;		
+	}	
+	.top-text{		
+		font-family: $global-font-family;
+		font-size: 45.5px;		
+		@media screen and (max-width: 431px){
+			font-size: 10.56vw;
+		}
+		@include breakpoint(lg){
+			font-size: 3.16vw;
+		}
+		@include breakpoint(xxl){
+			font-size: 61px;
+		}
+	  font-weight: 600;	  
+	  line-height: 1.01;	  
+	  text-align: center;	  
+		color: #000000;		
+	}
+	.panel-text{
+		font-family: $secondary-font-family;		
+		font-size: 15px;
+		@media screen and (max-width: 431px){
+			font-size: 4vw;
+		}
+		@include breakpoint(lg){
+			font-size: 1.46vw;
+		}
+		@include breakpoint(xxl){
+			font-size: 28px;
+		}
+	  font-weight: 300;		
+		line-height: 1.62;
+		text-align: center;
+		color: #010101;
+	}
+}

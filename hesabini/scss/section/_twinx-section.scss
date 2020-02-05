@@ -1,0 +1,173 @@
+.twinx-section{
+	.twinx-container{
+		@include breakpoint(xl){
+      display: flex;
+			flex-wrap: nowrap;
+		}
+
+		&.text-right{
+			padding: 37px $pad-x-xs 37px;
+			@include breakpoint(xl){
+				padding: 0 $pad-x-xl 37px 0;
+			}
+			.img-part{
+				@include breakpoint(xl){
+					order: 0;
+				}
+			}
+			.text-part{			
+				@include breakpoint(xl){	
+					order: 1;				
+					padding: 100px 0 100px 17px;
+				}
+			}	
+			.x-img-container{	
+				@include breakpoint(lg-down){
+					margin-left: auto;
+					margin-right: auto;
+				}
+				@include breakpoint(xl){				
+		    	margin-left: auto;
+		    }
+			}
+			.title{
+				@include breakpoint(xl){
+		  		text-align: right;
+		  	}
+			}
+			.text{
+				@include breakpoint(xl){
+		  		text-align: right;
+		  	}
+			}
+		}
+		&.text-left{
+			padding: 0 $pad-x-xs 37px;
+			@include breakpoint(xl){
+				padding: 0 0 37px $pad-x-xl;
+			}	
+			.img-part{
+				@include breakpoint(xl){
+					order: 1;
+				}
+			}
+			.text-part{			
+				@include breakpoint(xl){
+					order: 0;					
+					padding: 100px 17px 100px 0;
+				}				
+			}
+			.x-img-container{	
+				@include breakpoint(lg-down){
+					margin-left: auto;
+					margin-right: auto;
+				}
+				@include breakpoint(xl){			
+			    margin-right: auto;
+			  }
+			}
+			.title{
+				@include breakpoint(xl){
+		  		text-align: left;
+		  	}
+			}	
+			.text{
+				@include breakpoint(xl){
+		  		text-align: left;
+		  	}
+			}
+		}
+	}
+	.img-part{				
+    position: relative;		
+		@include breakpoint(xl){		
+			flex: 1 1 57%;
+		}
+	}
+	.img{
+    width: 78%;
+    @include breakpoint(xl){
+		  width: 100%;
+    }
+		//height: auto;
+		height: 100%;
+		object-fit: contain;
+    object-position: center center;
+	}
+	.text-part{
+		flex: 1 1 100%;		
+		@include breakpoint(md){
+			flex: 1 1 50%;		
+		}
+		@include breakpoint(xl){
+			flex: 1 1 43%;	
+		}
+		display: flex;
+    align-items: center;
+	}	
+  .x-img-container-xs{
+    @include breakpoint(xl){
+      display: none;      
+    }
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 26vw;
+    height: 26vw;
+  }
+	.x-img-container{		
+		@include breakpoint(lg-down){
+	    display: none;
+	  }		
+		@include breakpoint(xl){
+			width: 21vw;
+			height: 21vw;  
+			margin-bottom: 3.2vw;
+		} 
+		@include breakpoint(xxl){
+			width: 403px;
+			height: 403px;  
+			margin-bottom: 61px;
+		}
+	}
+	.x-img{
+    width: 78%;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+    object-position: center center;
+	}
+	.title{
+		font-family: $global-font-family;
+		word-break: break-word;
+		font-size: 24px;
+		@include breakpoint(md){
+  		font-size: 48px;
+  	}
+  	font-weight: 600;	  
+  	line-height: 1.25;
+  	letter-spacing: 1.2px;
+  	text-align: center;
+  	color: #ffffff;
+    @include breakpoint(lg-down){
+      padding: 0 32px;
+    }
+  	margin-bottom: 10px;
+	}
+	.text{
+		font-family: $secondary-font-family;
+		font-size: 12px;
+		@include breakpoint(md){
+  		font-size: 21px;
+  	}
+  	font-weight: 300;
+    text-align: center;
+    @include breakpoint(lg-down){
+      padding: 0 32px;
+    }
+  	line-height: 1.71;  	
+  	color: #f0f0f0;
+	}	
+}
+
+//background-blend-mode: color-dodge;

@@ -1,0 +1,299 @@
+.form-section{	
+  background-color: #ffffff;
+  position: relative;      
+  box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.15);
+  z-index: 200; 
+
+	//GENERAL STYLE FOR FORM ELEMENTS		
+	$placeholder-color: #545454;
+	
+	.input-group{}
+	// .input-label{  
+	// 	font-family: $global-font-family;
+	// 	font-size: 18px;
+	// 	font-weight: normal;  
+	// 	//line-height: 1.14;  
+	// 	color: #2c343f;
+	// }
+
+	.input-control{
+		@include outline(0);
+		width: 100%;  
+		height: 43px;  		
+
+		padding: 0 20px;
+		background-color: transparent;
+		border: solid 1px #9faaae; 
+		font-size: 16px;;
+		font-family: $global-font-family;
+
+		color: #545454;
+
+		&.invalid {
+			border: solid 2px #db6363;   
+		}   
+	}
+
+	input::-webkit-input-placeholder {
+		color: $placeholder-color !important;
+	}  
+	input:-moz-placeholder { /* Firefox 18- */
+		color: $placeholder-color !important;
+	}  
+	input::-moz-placeholder {  /* Firefox 19+ */
+		color: $placeholder-color !important;
+	}  
+	input:-ms-input-placeholder {  
+		color: $placeholder-color !important;
+	}
+	input:-webkit-autofill,
+	textarea:-webkit-autofill,
+	select:-webkit-autofill {
+		-webkit-box-shadow: inset 0 0 0 50px #fff;
+		-webkit-text-fill-color: #545454;  
+	} 
+
+
+	.label-checkbox{
+		display: flex;
+		align-items: center;
+		min-height: 27px;
+		position: relative;
+		font-size: 11px;
+		line-height: 18px;	
+    font-weight: 300;
+		color: #2c343f; 
+		cursor: pointer; 
+    text-align: left;
+
+		font-family: $global-font-family;
+		font-size: 12px;
+    @include breakpoint(xl){
+      font-size: 16px;
+    }         
+    &:not(:last-child){
+      margin: 0 0 4px 0;
+      @include breakpoint(xl){
+        margin: 0 16px 0 0;
+      }
+    }
+				
+		
+
+		.input{     
+			//appearance: none;
+			opacity: 0;
+			position: absolute;
+			height: 16px;
+    	width: 16px;
+	    top: 50%;
+    	transform: translateY(-50%);   
+		}
+
+		.custom-checkbox{
+			margin: 0 10px 0 0;  
+			height: 22px;
+			width: 22px; 
+      border-radius: 50%; 
+			border: solid 1px #9faaae;  
+			position: relative;
+			background-color: transparent;
+			flex-shrink: 0;
+      @include breakpoint(xl){
+        margin: 0 5px 0 0;
+        height: 16px;
+        width: 16px; 
+      }
+		} 
+
+		.input:checked + .custom-checkbox{
+			&:after{
+				content: "";
+				position: absolute; 
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				background-color: #9faaae;
+				width: 10px;
+				height: 10px;
+        border-radius: 50%;
+			}
+		}
+	}
+	//END GENERAL STYLE FOR FORM ELEMENTS
+
+	
+	.form-section-container{    
+		padding: 13px 38px 15px;		
+		@include breakpoint(md){
+			padding: 13px 38px 15px;
+		}	
+		@include breakpoint(xl){
+			padding: 14px $pad-x-xl 11px;
+		}			
+	}
+	.inner-form-container{
+    max-width: 450px;
+    @include breakpoint(xl){
+    	max-width: 950px;
+    }
+    margin: 0 auto;	
+	}
+	//.form{}
+	.title{
+		font-family: $secondary-font-family;
+		font-size: 16px;
+    line-height: 1.25;
+    font-weight: 600;
+    color: #03509f;
+    text-align: center;
+    margin-bottom: 13px;
+		@include breakpoint(xl){
+			font-size: 21px;
+      line-height: 1.14;
+      color: #064a5f;
+      margin-bottom: 14px;      
+		}				
+    .t1{
+      font-weight: 700;
+    }
+    .t2{
+      font-weight: 700;
+      text-decoration: underline;
+      color: #03509f;
+      @include breakpoint(xl){
+        color: #064a5f;
+      }
+    }
+	}	
+	.input-collection{
+		display: flex;
+		margin-bottom: 11px;
+		flex-wrap: wrap;
+		@include breakpoint(xl){
+			flex-wrap: nowrap;			
+		}
+		.input-group{
+			flex: 1 1 100%;
+			&:not(:last-child){
+				margin: 0 0 6px 0;
+			}
+			@include breakpoint(xl){
+				flex: 1 1 auto;				
+				&:not(:last-child){
+					margin: 0 21px 0 0;
+				}
+			}
+		}		
+	}
+	.che-cap-but-box{		
+		@include breakpoint(xl){
+      display: flex;
+      justify-content: space-between;
+    }
+	}
+	.checkbox-collection{
+		flex: 1 1 100%;
+		margin-bottom: 10px;
+		@include breakpoint(xl){
+			flex: 1 1 auto;
+      display: flex;
+			margin-bottom: 0;
+		}
+	}
+	.cap-inp-but-collection{
+		flex: 1 1 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		@include breakpoint(lg){
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+		}
+	}
+	.cap-inp-container{
+		position: relative;
+		flex: 1 1 100%;
+		display: flex;
+		justify-content: center;
+		margin: 0 0 16px 0;
+		flex-wrap: nowrap;		
+		@include breakpoint(lg){
+			flex: 0 1 auto;
+			justify-content: flex-end;
+			margin: 0 28px 0 0;
+		}
+		.input-group{
+			flex: 0 1 170px;
+		}
+	}
+	.input-capcha{
+		@include breakpoint(xs-only){
+			padding: 0 5px;
+		}
+	}
+	.cap-repoad-container{		
+		flex: 0 1 auto;
+		margin: 0 10px 0 0;	
+		display: flex;
+		justify-content: center;
+  	align-items: center;    	
+	}
+	.capcha{		
+		height: 63px;
+		width: 135px;
+		padding: 0;
+	}
+
+
+
+
+	.CaptchaTxtField { 
+		border-radius: 5px; 
+		border: 1px solid #ccc; 
+		display: block; 
+	}
+	.capcode { 
+		font-size: 46px; 
+		display: block; 
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none; 
+		cursor: default;
+		letter-spacing: 1px;
+		color: #ccc;
+		font-weight: 300;
+		font-style: italic;
+
+	    width: 100%;
+	    height: 100%;
+	    object-fit: contain;
+	}
+	.ReloadBtn {
+		@include outline(0); 
+		background:url('../img/captcha-update.png') center center no-repeat / contain;   		
+		width: 20px; 
+		height: 20px;
+		margin-left: 5px;
+		border: none;		
+		cursor: pointer; 
+	}
+	.error { 
+		color: red; 
+		font-size: 12px; 
+		display: none; 
+		position: absolute;
+		top: 100%;
+		padding: 1px 5px;
+	}
+	.success {
+		color: #0f0;
+		font-size: 14px;		
+		display: none;
+		position: absolute;
+		top: 100%;
+		padding: 1px 5px;
+	}
+
+}

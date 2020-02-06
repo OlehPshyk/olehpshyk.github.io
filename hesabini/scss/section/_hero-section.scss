@@ -1,42 +1,38 @@
 .hero-section{
-  overflow: hidden;
+  //overflow: hidden;
   //padding: 10px 0 0;
-  padding: 5vw 0 0;
+  padding: 4.5vw 0 5vw;
   //background: url(../img/gold-bg.jpg) no-repeat 50% 50% / cover;
-  background: linear-gradient(-180deg, rgb(5,0,102) 43%, rgb(3,57,179) 76%, rgb(0,114,255) 85%, rgb(0,18,51) 100%);
-  position: relative;
-  &:before{
-    content: '';
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../img/lp-b-bg1.jpg) no-repeat 46% 100%/cover;
-    opacity: 0.45;
-    mix-blend-mode: screen; 
-  }  
-  // background: url(../img/lp-b-bg1.jpg) no-repeat 50% 100%/100% auto;
-  @include breakpoint(xl){    
+  background: linear-gradient( 131deg, rgb(0,9,65) 40%, rgb(0,131,222) 100%);
+  @include breakpoint(xl){
+    position: relative;
     //padding: 33px 0 0;
-    padding: 2.29vw 0 0;      
-    background: linear-gradient( 90deg, rgb(5,0,102) 11%, rgb(0,114,255) 58%, rgb(0,18,51) 100%);
-    &:before{      
-      background: url(../img/lp-b-bg1.jpg) no-repeat 50% 100%/100% auto;      
+    padding: 2.29vw 0 0;  
+    //background: url("../img/gold-bg.jpg") no-repeat 50% 50% / cover;
+    &:before{
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../img/lp-a-bg1.jpg) no-repeat 50% 100%/100% auto;
+      opacity: 0.4;
+      mix-blend-mode: multiply;      
     }      
   }
   @include breakpoint(xxl){
     padding: 44px 0 0;
   }  
   .logo-section-container{
-    padding: 0 5vw 0;
-    @include breakpoint(xl){
-      padding: 0 2vw 0;       
-    } 
+    padding: 0 5vw 0;    
+    @include breakpoint(xl){      
+      padding: 0 2vw 0;
+    }
     @include breakpoint(xxl){
       padding: 0 38px 0;
-    } 
+    }
   }
   .logo-container{ 
     //width: 161px;
@@ -65,272 +61,278 @@
     }
   }
   .hero-section-container{
-    position: relative;
-    padding: 0 6vw 0;
-    @include breakpoint(xl){
-      padding: 0 2vw 0;
+    padding: 0 5vw 0;    
+    @include breakpoint(xl){      
+      padding: 0 2vw 0;  
       position: relative;
-      display: flex; 
-    } 
+      display: flex;          
+    }
     @include breakpoint(xxl){
       padding: 0 38px 0;
-    } 
+    }
   }  
   .content-container{
     // padding: 20px 0 15px; 
-    padding: 5vw 0 0;
+    padding: 4.5vw 0 4vw;
     @include breakpoint(xl){
-      flex: 0 1 auto;
-      width: 43%;   
+      flex: 1 1 auto;
+      width: 56%;   
       //padding: 65px 0 58px; 
-      padding: 5vw 0 0 0;
+      padding: 4.5vw 0 3.7vw 1.5vw;
     }
     @include breakpoint(xxl){
-      padding: 96px 0 0 0;
+      padding: 86px 0 71px 29px;
     }  
   }
   .t1{    
     font-family: $third-font-family;
     font-size: 6.4vw;    
     font-weight: 600;    
-    line-height: 1.3;    
+    line-height: 1.1;    
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
     .accent{
-      font-weight: 800;
-      color: #fff600;    
+      font-weight: 800;      
     }
     @include breakpoint(xl){
-      font-size: 2.92vw;
-      line-height: 1.27;
+      font-size: 3.36vw;
+      margin: 0 0 0 -1.5em;
+      line-height: 1.26; 
     }
     @include breakpoint(xxl){      
-      font-size: 56px;
+      font-size: 65px;
     } 
   }
-  .t2{
-    font-family: $third-font-family;
-    font-size: 9.5vw;    
-    font-weight: 600;    
-    line-height: 1.16;    
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-bottom: 1vw;
-    .accent{
-      font-weight: 800;
-      color: #fff600;    
-    }
+  .t2-box{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.5vw 0; 
     @include breakpoint(xl){
-      font-size: 4.1vw;
-      line-height: 1.09;      
+      margin: -1.2vw 0 0.9vw 0;  
+    } 
+    @include breakpoint(xxl){
+      margin: -23px 0 17px 0;
+    } 
+    .t2-1{
+      display: flex;
+      align-items: flex-start;   
+      text-align: left; 
+      margin-right: 1vw; 
+      @include breakpoint(xxl){
+        margin-right: 19px; 
+      }  
+      .sign{        
+        // text-shadow: 2px 0px 7.8px #ff0000;
+        // -webkit-text-stroke: #f00 2px;
+        -webkit-text-stroke: #f00 0.13vw;
+        background-image: linear-gradient(to top, #aeaeae, #eaeaea, #f1f1f1, #ffffff);
+        font-family: $third-font-family;
+        // font-size: 71px;
+        font-size: 10vw;
+        font-weight: 900;      
+        font-style: italic;
+        line-height: 1em;  
+        padding: 0.05em;
+        margin: 0.12em -0.2em 0 0;               
+        color: #ffffff;      
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include breakpoint(xl){
+          font-size: 5vw;
+          margin: 0.25em -0.2em 0 0; 
+        }
+        @include breakpoint(xxl){
+          -webkit-text-stroke: #f00 3px;
+          font-size: 96px;
+        } 
+      }
+      .numb{
+        // text-shadow: 2px 0px 7.8px #ff0000;
+        // -webkit-text-stroke: #f00 2px;
+        -webkit-text-stroke: #f00 0.13vw;
+        background-image: linear-gradient(to top, #aeaeae, #eaeaea, #f1f1f1, #ffffff);
+        font-family: $third-font-family;
+        //font-size: 149px;
+        font-size: 18.8vw;
+        font-weight: 900;      
+        font-style: italic;
+        line-height: 1em;
+        padding: 0.05em;             
+        color: #ffffff;      
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include breakpoint(xl){
+          font-size: 10.4vw;
+        }
+        @include breakpoint(xxl){
+          -webkit-text-stroke: #f00 3px;
+          font-size: 200px;
+        }
+      }
+    }
+    .t2-2{
+      // text-shadow: 2px 0px 7.8px #ff0000;
+      // -webkit-text-stroke: #f00 2px;
+      -webkit-text-stroke: #f00 0.13vw;
+      background-image: linear-gradient(to top, #aeaeae, #eaeaea, #f1f1f1, #ffffff);
+      font-family: $third-font-family;
+      // font-size: 58px;
+      font-size: 8vw;
+      font-weight: 900;      
+      font-style: italic;
+      line-height: 1.14;
+      letter-spacing: 0.01em;     
+      color: #fff;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: left; 
+      text-transform: uppercase;
+      @include breakpoint(xl){
+        font-size: 4.02vw;
+      }
+      @include breakpoint(xxl){
+        -webkit-text-stroke: #f00 3px;
+        font-size: 77px;
+      }
+    }    
+  }
+  .t3-box{       
+    margin-bottom: 0.6vw;
+    @include breakpoint(xl){
+      display: flex;
+      justify-content: flex-start;    
+      margin-bottom: 0.1vw;
     }
     @include breakpoint(xxl){      
-      font-size: 79px;      
-      margin-bottom: 19px;
-    }     
-  }  
-  .btn-container{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3vw;
-    @include breakpoint(xxl){
-      margin-bottom: 58px;
+      margin-bottom: 2px;
+    }
+    .t3-1,.t3-2{
+      display: flex;
+      flex-direction: column;
+      &:first-child{        
+        @include breakpoint(xl){
+          margin-right: 1.5vw;
+        }
+        @include breakpoint(xxl){      
+          margin-right: 29px;
+        }
+      }
+    }
+    .t3-dt-box{
+      display: flex;   
+      align-items: center;   
+    }
+    .dots{
+      flex: 0 0 auto;
+      display: block;
+      width: 3.5vw;
+      height: 3.5vw; 
+      border-radius: 50%;
+      background-color: #f00;
+      margin-right: 1.9vw;
+      position: relative;
+      @include breakpoint(xl){                
+        margin-right: 0.8vw;
+        width: 1.5vw;
+        height: 1.5vw;
+      }
+      @include breakpoint(xxl){      
+        width: 29px;
+        height: 29px;
+        margin-right: 15px;
+      }
+      &:after{
+        content: '';
+        width: 72%;
+        height: 72%;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+      }
+    }
+    .t3{
+      font-family: $third-font-family;
+      font-size: 4.4vw;      
+      font-weight: 600;      
+      line-height: 1.4;      
+      color: #ffffff;
+      text-transform: uppercase;
+      white-space: nowrap;
+      @include breakpoint(xl){ 
+        font-size: 1.67vw;
+        line-height: 1.25;
+      }
+      @include breakpoint(xxl){      
+        font-size: 32px;
+      }
     }
   }
-  .hero-btn{
-    @include outline(0);  
-    border: none;
-    //width: 374px;
-    
-    background-color: #ffd200;
-    
-    display: inline-flex;
-    justify-content: center;
-    align-items: center; 
-    font-family: $third-font-family; 
+  .t4{    
+    font-family: $third-font-family;
+    font-size: 4.5vw;    
+    font-weight: 600;    
+    line-height: 1.3;    
+    text-align: center;
+    color: #fff;  
+    margin-bottom: 0.7vw;
     text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;  
-    line-height: 1;  
-    color: #ffffff;  
-    text-align: center;  
-    // padding: 0 22vw;  
-    width: 100%;
-    min-height: 18vw;
-    border-radius: 8.9vw;
-    font-size: 5.87vw;
-    background-image: linear-gradient(0deg, rgb(255,54,0) 0%, rgb(255,120,0) 100%);
-    position: relative;
-    // z-index: 1;
+    @include breakpoint(xl){  
+      margin-bottom: 0;
+      line-height: 1.47;
+      text-align: left;
+      font-size: 1.98vw;
+    }
+    @include breakpoint(xxl){      
+      font-size: 38px;
+    }
+  }
+  .t5{   
+    font-family: $third-font-family;    
+    font-size: 3vw;
+    font-weight: 500;    
+    font-style: italic;
+    line-height: 1.25;
+    color: #d8ebff;
     @include breakpoint(xl){
-      width: unset;
-      // padding: 0 58px;
-      // min-height: 62px;
-      // border-radius: 31px;
-      // font-size: 30px;
-      padding: 0 4.65vw;
-      min-height: 7.64vw;
-      border-radius: 3.8vw;
-      font-size: 2.5vw;
+      font-size: 1.67vw;
     }
-    @include breakpoint(xxl){
-      padding: 0 89px;
-      min-height: 147px;
-      border-radius: 73px;
-      font-size: 48px;
-    }
-    &:before{
-      content:'';
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      top: 4%;
-      left: 0.8%;
-      background-image: linear-gradient( 0deg, rgb(193,41,0) 0%, rgb(202,95,0) 100%);        
-      border-radius: 8.9vw; 
-      @include breakpoint(xl){      
-        border-radius: 3.8vw;
-      } 
-      @include breakpoint(xxl){                
-        border-radius: 73px;        
-      }
-    }   
-    &:hover, &:active, &:focus, &:active:hover{
-      color: #ffffff;    
+    @include breakpoint(xxl){      
+      font-size: 32px;
     }
   }
   .hero-img-container{
-    width: 100%;     
-    height: 85vw;   
-    position: relative;     
-    @include breakpoint(xl){   
-      position: absolute;        
-      width: 100vw;
-      height: 48vw;
-      top: -12%;
-      left: 44.5%;
-    }  
-    @include breakpoint(xxl){      
-      width: 1920px;
-      height: 922px;
-    }  
+    width: 98%;
+    margin: 0 auto;
+    @include breakpoint(xl){
+      flex: 0 0 auto;
+      width: 44%;
+    }    
   }
-  .hero-img-1-box{
-    height: 103%;
+  .hero-img{
     width: 100%;
-    position: absolute;
-    top: 51%;
-    left: 51.5%;
-    transform: translate(-50%,-50%);
-    mask-image: url('../img/lp-b-mask-big.png');
-    mask-repeat: no-repeat;
-    mask-position: 50% 50%;
-    mask-size: contain;
-    @include breakpoint(xl){
-      height: 107%;
-      width: 52%;      
-      top: 50.5%;
-      left: 25.5%;
-    }
-    .hero-img-1{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;                  
-    }
+    height: 100%;
+    object-fit: contain;
+    // mix-blend-mode: multiply;
   }
-  .hero-img-2-box{
-    height: 62%;
-    width: 60%;
-    position: absolute;
-    top: 98.5%;
-    left: 10%;
-    transform: translate(-50%,-50%);
-    mask-image: url('../img/lp-b-mask-big.png');
-    mask-repeat: no-repeat;
-    mask-position: 50% 50%;
-    mask-size: contain;
-    @include breakpoint(xl){
-      height: 95%;
-      width: 46%;      
-      top: 9.5%;
-      left: 58.5%;
-    }
-    .hero-img-2{
-      width: 100%;
-      height: 100%;
-      object-fit: contain;    
-      object-position: 21% -3%;
-      @include breakpoint(xl){
-        object-fit: cover;
-        object-position: 90% 50%; 
-      }                
-    }
-  }
-  .hero-img-3-box{
-    height: 39%;
-    width: 39%;
-    position: absolute;
-    top: 98.5%;
-    left: 81.5%;
-    transform: translate(-50%,-50%);
-    mask-image: url('../img/lp-b-mask-sm.png');
-    mask-repeat: no-repeat;
-    mask-position: 50% 50%;
-    mask-size: contain;
-    @include breakpoint(xl){
-      height: 44%;
-      width: 21%;      
-      top: 101.5%;
-      left: 41%;
-    }
-    .hero-img-3{
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: 50% -25%;                 
-    }
-  }
-  .hero-img-4-box{
-    height: 42%;
-    width: 40%;
-    position: absolute;
-    top: 76%;
-    left: 105%;
-    transform: translate(-50%,-50%);
-    mask-image: url('../img/lp-b-mask-sm.png');
-    mask-repeat: no-repeat;
-    mask-position: 50% 50%;
-    mask-size: contain;
-    @include breakpoint(xl){
-      height: 44%;
-      width: 21%;      
-      top: 76%;
-      left: 53%;
-    }
-    .hero-img-4{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 70% 50%;                 
-    }
-  }
-  
   
   .hero-soc-container{
     position: relative;
     z-index: 1;
-    padding: 1vw 0 1.4vw;    
+    padding: 1vw 5vw 1.4vw;
+    margin: -5vw 0 0;
     @include breakpoint(xl){ 
       margin: 0;     
-      padding: 1vw 0 1.4vw;        
+      padding: 1vw 2vw 1.4vw;        
     }
     @include breakpoint(xxl){      
-      padding: 19px 0 27px; 
+      padding: 19px 38px 27px; 
     }
   }
   .soc-list{

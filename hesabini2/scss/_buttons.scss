@@ -1,0 +1,23 @@
+.submit-button{
+  @include outline(0);
+  border: none;
+  cursor: pointer;
+	height: 41px;
+	background-color: #079d70;
+	padding: 0 52px;	
+	font-family: $global-font-family;
+	font-size: 21px;
+	font-weight: 600;	
+	line-height: 1;
+	color: #ffffff;
+	display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @include breakpoint(xl){
+    width: unset;
+  }
+  &:hover, &:active, &:focus, &:active:hover{
+    color: #ffffff;    
+  }
+}

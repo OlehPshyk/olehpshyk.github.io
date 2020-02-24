@@ -1,0 +1,193 @@
+.twin-column-section{		
+  position: relative;    
+  &:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../img/twin-bg.jpg") no-repeat 50% 50% / cover, rgb(236, 236, 236);
+    opacity: 0.5;
+  }	
+		
+	.twin-column-container{
+		padding: 30px 10px 65px;
+		@include breakpoint(xl){
+			padding: 30px $pad-x-xl 65px;
+			display: flex;
+			justify-content: space-between;
+		}		
+    @media screen and (min-width:1200px) and (max-width:1400px){
+      padding: 30px 30px 65px;
+    }
+	}
+	.column-badge{
+		@include breakpoint(lg-down){		
+			margin-bottom: 81px;		
+		}
+		@include breakpoint(xl){			
+			//width: 49%;	
+      flex: 1 1 58%;
+      padding-right: 5%;
+      //padding-right: 10%;
+		}
+    .items-container{
+      padding-left: 43px;
+      @include breakpoint(xl){
+        padding-left: 106px;
+      }
+    }
+    .item-text{
+      @include breakpoint(lg-down){      
+        max-width: 250px;      
+      }
+    }
+    .item{      
+      &:not(:last-child){
+        @include breakpoint(lg-down){
+          margin-bottom: 18px;
+        }
+      }
+    }
+	}
+	.column-simple{
+		@include breakpoint(xl){
+			//width: 40%;
+      flex: 1 1 42%;
+		}
+    .item-title{
+      @include breakpoint(lg-down){
+        text-align: center;
+      }
+    }
+    .item-text{
+      @include breakpoint(lg-down){
+        text-align: center;
+        max-width: 235px;
+        margin: 0 auto;
+      }
+    }
+    .item{      
+      &:not(:last-child){
+        @include breakpoint(lg-down){
+          margin-bottom: 14px;
+        }
+      }
+    }
+	}
+	
+	.title{
+		font-family: $secondary-font-family;
+  	font-size: 40px;
+  	// font-weight: 600;	  	
+  	line-height: 1;
+  	letter-spacing: 2px;
+  	text-align: center;
+  	color: #2c343f;
+  	margin-bottom: 40px;
+	}
+	.items-container{		
+		@include breakpoint(md){
+			width: 90%;
+	    margin: 0 auto;
+	    max-width: 600px;
+		}
+		@include breakpoint(xl){
+			width: unset;
+	    margin: 0;
+	    max-width: unset;
+		}		
+	}
+	.item{
+    min-height: 69px;
+    @include breakpoint(xl){
+		  min-height: 127px;
+    }		
+    max-width: 473px;
+		background-image: linear-gradient(to top, #f7f7f7, #ffffff);
+  	box-shadow: 0 0 9.1px 0.9px rgba(0, 0, 0, 0.28);
+    margin-left: auto;
+    margin-right: auto;
+  	&:not(:last-child){
+      @include breakpoint(xl){
+  		  margin-bottom: 48px;
+      }
+  	}
+  	position: relative;
+  	//
+  	//flex: 1 1 127px;
+	}
+	.item-title{
+		font-family: $secondary-font-family;
+		font-size: 16px;
+		// font-weight: 600;  		
+		line-height: 1;
+		letter-spacing: 0.5px;		
+		text-transform: uppercase;
+    color: #2c343f;
+    margin-bottom: 4px;  
+		@include breakpoint(xl){
+      font-size: 27px;			
+      margin-bottom: 11px;
+		}  		
+  		
+	}
+	.item-text{
+		display: block;
+		font-family: $global-font-family;
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 1.4;		
+		@include breakpoint(xl){			
+      font-size: 18px;
+		}  
+		color: #565d67;
+	}
+	.column-badge{		
+		.item{
+			padding: 9px 10px 9px 44px;			
+			@include breakpoint(xl){
+				padding: 19px 15px 19px 67px;
+			}
+		}
+	}
+	.column-simple{		
+		.item{
+			padding: 9px 10px 9px 10px;			
+			@include breakpoint(xl){
+				padding: 19px 15px 19px 67px;
+			}
+		}
+	}
+	.badge{
+		position: absolute;
+		width: 73px;
+    height: 73px;
+    left: 30px;
+    top: 50%;	    
+    transform: translate(-100%, -50%);
+    @include breakpoint(xl){
+	    width: 145px;
+	    height: 145px;
+	    left: 39px;
+	    top: 50%;
+	    transform: translate(-100%, -50%);
+		}
+
+    border-radius: 50%;
+    background-image: linear-gradient(to top, #f7f7f7, #ffffff);		  
+		box-shadow: 0 0 9.1px 0.9px rgba(0, 0, 0, 0.28);
+
+    display: flex;
+    justify-content: center;
+  	align-items: center;
+	}
+	.badge-img{
+		width: 45%;
+		height: 45%;
+		object-fit: contain;
+  	object-position: center center;
+	}
+}

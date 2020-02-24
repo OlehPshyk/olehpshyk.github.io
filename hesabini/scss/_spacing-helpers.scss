@@ -1,0 +1,102 @@
+/*=========================================================
+   #PADDING & MARGIN
+=========================================================*/
+
+/*=======================================================================================*/
+/*======================================ALL SCREEN=======================================*/
+/*=======================================================================================*/
+// HOW TO USE, helper classe margin, padding
+// pd = padding, mg = margin, -b,-t,-l,r = bottom,top,left,right
+// pd-b-0..16..22..
+// pd-t-0..16..22..
+// pd-l-0..16..22..
+// pd-r-0..16..22..
+// +
+// mg-b-0..16..22..
+// mg-t-0..16..22..
+// mg-l-0..16..22..
+// mg-r-0..16..22..
+
+// $right-space-vars:                                                     (0 right r,);
+// $bottom-space-vars:                                                    (0 bottom b,);
+// $top-space-vars:                                                       (0 top t,);
+// @mixin generate-margin-classes( $default-space-amounts-with-direction: (0 left l,) ) {
+//   @each $space in $default-space-amounts-with-direction {
+//     .mg-#{nth($space, 3)}-#{nth($space, 1)} {
+//       margin-#{nth($space, 2)}: #{nth($space, 1)}px;
+//     }
+//   }
+// }
+
+// @mixin generate-padding-classes( $default-space-amounts-with-direction: (0 left l, ) ) {
+//   @each $space in $default-space-amounts-with-direction {
+//     .pd-#{nth($space, 3)}-#{nth($space, 1)} {
+//       padding-#{nth($space, 2)}: #{nth($space, 1)}px;
+//     }
+//   }
+// }
+
+// /*======================================MARGIN======================================*/
+// @include generate-margin-classes();
+// @include generate-margin-classes($right-space-vars);
+// @include generate-margin-classes($bottom-space-vars);
+// @include generate-margin-classes($top-space-vars);
+
+// /*======================================PADDING======================================*/
+// @include generate-padding-classes();
+// @include generate-padding-classes($right-space-vars);
+// @include generate-padding-classes($bottom-space-vars);
+// @include generate-padding-classes($top-space-vars);
+
+
+
+/*=======================================================================================*/
+/*======================================SMALL-DOWN=======================================*/
+/*=======================================================================================*/
+// HOW TO USE, helper classe margin, padding
+// sm-pd = padding, sm-mg = margin, -b,-t,-l,r = bottom,top,left,right
+// sm-pd-b-0..16..22..
+// sm-pd-t-0..16..22..
+// sm-pd-l-0..16..22..
+// sm-pd-r-0..16..22..
+// +
+// sm-mg-b-0..16..22..
+// sm-mg-t-0..16..22..
+// sm-mg-l-0..16..22..
+// sm-mg-r-0..16..22..
+
+
+// $right-space-vars-sm:                                                     (0 right r,);
+// $bottom-space-vars-sm:                                                    (0 bottom b,);
+// $top-space-vars-sm:                                                       (0 top t,);
+// @mixin generate-margin-classes-sm( $default-space-amounts-with-direction: (0 left l,) ) {
+//   @each $space in $default-space-amounts-with-direction {
+//     .sm-mg-#{nth($space, 3)}-#{nth($space, 1)} {
+//       @include breakpoint(sm-down){
+//         margin-#{nth($space, 2)}: #{nth($space, 1)}px;
+//       }
+//     }
+//   }
+// }
+
+// @mixin generate-padding-classes-sm( $default-space-amounts-with-direction: (0 left l, ) ) {
+//   @each $space in $default-space-amounts-with-direction {
+//     .sm-pd-#{nth($space, 3)}-#{nth($space, 1)} {
+//       @include breakpoint(small-down){
+//         padding-#{nth($space, 2)}: #{nth($space, 1)}px;
+//       }
+//     }
+//   }
+// }
+
+// /*======================================MARGIN======================================*/
+// @include generate-margin-classes-sm();
+// @include generate-margin-classes-sm($right-space-vars-sm);
+// @include generate-margin-classes-sm($bottom-space-vars-sm);
+// @include generate-margin-classes-sm($top-space-vars-sm);
+
+// /*======================================PADDING======================================*/
+// @include generate-padding-classes-sm();
+// @include generate-padding-classes-sm($right-space-vars-sm);
+// @include generate-padding-classes-sm($bottom-space-vars-sm);
+// @include generate-padding-classes-sm($top-space-vars-sm);

@@ -1,0 +1,34 @@
+@import 'variable';
+@import 'mixins';
+//@import 'fonts'; //used google fonts
+@import 'icons';
+@import 'base';
+@import 'wrapper';
+@import 'plugins';
+@import 'animations';
+@import 'typography';
+@import 'forms';
+@import 'buttons';
+@import 'video';
+@import 'helpers';
+@import 'spacing-helpers';
+@import 'main';
+
+
+@import 'components/header';
+@import 'components/footer';
+
+@import 'section/hero-section';
+@import 'section/form-section';
+@import 'section/bg-section';
+@import 'section/twinx-section';
+@import 'section/panelsx-section';
+@import 'section/testimonials-section';
+@import 'section/operation-section';
+@import 'section/twin-column-section';
+
+
+
+
+
+// @import 'app-old';

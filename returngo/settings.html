@@ -115,7 +115,115 @@
     <article class="content">
       <div class="wrapper">
         <div class="content-container">
-          <h1 class="page-title">Settings</h1>               
+          <h1 class="page-title">Store Settings</h1>           
+          <div class="v-card">              
+            <div class="card-title-container">
+              <h2 class="card-b-title">
+                Additional Title
+              </h2>
+              <div class="card-text">
+                <p>
+                  We need to know some basic information about your store, to help you reduce most returns possible and maximize profit.
+                </p>
+              </div>              
+            </div>
+            <div class="set-item">
+              <div class="set-item-t-part">
+                <h3 class="set-item-title">Store name</h3>
+                <div class="set-item-text">
+                  <p>We will show this name to users</p>
+                </div>
+              </div>
+              <div class="set-item-i-part">
+                <div class="input-group">                
+                  <input type="text" class="form-control ret-form-control" placeholder="">
+                </div>
+              </div>              
+            </div>
+            <div class="set-item">
+              <div class="set-item-t-part">
+                <h3 class="set-item-title">Store URL</h3>
+                <div class="set-item-text">
+                  <p>Your store URL where users can shop</p>
+                </div>
+              </div>
+              <div class="set-item-i-part">
+                <div class="input-group">                
+                  <input type="text" class="form-control ret-form-control" placeholder="">
+                </div>
+              </div>              
+            </div>
+            <div class="set-item">
+              <div class="set-item-t-part">
+                <h3 class="set-item-title">Industry</h3>
+                <div class="set-item-text">
+                  <p>Enter up to three primary industries of your store</p>
+                </div>
+              </div>
+              <div class="set-item-i-part">
+                <div class="input-group">                
+                  <input type="text" class="form-control ret-form-control" placeholder="" id="industry">
+                  <div class="input-group-append">
+                    <span class="input-group-text ret-input-group-text" id="industry-addon">Add</span>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="set-item">
+              <div class="set-item-t-part">
+                <h3 class="set-item-title">Refund Policy</h3>
+                <div class="set-item-text">
+                  <p>For internal use, let us know your current refund policy</p>
+                </div>
+              </div>
+              <div class="set-item-i-part">
+                <div class="input-group">                  
+                  <select class="js-select2" name="refundPolicy"> 
+                    <option value="30d" selected>Free Refunds 30 days</option>
+                    <option value="one">One</option>
+                    <option value="two">Two</option>
+                    <option value="three">Three</option>
+                  </select>
+                </div>
+              </div>              
+            </div>
+            <div class="set-item">
+              <div class="set-item-t-part">
+                <h3 class="set-item-title">Average Product Cost Margin</h3>
+                <div class="set-item-text">
+                  <p>For internal use, let us roughly know your product cost margin. E.g if it costs you $10 to produce/buy the product, and you sell it for $50, the cost margin is 20% This will help us to optimize return reduce while and maximize your</p>
+                </div>
+              </div>
+              <div class="set-item-i-part">
+                <div class="input-group">
+                  <select class="js-select2" id="averageProductCostMargin">
+                    <option value="10-20" selected>10-20%</option>
+                    <option value="one">One</option>
+                    <option value="two">Two</option>
+                    <option value="three">Three</option>
+                  </select>
+                </div>
+              </div>              
+            </div>
+            <div class="set-item">
+              <div class="set-item-t-part">
+                <h3 class="set-item-title">ReturnSense Behavior</h3>
+                <div class="set-item-text">
+                  <p>Normal - it means we make sure to maximize profit while reducing returns Aggressive - Once we have hard calls, in this option we will decide to give a higher compensation to reduce returns. In both behaviors, we make sure to eliminate abuse and base it on our smart ML algorithms, in order to maximize your profits.</p>
+                </div>
+              </div>
+              <div class="set-item-i-part">
+                <div class="input-group">                
+                  <select class="js-select2" id="returnSenseBehavior">
+                    <option value="normal" selected>Normal (Default)</option>
+                    <option value="one">One</option>
+                    <option value="two">Two</option>
+                    <option value="three">Three</option>
+                  </select>
+                </div>
+              </div>              
+            </div>
+          </div>    
         </div>
       </div>
     </article>

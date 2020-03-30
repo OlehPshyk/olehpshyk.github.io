@@ -273,10 +273,304 @@
   </main>
   
     
-  <!--
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+  <!-- <script>
+    // not need initialize select2 here, you have access to all event in select2 from this place/from any external <script> I fixed my issue with $ in webpack
+    $( document ).ready(function() {
+      // console.log("HTML select2 initialization");
+      $('.js-select2-int-box .js-select2').each(function () {        
+        const $parent = $(this).parent();
+        $(this).select2({
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+          dropdownParent: $parent,
+          // dropdownPosition: 'below',
+          // dropdownPosition: 'above',
+        });
+      });
+    });   
+  </script> -->
+
+  <script>
+    $( document ).ready(function() { 
+      console.log('HTML Selected change: TEST event listener for select2')
+      $('.js-select2').on('change', function(e) { 
+        console.log('HTML Selected change:', e.target )
+      }); 
+    });       
+  </script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.17.0/apexcharts.min.js"></script>
+  <!-- <script src="./static/lib/apexcharts.min.js"></script> -->
+  
+  <script>
+    $( document ).ready(function() {
+      var returnReasons = document.getElementById('return-reasons-chart');
+      if (returnReasons) {
+        var optionsReturnReasonsChart = {
+          chart: {
+            type: 'donut',
+          },
+          plotOptions: {
+            pie: {
+              customScale: 1,          
+              offsetX: 0,
+              offsetY: 0,
+              expandOnClick: true,
+              dataLabels: {
+                enabled: false,
+                minAngleToShowLabel: 360,
+              },
+              donut: {
+                size: '90%',
+                background: 'transparent',
+              },
+            },
+          },
+          series: [21, 36, 4, 4, 7, 11, 17],
+          labels: ['Did not fit: 21%', 'Changed mind: 36%', 'Not what I expected: 4%', 'Wrong size: 4%', 'Item is damaged: 7%', 'Received wrong item: 11%', 'Other: 17%'],
+          colors: ['#6EC5E8', '#557BEE', '#E16D70', '#EDC863', '#6EC5E8', '#67DF9C', '#E1E7FB'],
+          legend: {
+            show: true,
+            showForSingleSeries: false,
+            showForNullSeries: true,
+            showForZeroSeries: true,
+            position: 'right',
+            horizontalAlign: 'left',
+            floating: false,
+            fontSize: '14px',
+            fontFamily: 'Poppins',
+            fontWeight: 400,
+            formatter: undefined,
+            inverseOrder: false,
+            width: undefined,
+            height: undefined,
+            tooltipHoverFormatter: undefined,
+            offsetX: 0,
+            offsetY: 0,
+            labels: {
+              colors: '#50649C',
+              useSeriesColors: false,
+            },
+            markers: {
+              width: 12,
+              height: 12,
+              strokeWidth: 0,
+              strokeColor: '#fff',
+              fillColors: undefined,
+              radius: 12,
+              customHTML: undefined,
+              onClick: undefined,
+              offsetX: 0,
+              offsetY: 0,
+            },
+            itemMargin: {
+              horizontal: 3,
+              vertical: 1,
+            },
+            onItemClick: {
+              toggleDataSeries: true,
+            },
+            onItemHover: {
+              highlightDataSeries: true,
+            },
+          },
+          responsive: [
+            {
+              breakpoint: 575,
+              options: {
+                plotOptions: {
+                  pie: {
+                    donut: {
+                      size: '60%',
+                    },
+                  },
+                },
+                legend: {
+                  itemMargin: {
+                    horizontal: 2,
+                    vertical: 0,
+                  },
+                  position: 'bottom',
+                  horizontalAlign: 'center',
+                  fontSize: '10px',
+                },
+              },
+            },
+            {
+              breakpoint: 1199,
+              options: {
+                legend: {
+                  itemMargin: {
+                    horizontal: 8,
+                    vertical: 3,
+                  },
+                  position: 'right',
+                  horizontalAlign: 'left',
+                },
+              },
+            },
+            {
+              breakpoint: 1359,
+              options: {
+                plotOptions: {
+                  pie: {
+                    donut: {
+                      size: '80%',
+                    },
+                  },
+                },
+                legend: {
+                  position: 'bottom',
+                  horizontalAlign: 'center',
+                  itemMargin: {
+                    horizontal: 2,
+                    vertical: 0,
+                  },
+                },
+              },
+            },
+          ],
+        };
+        var chartReturnReasons = new ApexCharts(returnReasons, optionsReturnReasonsChart);
+        chartReturnReasons.render();
+      }
+    }); 
+  </script>
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.min.js"></script> -->
+  <script src="./static/lib/jquery-jvectormap.min.js"></script>
+  <script src="./static/lib/jquery-jvectormap-world-mill.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.min.css" rel="stylesheet"> 
+
+  <script>
+    $( document ).ready(function() {
+      var returnRequestLocations = document.getElementById('world-map-chart'); 
+      if (returnRequestLocations) {
+        var gdpData = {
+          GL: 1,
+          US: 2,
+          AU: 3,
+        };
+        $('#world-map-chart').vectorMap({
+          map: 'world_mill',
+          backgroundColor: '#FFFFFF',
+          zoomOnScroll: false,
+          regionsSelectable: true,
+          regionsSelectableOne: true,
+          regionStyle: {
+            initial: {
+              fill: '#E1E7FB',
+              'fill-opacity': 1,
+              stroke: 'none',
+              'stroke-width': 0,
+              'stroke-opacity': 1,
+            },
+            hover: {
+              'fill-opacity': 0.8,
+              stroke: '#6F8EF0',
+              'stroke-width': 0.5,
+              cursor: 'pointer',
+            },
+            selected: {
+              fill: 'yellow',
+            },
+            selectedHover: {},
+          },
+          regionLabelStyle: {
+            initial: {
+              'font-family': 'Poppins',
+              'font-size': '14',
+              'font-weight': '400',
+              cursor: 'default',
+              fill: '#50649C',
+            },
+            hover: {
+              cursor: 'pointer',
+            },
+          },
+          markerStyle: {
+            initial: {
+              fill: '#4d79f6',
+              stroke: '#FFFFFF',
+              'fill-opacity': 0.9,
+              'stroke-width': 7,
+              'stroke-opacity': 0.4,
+              r: 9,
+            },
+            hover: {
+              stroke: '#FFFFFF',
+              'stroke-width': 1.5,
+              cursor: 'pointer',
+            },
+            selected: {
+              fill: 'blue',
+            },
+            selectedHover: {},
+          },
+          markerLabelStyle: {
+            initial: {
+              'font-family': 'Poppins',
+              'font-size': '14',
+              'font-weight': 'bold',
+              cursor: 'default',
+              fill: 'black',
+            },
+            hover: {
+              cursor: 'pointer',
+            },
+          },
+          markers: [
+            { latLng: [41.9, 12.45], name: 'Vatican City' },
+            { latLng: [43.73, 7.41], name: 'Monaco' },
+            { latLng: [-0.52, 166.93], name: 'Nauru' },
+            { latLng: [-8.51, 179.21], name: 'Tuvalu' },
+            { latLng: [43.93, 12.46], name: 'San Marino' },
+            { latLng: [47.14, 9.52], name: 'Liechtenstein' },
+            { latLng: [7.11, 171.06], name: 'Marshall Islands' },
+            { latLng: [17.3, -62.73], name: 'Saint Kitts and Nevis' },
+            { latLng: [3.2, 73.22], name: 'Maldives' },
+            { latLng: [35.88, 14.5], name: 'Malta' },
+            { latLng: [12.05, -61.75], name: 'Grenada' },
+            { latLng: [13.16, -61.23], name: 'Saint Vincent and the Grenadines' },
+            { latLng: [13.16, -59.55], name: 'Barbados' },
+            { latLng: [17.11, -61.85], name: 'Antigua and Barbuda' },
+            { latLng: [-4.61, 55.45], name: 'Seychelles' },
+            { latLng: [7.35, 134.46], name: 'Palau' },
+            { latLng: [42.5, 1.51], name: 'Andorra' },
+            { latLng: [14.01, -60.98], name: 'Saint Lucia' },
+            { latLng: [6.91, 158.18], name: 'Federated States of Micronesia' },
+            { latLng: [1.3, 103.8], name: 'Singapore' },
+            { latLng: [1.46, 173.03], name: 'Kiribati' },
+            { latLng: [-21.13, -175.2], name: 'Tonga' },
+            { latLng: [15.3, -61.38], name: 'Dominica' },
+            { latLng: [-20.2, 57.5], name: 'Mauritius' },
+            { latLng: [26.02, 50.55], name: 'Bahrain' },
+            { latLng: [0.33, 6.73], name: 'São Tomé and Príncipe' },
+          ],
+          series: {
+            regions: [
+              {
+                values: gdpData,
+                regionsSelectable: true,
+                scale: ['#6F8EF0', '#A6BBF8', '#C2D0FB'],
+                normalizeFunction: 'polynomial',
+              },
+            ],
+          },
+          onRegionTipShow(e, el, code) {
+            el.html(`${el.html()} (Some info - ${gdpData[code]})`);
+          },
+        });
+      }
+    }); 
+  </script>
   
 <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>

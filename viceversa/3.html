@@ -146,7 +146,7 @@
 										<input class="input" type="text" placeholder="Enter search terms / Suchbegriff eingeben">
 									</div>
 									<div class="line hide-for-large">
-										<input class="input" type="text" placeholder="Enter search terms" autofocus>
+										<input class="input" type="text" placeholder="Enter search terms">
 									</div>
 								</form>	
 							</div>																
@@ -172,7 +172,8 @@
 						<div class="search-page">							
 							<div class="icon"><a href="#" class="closeNewslatter"><img src="img/Icon/Close White.svg" class="img"/></a></div>
 							<div class="searching">
-								<span class="title">Subscribe to our Newsletter:</span>							
+								<span class="title">Subscribe to our Newsletter:</span>	
+
 								<form class="posr form" action="">
 									<div class="line show-for-large">
 										<input class="input" type="email" placeholder="Please enter your Email Address">
@@ -729,8 +730,8 @@
 
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$(".viceversa-carousel").owlCarousel({
-			  		loop:false,			    				    	
+				$(".viceversa-carousel").owlCarousel({			  		
+			  		loop:$(".owl-carousel > .item").length <= 1 ? false : true,			    				    	
 			    	nav:true,
 			    	dots: false,
 			    	navText:false,		    				    	

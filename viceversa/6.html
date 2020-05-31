@@ -119,7 +119,7 @@
 		<div id="parent-filter">                                    
 
 			<!-- FILTER-SLIDER -->
-			<div id="filter-slider">	  <!-- .open (.filtered  not used)  for javascript or backend-->			
+			<div id="filter-slider" class="">	  <!-- .open (.filtered  not used)  for javascript or backend-->			
 				<div class="wrapper-white"> 
 					<div class="limiter">
 						<div class="inner-scroll-y">						
@@ -718,7 +718,7 @@
 					}
 					return false;
 			}
-			// if mobile menu dropped, large menu dropdown or open search or newsletter redefine onUnpin function
+			// if mobile menu dropped, large menu dropdown/or filter is open/or open search or newsletter redefine onUnpin function
 			var options = {				
 			  	onUnpin: function() {			  		
 			    	if ( isMobileMenuDropped(myHeader) || isLargeDropdown(myHeader) || isFilterOpen(myFilterSlider) || isSearchOrNewsletterOpen() ) {
@@ -744,31 +744,21 @@
 				$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 64});
 			} else {
 				$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
-			}
+			}						
 
-			//only for test
-			//$("#stick").stick_in_parent({parent: "#parent", offset_top: 104});
-			
-			//$("#filter-slider").stick_in_parent({parent: "#parent-filter", offset_top: 104});
-
-			//HEADROOM FILTER-SLIDER 								
-			
-			// var optionsFilterSlider = {
-			// 	onUnpin: function() {			  		
-			//     	if ( isMobileMenuDropped(myHeader) || isLargeDropdown(myHeader) || isFilterOpen(myFilterSlider) || isSearchOrNewsletterOpen() ) {
-			//       		this.elem.classList.remove(this.classes.unpinned);
-			//       		this.elem.classList.add(this.classes.pinned);
-			//     	}
-			//     	else {
-			//       		this.elem.classList.add(this.classes.unpinned);
-			//       		this.elem.classList.remove(this.classes.pinned);
-			//     	}
-			//   	},
-			//   	tolerance: { up: 5, down: 10 }		  	
-			// };	
-			
-
-			var optionsFilterSlider = {							
+			//HEADROOM FILTER-SLIDER 
+			//if filter is open redefine onUnpin function
+			var optionsFilterSlider = {	
+				onUnpin: function() {			  		
+			    	if ( isFilterOpen(myFilterSlider) ) {
+			      		this.elem.classList.remove(this.classes.unpinned);
+			      		this.elem.classList.add(this.classes.pinned);
+			    	}
+			    	else {
+			      		this.elem.classList.add(this.classes.unpinned);
+			      		this.elem.classList.remove(this.classes.pinned);
+			    	}
+			  	},						
 			  	tolerance: { up: 5, down: 10 }		  	
 			};	
 

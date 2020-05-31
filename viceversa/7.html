@@ -718,7 +718,7 @@
 					}
 					return false;
 			}
-			// if mobile menu dropped, large menu dropdown or open search or newsletter redefine onUnpin function
+			// if mobile menu dropped, large menu dropdown/or filter is open/or open search or newsletter redefine onUnpin function
 			var options = {				
 			  	onUnpin: function() {			  		
 			    	if ( isMobileMenuDropped(myHeader) || isLargeDropdown(myHeader) || isFilterOpen(myFilterSlider) || isSearchOrNewsletterOpen() ) {
@@ -747,7 +747,7 @@
 			}
 			
 			//HEADROOM FILTER-SLIDER 
-
+			//if filter is open redefine onUnpin function
 			var optionsFilterSlider = {	
 				onUnpin: function() {			  		
 			    	if ( isFilterOpen(myFilterSlider) ) {

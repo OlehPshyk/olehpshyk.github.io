@@ -298,16 +298,18 @@ if(closeSearch !== null){
 if(closeNewslatter !== null){
 	closeNewslatter.addEventListener("click", cancelNewslatter);
 }
-if(subscribe !== null){
-	subscribe.addEventListener("click", cancelNewslatter);
-}
-addEventListener("keydown", function(event) {	
-    if (event.keyCode == 13) {
-    	if ( isNewsletterOpen() ) {
-    		cancelNewslatter();
-    	}
-    	if ( (search !== null) && (search.classList.contains("fade-in")) ) {
-    		cancelSearch();
-    	}      
-    }
-});
+
+// Or we can use ajax
+//   $('form-newsletter').submit(function(e) {
+//   	e.preventDefault(); 
+//     	var $form = $(this);
+//     	$.ajax({
+//       	type: $form.attr('method'),
+//       	url: $form.attr('action'),
+//       	data: $form.serialize()
+//     	}).done(function() {
+//      	сonsole.log('success');
+//     	}).fail(function() {
+//       	console.log('fail');
+//     	});
+//   });

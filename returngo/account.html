@@ -234,7 +234,7 @@
                     <div class="input-group">                
                       <input type="password" class="form-control ret-form-control" placeholder="password">
                       <div class="input-group-append">
-                        <button class="input-group-btn" id="password-addon" type="button">Change</button>
+                        <button class="input-group-btn" type="button" data-toggle="modal" data-target="#change-password-modal">Change</button>
                       </div>
                     </div>
                   </div>              
@@ -292,10 +292,61 @@
     </article>
     <!-- <footer class="footer">
         <span class="copyright">&copy; <script>document.write(new Date().getFullYear());</script> returngo</span>
-    </footer> -->
+    </footer> -->    
   </main>
   
-    
+  <div class="modal" id="change-password-modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button class="modal-close-btn" type="button" class="close" data-dismiss="modal"><img src="./static/img/close-icon.svg" alt="close"></button> 
+
+        <div class="mod-body">
+                             
+          <h2 class="mod-title">Change password</h2> 
+          
+          <form action="/change_password">
+            <!-- method="post" enctype="application/x-www-form-urlencoded" id="" -->
+            <div class="form-group">
+              <label class="control-label ret-label" for="new-password">new password</label> 
+              <div class="input-visibility-group">               
+                <input type="password" class="form-control ret-form-control" id="new-password" required>
+                <svg width="24" height="24" viewBox="0 0 24 24"
+                  data-togglevisibility
+                  class="visibility-icon"
+                  alt="visibility">
+                  <path
+                    fill="#B9B9B9"
+                    fill-rule="evenodd"
+                    d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="form-group">  
+              <label class="control-label ret-label" for="repeat-new-password">repeat new password</label> 
+              <div class="input-visibility-group">               
+                <input type="password" class="form-control ret-form-control" id="repeat-new-password" required >
+                <svg width="24" height="24" viewBox="0 0 24 24"
+                  data-togglevisibility
+                  class="visibility-icon"
+                  alt="visibility">
+                  <path
+                    fill="#B9B9B9"
+                    fill-rule="evenodd"
+                    d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="mod-btn-container right">
+              <button type="submit" class="btn-v1">Submit</button>
+            </div>
+          </form>    
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

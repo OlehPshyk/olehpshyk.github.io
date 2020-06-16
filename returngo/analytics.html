@@ -214,38 +214,106 @@
             <button class="filter-btn">1m</button>
             <button class="filter-btn">ytd</button>
             <button class="filter-btn">all</button>
-          </div>  
+          </div> 
+          <div class="v-card">
+            <div class="funnel-container">
+              <div class="funnel-stat-card">
+                <div class="v-card-top-container">
+                  <h3 class="card-vc-title">Offers funnel</h3>              
+                </div>
+                <div class="funnel-stat-container">
+                  <div class="funnel-item">
+                    <div class="funnel-item-bg">
+                      <div class="funnel-item-bg-scaled"></div>
+                    </div>
+                    <div class="bg-round-box">
+                      <div class="bg-round">
+                        <div class="funnel-item-info">
+                          <div class="funnel-item-name">ReturnGO impressions</div>
+                          <div class="funnel-item-value">120</div>
+                        </div>
+                      </div>   
+                    </div>                   
+                  </div> 
+                  <div class="funnel-item">
+                    <div class="funnel-item-bg" style="height: 100%;">
+                      <!-- x = 120/60-->
+                      <!-- y = (120-60)/(120*120) -->
+                      <!-- matrix3d( x ,0,0, y ,0,1,0,0,0,0,1,0,0,0,0,1) -->
+                      <div class="funnel-item-bg-scaled" style="transform: matrix3d(2,0,0, 0.004166 ,0,1,0,0,0,0,1,0,0,0,0,1);"></div>
+                    </div>
+                    <div class="bg-round-box">
+                      <div class="bg-round">
+                        <div class="funnel-item-info">
+                          <div class="funnel-item-name">ReturnGO offers</div>
+                          <div class="funnel-item-value">60</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                   
+                  <div class="funnel-item">
+                    <!-- height: calc( 100% * 60 / 120 ); -->
+                    <div class="funnel-item-bg" style="height: calc( 100% * 60 / 120 );">
+                      <!-- x = 60/15-->
+                      <!-- y = (60-15)/(60*60) -->
+                      <!-- matrix3d( x ,0,0, y ,0,1,0,0,0,0,1,0,0,0,0,1) -->
+                      <div class="funnel-item-bg-scaled" style="transform: matrix3d(4,0,0,0.0125,0,1,0,0,0,0,1,0,0,0,0,1);"></div>
+                    </div>
+                    <div class="bg-round-box">
+                      <div class="bg-round">
+                        <div class="funnel-item-info">
+                          <div class="funnel-item-name">Return resolved</div>
+                          <div class="funnel-item-value">15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                </div>
+              </div>
+              <div class="conver-rate-card">
+                <div class="v-card-top-container">
+                  <h3 class="card-vc-title">Funnel conversion rate</h3>              
+                </div>            
+                <div class="conver-rate-container">
+                  <div class="conver-graph-container">
+                    <span class="conver-value">0%</span>
+                  </div>  
+                  
+                </div>
+              </div>
+            </div>
+          </div> 
           <div class="two-card-grid">
             <div class="h-card-v1">
               <h3 class="card-m-title">Important numbers</h3>
               <div class="table-responsive">
                 <table class="table v1">
-                  <thead>
+                  <!-- <thead>
                     <tr>
-                      <th>Return saved: 23</th>
-                      <th>Average total order: $52</th>                      
+                      <th>Average total order header: $52</th>
+                      <th>Average total order header: $52</th>                      
                     </tr>
-                  </thead>
+                  </thead> -->
                   <tbody>
                     <tr>
-                      <td>Return Requests: <span class="td-n">76</span></td>
-                      <td>Average return value: <span class="td-n">$36</span></td>                      
+                      <td>Avg. items per return request: <span class="td-n">0</span></td>
+                      <td>Avg. return request value: <span class="td-n">$0</span></td>                      
                     </tr>
                     <tr>
-                      <td>Return offers: <span class="td-n">72</span></td>
-                      <td>Average store credit given: <span class="td-n">$41</span></td>                      
+                      <td>Avg. total order of return: <span class="td-n">$0</span></td>
+                      <td>Avg. store credit given: <span class="td-n">$0</span></td>                      
                     </tr>
                     <tr>
-                      <td>Saving returns success rate: <span class="td-n">32%</span></td>
-                      <td>Retention rate: <span class="td-n">91%</span></td>                      
+                      <td><span class="td-n"></span></td>
+                      <td>ReturnGO retention rate: <span class="td-n">0%</span></td>                      
                     </tr>
                     <tr>
-                      <td>Item Return Request: <span class="td-n">91</span></td>
-                      <td>Average retention rate: <span class="td-n">$74</span></td>                      
+                      <td></td>
+                      <td>ReturnGO avg. order value: <span class="td-n">$0</span></td>                      
                     </tr>
                     <tr>
-                      <td>Item per return question: <span class="td-n">1.21</span></td>
-                      <td>Estimated profit: 230+660 = <span class="td-n">$41</span></td>                      
+                      <td></td>
+                      <td><strong>Estimated profit: <span class="td-n">$0</span></strong></td>                      
                     </tr>                    
                   </tbody>
                 </table>

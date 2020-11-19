@@ -4,151 +4,357 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700|Roboto:400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700|Roboto:400,500,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
   <title>KEDEM</title>
 <link href="main.css" rel="stylesheet"></head>
 
-<body>  
-  <!-- <header class="header">     
-  </header> -->  
+<body style="margin:0;">  
+  <div id="loadingArea" style="width: 100%;height: 100%;position: fixed;z-index: 1000;opacity:1; background-color: #feebe7;transition: opacity 1.2s linear;"></div>    
+  <header class="header">
+    <div class="search-contsiner"></div>     
+    <div class="header-container">
+      <div class="logo-container">
+        <a class="logo-link" href="/"><span class="title">Kedem</span></a>
+      </div>
+      <button class="menu-btn" id="menu-btn">
+        <svg class="hmb" height="16px" viewBox="0 -53 384 384" width="16px"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+        <span class="hmb-label">Menu</span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span class="nav-label">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-label">Shop</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-label">About</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="acc-container"></div>
+  </header>
+  <div class="overlay" id="overlay"></div>
+  <nav class="sidebar" id="sidebar">
+    <button class="close-sidebar" id="close-sidebar">
+      <svg height="16px" viewBox="0 0 329.26933 329" width="16px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+    </button>
+    <ul class="sb-nav-list">
+      <li class="sb-nav-item">
+        <a class="sb-nav-link" href="#">
+          <span class="sb-nav-label">Home</span>
+          <svg class="sb-nav-arrow" x="0px" y="0px" width="16px" hidden="16px"
+            viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+            <g>
+              <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
+                "/>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="sb-nav-item">
+        <a class="sb-nav-link" href="#">
+          <span class="sb-nav-label">Shop</span>
+          <svg class="sb-nav-arrow" x="0px" y="0px" width="16px" hidden="16px"
+            viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+            <g>
+              <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
+                "/>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="sb-nav-item">
+        <a class="sb-nav-link" href="#">
+          <span class="sb-nav-label">About</span>
+          <svg class="sb-nav-arrow" x="0px" y="0px" width="16px" hidden="16px"
+            viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+            <g>
+              <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
+                "/>
+            </g>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>   
   <main class="main">
     <div class="top-section">
       <div class="wrapper">
         <div class="top-section-container">
-          <div class="top-s-smimg-container">
-            <div class="sm-img-container"><img class="sm-img" src="./static/img/test.jpg" alt=""></div>
-            <div class="sm-img-container"><img class="sm-img" src="./static/img/test.jpg" alt=""></div>
-            <div class="sm-img-container"><img class="sm-img" src="./static/img/test.jpg" alt=""></div>            
-          </div>
-          <div class="top-s-bigimg-container">
-            <div class="big-img-container">
-              <img class="big-img" src="./static/img/test.jpg" alt=""> 
-            </div>               
-          </div>
-          <div class="top-s-form-container">
-            <form class="top-s-form" action="">
-              <div>
-                <h2>TSUKIM Water free lifting & anti-puffiness balm</h2>
-                <p>#1 Израильский Продукт по уходу за кожей лица, области вокруг глаз, губ, зоны шеи и декольте</p>
-                <span>$69.00</span>
-                <span>Size: 30 ml</span>
-                <span>Quantity</span>
-                <button>+</button>
-                <span>1</span>
-                <button>-</button>
-              </div>
-              <div class="btn-container">
-                <button>BUY NOW</button>
-              </div>
-            </form>
+          <div class="info-container">
+            <h2 class="subtitle">Look Gourgeus</h2>
+            <h1 class="title">Beauty you</h1>
+            <p class="info">Beaux products protect, moisturize, and lubricate your skin. It smartly nourish your skin with lotions, day creams, night creams, tinted moisturizers, and more.</p>
+            <a class="btn-v1" href="#">View Collections</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="result-section">
+    <div class="deal-section">
       <div class="wrapper">
-        <div class="result-section-container">
-          <h2 class="result-title">Proven Results</h2>
-          <p class="result-text">Женщины констатируют эффективность уже после 3 недель использования</p>
-          <div class="result-grid">
-            <div class="result-grid-item"><span class="item-qtt">93%</span><p class="item-text">женщин отмечают заметное разглаживание морщин</p></div>
-            <div class="result-grid-item"><span class="item-qtt">95%</span><p class="item-text">женщин отмечают уменьшение отеков и темных кругов под глазами</p></div>
-            <div class="result-grid-item"><span class="item-qtt">92%</span><p class="item-text">женщин отмечают, что кожа становится более упругой, гладкой и подтянутой</p></div>
+        <div class="deal-section-container">
+          <h2 class="title">Beauty Deal</h2> 
+          <p class="text">Pick your beauty products today. 50% OFF on the most popular cosmetic brands. Order all classy products today!</p>  
+        </div>
+      </div>
+    </div>
+    <div class="choose-section">
+      <div class="wrapper">
+        <div class="choose-section-container">
+          <h2 class="title">Choose your type</h2>
+          <h3 class="subtitle">What's New for You</h3>
+        </div>
+      </div>
+      <div class="choose-slider-container">          
+        
+        <div id="choose-slider">
+          <div class="choose-item">
+            <div class="img-container">
+              <span class="choose-label">Sale</span>              
+              <div class="ratio-choose-img">
+                <div class="choose-img-container">
+                  <a class="choose-img-link" href="#">
+                    <img class="choose-img" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/shop-5.jpg" alt="item1">
+                  </a>
+                </div>
+              </div>              
+            </div>
+            <div class="choose-item-info">
+              <a class="choose-item-name" href="#">Flores Intensive Body Lotion</a>
+              <span class="choose-item-prices"><span>£110</span>&nbsp;-&nbsp;<span>£190</span></span>
+            </div>
+          </div>
+          <div class="choose-item">
+            <div class="img-container">
+              <span class="choose-label">Sale</span>              
+              <div class="ratio-choose-img">
+                <div class="choose-img-container">
+                  <a class="choose-img-link" href="#">
+                    <img class="choose-img" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/shop-2.jpg" alt="item2">
+                  </a>
+                </div>
+              </div>              
+            </div>
+            <div class="choose-item-info">
+              <a class="choose-item-name" href="#">Flores Intensive Body Lotion</a>
+              <span class="choose-item-prices"><span class="old-price">£230.00</span>&nbsp;-&nbsp;<b><span>£200</span></b></span>
+            </div>
+          </div>
+          <div class="choose-item">
+            <div class="img-container">
+              <span class="choose-label">Sale</span>              
+              <div class="ratio-choose-img">
+                <div class="choose-img-container">
+                  <a class="choose-img-link" href="#">
+                    <img class="choose-img" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/shop-5.jpg" alt="item3">
+                  </a>
+                </div>
+              </div>              
+            </div>
+            <div class="choose-item-info">
+              <a class="choose-item-name" href="#">Detox Body Cream</a>
+              <span class="choose-item-prices"><span class="old-price">£150.00</span>&nbsp;-&nbsp;<b><span>£110</span></b></span>
+            </div>
+          </div>
+          <div class="choose-item">
+            <div class="img-container">
+              <span class="choose-label">Sale</span>              
+              <div class="ratio-choose-img">
+                <div class="choose-img-container">
+                  <a class="choose-img-link" href="#">
+                    <img class="choose-img" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/shop-8.jpg" alt="item3">
+                  </a>
+                </div>
+              </div>              
+            </div>
+            <div class="choose-item-info">
+              <a class="choose-item-name" href="#">Flores Body Lotion</a>
+              <span class="choose-item-prices"><span>£75.00</span>&nbsp;-&nbsp;<span>£90</span></span>
+            </div>
+          </div>
+          <div class="choose-item">
+            <div class="img-container">
+              <span class="choose-label">Sale</span>              
+              <div class="ratio-choose-img">
+                <div class="choose-img-container">
+                  <a class="choose-img-link" href="#">
+                    <img class="choose-img" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/shop-18.jpg" alt="item3">
+                  </a>
+                </div>
+              </div>              
+            </div>
+            <div class="choose-item-info">
+              <a class="choose-item-name" href="#">Detox Almond Cream</a>
+              <span class="choose-item-prices"><span>£190.00</span>&nbsp;-&nbsp;<span>£300</span></span>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="bring-section">
+      <div class="bring-col to-right">
+        <div class="bring-img-box">
+          <img class="bring-img" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/fullwidth-left-hover.jpg" alt="img1">
+        </div>    
+        <div class="bring-img-box">
+          <img class="bring-img" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/fullwidth-left-1.jpg" alt="img2">
+        </div>             
+      </div> 
+      <div class="bring-col to-left">
+        <div class="bring-img-box">
+          <img class="bring-img" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/fullwidth-right-1.jpg" alt="img3">
+        </div>    
+        <div class="bring-img-box">
+          <img class="bring-img" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/fullwidth-right-hover.jpg" alt="img4">
+        </div>
+      </div> 
+      <div class="bring-info">
+        <div class="bring-info-container">
+          <div class="bring-info-link-container">
+            <a class="bring-link" href="#">Trending Products</a>
           </div> 
-          <div class="is-does-grid">
-            <div class="is-does-item">
-              <h3 class="is-does-title">WHAT IT IS</h3>
-              <p>
-                Израильский крем для *кожи вокруг глаз и губ*, *области шеи и декольте* содержит уникальное сочетание *питательных и увлажняющих растительных веществ*. 
-              </p>
-              <p>
-                Благодаря большому содержанию витаминов и аминокислот активизирует микроциркуляцию в клетках, *уменьшая отечность и темные круги под глазами*. 
-              </p>
-              <p>
-                Разглаживает морщины, придает коже *эластичность и упругость*. Зона вокруг глаз мгновенно приобретает более *здоровый, сияющий и отдохнувший вид*. 
-              </p>
-              <p>
-                При нанесении *улучшает и подтягивает контуры*, *выравнивает цвет* и *структуру* кожи.
-              </p>
-            </div>
-            <div class="is-does-item">
-              <h3 class="is-does-title">WHAT IT DOES</h3>
-              <ul class="is-does-list">
-                <li>—предотвращает  преждевременное старение кожи</li>
-                <li>—обеспечивает полноценное питание клеток</li>
-                <li>—снимает отечность, разглаживает морщины и устраняет следы усталости под глазами (темные круги)</li>
-                <li>—наполняет кожу влагой и предотвращает от обезвоживания</li>
-                <li>—заметно подтягивает кожу</li>
-                <li>—защищает от пигментации</li>
-              </ul>
-            </div>
-          </div> 
+          <div class="bring-info-inner-container">
+            <h5 class="title">Bring out the hidden beauty</h5>
+            <p class="text">Get styled with the high-fashion products and transform yourself.</p>
+            <a class="button-link" href="#" role="button">Trending</a>
+          </div>
         </div>
-      </div>
+      </div> 
     </div>
-    <div class="before-section">
+    <div class="discount-section">
       <div class="wrapper">
-        <div class="before-section-container">
-          <h2>Proven Results</h2>
-          <h3>BEFORE & AFTER</h3>
-          <p>Мы считаем, что одним из наиболее честных способов доказать эффективность наших продуктов — фото с их результатами у реальных людей.</p>
-          <p>Независимое исследование потребителей. Заметное разглаживание морщин и "гусиных лапок". * (Слева - неделя 0, справа - неделя 3). Фото без ретуширования.</p>
-          SLIDER           
+        <div class="discount-section-container">
+          <div class="discount-info-container">
+            <h2 class="title">30% OFF on Creams</h2>
+            <p class="text">Nourish your skin with toxin-free cosmetic products. With the offers that you can’t refuse.</p>
+            <a class="discount-link" href="#">Never Before Prices</a>
+          </div>
+          <div class="discount-image-container">
+            <img class="discount-image" src="https://dtbeaux.wpengine.com/wp-content/uploads/2020/03/offer-img.jpg" alt="discount-image">
+          </div>
         </div>
-      </div>
+      </div>  
     </div>
-    <div class="ingred-section">
-      <div class="wrapper">
-        <div class="ingred-section-container">
-          <h2>Ingredients</h2>
-          <p>Все ингредиенты, в составе Tsukim, получены из растений, выращенных в экстремальных климатических условиях: перепады температуры, воздействие песка и ветра. Это позволило им выработать механизмы восстановления, необходимые для выживания, позволяющие также возобновлять и омолаживать кожу, защищая ее от внешнего влияния.</p>          
-          <div class="ingred-grid">              
-            <div>
-              <span>Cypress</span>
-              <p>
-                Cypress is a vascular toner, helping minimize swelling. Beneficial to combat skin ageing, by balancing loss of humidity. 
-              </p>
-            </div>
-            <div>
-              <span>Geranium</span>
-              <p>
-                Geranium is tissue healing and balances sebum creation, thereby promoting epidermis flexibility. It enhances blood circulation.
-              </p>
-            </div>
-            <div>
-              <span>Shea butter</span>
-              <p>
-                Shea butter is rich in anti-oxydants and vitamins, hydrates and protects the skin. 
-              </p>
-            </div>
-            <div>
-              <span>Wormwood</span>
-              <p>
-                Wormwood enhances skin reparation, tones and lifts the skin.  
-              </p>            
-            </div>
-            <div>
-              <span>Everlasting</span>
-              <p>
-                Everlasting is a powerful skin regenerating agent, which also repairs skin.
-              </p> 
-            </div>
-            <div>
-              <span>St. John'swort</span>
-              <p>
-                St. John'swort is anti-inflammatory and tissue healing.
-              </p> 
-            </div>
-          </div>          
+    <div class="sqr-images-section">
+      <div class="sqr-images-section-container">
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link" href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal1-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link"href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal3-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link" href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal5-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link" href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal7-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link" href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal9-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link" href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal2-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link" href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal4-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link" href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal6-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link" href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal8-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="sqr-item">
+          <div class="sqr-item-ratio">
+            <a class="sqr-image-link" href="#">
+              <div class="sqr-image-container">
+                <img class="sqr-image" src="https://ubmhq3b8uol6uxk61ipn5a12-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/img-gal10-1.jpg" alt="img1">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>      
     </div>
-    <!-- <footer class="footer">        
-    </footer> -->
+   <footer class="footer">        
+    </footer>
   </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('loadingArea').style.opacity = 0;
+      setTimeout(function(){document.getElementById('loadingArea').style.display = 'none';}, 1200);
+    })
+  </script>
   
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   
- 
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script> -->
 <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>

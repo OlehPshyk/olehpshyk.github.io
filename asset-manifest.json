@@ -1,0 +1,38 @@
+{
+  "files": {
+    "static/js/0.3db8dd63.chunk.js": "/static/js/0.3db8dd63.chunk.js",
+    "static/js/0.3db8dd63.chunk.js.map": "/static/js/0.3db8dd63.chunk.js.map",
+    "main.css": "/static/css/main.bf031472.chunk.css",
+    "main.js": "/static/js/main.bb8fd87f.chunk.js",
+    "main.js.map": "/static/js/main.bb8fd87f.chunk.js.map",
+    "register.js": "/static/js/register.e323dec7.chunk.js",
+    "register.js.map": "/static/js/register.e323dec7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.45d7b7d8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.45d7b7d8.js.map",
+    "thankyou.js": "/static/js/thankyou.a6bb17a9.chunk.js",
+    "thankyou.js.map": "/static/js/thankyou.a6bb17a9.chunk.js.map",
+    "static/js/5.02334439.chunk.js": "/static/js/5.02334439.chunk.js",
+    "static/js/5.02334439.chunk.js.map": "/static/js/5.02334439.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d067134f4eb603285f332d3914a9bc83.js": "/precache-manifest.d067134f4eb603285f332d3914a9bc83.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.bf031472.chunk.css.map": "/static/css/main.bf031472.chunk.css.map",
+    "static/js/5.02334439.chunk.js.LICENSE.txt": "/static/js/5.02334439.chunk.js.LICENSE.txt",
+    "static/media/bg-empty.png": "/static/media/bg-empty.4aa0e24f.png",
+    "static/media/down-arrow.195fdeba.svg": "/static/media/down-arrow.195fdeba.svg",
+    "static/media/ic-mekar.svg": "/static/media/ic-mekar.b31d24f7.svg",
+    "static/media/ic-register-as-borrower.svg": "/static/media/ic-register-as-borrower.c607ec63.svg",
+    "static/media/ic-register-as-lender.svg": "/static/media/ic-register-as-lender.a084e3b3.svg",
+    "static/media/ic-thankyou-borrower.svg": "/static/media/ic-thankyou-borrower.8334901a.svg",
+    "static/media/ic-thankyou-default.svg": "/static/media/ic-thankyou-default.8149d1fd.svg",
+    "static/media/ic-thankyou-register.svg": "/static/media/ic-thankyou-register.f0b6e98d.svg",
+    "static/media/left-arrow.7e0deac2.svg": "/static/media/left-arrow.7e0deac2.svg",
+    "static/media/logo.50bfa05b.svg": "/static/media/logo.50bfa05b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.45d7b7d8.js",
+    "static/js/5.02334439.chunk.js",
+    "static/css/main.bf031472.chunk.css",
+    "static/js/main.bb8fd87f.chunk.js"
+  ]
+}
